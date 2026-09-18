@@ -1,0 +1,14 @@
+{
+  "name": "usaspending_awards_search",
+  "actor_id": "publicrecords/usaspending-awards-scraper",
+  "brand": "USASpending Awards",
+  "description": "US federal contract/IDV awards from the official USASpending.gov v2 API with agency, recipient, or NAICS filters.",
+  "when_to_use": "Federal awards by NAICS, agency, or recipient; competitive intelligence on who won similar work.",
+  "sample_input": {
+    "naics": ["541512"],
+    "agency": "Department of Defense",
+    "maxItems": 50
+  },
+  "store_url": "https://apify.com/publicrecords/usaspending-awards-scraper",
+  "site_url": "https://geminigeorge22.github.io/usaspending/"
+}

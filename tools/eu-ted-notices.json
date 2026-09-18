@@ -1,0 +1,14 @@
+{
+  "name": "eu_ted_notices_search",
+  "actor_id": "publicrecords/eu-ted-notices-scraper",
+  "brand": "EU TED Notices",
+  "description": "Search EU public procurement notices via the official TED Search API v3 (anonymous, no API key).",
+  "when_to_use": "EU tenders by keyword, buyer country, CPV, or publication date window.",
+  "sample_input": {
+    "keywords": "cybersecurity",
+    "buyerCountry": "DEU",
+    "maxItems": 50
+  },
+  "store_url": "https://apify.com/publicrecords/eu-ted-notices-scraper",
+  "site_url": "https://geminigeorge22.github.io/ted/"
+}

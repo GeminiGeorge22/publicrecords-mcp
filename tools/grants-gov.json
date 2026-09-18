@@ -1,0 +1,15 @@
+{
+  "name": "grants_gov_opportunities_search",
+  "actor_id": "publicrecords/grants-gov-scraper",
+  "brand": "Grants.gov Opportunities",
+  "description": "US federal grant FOAs from the official Grants.gov search2 API (keyword, agency, posted-within).",
+  "when_to_use": "Posted federal grant opportunities by keyword/status/agency window.",
+  "sample_input": {
+    "keyword": "cybersecurity",
+    "status": "posted",
+    "postedWithinDays": 30,
+    "maxItems": 50
+  },
+  "store_url": "https://apify.com/publicrecords/grants-gov-scraper",
+  "site_url": "https://geminigeorge22.github.io/grantsgov/"
+}

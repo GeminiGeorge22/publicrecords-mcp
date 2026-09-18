@@ -1,0 +1,14 @@
+{
+  "name": "legistar_meetings_search",
+  "actor_id": "publicrecords/legistar-meetings-scraper",
+  "brand": "Legistar Meetings",
+  "description": "US city council meetings, agendas, and minutes from public Legistar (Granicus) Web API clients.",
+  "when_to_use": "Local government events/agendas/minutes for named Legistar clients (e.g. seattle, chicago).",
+  "sample_input": {
+    "clients": ["seattle"],
+    "resource": "events",
+    "maxItems": 50
+  },
+  "store_url": "https://apify.com/publicrecords/legistar-meetings-scraper",
+  "site_url": "https://geminigeorge22.github.io/legistar/"
+}

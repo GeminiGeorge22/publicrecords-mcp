@@ -1,0 +1,19 @@
+{
+  "name": "crosswalk_resolve_company",
+  "actor_id": "publicrecords/company-social-profile-finder",
+  "brand": "Crosswalk",
+  "flagship": true,
+  "description": "Find a company's LinkedIn, Instagram, Facebook, X, TikTok and YouTube from its website or name, verified from the platform side. Organizations only; never people; never guesses. Confidence score and evidence per link.",
+  "when_to_use": "Need verified organization social profiles from a website or company name; enrich Maps/lead datasets via inputDatasetId; batch resolve domains.",
+  "sample_input": {
+    "query": "hubspot.com",
+    "outputFormat": "compact"
+  },
+  "sample_inputs": [
+    { "query": "hubspot.com", "outputFormat": "compact" },
+    { "queries": ["stripe.com", "notion.so"], "outputFormat": "compact" },
+    { "inputDatasetId": "YOUR_MAPS_DATASET_ID", "maxRows": 500 }
+  ],
+  "store_url": "https://apify.com/publicrecords/company-social-profile-finder",
+  "site_url": "https://geminigeorge22.github.io/crosswalk/"
+}

@@ -1,0 +1,14 @@
+{
+  "publisher": "publicrecords",
+  "disclosure": "Published by the publicrecords maintainer on Apify.",
+  "mcp_pin_url": "https://mcp.apify.com?tools=publicrecords/company-social-profile-finder,publicrecords/eu-ted-notices-scraper,publicrecords/usaspending-awards-scraper,publicrecords/grants-gov-scraper,publicrecords/uk-find-a-tender-scraper,publicrecords/legistar-meetings-scraper",
+  "tools": [
+    "crosswalk.json",
+    "eu-ted-notices.json",
+    "usaspending-awards.json",
+    "grants-gov.json",
+    "uk-find-a-tender.json",
+    "legistar-meetings.json"
+  ],
+  "note": "Manifest descriptors only. No Actor source. GovCon is not listed as live."
+}

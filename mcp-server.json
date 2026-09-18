@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "publicrecords": {
+      "url": "https://mcp.apify.com?tools=publicrecords/company-social-profile-finder,publicrecords/eu-ted-notices-scraper,publicrecords/usaspending-awards-scraper,publicrecords/grants-gov-scraper,publicrecords/uk-find-a-tender-scraper,publicrecords/legistar-meetings-scraper",
+      "description": "Pinned live publicrecords Actors: Crosswalk (flagship) + TED + USASpending + Grants.gov + UK Find a Tender + Legistar. Disclosure: Published by the publicrecords maintainer on Apify."
+    }
+  },
+  "x_publicrecords": {
+    "disclosure": "Published by the publicrecords maintainer on Apify.",
+    "server_card": "https://geminigeorge22.github.io/.well-known/mcp/server-card.json",
+    "manifest_repo": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+    "for_agents": "https://geminigeorge22.github.io/for-agents/",
+    "updated": "2026-09-17"
+  }
+}
