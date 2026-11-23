@@ -1,0 +1,18 @@
+skool-community-growth-tracker|skool mcp|not in top 50
+ashby-jobs-scraper|ashby mcp|not in top 50
+greenhouse-jobs-scraper|greenhouse mcp|not in top 50
+lever-jobs-scraper|lever mcp|not in top 50
+smartrecruiters-jobs-scraper|smartrecruiters mcp|not in top 50
+etsy-search-scraper|etsy mcp|22:GeminiGeorge22/awesome-etsy-mcp;31:GeminiGeorge22/ecommerce-search-rankings-mcp
+etsy-shop-velocity|etsy mcp|22:GeminiGeorge22/awesome-etsy-mcp;31:GeminiGeorge22/ecommerce-search-rankings-mcp
+calibration-ledger|forecast mcp|not in top 50
+govcon-opportunity-feed|sam.gov mcp|not in top 50
+grants-gov-scraper|grants mcp|not in top 50
+usaspending-awards-scraper|usaspending mcp|not in top 50
+uk-find-a-tender-scraper|tender mcp|22:GeminiGeorge22/gov-tenders-mcp
+eu-ted-notices-scraper|tenders mcp|5:GeminiGeorge22/gov-tenders-mcp
+legistar-meetings-scraper|legistar mcp|2:GeminiGeorge22/gov-tenders-mcp
+company-social-profile-finder|social profiles mcp|not in top 50
+google-ads-transparency-scraper|google ads mcp|not in top 50
+sports-odds-api|odds mcp|2:GeminiGeorge22/sports-odds-mcp;13:GeminiGeorge22/sports-odds-mcp-listings;14:GeminiGeorge22/awesome-sports-odds-mcp
+spotify-play-count-scraper|spotify mcp|not in top 50
