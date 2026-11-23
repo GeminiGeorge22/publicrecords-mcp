@@ -7,7 +7,7 @@ Snapshot of every distribution surface the publicrecords Apify Actor fleet touch
 | File | What |
 |---|---|
 | [surfaces.csv](./surfaces.csv) | One row per surface |
-| [placements.csv](./placements.csv) | Surface × 17 Actors |
+| [placements.csv](./placements.csv) | Surface × 18 Actors |
 | [actor_map.csv](./actor_map.csv) | Dedicated server, bundles, skill folder per Actor |
 | [LAUNCH.md](./LAUNCH.md) | Ordered playbook |
 | [launch_new_actor.sh](./launch_new_actor.sh) | Dry-run planner (`./launch_new_actor.sh <actor-slug>`) |
