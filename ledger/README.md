@@ -2,7 +2,7 @@
 
 Snapshot of every distribution surface the publicrecords Apify Actor fleet touches, plus a playbook to launch a new Actor across them.
 
-**As of:** 2026-11-23 13:22 America/Toronto
+**As of:** 2026-11-23 16:36 America/Toronto
 
 | File | What |
 |---|---|
@@ -35,7 +35,7 @@ By type (from `counts.json` `by_type`): awesome-list 138, mcp-directory 115, plu
 ## What is still left to do (not just the 2 remaining surfaces)
 
 1. **Two new surfaces we can still file:** Grok Bot marketplace (after an in-app test) and HOL plugin registry claim (after [hashgraph-online/awesome-codex-plugins #788](https://github.com/hashgraph-online/awesome-codex-plugins/pull/788) merges). Source: `counts.json` `remaining_names`.
-2. **78 outstanding browser forms on surfaces we already touch:** the 13 dedicated servers published 23 Nov 2026 × 6 directories (mcpservers.org, cursor.directory, mcp.directory — check auto-import first, mcpcatalog.dev, TrackMCP, MCP Market Free Queue). Source: `/workspace/mcp-fleet-2026-11-23/browser-queue.csv` (81 rows; 78 are those six directories; 3 are Mark-login rows). Placement status for those 13 Actors on those directories is `remaining`.
+2. **Directory forms for the 13 dedicated servers (23 Nov 2026) are filed or held.** Placements: mcpservers.org 11 submitted (Etsy covered by existing etsy-sales-mcp); cursor.directory 11 submitted, some pending security scan (plugin URLs on the rows; company-social-mcp, etsy-sales-mcp, and google-ads-transparency-mcp-competitor-ads already exist); mcpcatalog.dev 13 submitted; TrackMCP 1 repo-root listing covering all 13; mcp.directory 13 submitted; MCP Market held (paid $29 only) and not submitted (`held-needs-Mark` on those 13 rows). These six surfaces were already `live` or `submitted`, so the `counts.json` surface totals are unchanged. The earlier 78-form browser queue is superseded by these rows.
 3. **Rechecks 24–25 Nov 2026:** ClawHub security scans, AgentForge 48-hour review (25 Nov), SkillzBench, Launch MCP, Gemini CLI gallery, SkillsMP, Socketlist, international form go-lives, [awesome-copilot #6582](https://github.com/github/awesome-copilot/issues/6582), [xai-org/plugin-marketplace #2237](https://github.com/xai-org/plugin-marketplace/pull/2237), hashgraph #788.
 4. **63 held-needs-Mark, default skip** unless Mark says go. Named on 23 Nov: Anthropic directory, OpenAI directory, Cursor Marketplace, Kiro registry, Piebald, awesome-claude-code, Microsoft 365, AWS, Perplexity connectors. The rest are the older MCP-LIST-1 account-gated backlog (LobeHub, GitHub MCP Registry, PlayMCP Kakao, bestmcp.it, API hubs, etc.). Full list: `counts.json` `held_names`.
 
@@ -72,6 +72,7 @@ Today’s results that were **not yet in those files** and were applied on top:
 - Perplexity connectors = needs-Mark, default skip (company partnership form, 68 questions / 51 required; OAuth would be Apify’s)
 - HOL claim still waits on #788 (OPEN)
 - International forms: serveurmcp 6 (ats-jobs maybe duplicate), almc.es 6, mcpmarket.cn 6, MCP Türkiye 6 + 1 duplicate (Company Social); gensapps skipped (rejects query URLs)
+- Directory submissions the same day, recorded on placement rows only (surface totals unchanged): mcpservers.org 11 submitted, Etsy covered by existing etsy-sales-mcp; cursor.directory 11 submitted (some pending security scan; plugin URLs on the rows; company-social-mcp, etsy-sales-mcp, and google-ads-transparency-mcp-competitor-ads already exist); mcpcatalog.dev 13 submitted; TrackMCP 1 repo-root listing covering all 13; mcp.directory 13 submitted; MCP Market held (paid $29 only), the 13 not submitted. sports-odds on MCP Market stays the earlier submitted row, so that surface stays `submitted`.
 
 `tools/work_clone.sh` was not used: it is not present under `/workspace/fleet-orders/tools/`. The MCP-LIST-1 snapshot already on disk was used read-only. No fleet-orders checkout was created or deleted.
 

@@ -164,12 +164,15 @@ Skills / plugins
       (Grok Build PR #2237 is a different surface and is already open.)
 
 General MCP directories (one form per dedicated or bundle server; check existing first)
-  [ ] mcpservers.org/submit
-  [ ] cursor.directory (Submit plugin; GitHub sign-in)
-  [ ] mcp.directory/submit  — CHECK registry auto-import first
-  [ ] mcpcatalog.dev/submit — verify earlier pendings before filing more
-  [ ] trackmcp.com/submit-mcp
-  [ ] mcpmarket.com/submit  — Free Queue only, never the paid fast lane
+  The 13 dedicated servers published 2026-11-23 are already submitted or held.
+  Do not refile them. See ledger/LAUNCH.md section C.
+  [ ] mcpservers.org/submit — Etsy already covered by etsy-sales-mcp
+  [ ] cursor.directory (Submit plugin; GitHub sign-in; security scan)
+      company-social-mcp, etsy-sales-mcp, google-ads plugin, and sports-odds already exist
+  [ ] mcp.directory/submit  — 13 dedicated servers submitted 2026-11-23
+  [ ] mcpcatalog.dev/submit — 13 dedicated servers submitted 2026-11-23
+  [ ] trackmcp.com/submit-mcp — 1 repo-root listing already covers those 13
+  [ ] mcpmarket.com/submit  — paid \$29 only; held-needs-Mark. Do not submit without Mark.
 
 International (6 bundles already filed 2026-11-23 and cover the current 17 Actors)
   [ ] Update the matching bundle (ats-jobs / gov-tenders / etsy-sales / or a new

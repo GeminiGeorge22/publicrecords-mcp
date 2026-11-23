@@ -72,14 +72,14 @@ Contact email: `mark-merchand-zs9fmg@mail.grokbot.com`. One entry per server or 
 - **HOL plugin registry claim:** **wait until** [hashgraph-online/awesome-codex-plugins #788](https://github.com/hashgraph-online/awesome-codex-plugins/pull/788) merges, then free claim only: https://hol.org/guard/plugins?claim=GeminiGeorge22%2Fpublicrecords-skills — never paid HOL tiers.
 - **Grok Bot marketplace:** https://x.ai/bot/marketplace/submit-a-plugin. **Held until an in-app test is done.** Do not tick “tested locally and in-app” first. Plugin URL = the skills repo. Distinct from Grok Build PR #2237, which is already open.
 
-**General MCP directories — still outstanding for the 13 dedicated servers published 23 Nov 2026** (`browser-queue.csv`, 13 × 6 = 78 forms). Older flagship/bundle listings already exist on some of these. Check live/pending first:
+**General MCP directories — the 13 dedicated servers published 23 Nov 2026 are filed or held.** Surface status was already live or submitted, so `counts.json` totals did not change. A brand-new Actor still uses the form only when it is not already covered. No second entry.
 
-- https://mcpservers.org/submit (Free plan, ~2-week review)
-- https://cursor.directory (Submit plugin; GitHub sign-in; security scan)
-- https://mcp.directory/submit (**check auto-import from the registry first**)
-- https://mcpcatalog.dev/submit (verify an earlier pending listing is live before filing 13 more)
-- https://trackmcp.com/submit-mcp (Cloudflare; real browser)
-- https://mcpmarket.com/submit (**Free Queue only**, never the paid fast lane)
+- https://mcpservers.org/submit — 11 dedicated servers submitted (Free plan, ~2-week review). Etsy (etsy-search-scraper, etsy-shop-velocity) is covered by existing etsy-sales-mcp.
+- https://cursor.directory — 11 plugins submitted (GitHub sign-in; some pending security scan). Plugin URLs are on the placement rows. company-social-mcp, etsy-sales-mcp, and google-ads-transparency-mcp-competitor-ads already exist; sports-odds stays live.
+- https://mcp.directory/submit — 13 dedicated servers submitted.
+- https://mcpcatalog.dev/submit — 13 dedicated servers submitted.
+- https://trackmcp.com/submit-mcp — 1 repo-root listing covering all 13 (Cloudflare; real browser). Do not file 13 separate forms for that repo root.
+- https://mcpmarket.com/submit — not submitted. Paid $29 only; those 13 placement rows are `held-needs-Mark`. sports-odds stays the earlier submitted row. Do not pick the paid lane without Mark.
 
 **International directories (6 flagship/bundle repos filed 23 Nov 2026; they already cover all 17 Actors).** A brand-new Actor is usually covered by updating the matching bundle (gov-tenders, ats-jobs, etsy-sales, or a new dedicated server if it is a new niche). File a new form only if it is not already covered. No duplicates (serveurmcp may already have a duplicate ats-jobs; MCP Türkiye already had a Company Social duplicate).
 
@@ -122,7 +122,7 @@ Smithery is **not** held — it is skipped (product ended 31 Oct 2026). Continue
 ## What “left to do” means (23 Nov 2026 snapshot)
 
 - **New surfaces we can still file:** 2 — Grok Bot marketplace (after in-app test) and HOL claim (after #788 merges). Source: `ledger/counts.json` `remaining_names`.
-- **Outstanding forms on surfaces we already touch:** 78 — the 13 new dedicated servers × 6 general directories above. Source: `/workspace/mcp-fleet-2026-11-23/browser-queue.csv` (81 rows, of which 78 are those six directories).
+- **Outstanding forms on the six general directories above:** none for the 13 dedicated servers. They were submitted or held on 23 Nov 2026 (TrackMCP is one repo-root listing; MCP Market was not submitted). Source: `placements.csv`. The earlier 78-form browser queue is superseded.
 - **Pending reviews to recheck 24–25 Nov 2026:** ClawHub scans, AgentForge 48h, SkillzBench, Launch MCP, Gemini gallery, SkillsMP, Socketlist, intl form go-lives, awesome-copilot #6582, xai #2237, hashgraph #788.
 - **Held-needs-Mark:** 63 surfaces (default skip unless Mark says go). Source: `ledger/counts.json`.
 - **Skipped / n-a / defunct / out of scope:** 111 surfaces. Do not rediscover and refile these.

@@ -169,20 +169,20 @@ Cursor / VS Code / Insiders MCP install links,company-social-profile-finder,live
 Cursor / VS Code / Insiders MCP install links,google-ads-transparency-scraper,live,skills pack,https://github.com/GeminiGeorge22/publicrecords-skills#install,fleet-level / pack-level status
 Cursor / VS Code / Insiders MCP install links,sports-odds-api,live,skills pack,https://github.com/GeminiGeorge22/publicrecords-skills#install,fleet-level / pack-level status
 Cursor / VS Code / Insiders MCP install links,spotify-play-count-scraper,live,skills pack,https://github.com/GeminiGeorge22/publicrecords-skills#install,fleet-level / pack-level status
-cursor.directory,ashby-jobs-scraper,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,greenhouse-jobs-scraper,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,lever-jobs-scraper,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,smartrecruiters-jobs-scraper,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,etsy-search-scraper,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,etsy-shop-velocity,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,calibration-ledger,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,govcon-opportunity-feed,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,grants-gov-scraper,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,usaspending-awards-scraper,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,uk-find-a-tender-scraper,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,eu-ted-notices-scraper,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,legistar-meetings-scraper,remaining,per-Actor server,https://cursor.directory,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-cursor.directory,company-social-profile-finder,not-listed,per-Actor server,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
+cursor.directory,ashby-jobs-scraper,submitted,per-Actor server,https://cursor.directory/plugins/ashby-jobs,server=ashby-jobs-mcp
+cursor.directory,greenhouse-jobs-scraper,submitted,per-Actor server,https://cursor.directory/plugins/greenhouse-jobs,server=greenhouse-jobs-mcp
+cursor.directory,lever-jobs-scraper,submitted,per-Actor server,https://cursor.directory/plugins/lever-jobs,server=lever-jobs-mcp
+cursor.directory,smartrecruiters-jobs-scraper,submitted,per-Actor server,https://cursor.directory/plugins/smartrecruiters-jobs,server=smartrecruiters-jobs-mcp
+cursor.directory,etsy-search-scraper,submitted,per-Actor server,https://cursor.directory/plugins/etsy-sales-mcp,server=etsy-sales-mcp
+cursor.directory,etsy-shop-velocity,submitted,per-Actor server,https://cursor.directory/plugins/etsy-sales-mcp,server=etsy-sales-mcp
+cursor.directory,calibration-ledger,submitted,per-Actor server,https://cursor.directory/plugins/forecast-calibration-ledger,server=calibration-ledger-mcp
+cursor.directory,govcon-opportunity-feed,submitted,per-Actor server,https://cursor.directory/plugins/govcon-opportunities-samgov,server=govcon-opportunities-mcp
+cursor.directory,grants-gov-scraper,submitted,per-Actor server,https://cursor.directory/plugins/grantsgov,server=grants-gov-mcp
+cursor.directory,usaspending-awards-scraper,submitted,per-Actor server,https://cursor.directory/plugins/usaspending-awards,server=usaspending-awards-mcp
+cursor.directory,uk-find-a-tender-scraper,submitted,per-Actor server,https://cursor.directory/plugins/uk-find-a-tender,server=uk-tenders-mcp
+cursor.directory,eu-ted-notices-scraper,submitted,per-Actor server,https://cursor.directory/plugins/eu-ted-tenders,server=eu-ted-tenders-mcp
+cursor.directory,legistar-meetings-scraper,submitted,per-Actor server,https://cursor.directory/plugins/legistar-council-meetings,server=legistar-council-meetings-mcp
+cursor.directory,company-social-profile-finder,submitted,per-Actor server,https://cursor.directory/plugins/company-social-mcp,server=company-social-mcp
 cursor.directory,google-ads-transparency-scraper,submitted,per-Actor server,https://cursor.directory/plugins/google-ads-transparency-mcp-competitor-ads,server=google-ads-transparency-mcp
 cursor.directory,sports-odds-api,live,per-Actor server,https://cursor.directory/plugins/sports-odds-api-betrivers-unibet-22-more-books,server=sports-odds-mcp (first lane)
 cursor.directory,spotify-play-count-scraper,not-listed,per-Actor server,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
@@ -594,19 +594,19 @@ mcpHQ/awesome-mcp-servers,company-social-profile-finder,not-listed,bundle endpoi
 mcpHQ/awesome-mcp-servers,google-ads-transparency-scraper,live,bundle endpoint,https://github.com/mcpHQ/awesome-mcp-servers/blob/main/data/servers.json,server=google-ads-transparency-mcp
 mcpHQ/awesome-mcp-servers,sports-odds-api,live,bundle endpoint,https://raw.githubusercontent.com/mcpHQ/awesome-mcp-servers/main/data/servers.json,server=sports-odds-mcp (first lane)
 mcpHQ/awesome-mcp-servers,spotify-play-count-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
-mcpservers.org,ashby-jobs-scraper,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpservers.org,greenhouse-jobs-scraper,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpservers.org,lever-jobs-scraper,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpservers.org,smartrecruiters-jobs-scraper,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpservers.org,etsy-search-scraper,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpservers.org,etsy-shop-velocity,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpservers.org,calibration-ledger,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpservers.org,govcon-opportunity-feed,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpservers.org,grants-gov-scraper,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpservers.org,usaspending-awards-scraper,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpservers.org,uk-find-a-tender-scraper,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpservers.org,eu-ted-notices-scraper,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpservers.org,legistar-meetings-scraper,remaining,per-Actor server,https://mcpservers.org/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
+mcpservers.org,ashby-jobs-scraper,submitted,per-Actor server,https://mcpservers.org/submit,server=ashby-jobs-mcp
+mcpservers.org,greenhouse-jobs-scraper,submitted,per-Actor server,https://mcpservers.org/submit,server=greenhouse-jobs-mcp
+mcpservers.org,lever-jobs-scraper,submitted,per-Actor server,https://mcpservers.org/submit,server=lever-jobs-mcp
+mcpservers.org,smartrecruiters-jobs-scraper,submitted,per-Actor server,https://mcpservers.org/submit,server=smartrecruiters-jobs-mcp
+mcpservers.org,etsy-search-scraper,submitted,per-Actor server,https://mcpservers.org/submit,server=etsy-sales-mcp
+mcpservers.org,etsy-shop-velocity,submitted,per-Actor server,https://mcpservers.org/submit,server=etsy-sales-mcp
+mcpservers.org,calibration-ledger,submitted,per-Actor server,https://mcpservers.org/submit,server=calibration-ledger-mcp
+mcpservers.org,govcon-opportunity-feed,submitted,per-Actor server,https://mcpservers.org/submit,server=govcon-opportunities-mcp
+mcpservers.org,grants-gov-scraper,submitted,per-Actor server,https://mcpservers.org/submit,server=grants-gov-mcp
+mcpservers.org,usaspending-awards-scraper,submitted,per-Actor server,https://mcpservers.org/submit,server=usaspending-awards-mcp
+mcpservers.org,uk-find-a-tender-scraper,submitted,per-Actor server,https://mcpservers.org/submit,server=uk-tenders-mcp
+mcpservers.org,eu-ted-notices-scraper,submitted,per-Actor server,https://mcpservers.org/submit,server=eu-ted-tenders-mcp
+mcpservers.org,legistar-meetings-scraper,submitted,per-Actor server,https://mcpservers.org/submit,server=legistar-council-meetings-mcp
 mcpservers.org,company-social-profile-finder,submitted,per-Actor server,https://mcpservers.org/submit,server=company-social-mcp
 mcpservers.org,google-ads-transparency-scraper,submitted,per-Actor server,https://mcpservers.org/submit,server=google-ads-transparency-mcp
 mcpservers.org,sports-odds-api,live,per-Actor server,https://mcpservers.org/servers/apify-com-publicrecords-sports-odds-api,server=sports-odds-mcp (first lane)
@@ -1597,19 +1597,19 @@ manil2020/awesome-mcp-servers,company-social-profile-finder,not-listed,bundle en
 manil2020/awesome-mcp-servers,google-ads-transparency-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 manil2020/awesome-mcp-servers,sports-odds-api,submitted,bundle endpoint,https://github.com/manil2020/awesome-mcp-servers/pull/15,server=sports-odds-mcp
 manil2020/awesome-mcp-servers,spotify-play-count-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
-MCP Market,ashby-jobs-scraper,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-MCP Market,greenhouse-jobs-scraper,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-MCP Market,lever-jobs-scraper,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-MCP Market,smartrecruiters-jobs-scraper,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-MCP Market,etsy-search-scraper,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-MCP Market,etsy-shop-velocity,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-MCP Market,calibration-ledger,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-MCP Market,govcon-opportunity-feed,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-MCP Market,grants-gov-scraper,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-MCP Market,usaspending-awards-scraper,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-MCP Market,uk-find-a-tender-scraper,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-MCP Market,eu-ted-notices-scraper,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-MCP Market,legistar-meetings-scraper,remaining,per-Actor server,https://mcpmarket.com/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
+MCP Market,ashby-jobs-scraper,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
+MCP Market,greenhouse-jobs-scraper,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
+MCP Market,lever-jobs-scraper,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
+MCP Market,smartrecruiters-jobs-scraper,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
+MCP Market,etsy-search-scraper,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
+MCP Market,etsy-shop-velocity,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
+MCP Market,calibration-ledger,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
+MCP Market,govcon-opportunity-feed,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
+MCP Market,grants-gov-scraper,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
+MCP Market,usaspending-awards-scraper,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
+MCP Market,uk-find-a-tender-scraper,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
+MCP Market,eu-ted-notices-scraper,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
+MCP Market,legistar-meetings-scraper,held-needs-Mark,per-Actor server,https://mcpmarket.com/submit,paid $29 only; not submitted
 MCP Market,company-social-profile-finder,not-listed,per-Actor server,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 MCP Market,google-ads-transparency-scraper,not-listed,per-Actor server,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 MCP Market,sports-odds-api,submitted,per-Actor server,https://mcpmarket.com/submit,server=sports-odds-mcp (first lane)
@@ -1699,19 +1699,19 @@ MCP Türkiye,company-social-profile-finder,submitted,bundle endpoint,https://mcp
 MCP Türkiye,google-ads-transparency-scraper,submitted,bundle endpoint,https://mcpturkiye.com/,covered by one of the 6 flagship/bundle repos filed today
 MCP Türkiye,sports-odds-api,submitted,bundle endpoint,https://mcpturkiye.com/,covered by one of the 6 flagship/bundle repos filed today
 MCP Türkiye,spotify-play-count-scraper,submitted,bundle endpoint,https://mcpturkiye.com/,covered by one of the 6 flagship/bundle repos filed today
-mcp.directory,ashby-jobs-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=ats-jobs-mcp
-mcp.directory,greenhouse-jobs-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=ats-jobs-mcp
-mcp.directory,lever-jobs-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=ats-jobs-mcp
-mcp.directory,smartrecruiters-jobs-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=ats-jobs-mcp
-mcp.directory,etsy-search-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=etsy-sales-mcp
-mcp.directory,etsy-shop-velocity,submitted,per-Actor server,https://mcp.directory/submit,server=etsy-sales-mcp
-mcp.directory,calibration-ledger,remaining,per-Actor server,https://mcp.directory/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcp.directory,govcon-opportunity-feed,submitted,per-Actor server,https://mcp.directory/submit,server=gov-tenders-mcp
-mcp.directory,grants-gov-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=gov-tenders-mcp
-mcp.directory,usaspending-awards-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=gov-tenders-mcp
-mcp.directory,uk-find-a-tender-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=gov-tenders-mcp
-mcp.directory,eu-ted-notices-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=gov-tenders-mcp
-mcp.directory,legistar-meetings-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=gov-tenders-mcp
+mcp.directory,ashby-jobs-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=ashby-jobs-mcp
+mcp.directory,greenhouse-jobs-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=greenhouse-jobs-mcp
+mcp.directory,lever-jobs-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=lever-jobs-mcp
+mcp.directory,smartrecruiters-jobs-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=smartrecruiters-jobs-mcp
+mcp.directory,etsy-search-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=etsy-search-mcp
+mcp.directory,etsy-shop-velocity,submitted,per-Actor server,https://mcp.directory/submit,server=etsy-shop-sales-mcp
+mcp.directory,calibration-ledger,submitted,per-Actor server,https://mcp.directory/submit,server=calibration-ledger-mcp
+mcp.directory,govcon-opportunity-feed,submitted,per-Actor server,https://mcp.directory/submit,server=govcon-opportunities-mcp
+mcp.directory,grants-gov-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=grants-gov-mcp
+mcp.directory,usaspending-awards-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=usaspending-awards-mcp
+mcp.directory,uk-find-a-tender-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=uk-tenders-mcp
+mcp.directory,eu-ted-notices-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=eu-ted-tenders-mcp
+mcp.directory,legistar-meetings-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=legistar-council-meetings-mcp
 mcp.directory,company-social-profile-finder,not-listed,per-Actor server,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 mcp.directory,google-ads-transparency-scraper,submitted,per-Actor server,https://mcp.directory/submit,server=google-ads-transparency-mcp
 mcp.directory,sports-odds-api,submitted,per-Actor server,https://mcp.directory/submit,server=sports-odds-mcp (first lane)
@@ -1733,19 +1733,19 @@ MCPBay (ru),company-social-profile-finder,submitted,per-Actor server,,fleet-leve
 MCPBay (ru),google-ads-transparency-scraper,submitted,per-Actor server,,fleet-level / pack-level status
 MCPBay (ru),sports-odds-api,submitted,per-Actor server,,fleet-level / pack-level status
 MCPBay (ru),spotify-play-count-scraper,submitted,per-Actor server,,fleet-level / pack-level status
-mcpcatalog.dev,ashby-jobs-scraper,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpcatalog.dev,greenhouse-jobs-scraper,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpcatalog.dev,lever-jobs-scraper,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpcatalog.dev,smartrecruiters-jobs-scraper,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpcatalog.dev,etsy-search-scraper,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpcatalog.dev,etsy-shop-velocity,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpcatalog.dev,calibration-ledger,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpcatalog.dev,govcon-opportunity-feed,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpcatalog.dev,grants-gov-scraper,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpcatalog.dev,usaspending-awards-scraper,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpcatalog.dev,uk-find-a-tender-scraper,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpcatalog.dev,eu-ted-notices-scraper,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-mcpcatalog.dev,legistar-meetings-scraper,remaining,per-Actor server,https://mcpcatalog.dev/submit,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
+mcpcatalog.dev,ashby-jobs-scraper,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=ashby-jobs-mcp
+mcpcatalog.dev,greenhouse-jobs-scraper,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=greenhouse-jobs-mcp
+mcpcatalog.dev,lever-jobs-scraper,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=lever-jobs-mcp
+mcpcatalog.dev,smartrecruiters-jobs-scraper,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=smartrecruiters-jobs-mcp
+mcpcatalog.dev,etsy-search-scraper,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=etsy-search-mcp
+mcpcatalog.dev,etsy-shop-velocity,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=etsy-shop-sales-mcp
+mcpcatalog.dev,calibration-ledger,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=calibration-ledger-mcp
+mcpcatalog.dev,govcon-opportunity-feed,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=govcon-opportunities-mcp
+mcpcatalog.dev,grants-gov-scraper,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=grants-gov-mcp
+mcpcatalog.dev,usaspending-awards-scraper,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=usaspending-awards-mcp
+mcpcatalog.dev,uk-find-a-tender-scraper,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=uk-tenders-mcp
+mcpcatalog.dev,eu-ted-notices-scraper,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=eu-ted-tenders-mcp
+mcpcatalog.dev,legistar-meetings-scraper,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=legistar-council-meetings-mcp
 mcpcatalog.dev,company-social-profile-finder,not-listed,per-Actor server,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 mcpcatalog.dev,google-ads-transparency-scraper,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=google-ads-transparency-mcp
 mcpcatalog.dev,sports-odds-api,submitted,per-Actor server,https://mcpcatalog.dev/submit,server=sports-odds-mcp (first lane)
@@ -2107,19 +2107,19 @@ Swarmnest,company-social-profile-finder,not-listed,per-Actor server,,No listing 
 Swarmnest,google-ads-transparency-scraper,not-listed,per-Actor server,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 Swarmnest,sports-odds-api,submitted,per-Actor server,,server=sports-odds-mcp (first lane)
 Swarmnest,spotify-play-count-scraper,not-listed,per-Actor server,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
-TrackMCP,ashby-jobs-scraper,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-TrackMCP,greenhouse-jobs-scraper,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-TrackMCP,lever-jobs-scraper,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-TrackMCP,smartrecruiters-jobs-scraper,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-TrackMCP,etsy-search-scraper,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-TrackMCP,etsy-shop-velocity,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-TrackMCP,calibration-ledger,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-TrackMCP,govcon-opportunity-feed,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-TrackMCP,grants-gov-scraper,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-TrackMCP,usaspending-awards-scraper,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-TrackMCP,uk-find-a-tender-scraper,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-TrackMCP,eu-ted-notices-scraper,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
-TrackMCP,legistar-meetings-scraper,remaining,per-Actor server,https://trackmcp.com/submit-mcp,browser-queue.csv 2026-11-23: 13 new dedicated servers not yet filed
+TrackMCP,ashby-jobs-scraper,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
+TrackMCP,greenhouse-jobs-scraper,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
+TrackMCP,lever-jobs-scraper,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
+TrackMCP,smartrecruiters-jobs-scraper,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
+TrackMCP,etsy-search-scraper,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
+TrackMCP,etsy-shop-velocity,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
+TrackMCP,calibration-ledger,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
+TrackMCP,govcon-opportunity-feed,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
+TrackMCP,grants-gov-scraper,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
+TrackMCP,usaspending-awards-scraper,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
+TrackMCP,uk-find-a-tender-scraper,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
+TrackMCP,eu-ted-notices-scraper,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
+TrackMCP,legistar-meetings-scraper,submitted,per-Actor server,https://trackmcp.com/submit-mcp,one repo-root listing covering all 13 dedicated servers
 TrackMCP,company-social-profile-finder,not-listed,per-Actor server,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 TrackMCP,google-ads-transparency-scraper,submitted,per-Actor server,https://trackmcp.com/submit-mcp,server=google-ads-transparency-mcp
 TrackMCP,sports-odds-api,not-listed,per-Actor server,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
