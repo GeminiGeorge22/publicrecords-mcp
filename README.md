@@ -1,6 +1,6 @@
 # publicrecords-mcp
 
-**Languages:** [zh-CN](./README.zh-CN.md) · [ja](./README.ja.md) · [ko](./README.ko.md) · [de](./README.de.md) · [fr](./README.fr.md) · [es](./README.es.md) · [pt-BR](./README.pt-BR.md) · [it](./README.it.md) · [ru](./README.ru.md) · [tr](./README.tr.md) · [id](./README.id.md) · [vi](./README.vi.md) · [ar](./README.ar.md) · [hi](./README.hi.md) (localized index of all 24 registry servers; English text applies if they differ)
+**Languages:** [zh-CN](./README.zh-CN.md) · [ja](./README.ja.md) · [ko](./README.ko.md) · [de](./README.de.md) · [fr](./README.fr.md) · [es](./README.es.md) · [pt-BR](./README.pt-BR.md) · [it](./README.it.md) · [ru](./README.ru.md) · [tr](./README.tr.md) · [id](./README.id.md) · [vi](./README.vi.md) · [ar](./README.ar.md) · [hi](./README.hi.md) (localized index of all 25 registry servers; English text applies if they differ)
 
 **Manifest-only** pin package for [publicrecords](https://apify.com/publicrecords) Apify Actors on [Apify MCP](https://mcp.apify.com).
 
@@ -62,6 +62,7 @@ Each folder under [`servers/`](./servers/) is a remote-only MCP Registry entry (
 | [`greenhouse-jobs-mcp`](./servers/greenhouse-jobs-mcp/) | [`publicrecords/greenhouse-jobs-scraper`](https://apify.com/publicrecords/greenhouse-jobs-scraper) | `https://mcp.apify.com?tools=publicrecords/greenhouse-jobs-scraper` |
 | [`lever-jobs-mcp`](./servers/lever-jobs-mcp/) | [`publicrecords/lever-jobs-scraper`](https://apify.com/publicrecords/lever-jobs-scraper) | `https://mcp.apify.com?tools=publicrecords/lever-jobs-scraper` |
 | [`smartrecruiters-jobs-mcp`](./servers/smartrecruiters-jobs-mcp/) | [`publicrecords/smartrecruiters-jobs-scraper`](https://apify.com/publicrecords/smartrecruiters-jobs-scraper) | `https://mcp.apify.com?tools=publicrecords/smartrecruiters-jobs-scraper` |
+| [`skool-community-mcp`](./servers/skool-community-mcp/) | [`publicrecords/skool-community-growth-tracker`](https://apify.com/publicrecords/skool-community-growth-tracker) | `https://mcp.apify.com?tools=publicrecords/skool-community-growth-tracker` |
 | [`etsy-search-mcp`](./servers/etsy-search-mcp/) | [`publicrecords/etsy-search-scraper`](https://apify.com/publicrecords/etsy-search-scraper) | `https://mcp.apify.com?tools=publicrecords/etsy-search-scraper` |
 | [`etsy-shop-sales-mcp`](./servers/etsy-shop-sales-mcp/) | [`publicrecords/etsy-shop-velocity`](https://apify.com/publicrecords/etsy-shop-velocity) | `https://mcp.apify.com?tools=publicrecords/etsy-shop-velocity` |
 | [`calibration-ledger-mcp`](./servers/calibration-ledger-mcp/) | [`publicrecords/calibration-ledger`](https://apify.com/publicrecords/calibration-ledger) | `https://mcp.apify.com?tools=publicrecords/calibration-ledger` |
