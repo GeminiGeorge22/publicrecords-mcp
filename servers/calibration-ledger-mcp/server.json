@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.GeminiGeorge22/calibration-ledger-mcp",
+  "title": "Calibration Ledger MCP: Forecast Track Records (beta)",
+  "description": "An organization's forecast track record (IMF, OECD, Fed, ECB SPF, listed issuers): errors and bias.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/publicrecords/calibration-ledger",
+  "repository": {
+    "url": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+    "source": "github",
+    "subfolder": "servers/calibration-ledger-mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/calibration-ledger",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional if you use Apify OAuth. Otherwise: Bearer <APIFY_TOKEN> (your own Apify API token).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

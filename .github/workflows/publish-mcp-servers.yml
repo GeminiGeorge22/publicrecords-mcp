@@ -1,0 +1,35 @@
+name: Publish per-Actor servers to MCP Registry
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["servers/**/server.json", ".github/workflows/publish-mcp-servers.yml"]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install mcp-publisher v1.8.3
+        run: curl -fsSL "https://github.com/modelcontextprotocol/registry/releases/download/v1.8.3/mcp-publisher_linux_amd64.tar.gz" | tar xz mcp-publisher
+      - name: Validate all
+        run: for f in servers/*/server.json; do ./mcp-publisher validate "$f"; done
+      - name: Login (GitHub Actions OIDC)
+        run: ./mcp-publisher login github-oidc
+      - name: Publish each (skip versions already published)
+        run: |
+          fail=0
+          for f in servers/*/server.json; do
+            echo "== $f"
+            if ! out=$(./mcp-publisher publish "$f" 2>&1); then
+              echo "$out"
+              if echo "$out" | grep -qi "already exists\|duplicate\|cannot publish duplicate"; then echo "skip: version already published"; else fail=1; fi
+            else
+              echo "$out"
+            fi
+          done
+          exit $fail

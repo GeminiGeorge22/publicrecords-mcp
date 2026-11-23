@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.GeminiGeorge22/greenhouse-jobs-mcp",
+  "title": "Greenhouse Jobs MCP: New Postings Since Any Date",
+  "description": "New job postings from any Greenhouse job board since a date or window (24h, 7d, 30d).",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/publicrecords/greenhouse-jobs-scraper",
+  "repository": {
+    "url": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+    "source": "github",
+    "subfolder": "servers/greenhouse-jobs-mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/greenhouse-jobs-scraper",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional if you use Apify OAuth. Otherwise: Bearer <APIFY_TOKEN> (your own Apify API token).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
