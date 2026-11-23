@@ -95,3 +95,9 @@ Every named directory in the 23 Nov `universe.md` “How each one accepts listin
 ## Secrets
 
 This ledger contains **no** credential values. Identities are GitHub `GeminiGeorge22`, email `mark-merchand-zs9fmg@mail.grokbot.com`, and vault **ids** only (6000163, 6000563). The publicrecords Apify credential is never written here.
+
+## Regional push (23 Nov 2026, Mark t1159u)
+
+- Added 5 surfaces: 3 filed (yaolifeng0629/Awesome-independent-tools #227, JuneYaooo/awesome-ai-media-skills-cn #8, Eternaldeath/AIProductHome issue #103) and 2 queued browser forms (MCP Shortlist zh-Hant, HostedMCP pt-BR). MCPナビ (ja) and AgentPoint (ru) moved from held-needs-Mark to remaining. They are free forms that need no account.
+- Totals are now in `counts.json`: 312 surfaces (59 live, 75 submitted, 6 remaining, 61 held, 111 skipped). The older totals above are the 23 Nov 17:20 ET baseline.
+- Localized copy for every Actor in 22 languages: `../localized/`.

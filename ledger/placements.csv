@@ -2294,23 +2294,23 @@ AgentNDX,company-social-profile-finder,held-needs-Mark,per-Actor server,,fleet-l
 AgentNDX,google-ads-transparency-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 AgentNDX,sports-odds-api,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 AgentNDX,spotify-play-count-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),ashby-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),greenhouse-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),lever-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),smartrecruiters-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),etsy-search-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),etsy-shop-velocity,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),calibration-ledger,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),govcon-opportunity-feed,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),grants-gov-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),usaspending-awards-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),uk-find-a-tender-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),eu-ted-notices-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),legistar-meetings-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),company-social-profile-finder,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),google-ads-transparency-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),sports-odds-api,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),spotify-play-count-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
+AgentPoint (ru),ashby-jobs-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),greenhouse-jobs-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),lever-jobs-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),smartrecruiters-jobs-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),etsy-search-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),etsy-shop-velocity,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),calibration-ledger,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),govcon-opportunity-feed,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),grants-gov-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),usaspending-awards-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),uk-find-a-tender-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),eu-ted-notices-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),legistar-meetings-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),company-social-profile-finder,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),google-ads-transparency-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),sports-odds-api,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+AgentPoint (ru),spotify-play-count-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
 AI Agents Directory,ashby-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 AI Agents Directory,greenhouse-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 AI Agents Directory,lever-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
@@ -3042,23 +3042,23 @@ MCPVault (zh),spotify-play-count-scraper,held-needs-Mark,per-Actor server,,fleet
 "MCPWorld (zh, Baidu)",google-ads-transparency-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 "MCPWorld (zh, Baidu)",sports-odds-api,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 "MCPWorld (zh, Baidu)",spotify-play-count-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),ashby-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),greenhouse-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),lever-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),smartrecruiters-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),etsy-search-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),etsy-shop-velocity,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),calibration-ledger,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),govcon-opportunity-feed,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),grants-gov-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),usaspending-awards-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),uk-find-a-tender-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),eu-ted-notices-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),legistar-meetings-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),company-social-profile-finder,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),google-ads-transparency-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),sports-odds-api,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),spotify-play-count-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
+MCPナビ mcpnavi.jp (ja),ashby-jobs-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),greenhouse-jobs-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),lever-jobs-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),smartrecruiters-jobs-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),etsy-search-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),etsy-shop-velocity,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),calibration-ledger,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),govcon-opportunity-feed,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),grants-gov-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),usaspending-awards-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),uk-find-a-tender-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),eu-ted-notices-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),legistar-meetings-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),company-social-profile-finder,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),google-ads-transparency-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),sports-odds-api,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
+MCPナビ mcpnavi.jp (ja),spotify-play-count-scraper,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
 Metorial marketplace,ashby-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 Metorial marketplace,greenhouse-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 Metorial marketplace,lever-jobs-scraper,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
@@ -5353,7 +5353,7 @@ Grok Bot marketplace (xAI),skool-community-growth-tracker,remaining,skills pack,
 HOL plugin registry claim,skool-community-growth-tracker,remaining,skills pack,https://github.com/hashgraph-online/awesome-codex-plugins/pull/788,fleet-level / pack-level status
 "AgenticSkills (etsy-sales-mcp, company-social-mcp)",skool-community-growth-tracker,held-needs-Mark,skills pack,,fleet-level / pack-level status
 AgentNDX,skool-community-growth-tracker,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-AgentPoint (ru),skool-community-growth-tracker,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
+AgentPoint (ru),skool-community-growth-tracker,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
 AI Agents Directory,skool-community-growth-tracker,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 AI for Recruitment (AU),skool-community-growth-tracker,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 AIBase MCP,skool-community-growth-tracker,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
@@ -5397,7 +5397,7 @@ MCPizy,skool-community-growth-tracker,held-needs-Mark,per-Actor server,,fleet-le
 mcpservers.com,skool-community-growth-tracker,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 MCPVault (zh),skool-community-growth-tracker,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 "MCPWorld (zh, Baidu)",skool-community-growth-tracker,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
-MCPナビ mcpnavi.jp (ja),skool-community-growth-tracker,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
+MCPナビ mcpnavi.jp (ja),skool-community-growth-tracker,remaining,per-Actor server,,queued in regional-browser-queue.csv (Mark t1159u)
 Metorial marketplace,skool-community-growth-tracker,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
 Microsoft 365 Agent Store / Copilot Studio,skool-community-growth-tracker,held-needs-Mark,skills pack,https://marketplace.microsoft.com,fleet-level / pack-level status
 ModelScope MCP 广场 (zh),skool-community-growth-tracker,held-needs-Mark,per-Actor server,,fleet-level / pack-level status
@@ -5525,3 +5525,93 @@ zeoagency/awesome-google-ads-mcp,skool-community-growth-tracker,skipped,bundle e
 zero-activity non-English MCP lists (bundle),skool-community-growth-tracker,skipped,per-Actor server,,fleet-level / pack-level status
 zgsm-ai/everything-ai-coding,skool-community-growth-tracker,skipped,per-Actor server,https://github.com/zgsm-ai/everything-ai-coding,fleet-level / pack-level status
 接口大全 api.whoskill.com (zh),skool-community-growth-tracker,skipped,skills pack,,fleet-level / pack-level status
+yaolifeng0629/Awesome-independent-tools,etsy-search-scraper,submitted,per-Actor server,https://github.com/yaolifeng0629/Awesome-independent-tools/pull/227,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,etsy-shop-velocity,submitted,per-Actor server,https://github.com/yaolifeng0629/Awesome-independent-tools/pull/227,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,sports-odds-api,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,company-social-profile-finder,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,legistar-meetings-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,eu-ted-notices-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,govcon-opportunity-feed,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,grants-gov-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,usaspending-awards-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,uk-find-a-tender-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,ashby-jobs-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,lever-jobs-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,spotify-play-count-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,google-ads-transparency-scraper,submitted,per-Actor server,https://github.com/yaolifeng0629/Awesome-independent-tools/pull/227,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,calibration-ledger,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,greenhouse-jobs-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,smartrecruiters-jobs-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+yaolifeng0629/Awesome-independent-tools,skool-community-growth-tracker,submitted,per-Actor server,https://github.com/yaolifeng0629/Awesome-independent-tools/pull/227,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,etsy-search-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,etsy-shop-velocity,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,sports-odds-api,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,company-social-profile-finder,submitted,per-Actor server,https://github.com/JuneYaooo/awesome-ai-media-skills-cn/pull/8,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,legistar-meetings-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,eu-ted-notices-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,govcon-opportunity-feed,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,grants-gov-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,usaspending-awards-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,uk-find-a-tender-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,ashby-jobs-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,lever-jobs-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,spotify-play-count-scraper,submitted,per-Actor server,https://github.com/JuneYaooo/awesome-ai-media-skills-cn/pull/8,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,google-ads-transparency-scraper,submitted,per-Actor server,https://github.com/JuneYaooo/awesome-ai-media-skills-cn/pull/8,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,calibration-ledger,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,greenhouse-jobs-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,smartrecruiters-jobs-scraper,not-listed,per-Actor server,,regional push 2026-11-23
+JuneYaooo/awesome-ai-media-skills-cn,skool-community-growth-tracker,submitted,per-Actor server,https://github.com/JuneYaooo/awesome-ai-media-skills-cn/pull/8,regional push 2026-11-23
+Eternaldeath/AIProductHome,etsy-search-scraper,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,etsy-shop-velocity,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,sports-odds-api,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,company-social-profile-finder,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,legistar-meetings-scraper,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,eu-ted-notices-scraper,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,govcon-opportunity-feed,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,grants-gov-scraper,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,usaspending-awards-scraper,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,uk-find-a-tender-scraper,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,ashby-jobs-scraper,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,lever-jobs-scraper,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,spotify-play-count-scraper,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,google-ads-transparency-scraper,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,calibration-ledger,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,greenhouse-jobs-scraper,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,smartrecruiters-jobs-scraper,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+Eternaldeath/AIProductHome,skool-community-growth-tracker,submitted,bundle endpoint,https://github.com/Eternaldeath/AIProductHome/issues/103,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),etsy-search-scraper,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),etsy-shop-velocity,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),sports-odds-api,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),company-social-profile-finder,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),legistar-meetings-scraper,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),eu-ted-notices-scraper,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),govcon-opportunity-feed,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),grants-gov-scraper,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),usaspending-awards-scraper,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),uk-find-a-tender-scraper,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),ashby-jobs-scraper,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),lever-jobs-scraper,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),spotify-play-count-scraper,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),google-ads-transparency-scraper,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),calibration-ledger,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),greenhouse-jobs-scraper,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),smartrecruiters-jobs-scraper,remaining,per-Actor server,,regional push 2026-11-23
+MCP Shortlist mcpshortlist.com (zh-Hant),skool-community-growth-tracker,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),etsy-search-scraper,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),etsy-shop-velocity,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),sports-odds-api,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),company-social-profile-finder,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),legistar-meetings-scraper,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),eu-ted-notices-scraper,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),govcon-opportunity-feed,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),grants-gov-scraper,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),usaspending-awards-scraper,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),uk-find-a-tender-scraper,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),ashby-jobs-scraper,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),lever-jobs-scraper,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),spotify-play-count-scraper,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),google-ads-transparency-scraper,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),calibration-ledger,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),greenhouse-jobs-scraper,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),smartrecruiters-jobs-scraper,remaining,per-Actor server,,regional push 2026-11-23
+HostedMCP hostedmcp.org (pt-BR),skool-community-growth-tracker,remaining,per-Actor server,,regional push 2026-11-23
