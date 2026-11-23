@@ -1,20 +1,24 @@
 {
-  "as_of": "2026-11-23 17:55 America/Toronto",
-  "total_surfaces": 312,
-  "live": 59,
-  "submitted_pending": 75,
-  "remaining_to_do": 6,
-  "held_needs_Mark": 61,
-  "skipped": 111,
-  "touched_live_submitted_remaining": 140,
-  "checksum": 312,
+  "as_of": "2026-11-23 18:34 America/Toronto",
+  "total_surfaces": 345,
+  "live": 61,
+  "submitted_pending": 78,
+  "remaining_to_do": 10,
+  "held_needs_Mark": 66,
+  "skipped": 130,
+  "touched_live_submitted_remaining": 149,
+  "checksum": 345,
   "remaining_names": [
     "AgentPoint (ru)",
     "Grok Bot marketplace (xAI)",
     "HOL plugin registry claim",
     "HostedMCP hostedmcp.org (pt-BR)",
     "MCP Shortlist mcpshortlist.com (zh-Hant)",
-    "MCPナビ mcpnavi.jp (ja)"
+    "MCPナビ mcpnavi.jp (ja)",
+    "PlugMCP (plugmcp.ai)",
+    "ProMCP (promcpservers.com)",
+    "RemoteMCP.net (en/zh/ja)",
+    "gate (gateturbo.com)"
   ],
   "held_names": [
     "AI Agents Directory",
@@ -39,6 +43,7 @@
     "CrafterStack (Etsy sellers)",
     "CuratedMCP",
     "Cursor Marketplace",
+    "Devin marketplace (CognitionAI/devin-marketplace)",
     "EvolvingHR",
     "Few Servers",
     "GitHub MCP Registry",
@@ -54,6 +59,7 @@
     "MCP Server Spot",
     "MCP Store",
     "MCP Trove",
+    "MCPDirectory (mcpdirectory.fyi)",
     "MCPExplorer (free option)",
     "MCPVault (zh)",
     "MCPWorld (zh, Baidu)",
@@ -65,6 +71,7 @@
     "Not Human Search (agent-ready jobs/APIs index)",
     "OpenAI plugin directory (ChatGPT + Codex)",
     "Perplexity connectors",
+    "Piebald-AI/awesome-gemini-cli",
     "Piebald-AI/awesome-gemini-cli-extensions",
     "PlayMCP Kakao",
     "Postman Public API Network",
@@ -73,6 +80,8 @@
     "SkillFoxx (ru)",
     "SpainMCP (es)",
     "Stork.AI",
+    "ToolSkipper",
+    "VS Code Marketplace extension",
     "YourAITools gateway",
     "Zyla API Hub",
     "any-api.com",
@@ -80,12 +89,30 @@
     "mcpservers.com"
   ],
   "by_type": {
-    "awesome-list": 141,
-    "plugin-marketplace": 18,
-    "other": 12,
-    "mcp-directory": 117,
+    "awesome-list": 155,
+    "plugin-marketplace": 21,
+    "other": 13,
+    "mcp-directory": 132,
     "skills-marketplace": 14,
     "registry": 9,
     "article": 1
-  }
+  },
+  "placements_rows": 6210,
+  "placements_by_status": {
+    "live": 635,
+    "not-listed": 1105,
+    "submitted": 709,
+    "remaining": 208,
+    "skipped": 2365,
+    "held-needs-Mark": 1188
+  },
+  "skool_placements_by_status": {
+    "submitted": 64,
+    "not-listed": 70,
+    "skipped": 130,
+    "live": 5,
+    "remaining": 10,
+    "held-needs-Mark": 66
+  },
+  "access_points_rows": 135
 }

@@ -5615,3 +5615,597 @@ HostedMCP hostedmcp.org (pt-BR),calibration-ledger,remaining,per-Actor server,,r
 HostedMCP hostedmcp.org (pt-BR),greenhouse-jobs-scraper,remaining,per-Actor server,,regional push 2026-11-23
 HostedMCP hostedmcp.org (pt-BR),smartrecruiters-jobs-scraper,remaining,per-Actor server,,regional push 2026-11-23
 HostedMCP hostedmcp.org (pt-BR),skool-community-growth-tracker,remaining,per-Actor server,,regional push 2026-11-23
+GetBindu/awesome-claude-code-and-skills,ashby-jobs-scraper,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,greenhouse-jobs-scraper,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,lever-jobs-scraper,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,smartrecruiters-jobs-scraper,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,etsy-search-scraper,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,etsy-shop-velocity,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,calibration-ledger,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,govcon-opportunity-feed,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,grants-gov-scraper,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,usaspending-awards-scraper,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,uk-find-a-tender-scraper,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,eu-ted-notices-scraper,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,legistar-meetings-scraper,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,company-social-profile-finder,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,google-ads-transparency-scraper,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,sports-odds-api,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,spotify-play-count-scraper,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+GetBindu/awesome-claude-code-and-skills,skool-community-growth-tracker,submitted,repo entry,https://github.com/GetBindu/awesome-claude-code-and-skills/pull/404,combined line #404
+cipher387/API-s-for-OSINT,ashby-jobs-scraper,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,greenhouse-jobs-scraper,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,lever-jobs-scraper,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,smartrecruiters-jobs-scraper,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,etsy-search-scraper,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,etsy-shop-velocity,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,calibration-ledger,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,govcon-opportunity-feed,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,grants-gov-scraper,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,usaspending-awards-scraper,submitted,api row,https://github.com/cipher387/API-s-for-OSINT/pull/101,one PR per suggestion per CONTRIBUTING
+cipher387/API-s-for-OSINT,uk-find-a-tender-scraper,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,eu-ted-notices-scraper,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,legistar-meetings-scraper,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,company-social-profile-finder,submitted,api row,https://github.com/cipher387/API-s-for-OSINT/pull/99,one PR per suggestion per CONTRIBUTING
+cipher387/API-s-for-OSINT,google-ads-transparency-scraper,submitted,api row,https://github.com/cipher387/API-s-for-OSINT/pull/100,one PR per suggestion per CONTRIBUTING
+cipher387/API-s-for-OSINT,sports-odds-api,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,spotify-play-count-scraper,not-listed,api row,,off-topic for an OSINT API list
+cipher387/API-s-for-OSINT,skool-community-growth-tracker,submitted,api row,https://github.com/cipher387/API-s-for-OSINT/pull/98,one PR per suggestion per CONTRIBUTING
+PlugMCP (plugmcp.ai),ashby-jobs-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),greenhouse-jobs-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),lever-jobs-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),smartrecruiters-jobs-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),etsy-search-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),etsy-shop-velocity,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),calibration-ledger,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),govcon-opportunity-feed,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),grants-gov-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),usaspending-awards-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),uk-find-a-tender-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),eu-ted-notices-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),legistar-meetings-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),company-social-profile-finder,live,server page,https://plugmcp.ai/mcp/io.github.geminigeorge22-company-social-mcp,registry auto-ingest
+PlugMCP (plugmcp.ai),google-ads-transparency-scraper,live,server page,https://plugmcp.ai/mcp/io.github.geminigeorge22-google-ads-transparency-mcp,registry auto-ingest
+PlugMCP (plugmcp.ai),sports-odds-api,live,server page,https://plugmcp.ai/mcp/io.github.geminigeorge22-sports-odds-api,registry auto-ingest
+PlugMCP (plugmcp.ai),spotify-play-count-scraper,live,server page,https://plugmcp.ai/mcp/io.github.geminigeorge22-spotify-play-count-mcp,registry auto-ingest
+PlugMCP (plugmcp.ai),skool-community-growth-tracker,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+gate (gateturbo.com),ashby-jobs-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),greenhouse-jobs-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),lever-jobs-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),smartrecruiters-jobs-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),etsy-search-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),etsy-shop-velocity,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),calibration-ledger,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),govcon-opportunity-feed,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),grants-gov-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),usaspending-awards-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),uk-find-a-tender-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),eu-ted-notices-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),legistar-meetings-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),company-social-profile-finder,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),google-ads-transparency-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),sports-odds-api,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),spotify-play-count-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),skool-community-growth-tracker,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+RemoteMCP.net (en/zh/ja),ashby-jobs-scraper,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),greenhouse-jobs-scraper,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),lever-jobs-scraper,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),smartrecruiters-jobs-scraper,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),etsy-search-scraper,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),etsy-shop-velocity,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),calibration-ledger,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),govcon-opportunity-feed,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),grants-gov-scraper,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),usaspending-awards-scraper,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),uk-find-a-tender-scraper,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),eu-ted-notices-scraper,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),legistar-meetings-scraper,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),company-social-profile-finder,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),google-ads-transparency-scraper,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),sports-odds-api,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),spotify-play-count-scraper,not-listed,dedicated server,,low-usage: Skool only
+RemoteMCP.net (en/zh/ja),skool-community-growth-tracker,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),
+ProMCP (promcpservers.com),ashby-jobs-scraper,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),greenhouse-jobs-scraper,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),lever-jobs-scraper,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),smartrecruiters-jobs-scraper,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),etsy-search-scraper,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),etsy-shop-velocity,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),calibration-ledger,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),govcon-opportunity-feed,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),grants-gov-scraper,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),usaspending-awards-scraper,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),uk-find-a-tender-scraper,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),eu-ted-notices-scraper,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),legistar-meetings-scraper,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),company-social-profile-finder,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),google-ads-transparency-scraper,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),sports-odds-api,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),spotify-play-count-scraper,not-listed,dedicated server,,low-usage: Skool only
+ProMCP (promcpservers.com),skool-community-growth-tracker,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),
+ZeroPointRepo/awesome-hermes-skills,ashby-jobs-scraper,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,greenhouse-jobs-scraper,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,lever-jobs-scraper,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,smartrecruiters-jobs-scraper,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,etsy-search-scraper,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,etsy-shop-velocity,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,calibration-ledger,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,govcon-opportunity-feed,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,grants-gov-scraper,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,usaspending-awards-scraper,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,uk-find-a-tender-scraper,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,eu-ted-notices-scraper,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,legistar-meetings-scraper,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,company-social-profile-finder,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,google-ads-transparency-scraper,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,sports-odds-api,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,spotify-play-count-scraper,not-listed,dedicated server,,low-usage: Skool only
+ZeroPointRepo/awesome-hermes-skills,skool-community-growth-tracker,submitted,dedicated server,https://github.com/ZeroPointRepo/awesome-hermes-skills/pull/194,
+Devin Desktop / Devin plugin install from repository (own manifest),ashby-jobs-scraper,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),greenhouse-jobs-scraper,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),lever-jobs-scraper,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),smartrecruiters-jobs-scraper,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),etsy-search-scraper,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),etsy-shop-velocity,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),calibration-ledger,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),govcon-opportunity-feed,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),grants-gov-scraper,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),usaspending-awards-scraper,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),uk-find-a-tender-scraper,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),eu-ted-notices-scraper,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),legistar-meetings-scraper,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),company-social-profile-finder,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),google-ads-transparency-scraper,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),sports-odds-api,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),spotify-play-count-scraper,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin Desktop / Devin plugin install from repository (own manifest),skool-community-growth-tracker,live,bundle plugin,https://github.com/GeminiGeorge22/publicrecords-skills/pull/2,
+Devin marketplace (CognitionAI/devin-marketplace),ashby-jobs-scraper,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),greenhouse-jobs-scraper,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),lever-jobs-scraper,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),smartrecruiters-jobs-scraper,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),etsy-search-scraper,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),etsy-shop-velocity,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),calibration-ledger,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),govcon-opportunity-feed,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),grants-gov-scraper,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),usaspending-awards-scraper,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),uk-find-a-tender-scraper,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),eu-ted-notices-scraper,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),legistar-meetings-scraper,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),company-social-profile-finder,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),google-ads-transparency-scraper,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),sports-odds-api,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),spotify-play-count-scraper,held-needs-Mark,pinned plugin,,App Developer Terms
+Devin marketplace (CognitionAI/devin-marketplace),skool-community-growth-tracker,held-needs-Mark,pinned plugin,,App Developer Terms
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",ashby-jobs-scraper,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",greenhouse-jobs-scraper,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",lever-jobs-scraper,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",smartrecruiters-jobs-scraper,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",etsy-search-scraper,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",etsy-shop-velocity,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",calibration-ledger,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",govcon-opportunity-feed,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",grants-gov-scraper,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",usaspending-awards-scraper,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",uk-find-a-tender-scraper,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",eu-ted-notices-scraper,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",legistar-meetings-scraper,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",company-social-profile-finder,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",google-ads-transparency-scraper,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",sports-odds-api,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",spotify-play-count-scraper,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+"Per-server one-click install links (VS Code, VS Code Insiders, Cursor) + client setup rows",skool-community-growth-tracker,live,dedicated server,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/6,
+VS Code Marketplace extension,ashby-jobs-scraper,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,greenhouse-jobs-scraper,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,lever-jobs-scraper,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,smartrecruiters-jobs-scraper,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,etsy-search-scraper,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,etsy-shop-velocity,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,calibration-ledger,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,govcon-opportunity-feed,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,grants-gov-scraper,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,usaspending-awards-scraper,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,uk-find-a-tender-scraper,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,eu-ted-notices-scraper,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,legistar-meetings-scraper,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,company-social-profile-finder,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,google-ads-transparency-scraper,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,sports-odds-api,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,spotify-play-count-scraper,held-needs-Mark,extension,,new account
+VS Code Marketplace extension,skool-community-growth-tracker,held-needs-Mark,extension,,new account
+ToolSkipper,ashby-jobs-scraper,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,greenhouse-jobs-scraper,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,lever-jobs-scraper,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,smartrecruiters-jobs-scraper,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,etsy-search-scraper,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,etsy-shop-velocity,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,calibration-ledger,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,govcon-opportunity-feed,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,grants-gov-scraper,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,usaspending-awards-scraper,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,uk-find-a-tender-scraper,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,eu-ted-notices-scraper,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,legistar-meetings-scraper,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,company-social-profile-finder,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,google-ads-transparency-scraper,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,sports-odds-api,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,spotify-play-count-scraper,held-needs-Mark,dedicated server,,sign-in
+ToolSkipper,skool-community-growth-tracker,held-needs-Mark,dedicated server,,sign-in
+MCPDirectory (mcpdirectory.fyi),ashby-jobs-scraper,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),greenhouse-jobs-scraper,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),lever-jobs-scraper,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),smartrecruiters-jobs-scraper,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),etsy-search-scraper,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),etsy-shop-velocity,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),calibration-ledger,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),govcon-opportunity-feed,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),grants-gov-scraper,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),usaspending-awards-scraper,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),uk-find-a-tender-scraper,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),eu-ted-notices-scraper,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),legistar-meetings-scraper,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),company-social-profile-finder,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),google-ads-transparency-scraper,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),sports-odds-api,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),spotify-play-count-scraper,held-needs-Mark,dedicated server,,address/phone
+MCPDirectory (mcpdirectory.fyi),skool-community-growth-tracker,held-needs-Mark,dedicated server,,address/phone
+Piebald-AI/awesome-gemini-cli,ashby-jobs-scraper,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,greenhouse-jobs-scraper,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,lever-jobs-scraper,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,smartrecruiters-jobs-scraper,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,etsy-search-scraper,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,etsy-shop-velocity,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,calibration-ledger,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,govcon-opportunity-feed,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,grants-gov-scraper,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,usaspending-awards-scraper,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,uk-find-a-tender-scraper,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,eu-ted-notices-scraper,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,legistar-meetings-scraper,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,company-social-profile-finder,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,google-ads-transparency-scraper,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,sports-odds-api,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,spotify-play-count-scraper,held-needs-Mark,extension line,,star rule
+Piebald-AI/awesome-gemini-cli,skool-community-growth-tracker,held-needs-Mark,extension line,,star rule
+MCPfinder (mcpfinder.dev),ashby-jobs-scraper,skipped,,,
+MCPfinder (mcpfinder.dev),greenhouse-jobs-scraper,skipped,,,
+MCPfinder (mcpfinder.dev),lever-jobs-scraper,skipped,,,
+MCPfinder (mcpfinder.dev),smartrecruiters-jobs-scraper,skipped,,,
+MCPfinder (mcpfinder.dev),etsy-search-scraper,skipped,,,
+MCPfinder (mcpfinder.dev),etsy-shop-velocity,skipped,,,
+MCPfinder (mcpfinder.dev),calibration-ledger,skipped,,,
+MCPfinder (mcpfinder.dev),govcon-opportunity-feed,skipped,,,
+MCPfinder (mcpfinder.dev),grants-gov-scraper,skipped,,,
+MCPfinder (mcpfinder.dev),usaspending-awards-scraper,skipped,,,
+MCPfinder (mcpfinder.dev),uk-find-a-tender-scraper,skipped,,,
+MCPfinder (mcpfinder.dev),eu-ted-notices-scraper,skipped,,,
+MCPfinder (mcpfinder.dev),legistar-meetings-scraper,skipped,,,
+MCPfinder (mcpfinder.dev),company-social-profile-finder,skipped,,,
+MCPfinder (mcpfinder.dev),google-ads-transparency-scraper,skipped,,,
+MCPfinder (mcpfinder.dev),sports-odds-api,skipped,,,
+MCPfinder (mcpfinder.dev),spotify-play-count-scraper,skipped,,,
+MCPfinder (mcpfinder.dev),skool-community-growth-tracker,skipped,,,
+WhoBuildsAgents,ashby-jobs-scraper,skipped,,,
+WhoBuildsAgents,greenhouse-jobs-scraper,skipped,,,
+WhoBuildsAgents,lever-jobs-scraper,skipped,,,
+WhoBuildsAgents,smartrecruiters-jobs-scraper,skipped,,,
+WhoBuildsAgents,etsy-search-scraper,skipped,,,
+WhoBuildsAgents,etsy-shop-velocity,skipped,,,
+WhoBuildsAgents,calibration-ledger,skipped,,,
+WhoBuildsAgents,govcon-opportunity-feed,skipped,,,
+WhoBuildsAgents,grants-gov-scraper,skipped,,,
+WhoBuildsAgents,usaspending-awards-scraper,skipped,,,
+WhoBuildsAgents,uk-find-a-tender-scraper,skipped,,,
+WhoBuildsAgents,eu-ted-notices-scraper,skipped,,,
+WhoBuildsAgents,legistar-meetings-scraper,skipped,,,
+WhoBuildsAgents,company-social-profile-finder,skipped,,,
+WhoBuildsAgents,google-ads-transparency-scraper,skipped,,,
+WhoBuildsAgents,sports-odds-api,skipped,,,
+WhoBuildsAgents,spotify-play-count-scraper,skipped,,,
+WhoBuildsAgents,skool-community-growth-tracker,skipped,,,
+BenchGecko MCP directory,ashby-jobs-scraper,skipped,,,
+BenchGecko MCP directory,greenhouse-jobs-scraper,skipped,,,
+BenchGecko MCP directory,lever-jobs-scraper,skipped,,,
+BenchGecko MCP directory,smartrecruiters-jobs-scraper,skipped,,,
+BenchGecko MCP directory,etsy-search-scraper,skipped,,,
+BenchGecko MCP directory,etsy-shop-velocity,skipped,,,
+BenchGecko MCP directory,calibration-ledger,skipped,,,
+BenchGecko MCP directory,govcon-opportunity-feed,skipped,,,
+BenchGecko MCP directory,grants-gov-scraper,skipped,,,
+BenchGecko MCP directory,usaspending-awards-scraper,skipped,,,
+BenchGecko MCP directory,uk-find-a-tender-scraper,skipped,,,
+BenchGecko MCP directory,eu-ted-notices-scraper,skipped,,,
+BenchGecko MCP directory,legistar-meetings-scraper,skipped,,,
+BenchGecko MCP directory,company-social-profile-finder,skipped,,,
+BenchGecko MCP directory,google-ads-transparency-scraper,skipped,,,
+BenchGecko MCP directory,sports-odds-api,skipped,,,
+BenchGecko MCP directory,spotify-play-count-scraper,skipped,,,
+BenchGecko MCP directory,skool-community-growth-tracker,skipped,,,
+lorien/awesome-web-scraping,ashby-jobs-scraper,skipped,,,
+lorien/awesome-web-scraping,greenhouse-jobs-scraper,skipped,,,
+lorien/awesome-web-scraping,lever-jobs-scraper,skipped,,,
+lorien/awesome-web-scraping,smartrecruiters-jobs-scraper,skipped,,,
+lorien/awesome-web-scraping,etsy-search-scraper,skipped,,,
+lorien/awesome-web-scraping,etsy-shop-velocity,skipped,,,
+lorien/awesome-web-scraping,calibration-ledger,skipped,,,
+lorien/awesome-web-scraping,govcon-opportunity-feed,skipped,,,
+lorien/awesome-web-scraping,grants-gov-scraper,skipped,,,
+lorien/awesome-web-scraping,usaspending-awards-scraper,skipped,,,
+lorien/awesome-web-scraping,uk-find-a-tender-scraper,skipped,,,
+lorien/awesome-web-scraping,eu-ted-notices-scraper,skipped,,,
+lorien/awesome-web-scraping,legistar-meetings-scraper,skipped,,,
+lorien/awesome-web-scraping,company-social-profile-finder,skipped,,,
+lorien/awesome-web-scraping,google-ads-transparency-scraper,skipped,,,
+lorien/awesome-web-scraping,sports-odds-api,skipped,,,
+lorien/awesome-web-scraping,spotify-play-count-scraper,skipped,,,
+lorien/awesome-web-scraping,skool-community-growth-tracker,skipped,,,
+0xsline/awesome-deepseek-harness,ashby-jobs-scraper,skipped,,,
+0xsline/awesome-deepseek-harness,greenhouse-jobs-scraper,skipped,,,
+0xsline/awesome-deepseek-harness,lever-jobs-scraper,skipped,,,
+0xsline/awesome-deepseek-harness,smartrecruiters-jobs-scraper,skipped,,,
+0xsline/awesome-deepseek-harness,etsy-search-scraper,skipped,,,
+0xsline/awesome-deepseek-harness,etsy-shop-velocity,skipped,,,
+0xsline/awesome-deepseek-harness,calibration-ledger,skipped,,,
+0xsline/awesome-deepseek-harness,govcon-opportunity-feed,skipped,,,
+0xsline/awesome-deepseek-harness,grants-gov-scraper,skipped,,,
+0xsline/awesome-deepseek-harness,usaspending-awards-scraper,skipped,,,
+0xsline/awesome-deepseek-harness,uk-find-a-tender-scraper,skipped,,,
+0xsline/awesome-deepseek-harness,eu-ted-notices-scraper,skipped,,,
+0xsline/awesome-deepseek-harness,legistar-meetings-scraper,skipped,,,
+0xsline/awesome-deepseek-harness,company-social-profile-finder,skipped,,,
+0xsline/awesome-deepseek-harness,google-ads-transparency-scraper,skipped,,,
+0xsline/awesome-deepseek-harness,sports-odds-api,skipped,,,
+0xsline/awesome-deepseek-harness,spotify-play-count-scraper,skipped,,,
+0xsline/awesome-deepseek-harness,skool-community-growth-tracker,skipped,,,
+ikaijua/Awesome-AITools,ashby-jobs-scraper,skipped,,,
+ikaijua/Awesome-AITools,greenhouse-jobs-scraper,skipped,,,
+ikaijua/Awesome-AITools,lever-jobs-scraper,skipped,,,
+ikaijua/Awesome-AITools,smartrecruiters-jobs-scraper,skipped,,,
+ikaijua/Awesome-AITools,etsy-search-scraper,skipped,,,
+ikaijua/Awesome-AITools,etsy-shop-velocity,skipped,,,
+ikaijua/Awesome-AITools,calibration-ledger,skipped,,,
+ikaijua/Awesome-AITools,govcon-opportunity-feed,skipped,,,
+ikaijua/Awesome-AITools,grants-gov-scraper,skipped,,,
+ikaijua/Awesome-AITools,usaspending-awards-scraper,skipped,,,
+ikaijua/Awesome-AITools,uk-find-a-tender-scraper,skipped,,,
+ikaijua/Awesome-AITools,eu-ted-notices-scraper,skipped,,,
+ikaijua/Awesome-AITools,legistar-meetings-scraper,skipped,,,
+ikaijua/Awesome-AITools,company-social-profile-finder,skipped,,,
+ikaijua/Awesome-AITools,google-ads-transparency-scraper,skipped,,,
+ikaijua/Awesome-AITools,sports-odds-api,skipped,,,
+ikaijua/Awesome-AITools,spotify-play-count-scraper,skipped,,,
+ikaijua/Awesome-AITools,skool-community-growth-tracker,skipped,,,
+HookMCP,ashby-jobs-scraper,skipped,,,
+HookMCP,greenhouse-jobs-scraper,skipped,,,
+HookMCP,lever-jobs-scraper,skipped,,,
+HookMCP,smartrecruiters-jobs-scraper,skipped,,,
+HookMCP,etsy-search-scraper,skipped,,,
+HookMCP,etsy-shop-velocity,skipped,,,
+HookMCP,calibration-ledger,skipped,,,
+HookMCP,govcon-opportunity-feed,skipped,,,
+HookMCP,grants-gov-scraper,skipped,,,
+HookMCP,usaspending-awards-scraper,skipped,,,
+HookMCP,uk-find-a-tender-scraper,skipped,,,
+HookMCP,eu-ted-notices-scraper,skipped,,,
+HookMCP,legistar-meetings-scraper,skipped,,,
+HookMCP,company-social-profile-finder,skipped,,,
+HookMCP,google-ads-transparency-scraper,skipped,,,
+HookMCP,sports-odds-api,skipped,,,
+HookMCP,spotify-play-count-scraper,skipped,,,
+HookMCP,skool-community-growth-tracker,skipped,,,
+mcpservers.fr,ashby-jobs-scraper,skipped,,,
+mcpservers.fr,greenhouse-jobs-scraper,skipped,,,
+mcpservers.fr,lever-jobs-scraper,skipped,,,
+mcpservers.fr,smartrecruiters-jobs-scraper,skipped,,,
+mcpservers.fr,etsy-search-scraper,skipped,,,
+mcpservers.fr,etsy-shop-velocity,skipped,,,
+mcpservers.fr,calibration-ledger,skipped,,,
+mcpservers.fr,govcon-opportunity-feed,skipped,,,
+mcpservers.fr,grants-gov-scraper,skipped,,,
+mcpservers.fr,usaspending-awards-scraper,skipped,,,
+mcpservers.fr,uk-find-a-tender-scraper,skipped,,,
+mcpservers.fr,eu-ted-notices-scraper,skipped,,,
+mcpservers.fr,legistar-meetings-scraper,skipped,,,
+mcpservers.fr,company-social-profile-finder,skipped,,,
+mcpservers.fr,google-ads-transparency-scraper,skipped,,,
+mcpservers.fr,sports-odds-api,skipped,,,
+mcpservers.fr,spotify-play-count-scraper,skipped,,,
+mcpservers.fr,skool-community-growth-tracker,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),ashby-jobs-scraper,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),greenhouse-jobs-scraper,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),lever-jobs-scraper,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),smartrecruiters-jobs-scraper,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),etsy-search-scraper,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),etsy-shop-velocity,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),calibration-ledger,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),govcon-opportunity-feed,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),grants-gov-scraper,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),usaspending-awards-scraper,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),uk-find-a-tender-scraper,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),eu-ted-notices-scraper,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),legistar-meetings-scraper,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),company-social-profile-finder,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),google-ads-transparency-scraper,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),sports-odds-api,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),spotify-play-count-scraper,skipped,,,
+mozgi.io MCP catalog (ru/en/tr/zh/it),skool-community-growth-tracker,skipped,,,
+AgentVera MCP directory (tr),ashby-jobs-scraper,skipped,,,
+AgentVera MCP directory (tr),greenhouse-jobs-scraper,skipped,,,
+AgentVera MCP directory (tr),lever-jobs-scraper,skipped,,,
+AgentVera MCP directory (tr),smartrecruiters-jobs-scraper,skipped,,,
+AgentVera MCP directory (tr),etsy-search-scraper,skipped,,,
+AgentVera MCP directory (tr),etsy-shop-velocity,skipped,,,
+AgentVera MCP directory (tr),calibration-ledger,skipped,,,
+AgentVera MCP directory (tr),govcon-opportunity-feed,skipped,,,
+AgentVera MCP directory (tr),grants-gov-scraper,skipped,,,
+AgentVera MCP directory (tr),usaspending-awards-scraper,skipped,,,
+AgentVera MCP directory (tr),uk-find-a-tender-scraper,skipped,,,
+AgentVera MCP directory (tr),eu-ted-notices-scraper,skipped,,,
+AgentVera MCP directory (tr),legistar-meetings-scraper,skipped,,,
+AgentVera MCP directory (tr),company-social-profile-finder,skipped,,,
+AgentVera MCP directory (tr),google-ads-transparency-scraper,skipped,,,
+AgentVera MCP directory (tr),sports-odds-api,skipped,,,
+AgentVera MCP directory (tr),spotify-play-count-scraper,skipped,,,
+AgentVera MCP directory (tr),skool-community-growth-tracker,skipped,,,
+Hermes LATAM MCP directory (es),ashby-jobs-scraper,skipped,,,
+Hermes LATAM MCP directory (es),greenhouse-jobs-scraper,skipped,,,
+Hermes LATAM MCP directory (es),lever-jobs-scraper,skipped,,,
+Hermes LATAM MCP directory (es),smartrecruiters-jobs-scraper,skipped,,,
+Hermes LATAM MCP directory (es),etsy-search-scraper,skipped,,,
+Hermes LATAM MCP directory (es),etsy-shop-velocity,skipped,,,
+Hermes LATAM MCP directory (es),calibration-ledger,skipped,,,
+Hermes LATAM MCP directory (es),govcon-opportunity-feed,skipped,,,
+Hermes LATAM MCP directory (es),grants-gov-scraper,skipped,,,
+Hermes LATAM MCP directory (es),usaspending-awards-scraper,skipped,,,
+Hermes LATAM MCP directory (es),uk-find-a-tender-scraper,skipped,,,
+Hermes LATAM MCP directory (es),eu-ted-notices-scraper,skipped,,,
+Hermes LATAM MCP directory (es),legistar-meetings-scraper,skipped,,,
+Hermes LATAM MCP directory (es),company-social-profile-finder,skipped,,,
+Hermes LATAM MCP directory (es),google-ads-transparency-scraper,skipped,,,
+Hermes LATAM MCP directory (es),sports-odds-api,skipped,,,
+Hermes LATAM MCP directory (es),spotify-play-count-scraper,skipped,,,
+Hermes LATAM MCP directory (es),skool-community-growth-tracker,skipped,,,
+bsab/italia-mcp-servers,ashby-jobs-scraper,skipped,,,
+bsab/italia-mcp-servers,greenhouse-jobs-scraper,skipped,,,
+bsab/italia-mcp-servers,lever-jobs-scraper,skipped,,,
+bsab/italia-mcp-servers,smartrecruiters-jobs-scraper,skipped,,,
+bsab/italia-mcp-servers,etsy-search-scraper,skipped,,,
+bsab/italia-mcp-servers,etsy-shop-velocity,skipped,,,
+bsab/italia-mcp-servers,calibration-ledger,skipped,,,
+bsab/italia-mcp-servers,govcon-opportunity-feed,skipped,,,
+bsab/italia-mcp-servers,grants-gov-scraper,skipped,,,
+bsab/italia-mcp-servers,usaspending-awards-scraper,skipped,,,
+bsab/italia-mcp-servers,uk-find-a-tender-scraper,skipped,,,
+bsab/italia-mcp-servers,eu-ted-notices-scraper,skipped,,,
+bsab/italia-mcp-servers,legistar-meetings-scraper,skipped,,,
+bsab/italia-mcp-servers,company-social-profile-finder,skipped,,,
+bsab/italia-mcp-servers,google-ads-transparency-scraper,skipped,,,
+bsab/italia-mcp-servers,sports-odds-api,skipped,,,
+bsab/italia-mcp-servers,spotify-play-count-scraper,skipped,,,
+bsab/italia-mcp-servers,skool-community-growth-tracker,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),ashby-jobs-scraper,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),greenhouse-jobs-scraper,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),lever-jobs-scraper,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),smartrecruiters-jobs-scraper,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),etsy-search-scraper,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),etsy-shop-velocity,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),calibration-ledger,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),govcon-opportunity-feed,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),grants-gov-scraper,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),usaspending-awards-scraper,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),uk-find-a-tender-scraper,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),eu-ted-notices-scraper,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),legistar-meetings-scraper,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),company-social-profile-finder,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),google-ads-transparency-scraper,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),sports-odds-api,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),spotify-play-count-scraper,skipped,,,
+CherryHQ/mcpmarket (Cherry Studio),skool-community-growth-tracker,skipped,,,
+Roo Code marketplace,ashby-jobs-scraper,skipped,,,
+Roo Code marketplace,greenhouse-jobs-scraper,skipped,,,
+Roo Code marketplace,lever-jobs-scraper,skipped,,,
+Roo Code marketplace,smartrecruiters-jobs-scraper,skipped,,,
+Roo Code marketplace,etsy-search-scraper,skipped,,,
+Roo Code marketplace,etsy-shop-velocity,skipped,,,
+Roo Code marketplace,calibration-ledger,skipped,,,
+Roo Code marketplace,govcon-opportunity-feed,skipped,,,
+Roo Code marketplace,grants-gov-scraper,skipped,,,
+Roo Code marketplace,usaspending-awards-scraper,skipped,,,
+Roo Code marketplace,uk-find-a-tender-scraper,skipped,,,
+Roo Code marketplace,eu-ted-notices-scraper,skipped,,,
+Roo Code marketplace,legistar-meetings-scraper,skipped,,,
+Roo Code marketplace,company-social-profile-finder,skipped,,,
+Roo Code marketplace,google-ads-transparency-scraper,skipped,,,
+Roo Code marketplace,sports-odds-api,skipped,,,
+Roo Code marketplace,spotify-play-count-scraper,skipped,,,
+Roo Code marketplace,skool-community-growth-tracker,skipped,,,
+apappascs/mcp-servers-hub,ashby-jobs-scraper,skipped,,,
+apappascs/mcp-servers-hub,greenhouse-jobs-scraper,skipped,,,
+apappascs/mcp-servers-hub,lever-jobs-scraper,skipped,,,
+apappascs/mcp-servers-hub,smartrecruiters-jobs-scraper,skipped,,,
+apappascs/mcp-servers-hub,etsy-search-scraper,skipped,,,
+apappascs/mcp-servers-hub,etsy-shop-velocity,skipped,,,
+apappascs/mcp-servers-hub,calibration-ledger,skipped,,,
+apappascs/mcp-servers-hub,govcon-opportunity-feed,skipped,,,
+apappascs/mcp-servers-hub,grants-gov-scraper,skipped,,,
+apappascs/mcp-servers-hub,usaspending-awards-scraper,skipped,,,
+apappascs/mcp-servers-hub,uk-find-a-tender-scraper,skipped,,,
+apappascs/mcp-servers-hub,eu-ted-notices-scraper,skipped,,,
+apappascs/mcp-servers-hub,legistar-meetings-scraper,skipped,,,
+apappascs/mcp-servers-hub,company-social-profile-finder,skipped,,,
+apappascs/mcp-servers-hub,google-ads-transparency-scraper,skipped,,,
+apappascs/mcp-servers-hub,sports-odds-api,skipped,,,
+apappascs/mcp-servers-hub,spotify-play-count-scraper,skipped,,,
+apappascs/mcp-servers-hub,skool-community-growth-tracker,skipped,,,
+jqueryscript/awesome-claude-code,ashby-jobs-scraper,skipped,,,
+jqueryscript/awesome-claude-code,greenhouse-jobs-scraper,skipped,,,
+jqueryscript/awesome-claude-code,lever-jobs-scraper,skipped,,,
+jqueryscript/awesome-claude-code,smartrecruiters-jobs-scraper,skipped,,,
+jqueryscript/awesome-claude-code,etsy-search-scraper,skipped,,,
+jqueryscript/awesome-claude-code,etsy-shop-velocity,skipped,,,
+jqueryscript/awesome-claude-code,calibration-ledger,skipped,,,
+jqueryscript/awesome-claude-code,govcon-opportunity-feed,skipped,,,
+jqueryscript/awesome-claude-code,grants-gov-scraper,skipped,,,
+jqueryscript/awesome-claude-code,usaspending-awards-scraper,skipped,,,
+jqueryscript/awesome-claude-code,uk-find-a-tender-scraper,skipped,,,
+jqueryscript/awesome-claude-code,eu-ted-notices-scraper,skipped,,,
+jqueryscript/awesome-claude-code,legistar-meetings-scraper,skipped,,,
+jqueryscript/awesome-claude-code,company-social-profile-finder,skipped,,,
+jqueryscript/awesome-claude-code,google-ads-transparency-scraper,skipped,,,
+jqueryscript/awesome-claude-code,sports-odds-api,skipped,,,
+jqueryscript/awesome-claude-code,spotify-play-count-scraper,skipped,,,
+jqueryscript/awesome-claude-code,skool-community-growth-tracker,skipped,,,
+RoggeOhta/awesome-codex-cli,ashby-jobs-scraper,skipped,,,
+RoggeOhta/awesome-codex-cli,greenhouse-jobs-scraper,skipped,,,
+RoggeOhta/awesome-codex-cli,lever-jobs-scraper,skipped,,,
+RoggeOhta/awesome-codex-cli,smartrecruiters-jobs-scraper,skipped,,,
+RoggeOhta/awesome-codex-cli,etsy-search-scraper,skipped,,,
+RoggeOhta/awesome-codex-cli,etsy-shop-velocity,skipped,,,
+RoggeOhta/awesome-codex-cli,calibration-ledger,skipped,,,
+RoggeOhta/awesome-codex-cli,govcon-opportunity-feed,skipped,,,
+RoggeOhta/awesome-codex-cli,grants-gov-scraper,skipped,,,
+RoggeOhta/awesome-codex-cli,usaspending-awards-scraper,skipped,,,
+RoggeOhta/awesome-codex-cli,uk-find-a-tender-scraper,skipped,,,
+RoggeOhta/awesome-codex-cli,eu-ted-notices-scraper,skipped,,,
+RoggeOhta/awesome-codex-cli,legistar-meetings-scraper,skipped,,,
+RoggeOhta/awesome-codex-cli,company-social-profile-finder,skipped,,,
+RoggeOhta/awesome-codex-cli,google-ads-transparency-scraper,skipped,,,
+RoggeOhta/awesome-codex-cli,sports-odds-api,skipped,,,
+RoggeOhta/awesome-codex-cli,spotify-play-count-scraper,skipped,,,
+RoggeOhta/awesome-codex-cli,skool-community-growth-tracker,skipped,,,
+ZeroPointRepo/awesome-grok-bot,ashby-jobs-scraper,skipped,,,
+ZeroPointRepo/awesome-grok-bot,greenhouse-jobs-scraper,skipped,,,
+ZeroPointRepo/awesome-grok-bot,lever-jobs-scraper,skipped,,,
+ZeroPointRepo/awesome-grok-bot,smartrecruiters-jobs-scraper,skipped,,,
+ZeroPointRepo/awesome-grok-bot,etsy-search-scraper,skipped,,,
+ZeroPointRepo/awesome-grok-bot,etsy-shop-velocity,skipped,,,
+ZeroPointRepo/awesome-grok-bot,calibration-ledger,skipped,,,
+ZeroPointRepo/awesome-grok-bot,govcon-opportunity-feed,skipped,,,
+ZeroPointRepo/awesome-grok-bot,grants-gov-scraper,skipped,,,
+ZeroPointRepo/awesome-grok-bot,usaspending-awards-scraper,skipped,,,
+ZeroPointRepo/awesome-grok-bot,uk-find-a-tender-scraper,skipped,,,
+ZeroPointRepo/awesome-grok-bot,eu-ted-notices-scraper,skipped,,,
+ZeroPointRepo/awesome-grok-bot,legistar-meetings-scraper,skipped,,,
+ZeroPointRepo/awesome-grok-bot,company-social-profile-finder,skipped,,,
+ZeroPointRepo/awesome-grok-bot,google-ads-transparency-scraper,skipped,,,
+ZeroPointRepo/awesome-grok-bot,sports-odds-api,skipped,,,
+ZeroPointRepo/awesome-grok-bot,spotify-play-count-scraper,skipped,,,
+ZeroPointRepo/awesome-grok-bot,skool-community-growth-tracker,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),ashby-jobs-scraper,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),greenhouse-jobs-scraper,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),lever-jobs-scraper,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),smartrecruiters-jobs-scraper,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),etsy-search-scraper,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),etsy-shop-velocity,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),calibration-ledger,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),govcon-opportunity-feed,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),grants-gov-scraper,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),usaspending-awards-scraper,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),uk-find-a-tender-scraper,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),eu-ted-notices-scraper,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),legistar-meetings-scraper,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),company-social-profile-finder,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),google-ads-transparency-scraper,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),sports-odds-api,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),spotify-play-count-scraper,skipped,,,
+JetBrains AI Assistant / LibreChat / Goose / Warp (connect-only clients),skool-community-growth-tracker,skipped,,,

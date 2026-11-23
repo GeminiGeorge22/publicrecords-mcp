@@ -1,0 +1,18 @@
+skool-community-mcp|Not found 
+ashby-jobs-mcp|Not found 
+greenhouse-jobs-mcp|Not found 
+lever-jobs-mcp|Not found 
+smartrecruiters-jobs-mcp|Not found 
+etsy-search-mcp|Not found 
+etsy-shop-sales-mcp|Not found 
+calibration-ledger-mcp|Not found 
+govcon-opportunities-mcp|Not found 
+grants-gov-mcp|Not found 
+usaspending-awards-mcp|Not found 
+uk-tenders-mcp|Not found 
+eu-ted-tenders-mcp|Not found 
+legistar-council-meetings-mcp|Not found 
+company-social-mcp|Company Social MCP: Website To LinkedIn &amp; So MCP server 
+google-ads-transparency-mcp|Google Ads Transparency MCP: Competitor Ads MCP server 
+sports-odds-api|Sports Odds API (BetRivers, Unibet &amp; 22 More MCP server 
+spotify-play-count-mcp|Spotify Play Count MCP: Plays &amp; Monthly List MCP server 
