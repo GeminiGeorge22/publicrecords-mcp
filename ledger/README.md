@@ -28,7 +28,7 @@ Source of the totals: this folder’s `surfaces.csv` / `counts.json`, built on 2
 | Touched (live + submitted + remaining) | **133** | Surfaces we listed, filed, or can still file without Mark |
 | Checksum | 307 | Must equal total |
 
-`placements.csv` has **5219** rows (307 surfaces × 17 Actors). Placement status `not-listed` means the surface is active for other Actors but this Actor has no row yet — follow `how_new_actor_added` (and batch into an open PR if one exists).
+`placements.csv` has **5526** rows (307 surfaces × 18 Actors). Placement status `not-listed` means the surface is active for other Actors but this Actor has no row yet — follow `how_new_actor_added` (and batch into an open PR if one exists).
 
 By type (from `counts.json` `by_type`): awesome-list 138, mcp-directory 115, plugin-marketplace 18, skills-marketplace 14, other 12, registry 9, article 1.
 
