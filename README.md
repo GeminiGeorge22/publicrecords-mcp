@@ -54,7 +54,7 @@ MIT — applies to these manifests and descriptors only.
 
 ## One MCP server per Actor (MCP Registry)
 
-Each folder under [`servers/`](./servers/) is a remote-only MCP Registry entry (`io.github.GeminiGeorge22/<name>`) for one Actor, served by Apify's hosted MCP gateway. Published by [`.github/workflows/publish-mcp-servers.yml`](./.github/workflows/publish-mcp-servers.yml). Actors that already have their own server repo: [sports-odds-mcp](https://github.com/GeminiGeorge22/sports-odds-mcp), [spotify-play-count-mcp](https://github.com/GeminiGeorge22/spotify-play-count-mcp), [google-ads-transparency-mcp](https://github.com/GeminiGeorge22/google-ads-transparency-mcp), [company-social-mcp](https://github.com/GeminiGeorge22/company-social-mcp).
+Each folder under [`servers/`](./servers/) is a remote-only MCP Registry entry (`io.github.GeminiGeorge22/<name>`) for one Actor, served by Apify's hosted MCP gateway. Published by [`.github/workflows/publish-mcp-servers.yml`](./.github/workflows/publish-mcp-servers.yml). Four of these also have dedicated server repos (stdio packages live there): [sports-odds-mcp](https://github.com/GeminiGeorge22/sports-odds-mcp), [spotify-play-count-mcp](https://github.com/GeminiGeorge22/spotify-play-count-mcp), [google-ads-transparency-mcp](https://github.com/GeminiGeorge22/google-ads-transparency-mcp), [company-social-mcp](https://github.com/GeminiGeorge22/company-social-mcp).
 
 | Server | Actor | Endpoint |
 |---|---|---|
@@ -72,6 +72,10 @@ Each folder under [`servers/`](./servers/) is a remote-only MCP Registry entry (
 | [`uk-tenders-mcp`](./servers/uk-tenders-mcp/) | [`publicrecords/uk-find-a-tender-scraper`](https://apify.com/publicrecords/uk-find-a-tender-scraper) | `https://mcp.apify.com?tools=publicrecords/uk-find-a-tender-scraper` |
 | [`eu-ted-tenders-mcp`](./servers/eu-ted-tenders-mcp/) | [`publicrecords/eu-ted-notices-scraper`](https://apify.com/publicrecords/eu-ted-notices-scraper) | `https://mcp.apify.com?tools=publicrecords/eu-ted-notices-scraper` |
 | [`legistar-council-meetings-mcp`](./servers/legistar-council-meetings-mcp/) | [`publicrecords/legistar-meetings-scraper`](https://apify.com/publicrecords/legistar-meetings-scraper) | `https://mcp.apify.com?tools=publicrecords/legistar-meetings-scraper` |
+| [`company-social-mcp`](./servers/company-social-mcp/) | [`publicrecords/company-social-profile-finder`](https://apify.com/publicrecords/company-social-profile-finder) | `https://mcp.apify.com?tools=publicrecords/company-social-profile-finder` |
+| [`google-ads-transparency-mcp`](./servers/google-ads-transparency-mcp/) | [`publicrecords/google-ads-transparency-scraper`](https://apify.com/publicrecords/google-ads-transparency-scraper) | `https://mcp.apify.com?tools=publicrecords/google-ads-transparency-scraper` |
+| [`sports-odds-api`](./servers/sports-odds-api/) | [`publicrecords/sports-odds-api`](https://apify.com/publicrecords/sports-odds-api) | `https://mcp.apify.com?tools=publicrecords/sports-odds-api` |
+| [`spotify-play-count-mcp`](./servers/spotify-play-count-mcp/) | [`publicrecords/spotify-play-count-scraper`](https://apify.com/publicrecords/spotify-play-count-scraper) | `https://mcp.apify.com?tools=publicrecords/spotify-play-count-scraper` |
 
 <!-- one-click-install-index:start -->
 ## One-click install (all 18 servers)
