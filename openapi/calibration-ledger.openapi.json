@@ -1,0 +1,153 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Calibration Ledger \u2014 trust a forecast, with evidence (beta)",
+    "description": "Given a claim from an organization (IMF, OECD, Fed/FOMC, SPF, ECB SPF, or a listed issuer), returns that organization's track record: error distribution, intervals, bias, band coverage, worst misses with source links \u2014 or honest 'no coverage' (free). Organizations only, never people.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/calibration-ledger\nMCP: https://mcp.apify.com?tools=publicrecords/calibration-ledger\nAuthor: Public Records.",
+    "version": "0.2.29",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/calibration-ledger",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~calibration-ledger/runs": {
+      "post": {
+        "operationId": "start_calibration_ledger_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/calibration-ledger",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/calibration-ledger",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Calibration Ledger input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"mode\": {\n      \"title\": \"Mode\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"default\": \"text\",\n      \"enum\": [\n        \"text\",\n        \"lookup\",\n        \"score\",\n        \"compare\",\n        \"issuer\",\n        \"coverage\",\n        \"verify\"\n      ],\n      \"enumTitles\": [\n        \"Text: any claim in words\",\n        \"Lookup: a live number by source/series/geo/period\",\n        \"Score: a source's record on a series\",\n        \"Compare: rank sources on one question\",\n        \"Issuer: an issuer's promise-keeping record\",\n        \"Coverage: what the ledger can answer\",\n        \"Verify: provenance of a claim id\"\n      ],\n      \"description\": \"text = hand it a sentence (\\\"The IMF expects Canada's economy to grow 1.8% in 2027\\\"). lookup/score/compare use structured fields.\",\n      \"prefill\": \"lookup\"\n    },\n    \"claim_text\": {\n      \"title\": \"Claim (text mode)\",\n      \"type\": \"string\",\n      \"editor\": \"textarea\",\n      \"prefill\": \"The IMF expects Canada's economy to grow 1.8% in 2027.\",\n      \"description\": \"Free-text claim for text mode (e.g. \\\"The IMF expects Canada's economy to grow 1.8% in 2027\\\").\"\n    },\n    \"source\": {\n      \"title\": \"Source organization\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"imf_weo | oecd_eo | fed_sep | spf | ecb_spf | pbo, or an issuer name; optional in text mode\",\n      \"prefill\": \"oecd_eo\"\n    },\n    \"series\": {\n      \"title\": \"Series\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"CORE_INFL_A\",\n        \"CORE_PCE_INFL\",\n        \"CPI_INFL\",\n        \"CURRENT_ACCOUNT_PCTGDP\",\n        \"EMPLOY_GROWTH_A\",\n        \"FEDFUNDS\",\n        \"GDP_DEFLATOR_A\",\n        \"GOV_BALANCE_PCTGDP\",\n        \"GOV_GROSS_DEBT_PCTGDP\",\n        \"HICP_INFL_M\",\n        \"LONG_RATE\",\n        \"NGDP_GROWTH_Q\",\n        \"PCE_INFL\",\n        \"PGDP_INFL_Q\",\n        \"RCONSUM_GROWTH_A\",\n        \"RCONSUM_GROWTH_Q\",\n        \"REXPORT_GROWTH_A\",\n        \"RGDP_GROWTH_A\",\n        \"RGDP_GROWTH_Q\",\n        \"RIMPORT_GROWTH_A\",\n        \"RINVEST_GROWTH_A\",\n        \"RNRESIN_GROWTH_Q\",\n        \"RRESINV_GROWTH_Q\",\n        \"SHORT_RATE\",\n        \"UNEMP_RATE\",\n        \"UNEMP_RATE_M\"\n      ],\n      \"description\": \"Generated from rules.yaml \u2014 every series the ledger resolves.\",\n      \"prefill\": \"RGDP_GROWTH_A\"\n    },\n    \"geo\": {\n      \"title\": \"Geography (ISO3 / EA / USA)\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"ISO3 country code, EA, or USA. Required for most score/lookup/compare calls.\",\n      \"prefill\": \"CAN\"\n    },\n    \"target_period\": {\n      \"title\": \"Target period (YYYY, YYYYQn, YYYY-MM)\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Target period as YYYY, YYYYQn, or YYYY-MM when looking up a specific claim.\",\n      \"prefill\": \"2027\"\n    },\n    \"point\": {\n      \"title\": \"Claimed value\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Numeric claimed value for lookup mode (string so decimals stay exact).\",\n      \"prefill\": \"1.8\"\n    },\n    \"published_at\": {\n      \"title\": \"Claim date (YYYY-MM-DD)\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"When the claim was published (YYYY-MM-DD), for lookup/verify.\",\n      \"prefill\": \"2026-06-01\"\n    },\n    \"horizon_bucket\": {\n      \"title\": \"Horizon bucket\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"0-4m\",\n        \"4-9m\",\n        \"9-15m\",\n        \"15-24m\",\n        \"24-36m\",\n        \"36m+\"\n      ],\n      \"description\": \"Optional horizon bucket filter for score mode.\"\n    },\n    \"band_kind\": {\n      \"title\": \"Band kind (score mode)\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"central_tendency\",\n        \"range\"\n      ],\n      \"description\": \"For Fed SEP score mode: central_tendency or range.\"\n    },\n    \"claim_id\": {\n      \"title\": \"Claim id (verify mode)\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Ledger claim id for verify mode.\"\n    },\n    \"issuer\": {\n      \"title\": \"Issuer (issuer mode)\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Organization name as it appears on its releases/filings (e.g. Salesforce Inc). Both records are returned: dated promises (newswires) and numeric guidance (EDGAR).\"\n    }\n  },\n  \"required\": [\n    \"mode\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~calibration-ledger/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_calibration_ledger_sync_get_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/calibration-ledger and return dataset items",
+        "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Calibration Ledger input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"mode\": {\n      \"title\": \"Mode\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"default\": \"text\",\n      \"enum\": [\n        \"text\",\n        \"lookup\",\n        \"score\",\n        \"compare\",\n        \"issuer\",\n        \"coverage\",\n        \"verify\"\n      ],\n      \"enumTitles\": [\n        \"Text: any claim in words\",\n        \"Lookup: a live number by source/series/geo/period\",\n        \"Score: a source's record on a series\",\n        \"Compare: rank sources on one question\",\n        \"Issuer: an issuer's promise-keeping record\",\n        \"Coverage: what the ledger can answer\",\n        \"Verify: provenance of a claim id\"\n      ],\n      \"description\": \"text = hand it a sentence (\\\"The IMF expects Canada's economy to grow 1.8% in 2027\\\"). lookup/score/compare use structured fields.\",\n      \"prefill\": \"lookup\"\n    },\n    \"claim_text\": {\n      \"title\": \"Claim (text mode)\",\n      \"type\": \"string\",\n      \"editor\": \"textarea\",\n      \"prefill\": \"The IMF expects Canada's economy to grow 1.8% in 2027.\",\n      \"description\": \"Free-text claim for text mode (e.g. \\\"The IMF expects Canada's economy to grow 1.8% in 2027\\\").\"\n    },\n    \"source\": {\n      \"title\": \"Source organization\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"imf_weo | oecd_eo | fed_sep | spf | ecb_spf | pbo, or an issuer name; optional in text mode\",\n      \"prefill\": \"oecd_eo\"\n    },\n    \"series\": {\n      \"title\": \"Series\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"CORE_INFL_A\",\n        \"CORE_PCE_INFL\",\n        \"CPI_INFL\",\n        \"CURRENT_ACCOUNT_PCTGDP\",\n        \"EMPLOY_GROWTH_A\",\n        \"FEDFUNDS\",\n        \"GDP_DEFLATOR_A\",\n        \"GOV_BALANCE_PCTGDP\",\n        \"GOV_GROSS_DEBT_PCTGDP\",\n        \"HICP_INFL_M\",\n        \"LONG_RATE\",\n        \"NGDP_GROWTH_Q\",\n        \"PCE_INFL\",\n        \"PGDP_INFL_Q\",\n        \"RCONSUM_GROWTH_A\",\n        \"RCONSUM_GROWTH_Q\",\n        \"REXPORT_GROWTH_A\",\n        \"RGDP_GROWTH_A\",\n        \"RGDP_GROWTH_Q\",\n        \"RIMPORT_GROWTH_A\",\n        \"RINVEST_GROWTH_A\",\n        \"RNRESIN_GROWTH_Q\",\n        \"RRESINV_GROWTH_Q\",\n        \"SHORT_RATE\",\n        \"UNEMP_RATE\",\n        \"UNEMP_RATE_M\"\n      ],\n      \"description\": \"Generated from rules.yaml \u2014 every series the ledger resolves.\",\n      \"prefill\": \"RGDP_GROWTH_A\"\n    },\n    \"geo\": {\n      \"title\": \"Geography (ISO3 / EA / USA)\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"ISO3 country code, EA, or USA. Required for most score/lookup/compare calls.\",\n      \"prefill\": \"CAN\"\n    },\n    \"target_period\": {\n      \"title\": \"Target period (YYYY, YYYYQn, YYYY-MM)\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Target period as YYYY, YYYYQn, or YYYY-MM when looking up a specific claim.\",\n      \"prefill\": \"2027\"\n    },\n    \"point\": {\n      \"title\": \"Claimed value\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Numeric claimed value for lookup mode (string so decimals stay exact).\",\n      \"prefill\": \"1.8\"\n    },\n    \"published_at\": {\n      \"title\": \"Claim date (YYYY-MM-DD)\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"When the claim was published (YYYY-MM-DD), for lookup/verify.\",\n      \"prefill\": \"2026-06-01\"\n    },\n    \"horizon_bucket\": {\n      \"title\": \"Horizon bucket\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"0-4m\",\n        \"4-9m\",\n        \"9-15m\",\n        \"15-24m\",\n        \"24-36m\",\n        \"36m+\"\n      ],\n      \"description\": \"Optional horizon bucket filter for score mode.\"\n    },\n    \"band_kind\": {\n      \"title\": \"Band kind (score mode)\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"central_tendency\",\n        \"range\"\n      ],\n      \"description\": \"For Fed SEP score mode: central_tendency or range.\"\n    },\n    \"claim_id\": {\n      \"title\": \"Claim id (verify mode)\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Ledger claim id for verify mode.\"\n    },\n    \"issuer\": {\n      \"title\": \"Issuer (issuer mode)\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Organization name as it appears on its releases/filings (e.g. Salesforce Inc). Both records are returned: dated promises (newswires) and numeric guidance (EDGAR).\"\n    }\n  },\n  \"required\": [\n    \"mode\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/calibration-ledger"
+  }
+}

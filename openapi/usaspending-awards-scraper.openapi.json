@@ -1,0 +1,153 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "USAspending API Awards: federal contract and grant awards",
+    "description": "Who won federal contracts and grants, and for how much? Pulls USAspending awards by agency, recipient, NAICS and period, with award IDs and source links.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/usaspending-awards-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/usaspending-awards-scraper\nAuthor: Public Records.",
+    "version": "0.0.20",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/usaspending-awards-scraper",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~usaspending-awards-scraper/runs": {
+      "post": {
+        "operationId": "start_usaspending_awards_scraper_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/usaspending-awards-scraper",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/usaspending-awards-scraper",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"$schema\": \"https://apify.com/schemas/v1/input.ide.json\",\n  \"title\": \"USASpending Awards Scraper\",\n  \"description\": \"Public USASpending.gov spending_by_award API. Defaults to recent contracts/IDVs (A\u2013D) over the last 30 days. Emphasize agency / recipient / date filters.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"keywords\": {\n      \"title\": \"Keywords\",\n      \"type\": \"array\",\n      \"description\": \"Mapped to filters.keywords. Leave empty for broad recent awards; prefer agency/recipient/date.\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"prefill\": []\n    },\n    \"naics\": {\n      \"title\": \"NAICS codes\",\n      \"type\": \"array\",\n      \"description\": \"Mapped to filters.naics_codes.\",\n      \"editor\": \"stringList\",\n      \"default\": []\n    },\n    \"agency\": {\n      \"title\": \"Awarding agency (toptier name)\",\n      \"type\": \"string\",\n      \"description\": \"Toptier awarding agency name \u2192 filters.agencies[{type:awarding,tier:toptier,name}]. Example: Department of Defense.\",\n      \"editor\": \"textfield\",\n      \"default\": \"\",\n      \"nullable\": true,\n      \"prefill\": \"Department of Defense\"\n    },\n    \"recipient\": {\n      \"title\": \"Recipient name\",\n      \"type\": \"string\",\n      \"description\": \"Mapped to filters.recipient_search_text (array). Example: Boeing. Verified shape requires an array of strings.\",\n      \"editor\": \"textfield\",\n      \"default\": \"\",\n      \"nullable\": true\n    },\n    \"awardTypes\": {\n      \"title\": \"Award type codes\",\n      \"type\": \"array\",\n      \"description\": \"Default A,B,C,D (contracts/IDVs). Avoid assistance codes that may list individuals.\",\n      \"editor\": \"stringList\",\n      \"default\": [\n        \"A\",\n        \"B\",\n        \"C\",\n        \"D\"\n      ]\n    },\n    \"startDate\": {\n      \"title\": \"Start date\",\n      \"type\": \"string\",\n      \"description\": \"YYYY-MM-DD. Default: today \u2212 30 days (recent awards window).\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"endDate\": {\n      \"title\": \"End date\",\n      \"type\": \"string\",\n      \"description\": \"YYYY-MM-DD. Default: today.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"subawards\": {\n      \"title\": \"Subawards mode\",\n      \"type\": \"boolean\",\n      \"description\": \"Pass subawards flag to search (default false).\",\n      \"default\": false\n    },\n    \"fetchDetails\": {\n      \"title\": \"Fetch award details\",\n      \"type\": \"boolean\",\n      \"description\": \"Hydrate via GET /awards/{generated_internal_id}/. Still one PPE charge.\",\n      \"default\": false\n    },\n    \"maxItems\": {\n      \"title\": \"Max items\",\n      \"type\": \"integer\",\n      \"description\": \"Cap on award rows (deduped by awardId|generatedInternalId).\",\n      \"default\": 50,\n      \"minimum\": 1,\n      \"maximum\": 5000\n    }\n  }\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~usaspending-awards-scraper/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_usaspending_awards_scraper_sync_get_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/usaspending-awards-scraper and return dataset items",
+        "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"$schema\": \"https://apify.com/schemas/v1/input.ide.json\",\n  \"title\": \"USASpending Awards Scraper\",\n  \"description\": \"Public USASpending.gov spending_by_award API. Defaults to recent contracts/IDVs (A\u2013D) over the last 30 days. Emphasize agency / recipient / date filters.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"keywords\": {\n      \"title\": \"Keywords\",\n      \"type\": \"array\",\n      \"description\": \"Mapped to filters.keywords. Leave empty for broad recent awards; prefer agency/recipient/date.\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"prefill\": []\n    },\n    \"naics\": {\n      \"title\": \"NAICS codes\",\n      \"type\": \"array\",\n      \"description\": \"Mapped to filters.naics_codes.\",\n      \"editor\": \"stringList\",\n      \"default\": []\n    },\n    \"agency\": {\n      \"title\": \"Awarding agency (toptier name)\",\n      \"type\": \"string\",\n      \"description\": \"Toptier awarding agency name \u2192 filters.agencies[{type:awarding,tier:toptier,name}]. Example: Department of Defense.\",\n      \"editor\": \"textfield\",\n      \"default\": \"\",\n      \"nullable\": true,\n      \"prefill\": \"Department of Defense\"\n    },\n    \"recipient\": {\n      \"title\": \"Recipient name\",\n      \"type\": \"string\",\n      \"description\": \"Mapped to filters.recipient_search_text (array). Example: Boeing. Verified shape requires an array of strings.\",\n      \"editor\": \"textfield\",\n      \"default\": \"\",\n      \"nullable\": true\n    },\n    \"awardTypes\": {\n      \"title\": \"Award type codes\",\n      \"type\": \"array\",\n      \"description\": \"Default A,B,C,D (contracts/IDVs). Avoid assistance codes that may list individuals.\",\n      \"editor\": \"stringList\",\n      \"default\": [\n        \"A\",\n        \"B\",\n        \"C\",\n        \"D\"\n      ]\n    },\n    \"startDate\": {\n      \"title\": \"Start date\",\n      \"type\": \"string\",\n      \"description\": \"YYYY-MM-DD. Default: today \u2212 30 days (recent awards window).\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"endDate\": {\n      \"title\": \"End date\",\n      \"type\": \"string\",\n      \"description\": \"YYYY-MM-DD. Default: today.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"subawards\": {\n      \"title\": \"Subawards mode\",\n      \"type\": \"boolean\",\n      \"description\": \"Pass subawards flag to search (default false).\",\n      \"default\": false\n    },\n    \"fetchDetails\": {\n      \"title\": \"Fetch award details\",\n      \"type\": \"boolean\",\n      \"description\": \"Hydrate via GET /awards/{generated_internal_id}/. Still one PPE charge.\",\n      \"default\": false\n    },\n    \"maxItems\": {\n      \"title\": \"Max items\",\n      \"type\": \"integer\",\n      \"description\": \"Cap on award rows (deduped by awardId|generatedInternalId).\",\n      \"default\": 50,\n      \"minimum\": 1,\n      \"maximum\": 5000\n    }\n  }\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/usaspending-awards-scraper"
+  }
+}

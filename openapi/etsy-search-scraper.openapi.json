@@ -1,0 +1,153 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Etsy Scraper \u2014 Listings, Prices, Best Sellers & Ad Flags",
+    "description": "Etsy scraper for product research: search results by keyword, market page or category URL with price, rating, reviews, Bestseller and Star Seller badges, ad flag, shop and Etsy's rank position. One row per listing. Pay per listing row. Works with Claude.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/etsy-search-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/etsy-search-scraper\nAuthor: Public Records.",
+    "version": "0.2.29",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/etsy-search-scraper",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~etsy-search-scraper/runs": {
+      "post": {
+        "operationId": "start_etsy_search_scraper_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/etsy-search-scraper",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/etsy-search-scraper",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Etsy Search Scraper input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"queries\": {\n      \"title\": \"Search keywords\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Keywords to search, one per line (e.g. ceramic mug). Each keyword lands on Etsy's /market page, then pages through Etsy's own search API \u2014 every listing on the page (rendered and lazy-loaded), in Etsy's rank order.\",\n      \"prefill\": [\n        \"ceramic mug\"\n      ]\n    },\n    \"sort\": {\n      \"title\": \"Sort\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"default\": \"relevance\",\n      \"enum\": [\n        \"relevance\",\n        \"newest\",\n        \"price_asc\",\n        \"price_desc\",\n        \"top_reviews\"\n      ],\n      \"enumTitles\": [\n        \"Relevance (Etsy default)\",\n        \"Newest\",\n        \"Price: low to high\",\n        \"Price: high to low\",\n        \"Top customer reviews\"\n      ],\n      \"description\": \"Order of results, as on Etsy's own sort menu. Applies to search keywords (a market phrase with a sort set runs as a keyword search).\"\n    },\n    \"minPrice\": {\n      \"title\": \"Min price\",\n      \"type\": \"integer\",\n      \"minimum\": 0,\n      \"description\": \"Lowest price to include, in whole units of the shop currency shown to your proxy's region (e.g. 10 = $10). Leave empty for no minimum.\"\n    },\n    \"maxPrice\": {\n      \"title\": \"Max price\",\n      \"type\": \"integer\",\n      \"minimum\": 0,\n      \"description\": \"Highest price to include, whole units. Leave empty for no maximum.\"\n    },\n    \"marketPhrases\": {\n      \"title\": \"Market phrases\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Phrases for Etsy's /market/ pages (any phrase resolves). Example: personalized dog collar\"\n    },\n    \"categoryUrls\": {\n      \"title\": \"Category URLs\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Etsy category pages, e.g. https://www.etsy.com/c/jewelry/necklaces (no query string). Read in Etsy's default order.\"\n    },\n    \"maxPages\": {\n      \"title\": \"Max pages per input\",\n      \"type\": \"integer\",\n      \"description\": \"Pages per input, 1\u201320 (Etsy's own cap). On the Standby/MCP endpoint one call stops at 240 s and says so (truncated:true with pagesDone/pagesRequested); big jobs belong in a batch run.\",\n      \"minimum\": 1,\n      \"maximum\": 20,\n      \"default\": 5\n    },\n    \"maxItems\": {\n      \"title\": \"Max listings per run (0 = no cap)\",\n      \"type\": \"integer\",\n      \"description\": \"Stop after this many listing rows across all inputs. Default 20: one keyword on defaults costs about 8 cents on the Free plan (20 x 0.4 cents + 0.005 cents start, prices as of Oct 28, 2026; see the Pricing tab). Raise it (or set 0 for no cap) to get more pages.\",\n      \"minimum\": 0,\n      \"default\": 20\n    },\n    \"maxCacheAgeHours\": {\n      \"title\": \"Max snapshot age (hours)\",\n      \"type\": \"integer\",\n      \"editor\": \"number\",\n      \"minimum\": 0,\n      \"default\": 24,\n      \"description\": \"Serve a keyword from our recent snapshot of the same search when it is at most this many hours old and holds every row you asked for; otherwise fetch live. Snapshot rows say data_source \\\"cache\\\", stale true and as_of (when they were read live), and are charged like live rows. 0 = always fetch live.\"\n    },\n    \"fillLazyCards\": {\n      \"title\": \"Return every listing on the page\",\n      \"type\": \"boolean\",\n      \"default\": true,\n      \"description\": \"Etsy renders 12 cards and lazy-loads the rest (48 more on page 1). On, the run fetches them the way Etsy's own page does, so you get the whole page in rank order. Off, you get the 12 rendered cards per page only (faster, fewer requests on your proxy).\"\n    },\n    \"is_best_seller\": {\n      \"title\": \"Bestseller badge\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Keeps listings shown with Etsy's Bestseller badge on the search page.\"\n    },\n    \"is_star_seller\": {\n      \"title\": \"Star Seller shops only\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Only return listings from Star Seller shops.\"\n    },\n    \"free_shipping\": {\n      \"title\": \"Free shipping only\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Only return listings with free shipping.\"\n    },\n    \"is_discounted\": {\n      \"title\": \"On sale only\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Only return listings currently on sale.\"\n    },\n    \"instant_download\": {\n      \"title\": \"Digital downloads only\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Only return digital download listings.\"\n    },\n    \"is_handmade_only\": {\n      \"title\": \"Handmade only\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Only return listings Etsy flags as handmade.\"\n    },\n    \"is_personalizable\": {\n      \"title\": \"Personalizable only\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Only return listings that offer personalization.\"\n    },\n    \"max_processing_days\": {\n      \"title\": \"Ready to ship within (days)\",\n      \"type\": \"integer\",\n      \"minimum\": 1,\n      \"description\": \"Only return listings whose processing time is at most this many days (Etsy's ready-to-ship filter).\"\n    },\n    \"ship_to\": {\n      \"title\": \"Ships to (country code)\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Two-letter code, e.g. US, GB, DE.\"\n    },\n    \"source\": {\n      \"title\": \"Source\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Optional free-text label for this run (for example the Make template that started it). Copied onto every listing row and onto RUN_SUMMARY so template runs can be filtered. Leave empty if you do not need it.\",\n      \"default\": \"\"\n    },\n    \"proxyConfiguration\": {\n      \"title\": \"Proxy\",\n      \"type\": \"object\",\n      \"editor\": \"proxy\",\n      \"description\": \"Etsy blocks datacenter IPs. Default: Apify Proxy RESIDENTIAL, included in the event prices (no separate proxy or compute charge). Your own residential proxy works too. A blocked page is never charged.\",\n      \"default\": {\n        \"useApifyProxy\": true,\n        \"apifyProxyGroups\": [\n          \"RESIDENTIAL\"\n        ],\n        \"apifyProxyCountry\": \"US\"\n      },\n      \"prefill\": {\n        \"useApifyProxy\": true,\n        \"apifyProxyGroups\": [\n          \"RESIDENTIAL\"\n        ],\n        \"apifyProxyCountry\": \"US\"\n      }\n    }\n  },\n  \"required\": []\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~etsy-search-scraper/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_etsy_search_scraper_sync_get_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/etsy-search-scraper and return dataset items",
+        "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Etsy Search Scraper input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"queries\": {\n      \"title\": \"Search keywords\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Keywords to search, one per line (e.g. ceramic mug). Each keyword lands on Etsy's /market page, then pages through Etsy's own search API \u2014 every listing on the page (rendered and lazy-loaded), in Etsy's rank order.\",\n      \"prefill\": [\n        \"ceramic mug\"\n      ]\n    },\n    \"sort\": {\n      \"title\": \"Sort\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"default\": \"relevance\",\n      \"enum\": [\n        \"relevance\",\n        \"newest\",\n        \"price_asc\",\n        \"price_desc\",\n        \"top_reviews\"\n      ],\n      \"enumTitles\": [\n        \"Relevance (Etsy default)\",\n        \"Newest\",\n        \"Price: low to high\",\n        \"Price: high to low\",\n        \"Top customer reviews\"\n      ],\n      \"description\": \"Order of results, as on Etsy's own sort menu. Applies to search keywords (a market phrase with a sort set runs as a keyword search).\"\n    },\n    \"minPrice\": {\n      \"title\": \"Min price\",\n      \"type\": \"integer\",\n      \"minimum\": 0,\n      \"description\": \"Lowest price to include, in whole units of the shop currency shown to your proxy's region (e.g. 10 = $10). Leave empty for no minimum.\"\n    },\n    \"maxPrice\": {\n      \"title\": \"Max price\",\n      \"type\": \"integer\",\n      \"minimum\": 0,\n      \"description\": \"Highest price to include, whole units. Leave empty for no maximum.\"\n    },\n    \"marketPhrases\": {\n      \"title\": \"Market phrases\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Phrases for Etsy's /market/ pages (any phrase resolves). Example: personalized dog collar\"\n    },\n    \"categoryUrls\": {\n      \"title\": \"Category URLs\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Etsy category pages, e.g. https://www.etsy.com/c/jewelry/necklaces (no query string). Read in Etsy's default order.\"\n    },\n    \"maxPages\": {\n      \"title\": \"Max pages per input\",\n      \"type\": \"integer\",\n      \"description\": \"Pages per input, 1\u201320 (Etsy's own cap). On the Standby/MCP endpoint one call stops at 240 s and says so (truncated:true with pagesDone/pagesRequested); big jobs belong in a batch run.\",\n      \"minimum\": 1,\n      \"maximum\": 20,\n      \"default\": 5\n    },\n    \"maxItems\": {\n      \"title\": \"Max listings per run (0 = no cap)\",\n      \"type\": \"integer\",\n      \"description\": \"Stop after this many listing rows across all inputs. Default 20: one keyword on defaults costs about 8 cents on the Free plan (20 x 0.4 cents + 0.005 cents start, prices as of Oct 28, 2026; see the Pricing tab). Raise it (or set 0 for no cap) to get more pages.\",\n      \"minimum\": 0,\n      \"default\": 20\n    },\n    \"maxCacheAgeHours\": {\n      \"title\": \"Max snapshot age (hours)\",\n      \"type\": \"integer\",\n      \"editor\": \"number\",\n      \"minimum\": 0,\n      \"default\": 24,\n      \"description\": \"Serve a keyword from our recent snapshot of the same search when it is at most this many hours old and holds every row you asked for; otherwise fetch live. Snapshot rows say data_source \\\"cache\\\", stale true and as_of (when they were read live), and are charged like live rows. 0 = always fetch live.\"\n    },\n    \"fillLazyCards\": {\n      \"title\": \"Return every listing on the page\",\n      \"type\": \"boolean\",\n      \"default\": true,\n      \"description\": \"Etsy renders 12 cards and lazy-loads the rest (48 more on page 1). On, the run fetches them the way Etsy's own page does, so you get the whole page in rank order. Off, you get the 12 rendered cards per page only (faster, fewer requests on your proxy).\"\n    },\n    \"is_best_seller\": {\n      \"title\": \"Bestseller badge\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Keeps listings shown with Etsy's Bestseller badge on the search page.\"\n    },\n    \"is_star_seller\": {\n      \"title\": \"Star Seller shops only\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Only return listings from Star Seller shops.\"\n    },\n    \"free_shipping\": {\n      \"title\": \"Free shipping only\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Only return listings with free shipping.\"\n    },\n    \"is_discounted\": {\n      \"title\": \"On sale only\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Only return listings currently on sale.\"\n    },\n    \"instant_download\": {\n      \"title\": \"Digital downloads only\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Only return digital download listings.\"\n    },\n    \"is_handmade_only\": {\n      \"title\": \"Handmade only\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Only return listings Etsy flags as handmade.\"\n    },\n    \"is_personalizable\": {\n      \"title\": \"Personalizable only\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Only return listings that offer personalization.\"\n    },\n    \"max_processing_days\": {\n      \"title\": \"Ready to ship within (days)\",\n      \"type\": \"integer\",\n      \"minimum\": 1,\n      \"description\": \"Only return listings whose processing time is at most this many days (Etsy's ready-to-ship filter).\"\n    },\n    \"ship_to\": {\n      \"title\": \"Ships to (country code)\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Two-letter code, e.g. US, GB, DE.\"\n    },\n    \"source\": {\n      \"title\": \"Source\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Optional free-text label for this run (for example the Make template that started it). Copied onto every listing row and onto RUN_SUMMARY so template runs can be filtered. Leave empty if you do not need it.\",\n      \"default\": \"\"\n    },\n    \"proxyConfiguration\": {\n      \"title\": \"Proxy\",\n      \"type\": \"object\",\n      \"editor\": \"proxy\",\n      \"description\": \"Etsy blocks datacenter IPs. Default: Apify Proxy RESIDENTIAL, included in the event prices (no separate proxy or compute charge). Your own residential proxy works too. A blocked page is never charged.\",\n      \"default\": {\n        \"useApifyProxy\": true,\n        \"apifyProxyGroups\": [\n          \"RESIDENTIAL\"\n        ],\n        \"apifyProxyCountry\": \"US\"\n      },\n      \"prefill\": {\n        \"useApifyProxy\": true,\n        \"apifyProxyGroups\": [\n          \"RESIDENTIAL\"\n        ],\n        \"apifyProxyCountry\": \"US\"\n      }\n    }\n  },\n  \"required\": []\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/etsy-search-scraper"
+  }
+}
