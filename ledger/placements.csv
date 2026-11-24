@@ -5651,19 +5651,19 @@ cipher387/API-s-for-OSINT,google-ads-transparency-scraper,submitted,api row,http
 cipher387/API-s-for-OSINT,sports-odds-api,not-listed,api row,,off-topic for an OSINT API list
 cipher387/API-s-for-OSINT,spotify-play-count-scraper,not-listed,api row,,off-topic for an OSINT API list
 cipher387/API-s-for-OSINT,skool-community-growth-tracker,submitted,api row,https://github.com/cipher387/API-s-for-OSINT/pull/98,one PR per suggestion per CONTRIBUTING
-PlugMCP (plugmcp.ai),ashby-jobs-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
-PlugMCP (plugmcp.ai),greenhouse-jobs-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
-PlugMCP (plugmcp.ai),lever-jobs-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
-PlugMCP (plugmcp.ai),smartrecruiters-jobs-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
-PlugMCP (plugmcp.ai),etsy-search-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
-PlugMCP (plugmcp.ai),etsy-shop-velocity,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
-PlugMCP (plugmcp.ai),calibration-ledger,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
-PlugMCP (plugmcp.ai),govcon-opportunity-feed,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
-PlugMCP (plugmcp.ai),grants-gov-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
-PlugMCP (plugmcp.ai),usaspending-awards-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
-PlugMCP (plugmcp.ai),uk-find-a-tender-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
-PlugMCP (plugmcp.ai),eu-ted-notices-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
-PlugMCP (plugmcp.ai),legistar-meetings-scraper,remaining,server page,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),page Not found (g2/ap/plugmcp_pages.txt); free anonymous form queued
+PlugMCP (plugmcp.ai),ashby-jobs-scraper,live,server page,https://plugmcp.ai/mcp/ashby-jobs-mcp-new-postings-since-any-date-mwvck07h,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
+PlugMCP (plugmcp.ai),greenhouse-jobs-scraper,live,server page,https://plugmcp.ai/mcp/greenhouse-jobs-mcp-new-postings-since-any-date-mwvcknp8,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
+PlugMCP (plugmcp.ai),lever-jobs-scraper,live,server page,https://plugmcp.ai/mcp/lever-jobs-mcp-new-postings-since-any-date-mwvckpih,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
+PlugMCP (plugmcp.ai),smartrecruiters-jobs-scraper,live,server page,https://plugmcp.ai/mcp/smartrecruiters-jobs-mcp-new-postings-since-any-date-mwvckr3j,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
+PlugMCP (plugmcp.ai),etsy-search-scraper,live,server page,https://plugmcp.ai/mcp/etsy-search-mcp-listings-prices-best-sellers-mwvcksoy,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
+PlugMCP (plugmcp.ai),etsy-shop-velocity,live,server page,https://plugmcp.ai/mcp/etsy-shop-daily-sales-mcp-mwvcku70,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
+PlugMCP (plugmcp.ai),calibration-ledger,live,server page,https://plugmcp.ai/mcp/calibration-ledger-mcp-forecast-track-records-beta--mwvckw9j,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
+PlugMCP (plugmcp.ai),govcon-opportunity-feed,live,server page,https://plugmcp.ai/mcp/federal-contracts-mcp-sam.gov-grants.gov-mwvckxsu,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
+PlugMCP (plugmcp.ai),grants-gov-scraper,live,server page,https://plugmcp.ai/mcp/grants.gov-mcp-open-federal-grants-mwvckze8,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
+PlugMCP (plugmcp.ai),usaspending-awards-scraper,live,server page,https://plugmcp.ai/mcp/usaspending-awards-mcp-federal-contract-grant-awards-mwvcl10e,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
+PlugMCP (plugmcp.ai),uk-find-a-tender-scraper,live,server page,https://plugmcp.ai/mcp/uk-tenders-mcp-find-a-tender-contracts-finder-mwvcl2n1,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
+PlugMCP (plugmcp.ai),eu-ted-notices-scraper,live,server page,https://plugmcp.ai/mcp/eu-ted-tenders-mcp-daily-procurement-notices-mwvcl49s,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
+PlugMCP (plugmcp.ai),legistar-meetings-scraper,live,server page,https://plugmcp.ai/mcp/city-council-meetings-mcp-legistar--mwvcl5tt,JSON POST /api/directory/submit 201 on 2026-11-24; page verified live same day. Skool not filed.
 PlugMCP (plugmcp.ai),company-social-profile-finder,live,server page,https://plugmcp.ai/mcp/io.github.geminigeorge22-company-social-mcp,registry auto-ingest
 PlugMCP (plugmcp.ai),google-ads-transparency-scraper,live,server page,https://plugmcp.ai/mcp/io.github.geminigeorge22-google-ads-transparency-mcp,registry auto-ingest
 PlugMCP (plugmcp.ai),sports-odds-api,live,server page,https://plugmcp.ai/mcp/io.github.geminigeorge22-sports-odds-api,registry auto-ingest
@@ -5682,7 +5682,7 @@ gate (gateturbo.com),usaspending-awards-scraper,remaining,dedicated server,/work
 gate (gateturbo.com),uk-find-a-tender-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
 gate (gateturbo.com),eu-ted-notices-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
 gate (gateturbo.com),legistar-meetings-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
-gate (gateturbo.com),company-social-profile-finder,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
+gate (gateturbo.com),company-social-profile-finder,live,dedicated server,https://gateturbo.com/mcp/company-social-mcp,Official-registry auto-ingest; prefill already_listed=company-social-mcp; page HTTP 200 verified 2026-11-24 18:48 America/Toronto.
 gate (gateturbo.com),google-ads-transparency-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
 gate (gateturbo.com),sports-odds-api,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
 gate (gateturbo.com),spotify-play-count-scraper,remaining,dedicated server,/workspace/mcp-fleet-2026-11-23/global-browser-queue-2.csv (not in repo),queued; scan caveat
@@ -8549,24 +8549,24 @@ AlternativeTo,sports-odds-api,remaining,bundle,,AMFM-4 2026-11-24
 AlternativeTo,spotify-play-count-scraper,remaining,bundle,,AMFM-4 2026-11-24
 AlternativeTo,uk-find-a-tender-scraper,remaining,bundle,,AMFM-4 2026-11-24
 AlternativeTo,usaspending-awards-scraper,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,ashby-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,calibration-ledger,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,company-social-profile-finder,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,etsy-search-scraper,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,etsy-shop-velocity,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,eu-ted-notices-scraper,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,google-ads-transparency-scraper,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,govcon-opportunity-feed,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,grants-gov-scraper,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,greenhouse-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,legistar-meetings-scraper,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,lever-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
+SaaSHub,ashby-jobs-scraper,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,calibration-ledger,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,company-social-profile-finder,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,etsy-search-scraper,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,etsy-shop-velocity,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,eu-ted-notices-scraper,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,google-ads-transparency-scraper,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,govcon-opportunity-feed,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,grants-gov-scraper,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,greenhouse-jobs-scraper,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,legistar-meetings-scraper,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,lever-jobs-scraper,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
 SaaSHub,skool-community-growth-tracker,not-listed,,,
-SaaSHub,smartrecruiters-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,sports-odds-api,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,spotify-play-count-scraper,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,uk-find-a-tender-scraper,remaining,bundle,,AMFM-4 2026-11-24
-SaaSHub,usaspending-awards-scraper,remaining,bundle,,AMFM-4 2026-11-24
+SaaSHub,smartrecruiters-jobs-scraper,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,sports-odds-api,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,spotify-play-count-scraper,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,uk-find-a-tender-scraper,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
+SaaSHub,usaspending-awards-scraper,skipped,bundle,,Skipped: SaaSHub asks not to auto-submit (standing rule). Not filed. 2026-11-24 remaining-pass.
 Futurepedia (free tier),ashby-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
 Futurepedia (free tier),calibration-ledger,remaining,bundle,,AMFM-4 2026-11-24
 Futurepedia (free tier),company-social-profile-finder,remaining,bundle,,AMFM-4 2026-11-24
@@ -9359,24 +9359,24 @@ Hacker News Show HN,sports-odds-api,remaining,bundle,,AMFM-4 2026-11-24
 Hacker News Show HN,spotify-play-count-scraper,remaining,bundle,,AMFM-4 2026-11-24
 Hacker News Show HN,uk-find-a-tender-scraper,remaining,bundle,,AMFM-4 2026-11-24
 Hacker News Show HN,usaspending-awards-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),ashby-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),calibration-ledger,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),company-social-profile-finder,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),etsy-search-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),etsy-shop-velocity,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),eu-ted-notices-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),google-ads-transparency-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),govcon-opportunity-feed,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),grants-gov-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),greenhouse-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),legistar-meetings-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),lever-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
+Lobsters (invite only - skip),ashby-jobs-scraper,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),calibration-ledger,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),company-social-profile-finder,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),etsy-search-scraper,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),etsy-shop-velocity,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),eu-ted-notices-scraper,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),google-ads-transparency-scraper,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),govcon-opportunity-feed,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),grants-gov-scraper,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),greenhouse-jobs-scraper,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),legistar-meetings-scraper,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),lever-jobs-scraper,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
 Lobsters (invite only - skip),skool-community-growth-tracker,not-listed,,,
-Lobsters (invite only - skip),smartrecruiters-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),sports-odds-api,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),spotify-play-count-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),uk-find-a-tender-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Lobsters (invite only - skip),usaspending-awards-scraper,remaining,bundle,,AMFM-4 2026-11-24
+Lobsters (invite only - skip),smartrecruiters-jobs-scraper,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),sports-odds-api,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),spotify-play-count-scraper,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),uk-find-a-tender-scraper,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
+Lobsters (invite only - skip),usaspending-awards-scraper,skipped,bundle,,Skipped: Lobsters is invite-only. Not filed. 2026-11-24 remaining-pass.
 thedaviddias/llms-txt-hub,ashby-jobs-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
 thedaviddias/llms-txt-hub,calibration-ledger,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
 thedaviddias/llms-txt-hub,company-social-profile-finder,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
