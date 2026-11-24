@@ -1,0 +1,1581 @@
+{
+  "info": {
+    "name": "Public Records APIs (Apify)",
+    "description": "Importable Postman Collection v2.1 for 17 Public Records Actors (Skool omitted). Each request bills through the caller's own Apify account. Set the collection variable APIFY_TOKEN locally \u2014 this file ships with it empty and contains no secrets.\n\nImport: Postman \u2192 Import \u2192 this file. OpenAPI specs: https://huggingface.co/datasets/Publicrecords/apify-actor-openapi\n\nAuthor: Public Records.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "APIFY_TOKEN",
+      "value": "",
+      "type": "string",
+      "description": "Set locally. Never commit a real token."
+    }
+  ],
+  "item": [
+    {
+      "name": "Ashby Jobs Scraper \u2014 New Job Postings Since Any Date",
+      "description": "Scrape Ashby jobs and job postings from any Ashby job board, only those published since a date or window (24h, 7d, 30d). Title, location, department, compensation, URL, description. Pay per result.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/ashby-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/ashby-jobs-scraper\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/ashby-jobs-scraper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~ashby-jobs-scraper/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~ashby-jobs-scraper",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/ashby-jobs-scraper\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"maxResults\": 500,\n  \"includeDescription\": false,\n  \"companies\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/ashby-jobs-scraper and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~ashby-jobs-scraper/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~ashby-jobs-scraper",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"maxResults\": 500,\n  \"includeDescription\": false,\n  \"companies\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Calibration Ledger \u2014 trust a forecast, with evidence (beta)",
+      "description": "Given a claim from an organization (IMF, OECD, Fed/FOMC, SPF, ECB SPF, or a listed issuer), returns that organization's track record: error distribution, intervals, bias, band coverage, worst misses with source links \u2014 or honest 'no coverage' (free). Organizations only, never people.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/calibration-ledger\nMCP: https://mcp.apify.com?tools=publicrecords/calibration-ledger\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/calibration-ledger",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~calibration-ledger/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~calibration-ledger",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/calibration-ledger\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"mode\": \"text\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/calibration-ledger and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~calibration-ledger/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~calibration-ledger",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"mode\": \"text\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Company Website to LinkedIn & Social Media Links",
+      "description": "Which social profiles belong to this company? Resolves a name, website or Google Maps listing to its LinkedIn, X, YouTube, Instagram and Facebook handles, with evidence. Instagram and Facebook are returned from the site on the default path, not platform-verified.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/company-social-profile-finder\nMCP: https://mcp.apify.com?tools=publicrecords/company-social-profile-finder\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/company-social-profile-finder",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~company-social-profile-finder/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~company-social-profile-finder",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/company-social-profile-finder\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"maxRows\": 5000,\n  \"outputFormat\": \"auto\",\n  \"mode\": \"resolve\",\n  \"probeMode\": \"direct\",\n  \"enableChildProbes\": false,\n  \"maxChildRuns\": 2,\n  \"maxChildCostUsd\": 1,\n  \"actorProbesPerEntity\": 2,\n  \"actorProbesPerRun\": 200,\n  \"maxProbesPerEntity\": 8,\n  \"cacheTtlDays\": 30,\n  \"forceRefresh\": false,\n  \"emitChangeEvents\": true,\n  \"confidentThreshold\": 0.8,\n  \"probeActors\": {},\n  \"proxyConfiguration\": {\n    \"useApifyProxy\": true\n  },\n  \"requestTimeoutSecs\": 20,\n  \"maxConcurrency\": 5,\n  \"seedTimeoutSecs\": 120,\n  \"perHostPerSecond\": 2,\n  \"respectRobots\": true,\n  \"forgetIds\": [],\n  \"probeConcurrency\": 4,\n  \"wikidataDeclared\": true,\n  \"reverifySlice\": 0,\n  \"reverifySlices\": 30,\n  \"reverifyLimit\": 500,\n  \"seedSource\": \"list\",\n  \"seedDomains\": [],\n  \"seedLimit\": 2000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/company-social-profile-finder and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~company-social-profile-finder/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~company-social-profile-finder",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"maxRows\": 5000,\n  \"outputFormat\": \"auto\",\n  \"mode\": \"resolve\",\n  \"probeMode\": \"direct\",\n  \"enableChildProbes\": false,\n  \"maxChildRuns\": 2,\n  \"maxChildCostUsd\": 1,\n  \"actorProbesPerEntity\": 2,\n  \"actorProbesPerRun\": 200,\n  \"maxProbesPerEntity\": 8,\n  \"cacheTtlDays\": 30,\n  \"forceRefresh\": false,\n  \"emitChangeEvents\": true,\n  \"confidentThreshold\": 0.8,\n  \"probeActors\": {},\n  \"proxyConfiguration\": {\n    \"useApifyProxy\": true\n  },\n  \"requestTimeoutSecs\": 20,\n  \"maxConcurrency\": 5,\n  \"seedTimeoutSecs\": 120,\n  \"perHostPerSecond\": 2,\n  \"respectRobots\": true,\n  \"forgetIds\": [],\n  \"probeConcurrency\": 4,\n  \"wikidataDeclared\": true,\n  \"reverifySlice\": 0,\n  \"reverifySlices\": 30,\n  \"reverifyLimit\": 500,\n  \"seedSource\": \"list\",\n  \"seedDomains\": [],\n  \"seedLimit\": 2000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Etsy Scraper \u2014 Listings, Prices, Best Sellers & Ad Flags",
+      "description": "Etsy scraper for product research: search results by keyword, market page or category URL with price, rating, reviews, Bestseller and Star Seller badges, ad flag, shop and Etsy's rank position. One row per listing. Pay per listing row. Works with Claude.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/etsy-search-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/etsy-search-scraper\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/etsy-search-scraper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~etsy-search-scraper/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~etsy-search-scraper",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/etsy-search-scraper\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sort\": \"relevance\",\n  \"maxPages\": 5,\n  \"maxItems\": 20,\n  \"maxCacheAgeHours\": 24,\n  \"fillLazyCards\": true,\n  \"is_best_seller\": false,\n  \"is_star_seller\": false,\n  \"free_shipping\": false,\n  \"is_discounted\": false,\n  \"instant_download\": false,\n  \"is_handmade_only\": false,\n  \"is_personalizable\": false,\n  \"source\": \"\",\n  \"proxyConfiguration\": {\n    \"useApifyProxy\": true,\n    \"apifyProxyGroups\": [\n      \"RESIDENTIAL\"\n    ],\n    \"apifyProxyCountry\": \"US\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/etsy-search-scraper and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~etsy-search-scraper/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~etsy-search-scraper",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sort\": \"relevance\",\n  \"maxPages\": 5,\n  \"maxItems\": 20,\n  \"maxCacheAgeHours\": 24,\n  \"fillLazyCards\": true,\n  \"is_best_seller\": false,\n  \"is_star_seller\": false,\n  \"free_shipping\": false,\n  \"is_discounted\": false,\n  \"instant_download\": false,\n  \"is_handmade_only\": false,\n  \"is_personalizable\": false,\n  \"source\": \"\",\n  \"proxyConfiguration\": {\n    \"useApifyProxy\": true,\n    \"apifyProxyGroups\": [\n      \"RESIDENTIAL\"\n    ],\n    \"apifyProxyCountry\": \"US\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Etsy Shop Daily Sales Tracker & Scraper",
+      "description": "Daily sales for 370,000+ Etsy shops: sales per day, 7-day and 28-day sales and total sales, measured from each shop's public sales counter and dated. One row per shop, pay per shop.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/etsy-shop-velocity\nMCP: https://mcp.apify.com?tools=publicrecords/etsy-shop-velocity\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/etsy-shop-velocity",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~etsy-shop-velocity/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~etsy-shop-velocity",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/etsy-shop-velocity\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"minSales\": 0,\n  \"maxShops\": 200\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/etsy-shop-velocity and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~etsy-shop-velocity/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~etsy-shop-velocity",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"minSales\": 0,\n  \"maxShops\": 200\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "TED Tenders Daily: EU procurement notices from Tenders",
+      "description": "Which EU tenders were published today? Returns TED (Tenders Electronic Daily) notices with buyer, CPV, value, deadline and source link.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/eu-ted-notices-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/eu-ted-notices-scraper\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/eu-ted-notices-scraper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~eu-ted-notices-scraper/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~eu-ted-notices-scraper",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/eu-ted-notices-scraper\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"keywords\": \"software\",\n  \"publicationDateFrom\": \"2026-09-01\",\n  \"publicationDateTo\": \"2026-09-16\",\n  \"noticeType\": \"cn-standard\",\n  \"cpv\": \"72000000\",\n  \"buyerCountry\": \"DEU\",\n  \"scope\": \"ALL\",\n  \"maxItems\": 50\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/eu-ted-notices-scraper and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~eu-ted-notices-scraper/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~eu-ted-notices-scraper",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"keywords\": \"software\",\n  \"publicationDateFrom\": \"2026-09-01\",\n  \"publicationDateTo\": \"2026-09-16\",\n  \"noticeType\": \"cn-standard\",\n  \"cpv\": \"72000000\",\n  \"buyerCountry\": \"DEU\",\n  \"scope\": \"ALL\",\n  \"maxItems\": 50\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Google Ads Transparency Scraper: Competitor Ads",
+      "description": "Google Ads Transparency Center scraper: enter a competitor's website or advertiser ID, get its new, running and stopped Google ads with first and last shown dates, days shown and ad links. No login, no proxy. Pay per ad.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/google-ads-transparency-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/google-ads-transparency-scraper\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/google-ads-transparency-scraper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~google-ads-transparency-scraper/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~google-ads-transparency-scraper",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/google-ads-transparency-scraper\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sinceDays\": 7,\n  \"region\": \"anywhere\",\n  \"statuses\": [\n    \"new\",\n    \"running\",\n    \"stopped\",\n    \"inactive\"\n  ],\n  \"maxAdsPerTarget\": 1000,\n  \"includeRegionStats\": false,\n  \"targets\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/google-ads-transparency-scraper and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~google-ads-transparency-scraper/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~google-ads-transparency-scraper",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sinceDays\": 7,\n  \"region\": \"anywhere\",\n  \"statuses\": [\n    \"new\",\n    \"running\",\n    \"stopped\",\n    \"inactive\"\n  ],\n  \"maxAdsPerTarget\": 1000,\n  \"includeRegionStats\": false,\n  \"targets\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Federal Government Contracts: SAM.gov + Grants.gov in one",
+      "description": "Which government contracts were posted today? Returns SAM.gov and Grants.gov notices in one feed, new-since-last-run deltas, and source links.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/govcon-opportunity-feed\nMCP: https://mcp.apify.com?tools=publicrecords/govcon-opportunity-feed\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/govcon-opportunity-feed",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~govcon-opportunity-feed/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~govcon-opportunity-feed",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/govcon-opportunity-feed\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"mode\": \"monitor\",\n  \"sources\": [\n    \"sam\",\n    \"grants\"\n  ],\n  \"naics\": [],\n  \"agencies\": [],\n  \"keywords\": [],\n  \"setAside\": [],\n  \"states\": [],\n  \"noticeTypes\": [],\n  \"postedWithinDays\": 14,\n  \"includeDescriptions\": false,\n  \"includeContacts\": false,\n  \"enrichTopN\": 5,\n  \"maxItems\": 10000,\n  \"samBulk\": true,\n  \"samEnrichLimit\": 5,\n  \"incumbentMode\": \"category_leaders\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/govcon-opportunity-feed and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~govcon-opportunity-feed/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~govcon-opportunity-feed",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"mode\": \"monitor\",\n  \"sources\": [\n    \"sam\",\n    \"grants\"\n  ],\n  \"naics\": [],\n  \"agencies\": [],\n  \"keywords\": [],\n  \"setAside\": [],\n  \"states\": [],\n  \"noticeTypes\": [],\n  \"postedWithinDays\": 14,\n  \"includeDescriptions\": false,\n  \"includeContacts\": false,\n  \"enrichTopN\": 5,\n  \"maxItems\": 10000,\n  \"samBulk\": true,\n  \"samEnrichLimit\": 5,\n  \"incumbentMode\": \"category_leaders\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Grants.gov Search API: federal grants list with deadlines",
+      "description": "Which federal grants are open right now? Searches Grants.gov and returns opportunity, agency, deadline, eligibility and the source link.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/grants-gov-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/grants-gov-scraper\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/grants-gov-scraper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~grants-gov-scraper/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~grants-gov-scraper",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/grants-gov-scraper\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"keyword\": \"\",\n  \"agency\": \"\",\n  \"status\": \"forecasted|posted\",\n  \"maxItems\": 50,\n  \"fetchDetails\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/grants-gov-scraper and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~grants-gov-scraper/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~grants-gov-scraper",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"keyword\": \"\",\n  \"agency\": \"\",\n  \"status\": \"forecasted|posted\",\n  \"maxItems\": 50,\n  \"fetchDetails\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Greenhouse Jobs Scraper \u2014 New Job Postings Since Any Date",
+      "description": "Scrape Greenhouse jobs and job postings from any Greenhouse job board, only those published since a date or window (24h, 7d, 30d). Title, location, department, URL, description. Pay per result.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/greenhouse-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/greenhouse-jobs-scraper\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/greenhouse-jobs-scraper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~greenhouse-jobs-scraper/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~greenhouse-jobs-scraper",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/greenhouse-jobs-scraper\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"maxResults\": 500,\n  \"includeDescription\": false,\n  \"companies\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/greenhouse-jobs-scraper and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~greenhouse-jobs-scraper/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~greenhouse-jobs-scraper",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"maxResults\": 500,\n  \"includeDescription\": false,\n  \"companies\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "City Council Meeting Minutes & Agendas Scraper (Legistar)",
+      "description": "City council meeting scraper for Legistar: pull meetings for public Legistar cities by date range, with body, date, agenda and minutes status and links (PDF when posted), optional agenda item titles and the official source link. No login.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/legistar-meetings-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/legistar-meetings-scraper\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/legistar-meetings-scraper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~legistar-meetings-scraper/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~legistar-meetings-scraper",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/legistar-meetings-scraper\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"clients\": [\n    \"seattle\"\n  ],\n  \"maxItems\": 50,\n  \"resource\": \"events\",\n  \"includeEventItems\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/legistar-meetings-scraper and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~legistar-meetings-scraper/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~legistar-meetings-scraper",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"clients\": [\n    \"seattle\"\n  ],\n  \"maxItems\": 50,\n  \"resource\": \"events\",\n  \"includeEventItems\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Lever Jobs Scraper \u2014 New Job Postings Since Any Date",
+      "description": "Scrape Lever jobs and job postings from any Lever job board, only those created since a date or window (24h, 7d, 30d). Title, location, team, workplace type, URL, description. Pay per result.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/lever-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/lever-jobs-scraper\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/lever-jobs-scraper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~lever-jobs-scraper/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~lever-jobs-scraper",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/lever-jobs-scraper\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"maxResults\": 500,\n  \"includeDescription\": false,\n  \"companies\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/lever-jobs-scraper and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~lever-jobs-scraper/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~lever-jobs-scraper",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"maxResults\": 500,\n  \"includeDescription\": false,\n  \"companies\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "SmartRecruiters Jobs Scraper \u2014 New Postings Since Any Date",
+      "description": "Scrape open jobs from any SmartRecruiters careers site and return only postings released since a date or window (24h, 7d, 30d). Title, location, department, URL, description. Pay per result.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/smartrecruiters-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/smartrecruiters-jobs-scraper\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/smartrecruiters-jobs-scraper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~smartrecruiters-jobs-scraper/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~smartrecruiters-jobs-scraper",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/smartrecruiters-jobs-scraper\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"maxResults\": 500,\n  \"includeDescription\": false,\n  \"companies\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/smartrecruiters-jobs-scraper and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~smartrecruiters-jobs-scraper/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~smartrecruiters-jobs-scraper",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"maxResults\": 500,\n  \"includeDescription\": false,\n  \"companies\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sports Betting Odds API: BetRivers, Unibet, Paf, Svenska Spel",
+      "description": "Sports betting odds API: live and pre-game odds from BetRivers (12 US states + Ontario), Unibet (7 countries), Paf, Svenska Spel and ATG in one call. One row per game with every book's price and the best price per outcome. No API key. Pay per game.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/sports-odds-api\nMCP: https://mcp.apify.com?tools=publicrecords/sports-odds-api\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/sports-odds-api",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~sports-odds-api/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~sports-odds-api",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/sports-odds-api\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"leagues\": [\n    \"basketball/nba\",\n    \"american_football/nfl\",\n    \"ice_hockey/nhl\",\n    \"baseball/mlb\",\n    \"football/england/premier_league\"\n  ],\n  \"operators\": [\n    \"rsiusnj\",\n    \"rsiusny\",\n    \"rsiuspa\",\n    \"rsicaon\",\n    \"ubuk\",\n    \"ubca\",\n    \"paf\",\n    \"svenskaspel\",\n    \"atg\"\n  ],\n  \"markets\": \"main\",\n  \"includeLive\": true,\n  \"startsWithinHours\": 0,\n  \"maxEvents\": 50,\n  \"proxyConfiguration\": {\n    \"useApifyProxy\": true\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/sports-odds-api and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~sports-odds-api/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~sports-odds-api",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"leagues\": [\n    \"basketball/nba\",\n    \"american_football/nfl\",\n    \"ice_hockey/nhl\",\n    \"baseball/mlb\",\n    \"football/england/premier_league\"\n  ],\n  \"operators\": [\n    \"rsiusnj\",\n    \"rsiusny\",\n    \"rsiuspa\",\n    \"rsicaon\",\n    \"ubuk\",\n    \"ubca\",\n    \"paf\",\n    \"svenskaspel\",\n    \"atg\"\n  ],\n  \"markets\": \"main\",\n  \"includeLive\": true,\n  \"startsWithinHours\": 0,\n  \"maxEvents\": 50,\n  \"proxyConfiguration\": {\n    \"useApifyProxy\": true\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Spotify Play Count & Monthly Listeners Scraper",
+      "description": "Spotify scraper for play counts and monthly listeners: paste a track, album, playlist or artist link and get every track's play count, plus an artist's monthly listeners and followers. Optional streams per day. No login. Pay per track.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/spotify-play-count-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/spotify-play-count-scraper\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/spotify-play-count-scraper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~spotify-play-count-scraper/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~spotify-play-count-scraper",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/spotify-play-count-scraper\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"addDailyStreams\": false,\n  \"includeArtistAlbums\": false,\n  \"maxTracksPerTarget\": 0,\n  \"urls\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/spotify-play-count-scraper and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~spotify-play-count-scraper/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~spotify-play-count-scraper",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"addDailyStreams\": false,\n  \"includeArtistAlbums\": false,\n  \"maxTracksPerTarget\": 0,\n  \"urls\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Find a Tender & Contracts Finder: UK government tenders",
+      "description": "Which UK government tenders were published today? Returns Find a Tender and Contracts Finder notices with buyer, value, deadline and source link.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/uk-find-a-tender-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/uk-find-a-tender-scraper\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/uk-find-a-tender-scraper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~uk-find-a-tender-scraper/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~uk-find-a-tender-scraper",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/uk-find-a-tender-scraper\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"keywords\": [],\n  \"cpv\": [],\n  \"noticeType\": [],\n  \"maxItems\": 50\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/uk-find-a-tender-scraper and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~uk-find-a-tender-scraper/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~uk-find-a-tender-scraper",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"keywords\": [],\n  \"cpv\": [],\n  \"noticeType\": [],\n  \"maxItems\": 50\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "USAspending API Awards: federal contract and grant awards",
+      "description": "Who won federal contracts and grants, and for how much? Pulls USAspending awards by agency, recipient, NAICS and period, with award IDs and source links.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/usaspending-awards-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/usaspending-awards-scraper\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/usaspending-awards-scraper",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~usaspending-awards-scraper/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~usaspending-awards-scraper",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/usaspending-awards-scraper\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"keywords\": [],\n  \"naics\": [],\n  \"agency\": \"\",\n  \"recipient\": \"\",\n  \"awardTypes\": [\n    \"A\",\n    \"B\",\n    \"C\",\n    \"D\"\n  ],\n  \"subawards\": false,\n  \"fetchDetails\": false,\n  \"maxItems\": 50\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/usaspending-awards-scraper and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~usaspending-awards-scraper/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~usaspending-awards-scraper",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"keywords\": [],\n  \"naics\": [],\n  \"agency\": \"\",\n  \"recipient\": \"\",\n  \"awardTypes\": [\n    \"A\",\n    \"B\",\n    \"C\",\n    \"D\"\n  ],\n  \"subawards\": false,\n  \"fetchDetails\": false,\n  \"maxItems\": 50\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
