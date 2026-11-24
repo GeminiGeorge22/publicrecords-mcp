@@ -9971,24 +9971,24 @@ buamorim/listagem-apis-publicas,sports-odds-api,skipped,,,Lane A i18n 2026-11-24
 buamorim/listagem-apis-publicas,spotify-play-count-scraper,skipped,,,Lane A i18n 2026-11-24
 buamorim/listagem-apis-publicas,uk-find-a-tender-scraper,skipped,,,Lane A i18n 2026-11-24
 buamorim/listagem-apis-publicas,usaspending-awards-scraper,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,ashby-jobs-scraper,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,calibration-ledger,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,company-social-profile-finder,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,etsy-search-scraper,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,etsy-shop-velocity,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,eu-ted-notices-scraper,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,google-ads-transparency-scraper,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,govcon-opportunity-feed,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,grants-gov-scraper,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,greenhouse-jobs-scraper,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,legistar-meetings-scraper,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,lever-jobs-scraper,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,skool-community-growth-tracker,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,smartrecruiters-jobs-scraper,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,sports-odds-api,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,spotify-play-count-scraper,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,uk-find-a-tender-scraper,skipped,,,Lane A i18n 2026-11-24
-commondataio/awesome-opendata-software,usaspending-awards-scraper,skipped,,,Lane A i18n 2026-11-24
+commondataio/awesome-opendata-software,ashby-jobs-scraper,not-listed,,,
+commondataio/awesome-opendata-software,calibration-ledger,submitted,store page,https://github.com/commondataio/awesome-opendata-software/pull/5,Lane C 2026-11-24 16:35 America/Toronto
+commondataio/awesome-opendata-software,company-social-profile-finder,not-listed,,,
+commondataio/awesome-opendata-software,etsy-search-scraper,not-listed,,,
+commondataio/awesome-opendata-software,etsy-shop-velocity,not-listed,,,
+commondataio/awesome-opendata-software,eu-ted-notices-scraper,submitted,store page,https://github.com/commondataio/awesome-opendata-software/pull/5,Lane C 2026-11-24 16:35 America/Toronto
+commondataio/awesome-opendata-software,google-ads-transparency-scraper,not-listed,,,
+commondataio/awesome-opendata-software,govcon-opportunity-feed,submitted,store page,https://github.com/commondataio/awesome-opendata-software/pull/5,Lane C 2026-11-24 16:35 America/Toronto
+commondataio/awesome-opendata-software,grants-gov-scraper,submitted,store page,https://github.com/commondataio/awesome-opendata-software/pull/5,Lane C 2026-11-24 16:35 America/Toronto
+commondataio/awesome-opendata-software,greenhouse-jobs-scraper,not-listed,,,
+commondataio/awesome-opendata-software,legistar-meetings-scraper,submitted,store page,https://github.com/commondataio/awesome-opendata-software/pull/5,Lane C 2026-11-24 16:35 America/Toronto
+commondataio/awesome-opendata-software,lever-jobs-scraper,not-listed,,,
+commondataio/awesome-opendata-software,skool-community-growth-tracker,not-listed,,,
+commondataio/awesome-opendata-software,smartrecruiters-jobs-scraper,not-listed,,,
+commondataio/awesome-opendata-software,sports-odds-api,not-listed,,,
+commondataio/awesome-opendata-software,spotify-play-count-scraper,not-listed,,,
+commondataio/awesome-opendata-software,uk-find-a-tender-scraper,submitted,store page,https://github.com/commondataio/awesome-opendata-software/pull/5,Lane C 2026-11-24 16:35 America/Toronto
+commondataio/awesome-opendata-software,usaspending-awards-scraper,submitted,store page,https://github.com/commondataio/awesome-opendata-software/pull/5,Lane C 2026-11-24 16:35 America/Toronto
 shvyac/awesome-mcp-ai,ashby-jobs-scraper,skipped,,,Lane A i18n 2026-11-24
 shvyac/awesome-mcp-ai,calibration-ledger,skipped,,,Lane A i18n 2026-11-24
 shvyac/awesome-mcp-ai,company-social-profile-finder,skipped,,,Lane A i18n 2026-11-24
@@ -10007,3 +10007,309 @@ shvyac/awesome-mcp-ai,sports-odds-api,skipped,,,Lane A i18n 2026-11-24
 shvyac/awesome-mcp-ai,spotify-play-count-scraper,skipped,,,Lane A i18n 2026-11-24
 shvyac/awesome-mcp-ai,uk-find-a-tender-scraper,skipped,,,Lane A i18n 2026-11-24
 shvyac/awesome-mcp-ai,usaspending-awards-scraper,skipped,,,Lane A i18n 2026-11-24
+Hugging Face Publicrecords public API snapshots (Lane C),ashby-jobs-scraper,live,dataset card,https://huggingface.co/datasets/Publicrecords/ashby-jobs-public-sample,Lane C 2026-11-24 16:35 America/Toronto
+Hugging Face Publicrecords public API snapshots (Lane C),calibration-ledger,live,dataset card,https://huggingface.co/datasets/Publicrecords/imf-real-gdp-growth-forecasts,Lane C 2026-11-24 16:35 America/Toronto
+Hugging Face Publicrecords public API snapshots (Lane C),company-social-profile-finder,live,dataset card,https://huggingface.co/datasets/Publicrecords/company-official-social-links,Lane C 2026-11-24 16:35 America/Toronto
+Hugging Face Publicrecords public API snapshots (Lane C),etsy-search-scraper,not-listed,,,
+Hugging Face Publicrecords public API snapshots (Lane C),etsy-shop-velocity,not-listed,,,
+Hugging Face Publicrecords public API snapshots (Lane C),eu-ted-notices-scraper,live,dataset card,https://huggingface.co/datasets/Publicrecords/eu-ted-notices-public-sample,Lane C 2026-11-24 16:35 America/Toronto
+Hugging Face Publicrecords public API snapshots (Lane C),google-ads-transparency-scraper,not-listed,,,
+Hugging Face Publicrecords public API snapshots (Lane C),govcon-opportunity-feed,live,dataset card,https://huggingface.co/datasets/Publicrecords/govcon-open-grants-snapshot,Lane C 2026-11-24 16:35 America/Toronto
+Hugging Face Publicrecords public API snapshots (Lane C),grants-gov-scraper,live,dataset card,https://huggingface.co/datasets/Publicrecords/us-open-federal-grants,Lane C 2026-11-24 16:35 America/Toronto
+Hugging Face Publicrecords public API snapshots (Lane C),greenhouse-jobs-scraper,live,dataset card,https://huggingface.co/datasets/Publicrecords/greenhouse-jobs-public-sample,Lane C 2026-11-24 16:35 America/Toronto
+Hugging Face Publicrecords public API snapshots (Lane C),legistar-meetings-scraper,live,dataset card,https://huggingface.co/datasets/Publicrecords/legistar-meetings-public-sample,Lane C 2026-11-24 16:35 America/Toronto
+Hugging Face Publicrecords public API snapshots (Lane C),lever-jobs-scraper,live,dataset card,https://huggingface.co/datasets/Publicrecords/lever-jobs-public-sample,Lane C 2026-11-24 16:35 America/Toronto
+Hugging Face Publicrecords public API snapshots (Lane C),skool-community-growth-tracker,not-listed,,,
+Hugging Face Publicrecords public API snapshots (Lane C),smartrecruiters-jobs-scraper,live,dataset card,https://huggingface.co/datasets/Publicrecords/smartrecruiters-jobs-public-sample,Lane C 2026-11-24 16:35 America/Toronto
+Hugging Face Publicrecords public API snapshots (Lane C),sports-odds-api,not-listed,,,
+Hugging Face Publicrecords public API snapshots (Lane C),spotify-play-count-scraper,not-listed,,,
+Hugging Face Publicrecords public API snapshots (Lane C),uk-find-a-tender-scraper,live,dataset card,https://huggingface.co/datasets/Publicrecords/uk-tenders-public-sample,Lane C 2026-11-24 16:35 America/Toronto
+Hugging Face Publicrecords public API snapshots (Lane C),usaspending-awards-scraper,live,dataset card,https://huggingface.co/datasets/Publicrecords/us-federal-contract-awards-top100,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),ashby-jobs-scraper,live,example repo,https://github.com/GeminiGeorge22/publicrecords-ashby-jobs-scraper-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),calibration-ledger,live,example repo,https://github.com/GeminiGeorge22/publicrecords-calibration-ledger-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),company-social-profile-finder,live,example repo,https://github.com/GeminiGeorge22/publicrecords-company-social-profile-finder-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),etsy-search-scraper,live,example repo,https://github.com/GeminiGeorge22/publicrecords-etsy-search-scraper-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),etsy-shop-velocity,live,example repo,https://github.com/GeminiGeorge22/publicrecords-etsy-shop-velocity-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),eu-ted-notices-scraper,live,example repo,https://github.com/GeminiGeorge22/publicrecords-eu-ted-notices-scraper-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),google-ads-transparency-scraper,live,example repo,https://github.com/GeminiGeorge22/publicrecords-google-ads-transparency-scraper-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),govcon-opportunity-feed,live,example repo,https://github.com/GeminiGeorge22/publicrecords-govcon-opportunity-feed-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),grants-gov-scraper,live,example repo,https://github.com/GeminiGeorge22/publicrecords-grants-gov-scraper-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),greenhouse-jobs-scraper,live,example repo,https://github.com/GeminiGeorge22/publicrecords-greenhouse-jobs-scraper-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),legistar-meetings-scraper,live,example repo,https://github.com/GeminiGeorge22/publicrecords-legistar-meetings-scraper-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),lever-jobs-scraper,live,example repo,https://github.com/GeminiGeorge22/publicrecords-lever-jobs-scraper-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),skool-community-growth-tracker,live,example repo,https://github.com/GeminiGeorge22/publicrecords-skool-community-growth-tracker-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),smartrecruiters-jobs-scraper,live,example repo,https://github.com/GeminiGeorge22/publicrecords-smartrecruiters-jobs-scraper-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),sports-odds-api,live,example repo,https://github.com/GeminiGeorge22/publicrecords-sports-odds-api-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),spotify-play-count-scraper,live,example repo,https://github.com/GeminiGeorge22/publicrecords-spotify-play-count-scraper-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),uk-find-a-tender-scraper,live,example repo,https://github.com/GeminiGeorge22/publicrecords-uk-find-a-tender-scraper-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22 publicrecords-*-examples (multilingual READMEs),usaspending-awards-scraper,live,example repo,https://github.com/GeminiGeorge22/publicrecords-usaspending-awards-scraper-examples,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,ashby-jobs-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,calibration-ledger,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,company-social-profile-finder,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,etsy-search-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,etsy-shop-velocity,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,eu-ted-notices-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,google-ads-transparency-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,govcon-opportunity-feed,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,grants-gov-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,greenhouse-jobs-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,legistar-meetings-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,lever-jobs-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,skool-community-growth-tracker,not-listed,,,
+GeminiGeorge22/publicrecords-automation-recipes,smartrecruiters-jobs-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,sports-odds-api,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,spotify-play-count-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,uk-find-a-tender-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+GeminiGeorge22/publicrecords-automation-recipes,usaspending-awards-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-automation-recipes,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,ashby-jobs-scraper,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,calibration-ledger,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,company-social-profile-finder,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,etsy-search-scraper,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,etsy-shop-velocity,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,eu-ted-notices-scraper,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,google-ads-transparency-scraper,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,govcon-opportunity-feed,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,grants-gov-scraper,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,greenhouse-jobs-scraper,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,legistar-meetings-scraper,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,lever-jobs-scraper,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,skool-community-growth-tracker,not-listed,,,
+enescingoz/awesome-n8n-templates,smartrecruiters-jobs-scraper,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,sports-odds-api,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,spotify-play-count-scraper,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,uk-find-a-tender-scraper,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+enescingoz/awesome-n8n-templates,usaspending-awards-scraper,submitted,template,https://github.com/enescingoz/awesome-n8n-templates/pull/342,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,ashby-jobs-scraper,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,calibration-ledger,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,company-social-profile-finder,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,etsy-search-scraper,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,etsy-shop-velocity,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,eu-ted-notices-scraper,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,google-ads-transparency-scraper,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,govcon-opportunity-feed,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,grants-gov-scraper,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,greenhouse-jobs-scraper,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,legistar-meetings-scraper,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,lever-jobs-scraper,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,skool-community-growth-tracker,not-listed,,,
+restyler/awesome-n8n,smartrecruiters-jobs-scraper,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,sports-odds-api,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,spotify-play-count-scraper,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,uk-find-a-tender-scraper,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+restyler/awesome-n8n,usaspending-awards-scraper,submitted,template,https://github.com/restyler/awesome-n8n/pull/68,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,ashby-jobs-scraper,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,calibration-ledger,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,company-social-profile-finder,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,etsy-search-scraper,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,etsy-shop-velocity,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,eu-ted-notices-scraper,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,google-ads-transparency-scraper,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,govcon-opportunity-feed,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,grants-gov-scraper,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,greenhouse-jobs-scraper,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,legistar-meetings-scraper,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,lever-jobs-scraper,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,skool-community-growth-tracker,not-listed,,,
+felipfr/awesome-n8n-workflows,smartrecruiters-jobs-scraper,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,sports-odds-api,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,spotify-play-count-scraper,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,uk-find-a-tender-scraper,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+felipfr/awesome-n8n-workflows,usaspending-awards-scraper,submitted,template,https://github.com/felipfr/awesome-n8n-workflows/pull/30,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,ashby-jobs-scraper,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,calibration-ledger,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,company-social-profile-finder,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,etsy-search-scraper,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,etsy-shop-velocity,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,eu-ted-notices-scraper,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,google-ads-transparency-scraper,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,govcon-opportunity-feed,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,grants-gov-scraper,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,greenhouse-jobs-scraper,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,legistar-meetings-scraper,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,lever-jobs-scraper,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,skool-community-growth-tracker,not-listed,,,
+ScraperNode/awesome-n8n-templates,smartrecruiters-jobs-scraper,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,sports-odds-api,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,spotify-play-count-scraper,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,uk-find-a-tender-scraper,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+ScraperNode/awesome-n8n-templates,usaspending-awards-scraper,submitted,template,https://github.com/ScraperNode/awesome-n8n-templates/pull/13,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,ashby-jobs-scraper,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,calibration-ledger,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,company-social-profile-finder,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,etsy-search-scraper,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,etsy-shop-velocity,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,eu-ted-notices-scraper,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,google-ads-transparency-scraper,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,govcon-opportunity-feed,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,grants-gov-scraper,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,greenhouse-jobs-scraper,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,legistar-meetings-scraper,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,lever-jobs-scraper,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,skool-community-growth-tracker,not-listed,,,
+Synaptiv-AI/awesome-n8n,smartrecruiters-jobs-scraper,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,sports-odds-api,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,spotify-play-count-scraper,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,uk-find-a-tender-scraper,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+Synaptiv-AI/awesome-n8n,usaspending-awards-scraper,submitted,template,https://github.com/Synaptiv-AI/awesome-n8n/pull/8,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,ashby-jobs-scraper,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,calibration-ledger,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,company-social-profile-finder,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,etsy-search-scraper,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,etsy-shop-velocity,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,eu-ted-notices-scraper,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,google-ads-transparency-scraper,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,govcon-opportunity-feed,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,grants-gov-scraper,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,greenhouse-jobs-scraper,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,legistar-meetings-scraper,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,lever-jobs-scraper,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,skool-community-growth-tracker,not-listed,,,
+naimo84/awesome-nodered,smartrecruiters-jobs-scraper,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,sports-odds-api,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,spotify-play-count-scraper,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,uk-find-a-tender-scraper,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+naimo84/awesome-nodered,usaspending-awards-scraper,submitted,template,https://github.com/naimo84/awesome-nodered/pull/11,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,ashby-jobs-scraper,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,calibration-ledger,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,company-social-profile-finder,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,etsy-search-scraper,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,etsy-shop-velocity,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,eu-ted-notices-scraper,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,google-ads-transparency-scraper,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,govcon-opportunity-feed,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,grants-gov-scraper,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,greenhouse-jobs-scraper,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,legistar-meetings-scraper,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,lever-jobs-scraper,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,skool-community-growth-tracker,not-listed,,,
+calpa/awesome-pipedream,smartrecruiters-jobs-scraper,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,sports-odds-api,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,spotify-play-count-scraper,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,uk-find-a-tender-scraper,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+calpa/awesome-pipedream,usaspending-awards-scraper,submitted,template,https://github.com/calpa/awesome-pipedream/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,ashby-jobs-scraper,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,calibration-ledger,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,company-social-profile-finder,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,etsy-search-scraper,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,etsy-shop-velocity,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,eu-ted-notices-scraper,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,google-ads-transparency-scraper,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,govcon-opportunity-feed,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,grants-gov-scraper,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,greenhouse-jobs-scraper,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,legistar-meetings-scraper,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,lever-jobs-scraper,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,skool-community-growth-tracker,not-listed,,,
+marcosmarxm/awesome-airbyte,smartrecruiters-jobs-scraper,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,sports-odds-api,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,spotify-play-count-scraper,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,uk-find-a-tender-scraper,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+marcosmarxm/awesome-airbyte,usaspending-awards-scraper,submitted,template,https://github.com/marcosmarxm/awesome-airbyte/pull/1,Lane C 2026-11-24 16:35 America/Toronto
+makegov/awesome-procurement-data,ashby-jobs-scraper,not-listed,,,
+makegov/awesome-procurement-data,calibration-ledger,not-listed,,,
+makegov/awesome-procurement-data,company-social-profile-finder,not-listed,,,
+makegov/awesome-procurement-data,etsy-search-scraper,not-listed,,,
+makegov/awesome-procurement-data,etsy-shop-velocity,not-listed,,,
+makegov/awesome-procurement-data,eu-ted-notices-scraper,submitted,store page,https://github.com/makegov/awesome-procurement-data/pull/15,Lane C 2026-11-24 16:35 America/Toronto
+makegov/awesome-procurement-data,google-ads-transparency-scraper,not-listed,,,
+makegov/awesome-procurement-data,govcon-opportunity-feed,submitted,store page,https://github.com/makegov/awesome-procurement-data/pull/15,Lane C 2026-11-24 16:35 America/Toronto
+makegov/awesome-procurement-data,grants-gov-scraper,not-listed,,,
+makegov/awesome-procurement-data,greenhouse-jobs-scraper,not-listed,,,
+makegov/awesome-procurement-data,legistar-meetings-scraper,not-listed,,,
+makegov/awesome-procurement-data,lever-jobs-scraper,not-listed,,,
+makegov/awesome-procurement-data,skool-community-growth-tracker,not-listed,,,
+makegov/awesome-procurement-data,smartrecruiters-jobs-scraper,not-listed,,,
+makegov/awesome-procurement-data,sports-odds-api,not-listed,,,
+makegov/awesome-procurement-data,spotify-play-count-scraper,not-listed,,,
+makegov/awesome-procurement-data,uk-find-a-tender-scraper,submitted,store page,https://github.com/makegov/awesome-procurement-data/pull/15,Lane C 2026-11-24 16:35 America/Toronto
+makegov/awesome-procurement-data,usaspending-awards-scraper,submitted,store page,https://github.com/makegov/awesome-procurement-data/pull/15,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,ashby-jobs-scraper,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,calibration-ledger,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,company-social-profile-finder,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,etsy-search-scraper,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,etsy-shop-velocity,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,eu-ted-notices-scraper,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,google-ads-transparency-scraper,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,govcon-opportunity-feed,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,grants-gov-scraper,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,greenhouse-jobs-scraper,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,legistar-meetings-scraper,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,lever-jobs-scraper,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,skool-community-growth-tracker,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,smartrecruiters-jobs-scraper,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,sports-odds-api,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,spotify-play-count-scraper,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,uk-find-a-tender-scraper,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+TheNextGenNexus/awesome-apify-actors,usaspending-awards-scraper,submitted,store page,https://github.com/TheNextGenNexus/awesome-apify-actors/pull/4,Lane C 2026-11-24 16:35 America/Toronto
+awelist/awesome-e-government,ashby-jobs-scraper,not-listed,,,
+awelist/awesome-e-government,calibration-ledger,not-listed,,,
+awelist/awesome-e-government,company-social-profile-finder,not-listed,,,
+awelist/awesome-e-government,etsy-search-scraper,not-listed,,,
+awelist/awesome-e-government,etsy-shop-velocity,not-listed,,,
+awelist/awesome-e-government,eu-ted-notices-scraper,submitted,store page,https://github.com/awelist/awesome-e-government/pull/31,Lane C 2026-11-24 16:35 America/Toronto
+awelist/awesome-e-government,google-ads-transparency-scraper,not-listed,,,
+awelist/awesome-e-government,govcon-opportunity-feed,submitted,store page,https://github.com/awelist/awesome-e-government/pull/31,Lane C 2026-11-24 16:35 America/Toronto
+awelist/awesome-e-government,grants-gov-scraper,submitted,store page,https://github.com/awelist/awesome-e-government/pull/31,Lane C 2026-11-24 16:35 America/Toronto
+awelist/awesome-e-government,greenhouse-jobs-scraper,not-listed,,,
+awelist/awesome-e-government,legistar-meetings-scraper,submitted,store page,https://github.com/awelist/awesome-e-government/pull/31,Lane C 2026-11-24 16:35 America/Toronto
+awelist/awesome-e-government,lever-jobs-scraper,not-listed,,,
+awelist/awesome-e-government,skool-community-growth-tracker,not-listed,,,
+awelist/awesome-e-government,smartrecruiters-jobs-scraper,not-listed,,,
+awelist/awesome-e-government,sports-odds-api,not-listed,,,
+awelist/awesome-e-government,spotify-play-count-scraper,not-listed,,,
+awelist/awesome-e-government,uk-find-a-tender-scraper,submitted,store page,https://github.com/awelist/awesome-e-government/pull/31,Lane C 2026-11-24 16:35 America/Toronto
+awelist/awesome-e-government,usaspending-awards-scraper,submitted,store page,https://github.com/awelist/awesome-e-government/pull/31,Lane C 2026-11-24 16:35 America/Toronto
+CodeandoMexico/awesome-civic-tech,ashby-jobs-scraper,not-listed,,,
+CodeandoMexico/awesome-civic-tech,calibration-ledger,not-listed,,,
+CodeandoMexico/awesome-civic-tech,company-social-profile-finder,not-listed,,,
+CodeandoMexico/awesome-civic-tech,etsy-search-scraper,not-listed,,,
+CodeandoMexico/awesome-civic-tech,etsy-shop-velocity,not-listed,,,
+CodeandoMexico/awesome-civic-tech,eu-ted-notices-scraper,submitted,store page,https://github.com/CodeandoMexico/awesome-civic-tech/pull/29,Lane C 2026-11-24 16:35 America/Toronto
+CodeandoMexico/awesome-civic-tech,google-ads-transparency-scraper,not-listed,,,
+CodeandoMexico/awesome-civic-tech,govcon-opportunity-feed,submitted,store page,https://github.com/CodeandoMexico/awesome-civic-tech/pull/29,Lane C 2026-11-24 16:35 America/Toronto
+CodeandoMexico/awesome-civic-tech,grants-gov-scraper,submitted,store page,https://github.com/CodeandoMexico/awesome-civic-tech/pull/29,Lane C 2026-11-24 16:35 America/Toronto
+CodeandoMexico/awesome-civic-tech,greenhouse-jobs-scraper,not-listed,,,
+CodeandoMexico/awesome-civic-tech,legistar-meetings-scraper,submitted,store page,https://github.com/CodeandoMexico/awesome-civic-tech/pull/29,Lane C 2026-11-24 16:35 America/Toronto
+CodeandoMexico/awesome-civic-tech,lever-jobs-scraper,not-listed,,,
+CodeandoMexico/awesome-civic-tech,skool-community-growth-tracker,not-listed,,,
+CodeandoMexico/awesome-civic-tech,smartrecruiters-jobs-scraper,not-listed,,,
+CodeandoMexico/awesome-civic-tech,sports-odds-api,not-listed,,,
+CodeandoMexico/awesome-civic-tech,spotify-play-count-scraper,not-listed,,,
+CodeandoMexico/awesome-civic-tech,uk-find-a-tender-scraper,submitted,store page,https://github.com/CodeandoMexico/awesome-civic-tech/pull/29,Lane C 2026-11-24 16:35 America/Toronto
+CodeandoMexico/awesome-civic-tech,usaspending-awards-scraper,submitted,store page,https://github.com/CodeandoMexico/awesome-civic-tech/pull/29,Lane C 2026-11-24 16:35 America/Toronto
+kestra-io/blueprints,ashby-jobs-scraper,not-listed,,,
+kestra-io/blueprints,calibration-ledger,not-listed,,,
+kestra-io/blueprints,company-social-profile-finder,not-listed,,,
+kestra-io/blueprints,etsy-search-scraper,not-listed,,,
+kestra-io/blueprints,etsy-shop-velocity,not-listed,,,
+kestra-io/blueprints,eu-ted-notices-scraper,submitted,template,https://github.com/kestra-io/blueprints/pull/5101,Lane C 2026-11-24 16:35 America/Toronto
+kestra-io/blueprints,google-ads-transparency-scraper,not-listed,,,
+kestra-io/blueprints,govcon-opportunity-feed,not-listed,,,
+kestra-io/blueprints,grants-gov-scraper,submitted,template,https://github.com/kestra-io/blueprints/pull/5101,Lane C 2026-11-24 16:35 America/Toronto
+kestra-io/blueprints,greenhouse-jobs-scraper,not-listed,,,
+kestra-io/blueprints,legistar-meetings-scraper,submitted,template,https://github.com/kestra-io/blueprints/pull/5101,Lane C 2026-11-24 16:35 America/Toronto
+kestra-io/blueprints,lever-jobs-scraper,not-listed,,,
+kestra-io/blueprints,skool-community-growth-tracker,not-listed,,,
+kestra-io/blueprints,smartrecruiters-jobs-scraper,not-listed,,,
+kestra-io/blueprints,sports-odds-api,not-listed,,,
+kestra-io/blueprints,spotify-play-count-scraper,not-listed,,,
+kestra-io/blueprints,uk-find-a-tender-scraper,submitted,template,https://github.com/kestra-io/blueprints/pull/5101,Lane C 2026-11-24 16:35 America/Toronto
+kestra-io/blueprints,usaspending-awards-scraper,submitted,template,https://github.com/kestra-io/blueprints/pull/5101,Lane C 2026-11-24 16:35 America/Toronto
+awesomedata/apd-core,ashby-jobs-scraper,not-listed,,,
+awesomedata/apd-core,calibration-ledger,not-listed,,,
+awesomedata/apd-core,company-social-profile-finder,not-listed,,,
+awesomedata/apd-core,etsy-search-scraper,not-listed,,,
+awesomedata/apd-core,etsy-shop-velocity,not-listed,,,
+awesomedata/apd-core,eu-ted-notices-scraper,not-listed,,,
+awesomedata/apd-core,google-ads-transparency-scraper,not-listed,,,
+awesomedata/apd-core,govcon-opportunity-feed,not-listed,,,
+awesomedata/apd-core,grants-gov-scraper,submitted,dataset card,https://github.com/awesomedata/apd-core/pull/1212,Lane C 2026-11-24 16:35 America/Toronto
+awesomedata/apd-core,greenhouse-jobs-scraper,not-listed,,,
+awesomedata/apd-core,legistar-meetings-scraper,not-listed,,,
+awesomedata/apd-core,lever-jobs-scraper,not-listed,,,
+awesomedata/apd-core,skool-community-growth-tracker,not-listed,,,
+awesomedata/apd-core,smartrecruiters-jobs-scraper,not-listed,,,
+awesomedata/apd-core,sports-odds-api,not-listed,,,
+awesomedata/apd-core,spotify-play-count-scraper,not-listed,,,
+awesomedata/apd-core,uk-find-a-tender-scraper,not-listed,,,
+awesomedata/apd-core,usaspending-awards-scraper,submitted,dataset card,https://github.com/awesomedata/apd-core/pull/1212,Lane C 2026-11-24 16:35 America/Toronto
