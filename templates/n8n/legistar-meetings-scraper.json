@@ -1,0 +1,83 @@
+{
+  "name": "City Council Meetings Scraper (Legistar) → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "e57f1d7d-2d10-40bf-bea1-823df0b49e8f",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~legistar-meetings-scraper/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"clients\": [\n    \"seattle\",\n    \"milwaukee\",\n    \"madison\",\n    \"oakland\",\n    \"sanjose\",\n    \"boston\",\n    \"denver\",\n    \"columbus\"\n  ],\n  \"dateFrom\": \"2026-09-20\",\n  \"dateTo\": \"2026-09-28\",\n  \"maxItems\": 200,\n  \"resource\": \"events\"\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "e0680c42-0fb7-40ee-a0e9-a3b0eed17f46",
+      "name": "Run City Council Meetings Scraper (Legistar) on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## City Council Meetings Scraper (Legistar)\nCity council meetings, agenda items and documents for any Legistar city.\n\nStore page: https://apify.com/publicrecords/legistar-meetings-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/legistar-meetings-scraper\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 260,
+        "width": 420
+      },
+      "id": "e48f4bf5-6d89-4d3a-b7b6-09844e5ab5c5",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -300
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run City Council Meetings Scraper (Legistar) on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

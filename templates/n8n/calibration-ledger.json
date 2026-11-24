@@ -1,0 +1,83 @@
+{
+  "name": "Calibration Ledger → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "b0a8133a-0c33-443d-b6bf-aa86c2beab31",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~calibration-ledger/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"mode\": \"lookup\",\n  \"source\": \"oecd_eo\",\n  \"series\": \"RGDP_GROWTH_A\",\n  \"geo\": \"CAN\",\n  \"target_period\": \"2027\",\n  \"point\": \"1.8\",\n  \"published_at\": \"2026-06-01\"\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "f5a51cc0-edda-4606-9b41-16ef1edbcdeb",
+      "name": "Run Calibration Ledger on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## Calibration Ledger\nForecast track records (IMF, OECD, Fed, ECB SPF): forecast errors and bias by organization.\n\nStore page: https://apify.com/publicrecords/calibration-ledger\nMCP: https://mcp.apify.com?tools=publicrecords/calibration-ledger\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 260,
+        "width": 420
+      },
+      "id": "7079d43e-2ca6-407a-9eac-722a44b5e529",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -300
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run Calibration Ledger on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

@@ -1,0 +1,83 @@
+{
+  "name": "Federal Contracts Feed (SAM.gov + Grants.gov) → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "fdbdbd51-0166-4d3b-8c3a-7144a1e62963",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~govcon-opportunity-feed/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"mode\": \"snapshot\",\n  \"sources\": [\n    \"sam\"\n  ],\n  \"samBulk\": true,\n  \"samEnrichLimit\": 0,\n  \"naics\": [\n    \"541512\"\n  ],\n  \"postedWithinDays\": 14,\n  \"maxItems\": 25,\n  \"includeDescriptions\": false,\n  \"includeContacts\": false\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "fdc5a151-3bf5-41ee-be4e-2885cbdc4525",
+      "name": "Run Federal Contracts Feed (SAM.gov + Grants.gov) on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## Federal Contracts Feed (SAM.gov + Grants.gov)\nNew US federal contract and grant notices from SAM.gov and Grants.gov in one feed.\n\nStore page: https://apify.com/publicrecords/govcon-opportunity-feed\nMCP: https://mcp.apify.com?tools=publicrecords/govcon-opportunity-feed\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 260,
+        "width": 420
+      },
+      "id": "437fc3f8-48f4-4314-9949-7a7d2f7a0474",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -300
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run Federal Contracts Feed (SAM.gov + Grants.gov) on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

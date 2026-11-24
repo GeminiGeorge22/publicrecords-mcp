@@ -1,0 +1,83 @@
+{
+  "name": "Greenhouse Jobs Scraper → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "000d83de-8dbb-4568-9a69-f1a7299b95f7",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~greenhouse-jobs-scraper/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"companies\": [\n    \"gitlab\",\n    \"cloudflare\"\n  ],\n  \"since\": \"30d\",\n  \"maxResults\": 50,\n  \"includeDescription\": true\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "63d09f6d-5cda-40d8-ac19-60a0eb89d2e2",
+      "name": "Run Greenhouse Jobs Scraper on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## Greenhouse Jobs Scraper\nNew job postings from any Greenhouse job board since a date or window.\n\nStore page: https://apify.com/publicrecords/greenhouse-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/greenhouse-jobs-scraper\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 260,
+        "width": 420
+      },
+      "id": "b795df15-f4d8-4620-8258-d732d74cec3c",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -300
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run Greenhouse Jobs Scraper on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

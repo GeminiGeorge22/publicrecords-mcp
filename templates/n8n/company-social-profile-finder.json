@@ -1,0 +1,83 @@
+{
+  "name": "Company Social Profile Finder → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "dbd2422c-acd3-4354-8bce-26d323b14baf",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~company-social-profile-finder/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"mode\": \"resolve\",\n  \"queries\": [\n    \"apify.com\"\n  ],\n  \"probeMode\": \"direct\"\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "9f7e290c-fd9d-4ad3-8b89-fe322ab443a2",
+      "name": "Run Company Social Profile Finder on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## Company Social Profile Finder\nCompany domain or name to its LinkedIn, X, YouTube, Instagram and Facebook links, with confidence scores.\n\nStore page: https://apify.com/publicrecords/company-social-profile-finder\nMCP: https://mcp.apify.com?tools=publicrecords/company-social-profile-finder\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 260,
+        "width": 420
+      },
+      "id": "8b070e5a-b89e-47ff-b28c-30ff8cd3204b",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -300
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run Company Social Profile Finder on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}
