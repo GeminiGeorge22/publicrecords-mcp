@@ -1,13 +1,13 @@
 {
-  "as_of": "2026-11-24 16:32 America/Toronto",
-  "total_surfaces": 573,
+  "as_of": "2026-11-24 16:57 America/Toronto",
+  "total_surfaces": 581,
   "live": 81,
-  "submitted_pending": 220,
+  "submitted_pending": 223,
   "remaining_to_do": 69,
   "held_needs_Mark": 29,
-  "skipped": 174,
-  "touched_live_submitted_remaining": 370,
-  "checksum": 573,
+  "skipped": 179,
+  "touched_live_submitted_remaining": 373,
+  "checksum": 581,
   "remaining_names": [
     "AI Agent Store aiagentstore.ai",
     "AI Agents List aiagentslist.com",
@@ -111,27 +111,27 @@
     "npm registry"
   ],
   "by_type": {
-    "awesome-list": 311,
+    "awesome-list": 318,
     "plugin-marketplace": 25,
     "other": 60,
-    "mcp-directory": 133,
+    "mcp-directory": 134,
     "skills-marketplace": 15,
     "registry": 9,
     "article": 20
   },
-  "placements_rows": 10314,
+  "placements_rows": 10458,
   "placements_by_status": {
     "live": 887,
-    "not-listed": 1864,
-    "submitted": 2641,
+    "not-listed": 1895,
+    "submitted": 2664,
     "remaining": 1232,
-    "skipped": 3124,
+    "skipped": 3214,
     "held-needs-Mark": 566
   },
   "skool_placements_by_status": {
     "submitted": 142,
-    "skipped": 174,
-    "not-listed": 195,
+    "skipped": 179,
+    "not-listed": 198,
     "live": 17,
     "remaining": 13,
     "held-needs-Mark": 32
