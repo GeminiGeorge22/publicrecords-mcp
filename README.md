@@ -8,6 +8,8 @@
 >
 > **Disclosure:** Published by the publicrecords maintainer on Apify.
 
+**Featured on:** <a href="https://www.agenthunter.io/agent/public-records-mcp" target="_blank"><img src="https://www.agenthunter.io/logo-light.svg" alt="AgentHunter Badge" width="40" height="40"> AgentHunter · Featured AI Agent</a>
+
 ## One-paste MCP pin (all live Actors)
 
 ```
