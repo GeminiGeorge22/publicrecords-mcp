@@ -11195,3 +11195,399 @@ Kaggle notebooks,sports-odds-api,held-needs-Mark,,,2026-11-24 17:31 America/Toro
 Kaggle notebooks,spotify-play-count-scraper,held-needs-Mark,,,2026-11-24 17:31 America/Toronto: No notebook this pass (no public Spotify snapshot; brief skip). Surface is held-needs-Mark until Kaggle phone verification by Mark.
 Kaggle notebooks,uk-find-a-tender-scraper,held-needs-Mark,notebook,https://www.kaggle.com/code/publicrecords/explore-uk-public-tenders-ogl-v3,"2026-11-24 17:31 America/Toronto: Built and ran 8 notebooks with `kaggle kernels push`, each attached to one of the 8 public Kaggle datasets. Every kernel reached KernelWorkerStatus.COMPLETE, printed a real table/chart from the CSV, and printed that os.environ['APIFY_TOKEN'] is empty (expected); the Actor call stays commented behind an `if token:` guard and internet was disabled, so Apify was not called. Author text is Public Records. Making a notebook public is blocked by Kaggle: SaveKernel returned 403 ""Phone verification is required to make a notebook public."" Phone numbers are Mark's and were not submitted. Logged-out GET of each notebook URL returned HTTP 404 (Kaggle hides private notebooks). The notebooks remain private drafts on Kaggle user publicrecords and can be flipped public with the same CLI after Mark phone-verifies that account. No paying. Private draft (run COMPLETE, not public): https://www.kaggle.com/code/publicrecords/explore-uk-public-tenders-ogl-v3"
 Kaggle notebooks,usaspending-awards-scraper,held-needs-Mark,notebook,https://www.kaggle.com/code/publicrecords/explore-largest-us-federal-contract-awards,"2026-11-24 17:31 America/Toronto: Built and ran 8 notebooks with `kaggle kernels push`, each attached to one of the 8 public Kaggle datasets. Every kernel reached KernelWorkerStatus.COMPLETE, printed a real table/chart from the CSV, and printed that os.environ['APIFY_TOKEN'] is empty (expected); the Actor call stays commented behind an `if token:` guard and internet was disabled, so Apify was not called. Author text is Public Records. Making a notebook public is blocked by Kaggle: SaveKernel returned 403 ""Phone verification is required to make a notebook public."" Phone numbers are Mark's and were not submitted. Logged-out GET of each notebook URL returned HTTP 404 (Kaggle hides private notebooks). The notebooks remain private drafts on Kaggle user publicrecords and can be flipped public with the same CLI after Mark phone-verifies that account. No paying. Private draft (run COMPLETE, not public): https://www.kaggle.com/code/publicrecords/explore-largest-us-federal-contract-awards"
+thiras/awesome-ngo,ashby-jobs-scraper,not-listed,,,
+thiras/awesome-ngo,calibration-ledger,not-listed,,,
+thiras/awesome-ngo,company-social-profile-finder,not-listed,,,
+thiras/awesome-ngo,etsy-search-scraper,not-listed,,,
+thiras/awesome-ngo,etsy-shop-velocity,not-listed,,,
+thiras/awesome-ngo,eu-ted-notices-scraper,not-listed,,,
+thiras/awesome-ngo,google-ads-transparency-scraper,not-listed,,,
+thiras/awesome-ngo,govcon-opportunity-feed,submitted,store page,https://github.com/thiras/awesome-ngo/pull/13,Lane C r4 2026-11-24 17:33 America/Toronto
+thiras/awesome-ngo,grants-gov-scraper,submitted,store page,https://github.com/thiras/awesome-ngo/pull/13,Lane C r4 2026-11-24 17:33 America/Toronto
+thiras/awesome-ngo,greenhouse-jobs-scraper,not-listed,,,
+thiras/awesome-ngo,legistar-meetings-scraper,not-listed,,,
+thiras/awesome-ngo,lever-jobs-scraper,not-listed,,,
+thiras/awesome-ngo,skool-community-growth-tracker,not-listed,,,
+thiras/awesome-ngo,smartrecruiters-jobs-scraper,not-listed,,,
+thiras/awesome-ngo,sports-odds-api,not-listed,,,
+thiras/awesome-ngo,spotify-play-count-scraper,not-listed,,,
+thiras/awesome-ngo,uk-find-a-tender-scraper,not-listed,,,
+thiras/awesome-ngo,usaspending-awards-scraper,submitted,store page,https://github.com/thiras/awesome-ngo/pull/13,Lane C r4 2026-11-24 17:33 America/Toronto
+sllvn/awesome-civic-tech,ashby-jobs-scraper,not-listed,,,
+sllvn/awesome-civic-tech,calibration-ledger,not-listed,,,
+sllvn/awesome-civic-tech,company-social-profile-finder,not-listed,,,
+sllvn/awesome-civic-tech,etsy-search-scraper,not-listed,,,
+sllvn/awesome-civic-tech,etsy-shop-velocity,not-listed,,,
+sllvn/awesome-civic-tech,eu-ted-notices-scraper,submitted,store page,https://github.com/sllvn/awesome-civic-tech/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+sllvn/awesome-civic-tech,google-ads-transparency-scraper,not-listed,,,
+sllvn/awesome-civic-tech,govcon-opportunity-feed,submitted,store page,https://github.com/sllvn/awesome-civic-tech/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+sllvn/awesome-civic-tech,grants-gov-scraper,submitted,store page,https://github.com/sllvn/awesome-civic-tech/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+sllvn/awesome-civic-tech,greenhouse-jobs-scraper,not-listed,,,
+sllvn/awesome-civic-tech,legistar-meetings-scraper,submitted,store page,https://github.com/sllvn/awesome-civic-tech/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+sllvn/awesome-civic-tech,lever-jobs-scraper,not-listed,,,
+sllvn/awesome-civic-tech,skool-community-growth-tracker,not-listed,,,
+sllvn/awesome-civic-tech,smartrecruiters-jobs-scraper,not-listed,,,
+sllvn/awesome-civic-tech,sports-odds-api,not-listed,,,
+sllvn/awesome-civic-tech,spotify-play-count-scraper,not-listed,,,
+sllvn/awesome-civic-tech,uk-find-a-tender-scraper,submitted,store page,https://github.com/sllvn/awesome-civic-tech/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+sllvn/awesome-civic-tech,usaspending-awards-scraper,submitted,store page,https://github.com/sllvn/awesome-civic-tech/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+awesomedirectory/awesome-b2b-prospecting,ashby-jobs-scraper,submitted,store page,https://github.com/awesomedirectory/awesome-b2b-prospecting/pull/11,Lane C r4 2026-11-24 17:33 America/Toronto
+awesomedirectory/awesome-b2b-prospecting,calibration-ledger,not-listed,,,
+awesomedirectory/awesome-b2b-prospecting,company-social-profile-finder,submitted,store page,https://github.com/awesomedirectory/awesome-b2b-prospecting/pull/11,Lane C r4 2026-11-24 17:33 America/Toronto
+awesomedirectory/awesome-b2b-prospecting,etsy-search-scraper,not-listed,,,
+awesomedirectory/awesome-b2b-prospecting,etsy-shop-velocity,not-listed,,,
+awesomedirectory/awesome-b2b-prospecting,eu-ted-notices-scraper,not-listed,,,
+awesomedirectory/awesome-b2b-prospecting,google-ads-transparency-scraper,submitted,store page,https://github.com/awesomedirectory/awesome-b2b-prospecting/pull/11,Lane C r4 2026-11-24 17:33 America/Toronto
+awesomedirectory/awesome-b2b-prospecting,govcon-opportunity-feed,not-listed,,,
+awesomedirectory/awesome-b2b-prospecting,grants-gov-scraper,not-listed,,,
+awesomedirectory/awesome-b2b-prospecting,greenhouse-jobs-scraper,submitted,store page,https://github.com/awesomedirectory/awesome-b2b-prospecting/pull/11,Lane C r4 2026-11-24 17:33 America/Toronto
+awesomedirectory/awesome-b2b-prospecting,legistar-meetings-scraper,not-listed,,,
+awesomedirectory/awesome-b2b-prospecting,lever-jobs-scraper,submitted,store page,https://github.com/awesomedirectory/awesome-b2b-prospecting/pull/11,Lane C r4 2026-11-24 17:33 America/Toronto
+awesomedirectory/awesome-b2b-prospecting,skool-community-growth-tracker,not-listed,,,
+awesomedirectory/awesome-b2b-prospecting,smartrecruiters-jobs-scraper,submitted,store page,https://github.com/awesomedirectory/awesome-b2b-prospecting/pull/11,Lane C r4 2026-11-24 17:33 America/Toronto
+awesomedirectory/awesome-b2b-prospecting,sports-odds-api,not-listed,,,
+awesomedirectory/awesome-b2b-prospecting,spotify-play-count-scraper,not-listed,,,
+awesomedirectory/awesome-b2b-prospecting,uk-find-a-tender-scraper,not-listed,,,
+awesomedirectory/awesome-b2b-prospecting,usaspending-awards-scraper,not-listed,,,
+mallick-prat/awesome-govtech,ashby-jobs-scraper,not-listed,,,
+mallick-prat/awesome-govtech,calibration-ledger,not-listed,,,
+mallick-prat/awesome-govtech,company-social-profile-finder,not-listed,,,
+mallick-prat/awesome-govtech,etsy-search-scraper,not-listed,,,
+mallick-prat/awesome-govtech,etsy-shop-velocity,not-listed,,,
+mallick-prat/awesome-govtech,eu-ted-notices-scraper,submitted,store page,https://github.com/mallick-prat/awesome-govtech/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+mallick-prat/awesome-govtech,google-ads-transparency-scraper,not-listed,,,
+mallick-prat/awesome-govtech,govcon-opportunity-feed,submitted,store page,https://github.com/mallick-prat/awesome-govtech/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+mallick-prat/awesome-govtech,grants-gov-scraper,submitted,store page,https://github.com/mallick-prat/awesome-govtech/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+mallick-prat/awesome-govtech,greenhouse-jobs-scraper,not-listed,,,
+mallick-prat/awesome-govtech,legistar-meetings-scraper,submitted,store page,https://github.com/mallick-prat/awesome-govtech/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+mallick-prat/awesome-govtech,lever-jobs-scraper,not-listed,,,
+mallick-prat/awesome-govtech,skool-community-growth-tracker,not-listed,,,
+mallick-prat/awesome-govtech,smartrecruiters-jobs-scraper,not-listed,,,
+mallick-prat/awesome-govtech,sports-odds-api,not-listed,,,
+mallick-prat/awesome-govtech,spotify-play-count-scraper,not-listed,,,
+mallick-prat/awesome-govtech,uk-find-a-tender-scraper,submitted,store page,https://github.com/mallick-prat/awesome-govtech/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+mallick-prat/awesome-govtech,usaspending-awards-scraper,submitted,store page,https://github.com/mallick-prat/awesome-govtech/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+Perufitlife/awesome-lead-generation,ashby-jobs-scraper,submitted,store page,https://github.com/Perufitlife/awesome-lead-generation/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+Perufitlife/awesome-lead-generation,calibration-ledger,not-listed,,,
+Perufitlife/awesome-lead-generation,company-social-profile-finder,submitted,store page,https://github.com/Perufitlife/awesome-lead-generation/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+Perufitlife/awesome-lead-generation,etsy-search-scraper,not-listed,,,
+Perufitlife/awesome-lead-generation,etsy-shop-velocity,not-listed,,,
+Perufitlife/awesome-lead-generation,eu-ted-notices-scraper,not-listed,,,
+Perufitlife/awesome-lead-generation,google-ads-transparency-scraper,submitted,store page,https://github.com/Perufitlife/awesome-lead-generation/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+Perufitlife/awesome-lead-generation,govcon-opportunity-feed,not-listed,,,
+Perufitlife/awesome-lead-generation,grants-gov-scraper,not-listed,,,
+Perufitlife/awesome-lead-generation,greenhouse-jobs-scraper,submitted,store page,https://github.com/Perufitlife/awesome-lead-generation/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+Perufitlife/awesome-lead-generation,legistar-meetings-scraper,not-listed,,,
+Perufitlife/awesome-lead-generation,lever-jobs-scraper,submitted,store page,https://github.com/Perufitlife/awesome-lead-generation/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+Perufitlife/awesome-lead-generation,skool-community-growth-tracker,not-listed,,,
+Perufitlife/awesome-lead-generation,smartrecruiters-jobs-scraper,submitted,store page,https://github.com/Perufitlife/awesome-lead-generation/pull/4,Lane C r4 2026-11-24 17:33 America/Toronto
+Perufitlife/awesome-lead-generation,sports-odds-api,not-listed,,,
+Perufitlife/awesome-lead-generation,spotify-play-count-scraper,not-listed,,,
+Perufitlife/awesome-lead-generation,uk-find-a-tender-scraper,not-listed,,,
+Perufitlife/awesome-lead-generation,usaspending-awards-scraper,not-listed,,,
+verma6uc/awesome-b2b-outbound,ashby-jobs-scraper,submitted,store page,https://github.com/verma6uc/awesome-b2b-outbound/pull/1,Lane C r4 2026-11-24 17:33 America/Toronto
+verma6uc/awesome-b2b-outbound,calibration-ledger,not-listed,,,
+verma6uc/awesome-b2b-outbound,company-social-profile-finder,submitted,store page,https://github.com/verma6uc/awesome-b2b-outbound/pull/1,Lane C r4 2026-11-24 17:33 America/Toronto
+verma6uc/awesome-b2b-outbound,etsy-search-scraper,not-listed,,,
+verma6uc/awesome-b2b-outbound,etsy-shop-velocity,not-listed,,,
+verma6uc/awesome-b2b-outbound,eu-ted-notices-scraper,not-listed,,,
+verma6uc/awesome-b2b-outbound,google-ads-transparency-scraper,submitted,store page,https://github.com/verma6uc/awesome-b2b-outbound/pull/1,Lane C r4 2026-11-24 17:33 America/Toronto
+verma6uc/awesome-b2b-outbound,govcon-opportunity-feed,not-listed,,,
+verma6uc/awesome-b2b-outbound,grants-gov-scraper,not-listed,,,
+verma6uc/awesome-b2b-outbound,greenhouse-jobs-scraper,submitted,store page,https://github.com/verma6uc/awesome-b2b-outbound/pull/1,Lane C r4 2026-11-24 17:33 America/Toronto
+verma6uc/awesome-b2b-outbound,legistar-meetings-scraper,not-listed,,,
+verma6uc/awesome-b2b-outbound,lever-jobs-scraper,submitted,store page,https://github.com/verma6uc/awesome-b2b-outbound/pull/1,Lane C r4 2026-11-24 17:33 America/Toronto
+verma6uc/awesome-b2b-outbound,skool-community-growth-tracker,not-listed,,,
+verma6uc/awesome-b2b-outbound,smartrecruiters-jobs-scraper,submitted,store page,https://github.com/verma6uc/awesome-b2b-outbound/pull/1,Lane C r4 2026-11-24 17:33 America/Toronto
+verma6uc/awesome-b2b-outbound,sports-odds-api,not-listed,,,
+verma6uc/awesome-b2b-outbound,spotify-play-count-scraper,not-listed,,,
+verma6uc/awesome-b2b-outbound,uk-find-a-tender-scraper,not-listed,,,
+verma6uc/awesome-b2b-outbound,usaspending-awards-scraper,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,ashby-jobs-scraper,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,calibration-ledger,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,company-social-profile-finder,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,etsy-search-scraper,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,etsy-shop-velocity,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,eu-ted-notices-scraper,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,google-ads-transparency-scraper,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,govcon-opportunity-feed,submitted,store page,https://github.com/ishandutta2007/Awesome-Nonprofit-Grant-Management/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Nonprofit-Grant-Management,grants-gov-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-Nonprofit-Grant-Management/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Nonprofit-Grant-Management,greenhouse-jobs-scraper,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,legistar-meetings-scraper,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,lever-jobs-scraper,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,skool-community-growth-tracker,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,smartrecruiters-jobs-scraper,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,sports-odds-api,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,spotify-play-count-scraper,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,uk-find-a-tender-scraper,not-listed,,,
+ishandutta2007/Awesome-Nonprofit-Grant-Management,usaspending-awards-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-Nonprofit-Grant-Management/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,ashby-jobs-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment/pull/3,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,calibration-ledger,not-listed,,,
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,company-social-profile-finder,submitted,store page,https://github.com/ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment/pull/3,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,etsy-search-scraper,not-listed,,,
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,etsy-shop-velocity,not-listed,,,
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,eu-ted-notices-scraper,not-listed,,,
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,google-ads-transparency-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment/pull/3,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,govcon-opportunity-feed,not-listed,,,
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,grants-gov-scraper,not-listed,,,
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,greenhouse-jobs-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment/pull/3,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,legistar-meetings-scraper,not-listed,,,
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,lever-jobs-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment/pull/3,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,skool-community-growth-tracker,not-listed,,,
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,smartrecruiters-jobs-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment/pull/3,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,sports-odds-api,not-listed,,,
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,spotify-play-count-scraper,not-listed,,,
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,uk-find-a-tender-scraper,not-listed,,,
+ishandutta2007/Awesome-B2b-Lead-Intelligence-Data-Enrichment,usaspending-awards-scraper,not-listed,,,
+ishandutta2007/Awesome-Sales-Intelligence,ashby-jobs-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-Sales-Intelligence/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Sales-Intelligence,calibration-ledger,not-listed,,,
+ishandutta2007/Awesome-Sales-Intelligence,company-social-profile-finder,submitted,store page,https://github.com/ishandutta2007/Awesome-Sales-Intelligence/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Sales-Intelligence,etsy-search-scraper,not-listed,,,
+ishandutta2007/Awesome-Sales-Intelligence,etsy-shop-velocity,not-listed,,,
+ishandutta2007/Awesome-Sales-Intelligence,eu-ted-notices-scraper,not-listed,,,
+ishandutta2007/Awesome-Sales-Intelligence,google-ads-transparency-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-Sales-Intelligence/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Sales-Intelligence,govcon-opportunity-feed,not-listed,,,
+ishandutta2007/Awesome-Sales-Intelligence,grants-gov-scraper,not-listed,,,
+ishandutta2007/Awesome-Sales-Intelligence,greenhouse-jobs-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-Sales-Intelligence/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Sales-Intelligence,legistar-meetings-scraper,not-listed,,,
+ishandutta2007/Awesome-Sales-Intelligence,lever-jobs-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-Sales-Intelligence/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Sales-Intelligence,skool-community-growth-tracker,not-listed,,,
+ishandutta2007/Awesome-Sales-Intelligence,smartrecruiters-jobs-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-Sales-Intelligence/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Sales-Intelligence,sports-odds-api,not-listed,,,
+ishandutta2007/Awesome-Sales-Intelligence,spotify-play-count-scraper,not-listed,,,
+ishandutta2007/Awesome-Sales-Intelligence,uk-find-a-tender-scraper,not-listed,,,
+ishandutta2007/Awesome-Sales-Intelligence,usaspending-awards-scraper,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,ashby-jobs-scraper,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,calibration-ledger,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,company-social-profile-finder,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,etsy-search-scraper,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,etsy-shop-velocity,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,eu-ted-notices-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics/pull/1,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,google-ads-transparency-scraper,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,govcon-opportunity-feed,submitted,store page,https://github.com/ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics/pull/1,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,grants-gov-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics/pull/1,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,greenhouse-jobs-scraper,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,legistar-meetings-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics/pull/1,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,lever-jobs-scraper,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,skool-community-growth-tracker,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,smartrecruiters-jobs-scraper,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,sports-odds-api,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,spotify-play-count-scraper,not-listed,,,
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,uk-find-a-tender-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics/pull/1,Lane C r4 2026-11-24 17:33 America/Toronto
+ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics,usaspending-awards-scraper,submitted,store page,https://github.com/ishandutta2007/Awesome-Civic-Tech-Open-Government-Data-Analytics/pull/1,Lane C r4 2026-11-24 17:33 America/Toronto
+mrtonyirving/awesome-legaltech,ashby-jobs-scraper,not-listed,,,
+mrtonyirving/awesome-legaltech,calibration-ledger,not-listed,,,
+mrtonyirving/awesome-legaltech,company-social-profile-finder,not-listed,,,
+mrtonyirving/awesome-legaltech,etsy-search-scraper,not-listed,,,
+mrtonyirving/awesome-legaltech,etsy-shop-velocity,not-listed,,,
+mrtonyirving/awesome-legaltech,eu-ted-notices-scraper,submitted,store page,https://github.com/mrtonyirving/awesome-legaltech/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+mrtonyirving/awesome-legaltech,google-ads-transparency-scraper,not-listed,,,
+mrtonyirving/awesome-legaltech,govcon-opportunity-feed,submitted,store page,https://github.com/mrtonyirving/awesome-legaltech/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+mrtonyirving/awesome-legaltech,grants-gov-scraper,submitted,store page,https://github.com/mrtonyirving/awesome-legaltech/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+mrtonyirving/awesome-legaltech,greenhouse-jobs-scraper,not-listed,,,
+mrtonyirving/awesome-legaltech,legistar-meetings-scraper,submitted,store page,https://github.com/mrtonyirving/awesome-legaltech/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+mrtonyirving/awesome-legaltech,lever-jobs-scraper,not-listed,,,
+mrtonyirving/awesome-legaltech,skool-community-growth-tracker,not-listed,,,
+mrtonyirving/awesome-legaltech,smartrecruiters-jobs-scraper,not-listed,,,
+mrtonyirving/awesome-legaltech,sports-odds-api,not-listed,,,
+mrtonyirving/awesome-legaltech,spotify-play-count-scraper,not-listed,,,
+mrtonyirving/awesome-legaltech,uk-find-a-tender-scraper,submitted,store page,https://github.com/mrtonyirving/awesome-legaltech/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+mrtonyirving/awesome-legaltech,usaspending-awards-scraper,submitted,store page,https://github.com/mrtonyirving/awesome-legaltech/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+aleksUIX/awesome-adtech,ashby-jobs-scraper,not-listed,,,
+aleksUIX/awesome-adtech,calibration-ledger,not-listed,,,
+aleksUIX/awesome-adtech,company-social-profile-finder,submitted,store page,https://github.com/aleksUIX/awesome-adtech/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+aleksUIX/awesome-adtech,etsy-search-scraper,submitted,store page,https://github.com/aleksUIX/awesome-adtech/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+aleksUIX/awesome-adtech,etsy-shop-velocity,submitted,store page,https://github.com/aleksUIX/awesome-adtech/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+aleksUIX/awesome-adtech,eu-ted-notices-scraper,not-listed,,,
+aleksUIX/awesome-adtech,google-ads-transparency-scraper,submitted,store page,https://github.com/aleksUIX/awesome-adtech/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+aleksUIX/awesome-adtech,govcon-opportunity-feed,not-listed,,,
+aleksUIX/awesome-adtech,grants-gov-scraper,not-listed,,,
+aleksUIX/awesome-adtech,greenhouse-jobs-scraper,not-listed,,,
+aleksUIX/awesome-adtech,legistar-meetings-scraper,not-listed,,,
+aleksUIX/awesome-adtech,lever-jobs-scraper,not-listed,,,
+aleksUIX/awesome-adtech,skool-community-growth-tracker,not-listed,,,
+aleksUIX/awesome-adtech,smartrecruiters-jobs-scraper,not-listed,,,
+aleksUIX/awesome-adtech,sports-odds-api,not-listed,,,
+aleksUIX/awesome-adtech,spotify-play-count-scraper,submitted,store page,https://github.com/aleksUIX/awesome-adtech/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+aleksUIX/awesome-adtech,uk-find-a-tender-scraper,not-listed,,,
+aleksUIX/awesome-adtech,usaspending-awards-scraper,not-listed,,,
+XiaomingX/awesome-seo-tools,ashby-jobs-scraper,not-listed,,,
+XiaomingX/awesome-seo-tools,calibration-ledger,not-listed,,,
+XiaomingX/awesome-seo-tools,company-social-profile-finder,submitted,store page,https://github.com/XiaomingX/awesome-seo-tools/pull/38,Lane C r4 2026-11-24 17:33 America/Toronto
+XiaomingX/awesome-seo-tools,etsy-search-scraper,submitted,store page,https://github.com/XiaomingX/awesome-seo-tools/pull/38,Lane C r4 2026-11-24 17:33 America/Toronto
+XiaomingX/awesome-seo-tools,etsy-shop-velocity,not-listed,,,
+XiaomingX/awesome-seo-tools,eu-ted-notices-scraper,not-listed,,,
+XiaomingX/awesome-seo-tools,google-ads-transparency-scraper,submitted,store page,https://github.com/XiaomingX/awesome-seo-tools/pull/38,Lane C r4 2026-11-24 17:33 America/Toronto
+XiaomingX/awesome-seo-tools,govcon-opportunity-feed,not-listed,,,
+XiaomingX/awesome-seo-tools,grants-gov-scraper,not-listed,,,
+XiaomingX/awesome-seo-tools,greenhouse-jobs-scraper,not-listed,,,
+XiaomingX/awesome-seo-tools,legistar-meetings-scraper,not-listed,,,
+XiaomingX/awesome-seo-tools,lever-jobs-scraper,not-listed,,,
+XiaomingX/awesome-seo-tools,skool-community-growth-tracker,not-listed,,,
+XiaomingX/awesome-seo-tools,smartrecruiters-jobs-scraper,not-listed,,,
+XiaomingX/awesome-seo-tools,sports-odds-api,not-listed,,,
+XiaomingX/awesome-seo-tools,spotify-play-count-scraper,not-listed,,,
+XiaomingX/awesome-seo-tools,uk-find-a-tender-scraper,not-listed,,,
+XiaomingX/awesome-seo-tools,usaspending-awards-scraper,not-listed,,,
+Sjamilla/awesome-recruitment,ashby-jobs-scraper,submitted,store page,https://github.com/Sjamilla/awesome-recruitment/pull/55,Lane C r4 2026-11-24 17:33 America/Toronto
+Sjamilla/awesome-recruitment,calibration-ledger,not-listed,,,
+Sjamilla/awesome-recruitment,company-social-profile-finder,not-listed,,,
+Sjamilla/awesome-recruitment,etsy-search-scraper,not-listed,,,
+Sjamilla/awesome-recruitment,etsy-shop-velocity,not-listed,,,
+Sjamilla/awesome-recruitment,eu-ted-notices-scraper,not-listed,,,
+Sjamilla/awesome-recruitment,google-ads-transparency-scraper,not-listed,,,
+Sjamilla/awesome-recruitment,govcon-opportunity-feed,not-listed,,,
+Sjamilla/awesome-recruitment,grants-gov-scraper,not-listed,,,
+Sjamilla/awesome-recruitment,greenhouse-jobs-scraper,submitted,store page,https://github.com/Sjamilla/awesome-recruitment/pull/55,Lane C r4 2026-11-24 17:33 America/Toronto
+Sjamilla/awesome-recruitment,legistar-meetings-scraper,not-listed,,,
+Sjamilla/awesome-recruitment,lever-jobs-scraper,submitted,store page,https://github.com/Sjamilla/awesome-recruitment/pull/55,Lane C r4 2026-11-24 17:33 America/Toronto
+Sjamilla/awesome-recruitment,skool-community-growth-tracker,not-listed,,,
+Sjamilla/awesome-recruitment,smartrecruiters-jobs-scraper,submitted,store page,https://github.com/Sjamilla/awesome-recruitment/pull/55,Lane C r4 2026-11-24 17:33 America/Toronto
+Sjamilla/awesome-recruitment,sports-odds-api,not-listed,,,
+Sjamilla/awesome-recruitment,spotify-play-count-scraper,not-listed,,,
+Sjamilla/awesome-recruitment,uk-find-a-tender-scraper,not-listed,,,
+Sjamilla/awesome-recruitment,usaspending-awards-scraper,not-listed,,,
+happyendpointhq/awesome-alternative-data,ashby-jobs-scraper,not-listed,,,
+happyendpointhq/awesome-alternative-data,calibration-ledger,submitted,store page,https://github.com/happyendpointhq/awesome-alternative-data/pull/8,Lane C r4 2026-11-24 17:33 America/Toronto
+happyendpointhq/awesome-alternative-data,company-social-profile-finder,submitted,store page,https://github.com/happyendpointhq/awesome-alternative-data/pull/8,Lane C r4 2026-11-24 17:33 America/Toronto
+happyendpointhq/awesome-alternative-data,etsy-search-scraper,submitted,store page,https://github.com/happyendpointhq/awesome-alternative-data/pull/8,Lane C r4 2026-11-24 17:33 America/Toronto
+happyendpointhq/awesome-alternative-data,etsy-shop-velocity,submitted,store page,https://github.com/happyendpointhq/awesome-alternative-data/pull/8,Lane C r4 2026-11-24 17:33 America/Toronto
+happyendpointhq/awesome-alternative-data,eu-ted-notices-scraper,not-listed,,,
+happyendpointhq/awesome-alternative-data,google-ads-transparency-scraper,submitted,store page,https://github.com/happyendpointhq/awesome-alternative-data/pull/8,Lane C r4 2026-11-24 17:33 America/Toronto
+happyendpointhq/awesome-alternative-data,govcon-opportunity-feed,not-listed,,,
+happyendpointhq/awesome-alternative-data,grants-gov-scraper,not-listed,,,
+happyendpointhq/awesome-alternative-data,greenhouse-jobs-scraper,not-listed,,,
+happyendpointhq/awesome-alternative-data,legistar-meetings-scraper,not-listed,,,
+happyendpointhq/awesome-alternative-data,lever-jobs-scraper,not-listed,,,
+happyendpointhq/awesome-alternative-data,skool-community-growth-tracker,not-listed,,,
+happyendpointhq/awesome-alternative-data,smartrecruiters-jobs-scraper,not-listed,,,
+happyendpointhq/awesome-alternative-data,sports-odds-api,submitted,store page,https://github.com/happyendpointhq/awesome-alternative-data/pull/8,Lane C r4 2026-11-24 17:33 America/Toronto
+happyendpointhq/awesome-alternative-data,spotify-play-count-scraper,not-listed,,,
+happyendpointhq/awesome-alternative-data,uk-find-a-tender-scraper,not-listed,,,
+happyendpointhq/awesome-alternative-data,usaspending-awards-scraper,not-listed,,,
+thuquant/awesome-quant,ashby-jobs-scraper,not-listed,,,
+thuquant/awesome-quant,calibration-ledger,submitted,store page,https://github.com/thuquant/awesome-quant/pull/129,Lane C r4 2026-11-24 17:33 America/Toronto
+thuquant/awesome-quant,company-social-profile-finder,not-listed,,,
+thuquant/awesome-quant,etsy-search-scraper,not-listed,,,
+thuquant/awesome-quant,etsy-shop-velocity,not-listed,,,
+thuquant/awesome-quant,eu-ted-notices-scraper,not-listed,,,
+thuquant/awesome-quant,google-ads-transparency-scraper,not-listed,,,
+thuquant/awesome-quant,govcon-opportunity-feed,not-listed,,,
+thuquant/awesome-quant,grants-gov-scraper,not-listed,,,
+thuquant/awesome-quant,greenhouse-jobs-scraper,not-listed,,,
+thuquant/awesome-quant,legistar-meetings-scraper,not-listed,,,
+thuquant/awesome-quant,lever-jobs-scraper,not-listed,,,
+thuquant/awesome-quant,skool-community-growth-tracker,not-listed,,,
+thuquant/awesome-quant,smartrecruiters-jobs-scraper,not-listed,,,
+thuquant/awesome-quant,sports-odds-api,not-listed,,,
+thuquant/awesome-quant,spotify-play-count-scraper,not-listed,,,
+thuquant/awesome-quant,uk-find-a-tender-scraper,not-listed,,,
+thuquant/awesome-quant,usaspending-awards-scraper,not-listed,,,
+sneg55/awesome-govtech-opensource,ashby-jobs-scraper,not-listed,,,
+sneg55/awesome-govtech-opensource,calibration-ledger,not-listed,,,
+sneg55/awesome-govtech-opensource,company-social-profile-finder,not-listed,,,
+sneg55/awesome-govtech-opensource,etsy-search-scraper,not-listed,,,
+sneg55/awesome-govtech-opensource,etsy-shop-velocity,not-listed,,,
+sneg55/awesome-govtech-opensource,eu-ted-notices-scraper,submitted,store page,https://github.com/sneg55/awesome-govtech-opensource/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+sneg55/awesome-govtech-opensource,google-ads-transparency-scraper,not-listed,,,
+sneg55/awesome-govtech-opensource,govcon-opportunity-feed,submitted,store page,https://github.com/sneg55/awesome-govtech-opensource/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+sneg55/awesome-govtech-opensource,grants-gov-scraper,submitted,store page,https://github.com/sneg55/awesome-govtech-opensource/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+sneg55/awesome-govtech-opensource,greenhouse-jobs-scraper,not-listed,,,
+sneg55/awesome-govtech-opensource,legistar-meetings-scraper,submitted,store page,https://github.com/sneg55/awesome-govtech-opensource/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+sneg55/awesome-govtech-opensource,lever-jobs-scraper,not-listed,,,
+sneg55/awesome-govtech-opensource,skool-community-growth-tracker,not-listed,,,
+sneg55/awesome-govtech-opensource,smartrecruiters-jobs-scraper,not-listed,,,
+sneg55/awesome-govtech-opensource,sports-odds-api,not-listed,,,
+sneg55/awesome-govtech-opensource,spotify-play-count-scraper,not-listed,,,
+sneg55/awesome-govtech-opensource,uk-find-a-tender-scraper,submitted,store page,https://github.com/sneg55/awesome-govtech-opensource/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+sneg55/awesome-govtech-opensource,usaspending-awards-scraper,submitted,store page,https://github.com/sneg55/awesome-govtech-opensource/pull/2,Lane C r4 2026-11-24 17:33 America/Toronto
+awelist/awesome-govtech,ashby-jobs-scraper,not-listed,,,
+awelist/awesome-govtech,calibration-ledger,not-listed,,,
+awelist/awesome-govtech,company-social-profile-finder,not-listed,,,
+awelist/awesome-govtech,etsy-search-scraper,not-listed,,,
+awelist/awesome-govtech,etsy-shop-velocity,not-listed,,,
+awelist/awesome-govtech,eu-ted-notices-scraper,submitted,store page,https://github.com/awelist/awesome-govtech/pull/44,Lane C r4 2026-11-24 17:33 America/Toronto
+awelist/awesome-govtech,google-ads-transparency-scraper,not-listed,,,
+awelist/awesome-govtech,govcon-opportunity-feed,submitted,store page,https://github.com/awelist/awesome-govtech/pull/44,Lane C r4 2026-11-24 17:33 America/Toronto
+awelist/awesome-govtech,grants-gov-scraper,submitted,store page,https://github.com/awelist/awesome-govtech/pull/44,Lane C r4 2026-11-24 17:33 America/Toronto
+awelist/awesome-govtech,greenhouse-jobs-scraper,not-listed,,,
+awelist/awesome-govtech,legistar-meetings-scraper,submitted,store page,https://github.com/awelist/awesome-govtech/pull/44,Lane C r4 2026-11-24 17:33 America/Toronto
+awelist/awesome-govtech,lever-jobs-scraper,not-listed,,,
+awelist/awesome-govtech,skool-community-growth-tracker,not-listed,,,
+awelist/awesome-govtech,smartrecruiters-jobs-scraper,not-listed,,,
+awelist/awesome-govtech,sports-odds-api,not-listed,,,
+awelist/awesome-govtech,spotify-play-count-scraper,not-listed,,,
+awelist/awesome-govtech,uk-find-a-tender-scraper,submitted,store page,https://github.com/awelist/awesome-govtech/pull/44,Lane C r4 2026-11-24 17:33 America/Toronto
+awelist/awesome-govtech,usaspending-awards-scraper,submitted,store page,https://github.com/awelist/awesome-govtech/pull/44,Lane C r4 2026-11-24 17:33 America/Toronto
+athman3/awesome-free-nonprofits,ashby-jobs-scraper,not-listed,,,
+athman3/awesome-free-nonprofits,calibration-ledger,not-listed,,,
+athman3/awesome-free-nonprofits,company-social-profile-finder,not-listed,,,
+athman3/awesome-free-nonprofits,etsy-search-scraper,not-listed,,,
+athman3/awesome-free-nonprofits,etsy-shop-velocity,not-listed,,,
+athman3/awesome-free-nonprofits,eu-ted-notices-scraper,not-listed,,,
+athman3/awesome-free-nonprofits,google-ads-transparency-scraper,not-listed,,,
+athman3/awesome-free-nonprofits,govcon-opportunity-feed,submitted,store page,https://github.com/athman3/awesome-free-nonprofits/pull/6,Lane C r4 2026-11-24 17:33 America/Toronto
+athman3/awesome-free-nonprofits,grants-gov-scraper,submitted,store page,https://github.com/athman3/awesome-free-nonprofits/pull/6,Lane C r4 2026-11-24 17:33 America/Toronto
+athman3/awesome-free-nonprofits,greenhouse-jobs-scraper,not-listed,,,
+athman3/awesome-free-nonprofits,legistar-meetings-scraper,not-listed,,,
+athman3/awesome-free-nonprofits,lever-jobs-scraper,not-listed,,,
+athman3/awesome-free-nonprofits,skool-community-growth-tracker,not-listed,,,
+athman3/awesome-free-nonprofits,smartrecruiters-jobs-scraper,not-listed,,,
+athman3/awesome-free-nonprofits,sports-odds-api,not-listed,,,
+athman3/awesome-free-nonprofits,spotify-play-count-scraper,not-listed,,,
+athman3/awesome-free-nonprofits,uk-find-a-tender-scraper,not-listed,,,
+athman3/awesome-free-nonprofits,usaspending-awards-scraper,submitted,store page,https://github.com/athman3/awesome-free-nonprofits/pull/6,Lane C r4 2026-11-24 17:33 America/Toronto
+AirGrid/awesome-adtech,ashby-jobs-scraper,not-listed,,,
+AirGrid/awesome-adtech,calibration-ledger,not-listed,,,
+AirGrid/awesome-adtech,company-social-profile-finder,submitted,store page,https://github.com/AirGrid/awesome-adtech/pull/17,Lane C r4 2026-11-24 17:33 America/Toronto
+AirGrid/awesome-adtech,etsy-search-scraper,submitted,store page,https://github.com/AirGrid/awesome-adtech/pull/17,Lane C r4 2026-11-24 17:33 America/Toronto
+AirGrid/awesome-adtech,etsy-shop-velocity,submitted,store page,https://github.com/AirGrid/awesome-adtech/pull/17,Lane C r4 2026-11-24 17:33 America/Toronto
+AirGrid/awesome-adtech,eu-ted-notices-scraper,not-listed,,,
+AirGrid/awesome-adtech,google-ads-transparency-scraper,submitted,store page,https://github.com/AirGrid/awesome-adtech/pull/17,Lane C r4 2026-11-24 17:33 America/Toronto
+AirGrid/awesome-adtech,govcon-opportunity-feed,not-listed,,,
+AirGrid/awesome-adtech,grants-gov-scraper,not-listed,,,
+AirGrid/awesome-adtech,greenhouse-jobs-scraper,not-listed,,,
+AirGrid/awesome-adtech,legistar-meetings-scraper,not-listed,,,
+AirGrid/awesome-adtech,lever-jobs-scraper,not-listed,,,
+AirGrid/awesome-adtech,skool-community-growth-tracker,not-listed,,,
+AirGrid/awesome-adtech,smartrecruiters-jobs-scraper,not-listed,,,
+AirGrid/awesome-adtech,sports-odds-api,not-listed,,,
+AirGrid/awesome-adtech,spotify-play-count-scraper,submitted,store page,https://github.com/AirGrid/awesome-adtech/pull/17,Lane C r4 2026-11-24 17:33 America/Toronto
+AirGrid/awesome-adtech,uk-find-a-tender-scraper,not-listed,,,
+AirGrid/awesome-adtech,usaspending-awards-scraper,not-listed,,,
+kokasexton/awesome-marketing-repos,ashby-jobs-scraper,not-listed,,,
+kokasexton/awesome-marketing-repos,calibration-ledger,not-listed,,,
+kokasexton/awesome-marketing-repos,company-social-profile-finder,submitted,store page,https://github.com/kokasexton/awesome-marketing-repos/pull/17,Lane C r4 2026-11-24 17:33 America/Toronto
+kokasexton/awesome-marketing-repos,etsy-search-scraper,submitted,store page,https://github.com/kokasexton/awesome-marketing-repos/pull/17,Lane C r4 2026-11-24 17:33 America/Toronto
+kokasexton/awesome-marketing-repos,etsy-shop-velocity,submitted,store page,https://github.com/kokasexton/awesome-marketing-repos/pull/17,Lane C r4 2026-11-24 17:33 America/Toronto
+kokasexton/awesome-marketing-repos,eu-ted-notices-scraper,not-listed,,,
+kokasexton/awesome-marketing-repos,google-ads-transparency-scraper,submitted,store page,https://github.com/kokasexton/awesome-marketing-repos/pull/17,Lane C r4 2026-11-24 17:33 America/Toronto
+kokasexton/awesome-marketing-repos,govcon-opportunity-feed,not-listed,,,
+kokasexton/awesome-marketing-repos,grants-gov-scraper,not-listed,,,
+kokasexton/awesome-marketing-repos,greenhouse-jobs-scraper,not-listed,,,
+kokasexton/awesome-marketing-repos,legistar-meetings-scraper,not-listed,,,
+kokasexton/awesome-marketing-repos,lever-jobs-scraper,not-listed,,,
+kokasexton/awesome-marketing-repos,skool-community-growth-tracker,not-listed,,,
+kokasexton/awesome-marketing-repos,smartrecruiters-jobs-scraper,not-listed,,,
+kokasexton/awesome-marketing-repos,sports-odds-api,not-listed,,,
+kokasexton/awesome-marketing-repos,spotify-play-count-scraper,submitted,store page,https://github.com/kokasexton/awesome-marketing-repos/pull/17,Lane C r4 2026-11-24 17:33 America/Toronto
+kokasexton/awesome-marketing-repos,uk-find-a-tender-scraper,not-listed,,,
+kokasexton/awesome-marketing-repos,usaspending-awards-scraper,not-listed,,,
+teles/awesome-seo,ashby-jobs-scraper,not-listed,,,
+teles/awesome-seo,calibration-ledger,not-listed,,,
+teles/awesome-seo,company-social-profile-finder,submitted,store page,https://github.com/teles/awesome-seo/pull/378,Lane C r4 2026-11-24 17:33 America/Toronto
+teles/awesome-seo,etsy-search-scraper,submitted,store page,https://github.com/teles/awesome-seo/pull/378,Lane C r4 2026-11-24 17:33 America/Toronto
+teles/awesome-seo,etsy-shop-velocity,not-listed,,,
+teles/awesome-seo,eu-ted-notices-scraper,not-listed,,,
+teles/awesome-seo,google-ads-transparency-scraper,submitted,store page,https://github.com/teles/awesome-seo/pull/378,Lane C r4 2026-11-24 17:33 America/Toronto
+teles/awesome-seo,govcon-opportunity-feed,not-listed,,,
+teles/awesome-seo,grants-gov-scraper,not-listed,,,
+teles/awesome-seo,greenhouse-jobs-scraper,not-listed,,,
+teles/awesome-seo,legistar-meetings-scraper,not-listed,,,
+teles/awesome-seo,lever-jobs-scraper,not-listed,,,
+teles/awesome-seo,skool-community-growth-tracker,not-listed,,,
+teles/awesome-seo,smartrecruiters-jobs-scraper,not-listed,,,
+teles/awesome-seo,sports-odds-api,not-listed,,,
+teles/awesome-seo,spotify-play-count-scraper,not-listed,,,
+teles/awesome-seo,uk-find-a-tender-scraper,not-listed,,,
+teles/awesome-seo,usaspending-awards-scraper,not-listed,,,
