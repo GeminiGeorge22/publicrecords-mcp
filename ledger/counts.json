@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-24 02:02 America/Toronto",
+  "as_of": "2026-11-24 06:12 America/Toronto",
   "total_surfaces": 345,
   "live": 63,
   "submitted_pending": 102,
@@ -64,17 +64,17 @@
   "placements_by_status": {
     "live": 671,
     "not-listed": 1089,
-    "submitted": 999,
-    "remaining": 338,
-    "skipped": 2565,
+    "submitted": 1061,
+    "remaining": 259,
+    "skipped": 2582,
     "held-needs-Mark": 548
   },
   "skool_placements_by_status": {
-    "submitted": 78,
+    "submitted": 82,
     "not-listed": 70,
-    "skipped": 141,
+    "skipped": 142,
     "live": 7,
-    "remaining": 18,
+    "remaining": 13,
     "held-needs-Mark": 31
   },
   "access_points_rows": 135
