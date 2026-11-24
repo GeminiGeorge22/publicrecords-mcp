@@ -1,0 +1,83 @@
+{
+  "name": "Ashby Jobs Scraper → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "e31448f9-ecf8-48a8-b6a9-7c6c0d99abb4",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~ashby-jobs-scraper/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"companies\": [\n    \"ramp\",\n    \"linear\"\n  ],\n  \"since\": \"30d\",\n  \"maxResults\": 50,\n  \"includeDescription\": true\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "30651129-e624-4a55-8be8-5dcc0bac7845",
+      "name": "Run Ashby Jobs Scraper on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## Ashby Jobs Scraper\nNew job postings from any Ashby job board since a date or window (24h, 7d, 30d).\n\nStore page: https://apify.com/publicrecords/ashby-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/ashby-jobs-scraper\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 260,
+        "width": 420
+      },
+      "id": "6c7343e1-7d45-4ea9-b9ea-5079240955e8",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -300
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run Ashby Jobs Scraper on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

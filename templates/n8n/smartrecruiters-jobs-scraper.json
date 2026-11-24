@@ -1,0 +1,83 @@
+{
+  "name": "SmartRecruiters Jobs Scraper → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "19f3aabe-dc62-4dc5-9dc9-c8250185f328",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~smartrecruiters-jobs-scraper/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"companies\": [\n    \"Ubisoft2\",\n    \"smartrecruiters\"\n  ],\n  \"since\": \"30d\",\n  \"maxResults\": 50,\n  \"includeDescription\": true\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "a6e998ee-3000-4298-b5d1-2bcf91990a09",
+      "name": "Run SmartRecruiters Jobs Scraper on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## SmartRecruiters Jobs Scraper\nNew job postings from any SmartRecruiters careers site since a date or window.\n\nStore page: https://apify.com/publicrecords/smartrecruiters-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/smartrecruiters-jobs-scraper\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 260,
+        "width": 420
+      },
+      "id": "fdb8fb6d-e8c0-416c-9aad-03b3ec671a8a",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -300
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run SmartRecruiters Jobs Scraper on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

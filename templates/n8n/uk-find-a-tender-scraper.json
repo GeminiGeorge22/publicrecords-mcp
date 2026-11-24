@@ -1,0 +1,83 @@
+{
+  "name": "UK Tenders Scraper → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "96fa338b-a7ce-4b15-b408-a15875d5e3a6",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~uk-find-a-tender-scraper/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"noticeType\": [\n    \"tender\"\n  ],\n  \"updatedFrom\": \"2026-09-28T00:00:00\",\n  \"maxItems\": 100\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "a6413f03-f740-42bc-b828-9e944a3d59c6",
+      "name": "Run UK Tenders Scraper on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## UK Tenders Scraper\nUK government tenders from Find a Tender and Contracts Finder: buyer, value, deadline.\n\nStore page: https://apify.com/publicrecords/uk-find-a-tender-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/uk-find-a-tender-scraper\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 260,
+        "width": 420
+      },
+      "id": "c8359774-911f-49cd-8e19-4e89b646b756",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -300
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run UK Tenders Scraper on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}
