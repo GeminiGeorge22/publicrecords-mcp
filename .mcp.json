@@ -1,0 +1,58 @@
+{
+  "mcpServers": {
+    "ashby-jobs-scraper": {
+      "url": "https://mcp.apify.com?tools=publicrecords/ashby-jobs-scraper"
+    },
+    "calibration-ledger": {
+      "url": "https://mcp.apify.com?tools=publicrecords/calibration-ledger"
+    },
+    "company-social-profile-finder": {
+      "url": "https://mcp.apify.com?tools=publicrecords/company-social-profile-finder"
+    },
+    "etsy-search-scraper": {
+      "url": "https://mcp.apify.com?tools=publicrecords/etsy-search-scraper"
+    },
+    "etsy-shop-velocity": {
+      "url": "https://mcp.apify.com?tools=publicrecords/etsy-shop-velocity"
+    },
+    "eu-ted-notices-scraper": {
+      "url": "https://mcp.apify.com?tools=publicrecords/eu-ted-notices-scraper"
+    },
+    "google-ads-transparency-scraper": {
+      "url": "https://mcp.apify.com?tools=publicrecords/google-ads-transparency-scraper"
+    },
+    "govcon-opportunity-feed": {
+      "url": "https://mcp.apify.com?tools=publicrecords/govcon-opportunity-feed"
+    },
+    "grants-gov-scraper": {
+      "url": "https://mcp.apify.com?tools=publicrecords/grants-gov-scraper"
+    },
+    "greenhouse-jobs-scraper": {
+      "url": "https://mcp.apify.com?tools=publicrecords/greenhouse-jobs-scraper"
+    },
+    "legistar-meetings-scraper": {
+      "url": "https://mcp.apify.com?tools=publicrecords/legistar-meetings-scraper"
+    },
+    "lever-jobs-scraper": {
+      "url": "https://mcp.apify.com?tools=publicrecords/lever-jobs-scraper"
+    },
+    "skool-community-growth-tracker": {
+      "url": "https://mcp.apify.com?tools=publicrecords/skool-community-growth-tracker"
+    },
+    "smartrecruiters-jobs-scraper": {
+      "url": "https://mcp.apify.com?tools=publicrecords/smartrecruiters-jobs-scraper"
+    },
+    "sports-odds-api": {
+      "url": "https://mcp.apify.com?tools=publicrecords/sports-odds-api"
+    },
+    "spotify-play-count-scraper": {
+      "url": "https://mcp.apify.com?tools=publicrecords/spotify-play-count-scraper"
+    },
+    "uk-find-a-tender-scraper": {
+      "url": "https://mcp.apify.com?tools=publicrecords/uk-find-a-tender-scraper"
+    },
+    "usaspending-awards-scraper": {
+      "url": "https://mcp.apify.com?tools=publicrecords/usaspending-awards-scraper"
+    }
+  }
+}
