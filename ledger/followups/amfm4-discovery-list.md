@@ -1,0 +1,314 @@
+# AMFM-4 discovery list (rough, 24 Nov 2026)
+Audience figures are not measured; GitHub ★ come from the API at discovery time. "held"/"skip" items need Mark (money, identity, phone) or are out of scope.
+
+
+## AI agent & assistant platforms
+- GPT Store (ChatGPT) — held: builder verification
+- Gemini Gems (no public store)
+- Poe bots
+- Coze global plugin store
+- Coze CN 插件商店
+- Dify Marketplace plugins
+- LobeHub agents + MCP
+- FastGPT plugin market
+- Langflow Store
+- Flowise marketplace templates
+- CrewAI tools docs (crewai-tools)
+- AutoGen extensions gallery
+- LangChain integrations docs
+- LlamaHub (LlamaIndex tools)
+- Agent.ai marketplace
+- Relevance AI tools marketplace
+- MindStudio agent marketplace
+- Botpress hub
+- Voiceflow marketplace
+- Character-style agent hubs (skip)
+- HuggingChat assistants
+- Mistral Le Chat agents (no store)
+- Microsoft Copilot Studio — held
+- Perplexity connectors — held
+- Kimi+ / Moonshot plugins (CN phone - skip)
+- Doubao 豆包 bots (CN phone - skip)
+- Baidu AppBuilder (CN phone - skip)
+- Tencent Yuanqi 元器 (CN phone - skip)
+- Zhipu GLMs agent store (CN phone - skip)
+- OpenClaw ClawHub (live)
+- DeepSeek Harness plugin lists (PRs filed)
+- Hermes Agent skill lists (PR filed)
+- Grok Bot skill lists (PRs filed)
+- Kiro powers (live)
+- Cursor marketplace — held
+- Cline MCP marketplace
+- Roo Code marketplace (skipped earlier)
+- Continue Hub (queued earlier)
+- Goose extensions directory
+- Warp MCP (connect-only)
+- Zed extensions (needs extension)
+
+## No-code / automation templates
+- n8n template gallery (creator)
+- n8n community nodes (npm)
+- Make templates
+- Zapier templates (partner only)
+- Pipedream shared workflows
+- Pipedream components (PR to PipedreamHQ/pipedream)
+- Activepieces pieces/templates
+- Clay templates/community
+- Relevance AI templates
+- Gumloop templates
+- Lindy templates
+- Bardeen playbooks
+- Integrately
+- Albato templates
+- Latenode templates
+- Tray.io (enterprise - skip)
+- Workato (enterprise - skip)
+- IFTTT applets (no HTTP POST w/ body in free) - skip
+- Power Automate templates (MS partner) - skip
+- Airtable Universe
+- Notion template gallery
+- Google Sheets template galleries
+- Retool templates
+- Budibase templates
+- Appsmith templates
+
+## Data & API hubs
+- Hugging Face datasets
+- Hugging Face Spaces (demo app)
+- Kaggle datasets
+- data.world
+- AWS Data Exchange (free listing) — held: AWS seller reg
+- Datarade (free profile)
+- Snowflake Marketplace free listings — needs Snowflake acct + business
+- Databricks Marketplace — business
+- Google Dataset Search (via schema.org on GitHub Pages)
+- Zenodo (DOI for snapshots)
+- Figshare
+- OpenML
+- Data.gov "Use cases" (showcase submit)
+- EU Data Portal (data.europa.eu) use-case submit
+- RapidAPI Hub — held
+- Zyla — held
+- APILayer — held
+- API.market — held
+- Postman Public API Network — held
+- APIs.guru openapi-directory (PR)
+- publicapis.io
+- freepublicapis.com
+- apilist.fun
+- any-api.com — held
+
+## Package registries
+- npm (MCP wrapper packages)
+- PyPI (live)
+- crates.io
+- Go module proxy (pkg.go.dev auto from GitHub tag)
+- Docker Hub
+- GitHub Container Registry (ghcr - no Actions; push from box)
+- Smithery (live)
+- Official MCP Registry (live)
+- JSR (jsr.io)
+- NuGet
+- RubyGems
+- Packagist
+- Maven Central (needs Sonatype + domain) - skip
+- Homebrew tap (own repo)
+- Scoop bucket (own repo)
+- conda-forge (PR feedstock)
+
+## Editor & client catalogs
+- VS Code Marketplace — held
+- Open VSX (Eclipse account)
+- JetBrains Marketplace
+- Raycast Store (PR to raycast/extensions)
+- Alfred Gallery
+- Obsidian community plugins (PR obsidian-releases)
+- Logseq marketplace
+- Sublime Package Control
+- Neovim plugin lists
+- Chrome Web Store ($5 fee) - paid
+- Firefox Add-ons
+- Claude Desktop extensions (.mcpb) directory
+- Cherry Studio MCP market
+- Chatbox MCP
+- LM Studio MCP (connect-only)
+- Msty
+- Jan.ai extensions
+
+## Regional developer sites & directories
+- Qiita (ja)
+- Zenn (ja)
+- note (ja)
+- MCPナビ mcpnavi.jp (ja, queued earlier)
+- velog (ko)
+- Tistory (ko)
+- PlayMCP Kakao (ko, held)
+- Juejin 掘金 (zh)
+- CSDN (zh, phone) - skip
+- Gitee (zh, phone) - skip
+- ModelScope MCP 广场 (zh, held)
+- mcpmarket.cn (zh)
+- SegmentFault (zh)
+- OSChina (zh, phone) - skip
+- V2EX (zh)
+- Habr (ru)
+- vc.ru (ru)
+- TabNews (pt-BR)
+- Dev.to PT/ES tags
+- Medium ES/PT/DE/FR
+- t3n / heise developer (de) - press
+- Developpez.com (fr)
+- Journal du Hacker (fr)
+- Genbeta / Xataka (es) - press
+- Platzi community (es)
+- Hipsters.tech (pt-BR) - press
+- Viblo (vi)
+- Kipalog (vi)
+- Codepolitan (id)
+- Dicoding forum (id)
+- Kodlama.io / Medium TR (tr)
+- Webrazzi (tr) - press
+- YourStory (India) - press
+- Analytics India Magazine - press
+- Wamda (Gulf/MENA) - press
+- Arageek (ar)
+- Hasoub Academy community (ar)
+- Bulgarian/Polish: 4programmers.net (pl)
+- Wykop (pl) - skip social
+- Tweakers (nl)
+- Computer Sweden (sv) - press
+
+## Launch & SaaS directories
+- Product Hunt
+- DevHunt
+- Uneed
+- Fazier
+- Microlaunch
+- Peerlist Launchpad
+- BetaList
+- Launching Next
+- StartupBase
+- SideProjectors
+- Indie Hackers products
+- Hacker News Show HN
+- AlternativeTo
+- SaaSHub
+- G2 (free profile)
+- Capterra (vendor signup - business)
+- Futurepedia
+- There's An AI For That (paid) - skip
+- Toolify (free tier)
+- TopAI.tools
+- AI Scout
+- Insidr
+- aitoolsdirectory.com
+- AIcyclopedia
+- Dang.ai
+- aiagentslist.com
+- AgentHunter
+- aiagentstore.ai
+- AI Agents Directory — held paid
+- MCP Market — held paid
+- StackShare
+- Slant
+- LibHunt
+- OpenAlternative
+- Awesome Open Source (site)
+
+## GitHub awesome lists (filed this run)
+- composio-community/awesome-codex-skills — https://github.com/composio-community/awesome-codex-skills/pull/457
+- kyrolabs/awesome-langchain — https://github.com/kyrolabs/awesome-langchain/pull/648
+- rawfilejson/awesome-osint-arsenal — https://github.com/rawfilejson/awesome-osint-arsenal/pull/74
+- slavakurilyak/awesome-ai-agents — https://github.com/slavakurilyak/awesome-ai-agents/pull/1034
+- caramaschiHG/awesome-ai-agents-2026 — https://github.com/caramaschiHG/awesome-ai-agents-2026/pull/778
+- Jenqyang/Awesome-AI-Agents — https://github.com/Jenqyang/Awesome-AI-Agents/pull/838
+- serpapi/awesome-seo-tools — https://github.com/serpapi/awesome-seo-tools/pull/662
+- mikiarlo3/awesome-growth-hacking-skills — https://github.com/mikiarlo3/awesome-growth-hacking-skills/pull/22
+- bekatom/awesome-growth-hacking — https://github.com/bekatom/awesome-growth-hacking/pull/176
+- eudk/awesome-ai-tools — https://github.com/eudk/awesome-ai-tools/pull/1012
+- bestofmarketing/awesome-marketing — https://github.com/bestofmarketing/awesome-marketing/pull/312
+- tankvn/awesome-ai-tools — https://github.com/tankvn/awesome-ai-tools/pull/340
+- cporter202/awesome-ai-tools — https://github.com/cporter202/awesome-ai-tools/pull/158
+- Vaquill-AI/awesome-legaltech — https://github.com/Vaquill-AI/awesome-legaltech/pull/176
+- Germey/AwesomeWebScraping — https://github.com/Germey/AwesomeWebScraping/pull/32
+- Zijian-Ni/awesome-ai-agents-2026 — https://github.com/Zijian-Ni/awesome-ai-agents-2026/pull/142
+- osintshifu/awesome-osint-repos — https://github.com/osintshifu/awesome-osint-repos/pull/31
+- aureliowozhiak/awesome-data-engineering-br — https://github.com/aureliowozhiak/awesome-data-engineering-br/pull/2
+- finsilabs/awesome-ecommerce-skills — https://github.com/finsilabs/awesome-ecommerce-skills/pull/7
+- bayshier/awesome-osint-arsenal-zh — https://github.com/bayshier/awesome-osint-arsenal-zh/pull/2
+- NipunaRanasinghe/awesome-ai-agents — https://github.com/NipunaRanasinghe/awesome-ai-agents/pull/288
+- Suganthan-Mohanadasan/awesome-seo-tools — https://github.com/Suganthan-Mohanadasan/awesome-seo-tools/pull/82
+- awelist/awesome-osint — https://github.com/awelist/awesome-osint/pull/55
+- Salesably/awesome-ai-agents-for-sales — https://github.com/Salesably/awesome-ai-agents-for-sales/pull/58
+- edwardtay/awesome-OSINT — https://github.com/edwardtay/awesome-OSINT/pull/23
+- NajiElKotob/Awesome-Datasets — https://github.com/NajiElKotob/Awesome-Datasets/pull/16
+- tanko-r/awesome-legal-tech — https://github.com/tanko-r/awesome-legal-tech/pull/35
+- tractiongroup/awesome-marketing-tools — https://github.com/tractiongroup/awesome-marketing-tools/pull/172
+- helloianneo/awesome-claude-code-skills — https://github.com/helloianneo/awesome-claude-code-skills/pull/118
+- LangGPT/awesome-claude-code — https://github.com/LangGPT/awesome-claude-code/pull/212
+- shahshrey/awesome-claude-code-mastery — https://github.com/shahshrey/awesome-claude-code-mastery/pull/75
+- pingan8787/awesome-ai-tools — https://github.com/pingan8787/awesome-ai-tools/pull/437
+- ka-pi-ba-la/awesome-ai-tools — https://github.com/ka-pi-ba-la/awesome-ai-tools/pull/53
+- ToolkitlyAI/awesome-ai-tools — https://github.com/ToolkitlyAI/awesome-ai-tools/pull/252
+- aliammari1/awesome-ai-tools — https://github.com/aliammari1/awesome-ai-tools/pull/618
+- VoltAgent/awesome-openclaw-skills — https://github.com/VoltAgent/awesome-openclaw-skills/pull/623
+- EmbraceAGI/awesome-chatgpt-zh — https://github.com/EmbraceAGI/awesome-chatgpt-zh/pull/234
+- ubikron/Awesome-AI-OSINT — https://github.com/ubikron/Awesome-AI-OSINT/pull/23
+- alvinreal/awesome-openclaw — https://github.com/alvinreal/awesome-openclaw/pull/136
+- Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins — https://github.com/Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins/pull/127
+- libukai/awesome-deepseek-harness — https://github.com/libukai/awesome-deepseek-harness/pull/167
+- fleurytian/awesome-claude-skills — https://github.com/fleurytian/awesome-claude-skills/pull/25
+- smew-tech/public-apis — https://github.com/smew-tech/public-apis/pull/45
+- seb1n/awesome-ai-agent-skills — https://github.com/seb1n/awesome-ai-agent-skills/pull/33
+- vincentkoc/awesome-openclaw — https://github.com/vincentkoc/awesome-openclaw/pull/150
+- lqshow/awesome-n8n-workflows — https://github.com/lqshow/awesome-n8n-workflows/pull/9
+- AIPMAndy/awesome-openclaw-skills-CN — https://github.com/AIPMAndy/awesome-openclaw-skills-CN/pull/23
+- bh-rat/awesome-mcp-enterprise — https://github.com/bh-rat/awesome-mcp-enterprise/pull/198
+- aowang-ai/awesome-finance-agents — https://github.com/aowang-ai/awesome-finance-agents/pull/36
+- 0x11c11e/awesome-ai-research-tools — https://github.com/0x11c11e/awesome-ai-research-tools/pull/97
+- Sami-Uysal/awesome-open-ai-developer-tools — https://github.com/Sami-Uysal/awesome-open-ai-developer-tools/pull/99
+- thienanblog/awesome-ai-agent-skills — https://github.com/thienanblog/awesome-ai-agent-skills/pull/56
+- J-nowcow/awesome-korean-agent-skills — https://github.com/J-nowcow/awesome-korean-agent-skills/pull/1008
+- awesome-deepseekharness/awesome-deepseek-harness — https://github.com/awesome-deepseekharness/awesome-deepseek-harness/pull/243
+- LifeJiggy/Awesome-Grok-Skills — https://github.com/LifeJiggy/Awesome-Grok-Skills/pull/3
+- itgoyo/awesome-claude-code-skills — https://github.com/itgoyo/awesome-claude-code-skills/pull/23
+- RankSpotAI/awesome-seo-agent-skills — https://github.com/RankSpotAI/awesome-seo-agent-skills/pull/24
+- ColinEberhardt/awesome-public-streaming-datasets — https://github.com/ColinEberhardt/awesome-public-streaming-datasets/pull/16
+- 0voice/awesome-ai-tools — https://github.com/0voice/awesome-ai-tools/pull/275
+- Deep-Insight-Labs/awesome-ai-agents — https://github.com/Deep-Insight-Labs/awesome-ai-agents/pull/64
+- ai-boost/awesome-harness-engineering — https://github.com/ai-boost/awesome-harness-engineering/pull/481
+- tracelabs/awesome-osint — https://github.com/tracelabs/awesome-osint/pull/53
+- awelist/awesome-civic-tech — https://github.com/awelist/awesome-civic-tech/pull/66
+- ScrapeRouter/awesome-scraping — https://github.com/ScrapeRouter/awesome-scraping/pull/45
+- buntys2010/awesome-ai-agents — https://github.com/buntys2010/awesome-ai-agents/pull/27
+- JMcrafter26/awesome-ai-tools — https://github.com/JMcrafter26/awesome-ai-tools/pull/69
+- LinuxSuRen/awesome-ai — https://github.com/LinuxSuRen/awesome-ai/pull/126
+- dipakkr/awesome-ai-tools — https://github.com/dipakkr/awesome-ai-tools/pull/31
+- ishandutta2007/Awesome-Claude-Skills — https://github.com/ishandutta2007/Awesome-Claude-Skills/pull/24
+- lawve-ai/awesome-legal-skills — https://github.com/lawve-ai/awesome-legal-skills/pull/48
+- philipbankier/awesome-agent-skills — https://github.com/philipbankier/awesome-agent-skills/pull/178
+- OpenSourceAssist/awesome-agent-skills — https://github.com/OpenSourceAssist/awesome-agent-skills/pull/1
+- hao-ji-xing/awesome-cursor — https://github.com/hao-ji-xing/awesome-cursor/pull/132
+- rohitg00/awesome-claude-code-toolkit — https://github.com/rohitg00/awesome-claude-code-toolkit/pull/970
+- ithiria894/awesome-claude-code-workflows — https://github.com/ithiria894/awesome-claude-code-workflows/pull/44
+- awelist/awesome-data-engineering — https://github.com/awelist/awesome-data-engineering/pull/38
+- infoculture/awesome-datajournalism — https://github.com/infoculture/awesome-datajournalism/pull/33
+- mahseema/awesome-ai-tools — https://github.com/mahseema/awesome-ai-tools/pull/2883
+- ai-for-developers/awesome-ai-coding-tools — https://github.com/ai-for-developers/awesome-ai-coding-tools/pull/1366
+- zinyando/awesome-crewai — https://github.com/zinyando/awesome-crewai/pull/15
+- HA2345567/awesome-autonomus-ai-agents — https://github.com/HA2345567/awesome-autonomus-ai-agents/pull/58
+- nexscope-ai/awesome-amazon-seller-tools — https://github.com/nexscope-ai/awesome-amazon-seller-tools/pull/29
+- RongleCat/awesome-grok-bot — https://github.com/RongleCat/awesome-grok-bot/pull/44
+- Maimuzamilhu/awesome-grok-bot-templates — https://github.com/Maimuzamilhu/awesome-grok-bot-templates/pull/1
+- sundial-org/awesome-openclaw-skills — https://github.com/sundial-org/awesome-openclaw-skills/pull/73
+- rohitg00/awesome-openclaw — https://github.com/rohitg00/awesome-openclaw/pull/237
+- lskatz/awesome-bioinformatics-jobs — https://github.com/lskatz/awesome-bioinformatics-jobs/pull/13
+- ronakganatra/awesome-marketing — https://github.com/ronakganatra/awesome-marketing/pull/92
+- ninjasort/awesome-marketing — https://github.com/ninjasort/awesome-marketing/pull/123
+- alternbits/awesome-ai-marketing — https://github.com/alternbits/awesome-ai-marketing/pull/116
+- awelist/awesome-content-marketing — https://github.com/awelist/awesome-content-marketing/pull/72
+- toofast1/awesome-ai-lead-generation — https://github.com/toofast1/awesome-ai-lead-generation/pull/69
+- awelist/awesome-journalism — https://github.com/awelist/awesome-journalism/pull/43
+- awelist/awesome-economics — https://github.com/awelist/awesome-economics/pull/43
+- rahul-ai-studio/awesome-finance-apis — https://github.com/rahul-ai-studio/awesome-finance-apis/pull/18
+- eferrares/awesome-startup-resources — https://github.com/eferrares/awesome-startup-resources/pull/154
