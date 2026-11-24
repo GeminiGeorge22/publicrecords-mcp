@@ -1,0 +1,153 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "City Council Meeting Minutes & Agendas Scraper (Legistar)",
+    "description": "City council meeting scraper for Legistar: pull meetings for public Legistar cities by date range, with body, date, agenda and minutes status and links (PDF when posted), optional agenda item titles and the official source link. No login.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/legistar-meetings-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/legistar-meetings-scraper\nAuthor: Public Records.",
+    "version": "0.0.15",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/legistar-meetings-scraper",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~legistar-meetings-scraper/runs": {
+      "post": {
+        "operationId": "start_legistar_meetings_scraper_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/legistar-meetings-scraper",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/legistar-meetings-scraper",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"$schema\": \"https://apify.com/schemas/v1/input.ide.json\",\n  \"title\": \"Legistar Meetings Scraper\",\n  \"description\": \"Public Granicus Legistar Web API. Client slug is the first label of {slug}.legistar.com (e.g. seattle). chicago currently 500s; phila 403s.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"clients\": {\n      \"title\": \"Client slugs\",\n      \"type\": \"array\",\n      \"description\": \"Legistar client codes. Use the hostname label of {slug}.legistar.com. Working examples: seattle, milwaukee, madison, oakland, sanjose, boston, denver, columbus.\",\n      \"editor\": \"stringList\",\n      \"default\": [\n        \"seattle\"\n      ],\n      \"prefill\": [\n        \"seattle\"\n      ]\n    },\n    \"dateFrom\": {\n      \"title\": \"From date\",\n      \"type\": \"string\",\n      \"description\": \"Inclusive YYYY-MM-DD (EventDate / MatterIntroDate). Default: 30 days ago.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"dateTo\": {\n      \"title\": \"To date\",\n      \"type\": \"string\",\n      \"description\": \"Inclusive YYYY-MM-DD. Default: today + 14 days.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"maxItems\": {\n      \"title\": \"Max items\",\n      \"type\": \"integer\",\n      \"description\": \"Cap on dataset rows (events + matters combined).\",\n      \"default\": 50,\n      \"minimum\": 1,\n      \"maximum\": 5000\n    },\n    \"resource\": {\n      \"title\": \"Resource\",\n      \"type\": \"string\",\n      \"description\": \"Which Legistar collection to pull.\",\n      \"enum\": [\n        \"events\",\n        \"matters\",\n        \"both\"\n      ],\n      \"enumTitles\": [\n        \"Meetings (events)\",\n        \"Matters (legislation)\",\n        \"Both\"\n      ],\n      \"default\": \"events\"\n    },\n    \"includeEventItems\": {\n      \"title\": \"Include agenda item titles\",\n      \"type\": \"boolean\",\n      \"description\": \"Extra HTTP call per event. Titles flattened into eventItemTitles (pipe-separated). Default off.\",\n      \"default\": false\n    }\n  },\n  \"required\": [\n    \"clients\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~legistar-meetings-scraper/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_legistar_meetings_scraper_sync_get_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/legistar-meetings-scraper and return dataset items",
+        "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"$schema\": \"https://apify.com/schemas/v1/input.ide.json\",\n  \"title\": \"Legistar Meetings Scraper\",\n  \"description\": \"Public Granicus Legistar Web API. Client slug is the first label of {slug}.legistar.com (e.g. seattle). chicago currently 500s; phila 403s.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"clients\": {\n      \"title\": \"Client slugs\",\n      \"type\": \"array\",\n      \"description\": \"Legistar client codes. Use the hostname label of {slug}.legistar.com. Working examples: seattle, milwaukee, madison, oakland, sanjose, boston, denver, columbus.\",\n      \"editor\": \"stringList\",\n      \"default\": [\n        \"seattle\"\n      ],\n      \"prefill\": [\n        \"seattle\"\n      ]\n    },\n    \"dateFrom\": {\n      \"title\": \"From date\",\n      \"type\": \"string\",\n      \"description\": \"Inclusive YYYY-MM-DD (EventDate / MatterIntroDate). Default: 30 days ago.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"dateTo\": {\n      \"title\": \"To date\",\n      \"type\": \"string\",\n      \"description\": \"Inclusive YYYY-MM-DD. Default: today + 14 days.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"maxItems\": {\n      \"title\": \"Max items\",\n      \"type\": \"integer\",\n      \"description\": \"Cap on dataset rows (events + matters combined).\",\n      \"default\": 50,\n      \"minimum\": 1,\n      \"maximum\": 5000\n    },\n    \"resource\": {\n      \"title\": \"Resource\",\n      \"type\": \"string\",\n      \"description\": \"Which Legistar collection to pull.\",\n      \"enum\": [\n        \"events\",\n        \"matters\",\n        \"both\"\n      ],\n      \"enumTitles\": [\n        \"Meetings (events)\",\n        \"Matters (legislation)\",\n        \"Both\"\n      ],\n      \"default\": \"events\"\n    },\n    \"includeEventItems\": {\n      \"title\": \"Include agenda item titles\",\n      \"type\": \"boolean\",\n      \"description\": \"Extra HTTP call per event. Titles flattened into eventItemTitles (pipe-separated). Default off.\",\n      \"default\": false\n    }\n  },\n  \"required\": [\n    \"clients\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/legistar-meetings-scraper"
+  }
+}

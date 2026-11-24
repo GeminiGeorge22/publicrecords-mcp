@@ -717,19 +717,19 @@ public-apis/public-apis,ashby-jobs-scraper,not-listed,bundle endpoint,,No listin
 public-apis/public-apis,greenhouse-jobs-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 public-apis/public-apis,lever-jobs-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 public-apis/public-apis,smartrecruiters-jobs-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
-public-apis/public-apis,etsy-search-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
-public-apis/public-apis,etsy-shop-velocity,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
-public-apis/public-apis,calibration-ledger,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
+public-apis/public-apis,etsy-search-scraper,submitted,API table row,https://github.com/public-apis/public-apis/pull/9430,Lane B 2026-11-24 16:22 America/Toronto
+public-apis/public-apis,etsy-shop-velocity,submitted,API table row,https://github.com/public-apis/public-apis/pull/9430,Lane B 2026-11-24 16:22 America/Toronto
+public-apis/public-apis,calibration-ledger,submitted,API table row,https://github.com/public-apis/public-apis/pull/9430,Lane B 2026-11-24 16:22 America/Toronto
 public-apis/public-apis,govcon-opportunity-feed,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 public-apis/public-apis,grants-gov-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 public-apis/public-apis,usaspending-awards-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 public-apis/public-apis,uk-find-a-tender-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
 public-apis/public-apis,eu-ted-notices-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
-public-apis/public-apis,legistar-meetings-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
-public-apis/public-apis,company-social-profile-finder,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
-public-apis/public-apis,google-ads-transparency-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
+public-apis/public-apis,legistar-meetings-scraper,submitted,API table row,https://github.com/public-apis/public-apis/pull/9430,Lane B 2026-11-24 16:22 America/Toronto
+public-apis/public-apis,company-social-profile-finder,submitted,API table row,https://github.com/public-apis/public-apis/pull/9430,Lane B 2026-11-24 16:22 America/Toronto
+public-apis/public-apis,google-ads-transparency-scraper,submitted,API table row,https://github.com/public-apis/public-apis/pull/9430,Lane B 2026-11-24 16:22 America/Toronto
 public-apis/public-apis,sports-odds-api,live,bundle endpoint,https://github.com/public-apis/public-apis/blob/master/README.md,server=sports-odds-mcp (first lane)
-public-apis/public-apis,spotify-play-count-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
+public-apis/public-apis,spotify-play-count-scraper,submitted,API table row,https://github.com/public-apis/public-apis/pull/9430,Lane B 2026-11-24 16:22 America/Toronto
 publicrecords-mcp localized READMEs (14 languages),ashby-jobs-scraper,live,per-Actor server,https://github.com/GeminiGeorge22/publicrecords-mcp/commit/ec94f86,fleet-level / pack-level status
 publicrecords-mcp localized READMEs (14 languages),greenhouse-jobs-scraper,live,per-Actor server,https://github.com/GeminiGeorge22/publicrecords-mcp/commit/ec94f86,fleet-level / pack-level status
 publicrecords-mcp localized READMEs (14 languages),lever-jobs-scraper,live,per-Actor server,https://github.com/GeminiGeorge22/publicrecords-mcp/commit/ec94f86,fleet-level / pack-level status
@@ -8297,24 +8297,24 @@ publicrecords-mcp automation templates (n8n + HTTP recipes),sports-odds-api,live
 publicrecords-mcp automation templates (n8n + HTTP recipes),spotify-play-count-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/14,AMFM-4 2026-11-24
 publicrecords-mcp automation templates (n8n + HTTP recipes),uk-find-a-tender-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/14,AMFM-4 2026-11-24
 publicrecords-mcp automation templates (n8n + HTTP recipes),usaspending-awards-scraper,live,template,https://github.com/GeminiGeorge22/publicrecords-mcp/pull/14,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",ashby-jobs-scraper,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",calibration-ledger,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",company-social-profile-finder,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",etsy-search-scraper,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",etsy-shop-velocity,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",eu-ted-notices-scraper,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",google-ads-transparency-scraper,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",govcon-opportunity-feed,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",grants-gov-scraper,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",greenhouse-jobs-scraper,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",legistar-meetings-scraper,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",lever-jobs-scraper,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",skool-community-growth-tracker,not-listed,,,
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",smartrecruiters-jobs-scraper,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",sports-odds-api,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",spotify-play-count-scraper,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",uk-find-a-tender-scraper,remaining,account,,AMFM-4 2026-11-24
-"Hugging Face (account + org ""publicrecords"" + write token to vault)",usaspending-awards-scraper,remaining,account,,AMFM-4 2026-11-24
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",ashby-jobs-scraper,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",calibration-ledger,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",company-social-profile-finder,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",etsy-search-scraper,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",etsy-shop-velocity,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",eu-ted-notices-scraper,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",google-ads-transparency-scraper,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",govcon-opportunity-feed,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",grants-gov-scraper,live,dataset card,https://huggingface.co/datasets/Publicrecords/us-open-federal-grants,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",greenhouse-jobs-scraper,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",legistar-meetings-scraper,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",lever-jobs-scraper,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",skool-community-growth-tracker,not-listed,,,Lane B 2026-11-24 16:22 America/Toronto: omitted (do not reference the Skool Actor server)
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",smartrecruiters-jobs-scraper,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",sports-odds-api,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",spotify-play-count-scraper,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",uk-find-a-tender-scraper,live,openapi + space index,https://huggingface.co/datasets/Publicrecords/apify-actor-openapi,Lane B 2026-11-24 16:22 America/Toronto
+"Hugging Face (account + org ""publicrecords"" + write token to vault)",usaspending-awards-scraper,live,dataset card,https://huggingface.co/datasets/Publicrecords/us-federal-contract-awards-top100,Lane B 2026-11-24 16:22 America/Toronto
 Kaggle datasets,ashby-jobs-scraper,remaining,account,,AMFM-4 2026-11-24
 Kaggle datasets,calibration-ledger,remaining,account,,AMFM-4 2026-11-24
 Kaggle datasets,company-social-profile-finder,remaining,account,,AMFM-4 2026-11-24
@@ -8963,24 +8963,24 @@ Agent.ai marketplace,sports-odds-api,remaining,bundle,,AMFM-4 2026-11-24
 Agent.ai marketplace,spotify-play-count-scraper,remaining,bundle,,AMFM-4 2026-11-24
 Agent.ai marketplace,uk-find-a-tender-scraper,remaining,bundle,,AMFM-4 2026-11-24
 Agent.ai marketplace,usaspending-awards-scraper,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),ashby-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),calibration-ledger,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),company-social-profile-finder,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),etsy-search-scraper,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),etsy-shop-velocity,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),eu-ted-notices-scraper,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),google-ads-transparency-scraper,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),govcon-opportunity-feed,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),grants-gov-scraper,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),greenhouse-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),legistar-meetings-scraper,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),lever-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),skool-community-growth-tracker,not-listed,,,
-APIs.guru (OpenAPI PR),smartrecruiters-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),sports-odds-api,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),spotify-play-count-scraper,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),uk-find-a-tender-scraper,remaining,bundle,,AMFM-4 2026-11-24
-APIs.guru (OpenAPI PR),usaspending-awards-scraper,remaining,bundle,,AMFM-4 2026-11-24
+APIs.guru (OpenAPI PR),ashby-jobs-scraper,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),calibration-ledger,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),company-social-profile-finder,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),etsy-search-scraper,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),etsy-shop-velocity,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),eu-ted-notices-scraper,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),google-ads-transparency-scraper,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),govcon-opportunity-feed,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),grants-gov-scraper,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),greenhouse-jobs-scraper,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),legistar-meetings-scraper,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),lever-jobs-scraper,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),skool-community-growth-tracker,not-listed,,,Lane B 2026-11-24 16:22 America/Toronto: omitted
+APIs.guru (OpenAPI PR),smartrecruiters-jobs-scraper,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),sports-odds-api,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),spotify-play-count-scraper,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),uk-find-a-tender-scraper,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
+APIs.guru (OpenAPI PR),usaspending-awards-scraper,submitted,openapi spec,https://github.com/APIs-guru/openapi-directory/issues/4659,Lane B 2026-11-24 16:22 America/Toronto
 Public APIs (publicapis.io),ashby-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
 Public APIs (publicapis.io),calibration-ledger,remaining,bundle,,AMFM-4 2026-11-24
 Public APIs (publicapis.io),company-social-profile-finder,remaining,bundle,,AMFM-4 2026-11-24
@@ -9377,3 +9377,57 @@ Lobsters (invite only - skip),sports-odds-api,remaining,bundle,,AMFM-4 2026-11-2
 Lobsters (invite only - skip),spotify-play-count-scraper,remaining,bundle,,AMFM-4 2026-11-24
 Lobsters (invite only - skip),uk-find-a-tender-scraper,remaining,bundle,,AMFM-4 2026-11-24
 Lobsters (invite only - skip),usaspending-awards-scraper,remaining,bundle,,AMFM-4 2026-11-24
+thedaviddias/llms-txt-hub,ashby-jobs-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,calibration-ledger,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,company-social-profile-finder,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,etsy-search-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,etsy-shop-velocity,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,eu-ted-notices-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,google-ads-transparency-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,govcon-opportunity-feed,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,grants-gov-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,greenhouse-jobs-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,legistar-meetings-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,lever-jobs-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,smartrecruiters-jobs-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,sports-odds-api,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,spotify-play-count-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,uk-find-a-tender-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,usaspending-awards-scraper,submitted,llms.txt site,https://github.com/thedaviddias/llms-txt-hub/pull/2644,Lane B 2026-11-24 16:22 America/Toronto
+thedaviddias/llms-txt-hub,skool-community-growth-tracker,not-listed,,,
+PatrickJS/awesome-cursorrules,ashby-jobs-scraper,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,calibration-ledger,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,company-social-profile-finder,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,etsy-search-scraper,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,etsy-shop-velocity,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,eu-ted-notices-scraper,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,google-ads-transparency-scraper,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,govcon-opportunity-feed,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,grants-gov-scraper,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,greenhouse-jobs-scraper,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,legistar-meetings-scraper,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,lever-jobs-scraper,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,smartrecruiters-jobs-scraper,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,sports-odds-api,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,spotify-play-count-scraper,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,uk-find-a-tender-scraper,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,usaspending-awards-scraper,submitted,cursor rule,https://github.com/PatrickJS/awesome-cursorrules/pull/470,Lane B 2026-11-24 16:22 America/Toronto
+PatrickJS/awesome-cursorrules,skool-community-growth-tracker,not-listed,,,
+npm registry,ashby-jobs-scraper,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,calibration-ledger,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,company-social-profile-finder,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,etsy-search-scraper,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,etsy-shop-velocity,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,eu-ted-notices-scraper,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,google-ads-transparency-scraper,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,govcon-opportunity-feed,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,grants-gov-scraper,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,greenhouse-jobs-scraper,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,legistar-meetings-scraper,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,lever-jobs-scraper,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,smartrecruiters-jobs-scraper,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,sports-odds-api,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,spotify-play-count-scraper,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,uk-find-a-tender-scraper,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,usaspending-awards-scraper,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper
+npm registry,skool-community-growth-tracker,held-needs-Mark,,,Lane B 2026-11-24: no npm package and no npm token; needs account + real wrapper

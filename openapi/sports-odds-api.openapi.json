@@ -1,0 +1,153 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Sports Betting Odds API: BetRivers, Unibet, Paf, Svenska Spel",
+    "description": "Sports betting odds API: live and pre-game odds from BetRivers (12 US states + Ontario), Unibet (7 countries), Paf, Svenska Spel and ATG in one call. One row per game with every book's price and the best price per outcome. No API key. Pay per game.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/sports-odds-api\nMCP: https://mcp.apify.com?tools=publicrecords/sports-odds-api\nAuthor: Public Records.",
+    "version": "0.0.3",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/sports-odds-api",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~sports-odds-api/runs": {
+      "post": {
+        "operationId": "start_sports_odds_api_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/sports-odds-api",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/sports-odds-api",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Kambi sportsbook odds\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"leagues\": {\n      \"title\": \"Leagues or sports\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Kambi paths, sport or league level: \\\"basketball/nba\\\", \\\"american_football/nfl\\\", \\\"ice_hockey/nhl\\\", \\\"baseball/mlb\\\", \\\"football/england/premier_league\\\", or a whole sport such as \\\"tennis\\\". Unknown paths are answered with suggestions and are never charged.\",\n      \"prefill\": [\n        \"basketball/nba\",\n        \"american_football/nfl\",\n        \"ice_hockey/nhl\",\n        \"baseball/mlb\",\n        \"football/england/premier_league\"\n      ],\n      \"default\": [\n        \"basketball/nba\",\n        \"american_football/nfl\",\n        \"ice_hockey/nhl\",\n        \"baseball/mlb\",\n        \"football/england/premier_league\"\n      ]\n    },\n    \"operators\": {\n      \"title\": \"Sportsbooks\",\n      \"type\": \"array\",\n      \"editor\": \"select\",\n      \"description\": \"Kambi-powered books to price. Each book is a separate brand/jurisdiction feed; prices can differ between them. The list contains only books verified open on the date in the README.\",\n      \"items\": {\n        \"type\": \"string\",\n        \"enum\": [\n          \"rsiusnj\",\n          \"rsiusny\",\n          \"rsiuspa\",\n          \"rsiusil\",\n          \"rsiusin\",\n          \"rsiusco\",\n          \"rsiusmi\",\n          \"rsiusaz\",\n          \"rsiusla\",\n          \"rsiusmd\",\n          \"rsiusoh\",\n          \"rsiuswv\",\n          \"rsicaon\",\n          \"ubuk\",\n          \"ubca\",\n          \"ubse\",\n          \"ubdk\",\n          \"ubbe\",\n          \"ubnl\",\n          \"ubro\",\n          \"paf\",\n          \"pafes\",\n          \"svenskaspel\",\n          \"atg\"\n        ],\n        \"enumTitles\": [\n          \"BetRivers \u2014 US-NJ (rsiusnj)\",\n          \"BetRivers \u2014 US-NY (rsiusny)\",\n          \"BetRivers \u2014 US-PA (rsiuspa)\",\n          \"BetRivers \u2014 US-IL (rsiusil)\",\n          \"BetRivers \u2014 US-IN (rsiusin)\",\n          \"BetRivers \u2014 US-CO (rsiusco)\",\n          \"BetRivers \u2014 US-MI (rsiusmi)\",\n          \"BetRivers \u2014 US-AZ (rsiusaz)\",\n          \"BetRivers \u2014 US-LA (rsiusla)\",\n          \"BetRivers \u2014 US-MD (rsiusmd)\",\n          \"BetRivers \u2014 US-OH (rsiusoh)\",\n          \"BetRivers \u2014 US-WV (rsiuswv)\",\n          \"BetRivers \u2014 CA-ON (rsicaon)\",\n          \"Unibet \u2014 GB (ubuk)\",\n          \"Unibet \u2014 CA-ON (ubca)\",\n          \"Unibet \u2014 SE (ubse)\",\n          \"Unibet \u2014 DK (ubdk)\",\n          \"Unibet \u2014 BE (ubbe)\",\n          \"Unibet \u2014 NL (ubnl)\",\n          \"Unibet \u2014 RO (ubro)\",\n          \"Paf \u2014 FI (paf)\",\n          \"Paf \u2014 ES (pafes)\",\n          \"Svenska Spel \u2014 SE (svenskaspel)\",\n          \"ATG \u2014 SE (atg)\"\n        ]\n      },\n      \"default\": [\n        \"rsiusnj\",\n        \"rsiusny\",\n        \"rsiuspa\",\n        \"rsicaon\",\n        \"ubuk\",\n        \"ubca\",\n        \"paf\",\n        \"svenskaspel\",\n        \"atg\"\n      ]\n    },\n    \"markets\": {\n      \"title\": \"Markets\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"main\",\n        \"all\"\n      ],\n      \"enumTitles\": [\n        \"Main lines (moneyline, spread, total)\",\n        \"Every market incl. player props and alternates\"\n      ],\n      \"description\": \"\\\"main\\\" returns the headline markets per game. \\\"all\\\" returns each game's full board (often 300\u2013500 markets) and is priced higher.\",\n      \"default\": \"main\"\n    },\n    \"includeLive\": {\n      \"title\": \"Include in-play games\",\n      \"type\": \"boolean\",\n      \"description\": \"Include games already started (live prices at the moment of the run).\",\n      \"default\": true\n    },\n    \"startsWithinHours\": {\n      \"title\": \"Only games starting within (hours)\",\n      \"type\": \"integer\",\n      \"minimum\": 0,\n      \"description\": \"0 = no limit. Live games are kept when \\\"Include in-play games\\\" is on.\",\n      \"default\": 0\n    },\n    \"maxEvents\": {\n      \"title\": \"Max games\",\n      \"type\": \"integer\",\n      \"minimum\": 1,\n      \"maximum\": 1000,\n      \"description\": \"Soonest games first. You pay per game returned.\",\n      \"prefill\": 10,\n      \"default\": 50\n    },\n    \"proxyConfiguration\": {\n      \"title\": \"Proxy (optional)\",\n      \"type\": \"object\",\n      \"editor\": \"proxy\",\n      \"description\": \"On by default. Kambi limits how often one IP may ask; your run moves to a fresh Apify Proxy IP whenever it is slowed down. Turn off only to test without a proxy.\",\n      \"prefill\": {\n        \"useApifyProxy\": true\n      },\n      \"default\": {\n        \"useApifyProxy\": true\n      }\n    }\n  },\n  \"required\": []\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~sports-odds-api/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_sports_odds_api_sync_get_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/sports-odds-api and return dataset items",
+        "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Kambi sportsbook odds\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"leagues\": {\n      \"title\": \"Leagues or sports\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Kambi paths, sport or league level: \\\"basketball/nba\\\", \\\"american_football/nfl\\\", \\\"ice_hockey/nhl\\\", \\\"baseball/mlb\\\", \\\"football/england/premier_league\\\", or a whole sport such as \\\"tennis\\\". Unknown paths are answered with suggestions and are never charged.\",\n      \"prefill\": [\n        \"basketball/nba\",\n        \"american_football/nfl\",\n        \"ice_hockey/nhl\",\n        \"baseball/mlb\",\n        \"football/england/premier_league\"\n      ],\n      \"default\": [\n        \"basketball/nba\",\n        \"american_football/nfl\",\n        \"ice_hockey/nhl\",\n        \"baseball/mlb\",\n        \"football/england/premier_league\"\n      ]\n    },\n    \"operators\": {\n      \"title\": \"Sportsbooks\",\n      \"type\": \"array\",\n      \"editor\": \"select\",\n      \"description\": \"Kambi-powered books to price. Each book is a separate brand/jurisdiction feed; prices can differ between them. The list contains only books verified open on the date in the README.\",\n      \"items\": {\n        \"type\": \"string\",\n        \"enum\": [\n          \"rsiusnj\",\n          \"rsiusny\",\n          \"rsiuspa\",\n          \"rsiusil\",\n          \"rsiusin\",\n          \"rsiusco\",\n          \"rsiusmi\",\n          \"rsiusaz\",\n          \"rsiusla\",\n          \"rsiusmd\",\n          \"rsiusoh\",\n          \"rsiuswv\",\n          \"rsicaon\",\n          \"ubuk\",\n          \"ubca\",\n          \"ubse\",\n          \"ubdk\",\n          \"ubbe\",\n          \"ubnl\",\n          \"ubro\",\n          \"paf\",\n          \"pafes\",\n          \"svenskaspel\",\n          \"atg\"\n        ],\n        \"enumTitles\": [\n          \"BetRivers \u2014 US-NJ (rsiusnj)\",\n          \"BetRivers \u2014 US-NY (rsiusny)\",\n          \"BetRivers \u2014 US-PA (rsiuspa)\",\n          \"BetRivers \u2014 US-IL (rsiusil)\",\n          \"BetRivers \u2014 US-IN (rsiusin)\",\n          \"BetRivers \u2014 US-CO (rsiusco)\",\n          \"BetRivers \u2014 US-MI (rsiusmi)\",\n          \"BetRivers \u2014 US-AZ (rsiusaz)\",\n          \"BetRivers \u2014 US-LA (rsiusla)\",\n          \"BetRivers \u2014 US-MD (rsiusmd)\",\n          \"BetRivers \u2014 US-OH (rsiusoh)\",\n          \"BetRivers \u2014 US-WV (rsiuswv)\",\n          \"BetRivers \u2014 CA-ON (rsicaon)\",\n          \"Unibet \u2014 GB (ubuk)\",\n          \"Unibet \u2014 CA-ON (ubca)\",\n          \"Unibet \u2014 SE (ubse)\",\n          \"Unibet \u2014 DK (ubdk)\",\n          \"Unibet \u2014 BE (ubbe)\",\n          \"Unibet \u2014 NL (ubnl)\",\n          \"Unibet \u2014 RO (ubro)\",\n          \"Paf \u2014 FI (paf)\",\n          \"Paf \u2014 ES (pafes)\",\n          \"Svenska Spel \u2014 SE (svenskaspel)\",\n          \"ATG \u2014 SE (atg)\"\n        ]\n      },\n      \"default\": [\n        \"rsiusnj\",\n        \"rsiusny\",\n        \"rsiuspa\",\n        \"rsicaon\",\n        \"ubuk\",\n        \"ubca\",\n        \"paf\",\n        \"svenskaspel\",\n        \"atg\"\n      ]\n    },\n    \"markets\": {\n      \"title\": \"Markets\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"main\",\n        \"all\"\n      ],\n      \"enumTitles\": [\n        \"Main lines (moneyline, spread, total)\",\n        \"Every market incl. player props and alternates\"\n      ],\n      \"description\": \"\\\"main\\\" returns the headline markets per game. \\\"all\\\" returns each game's full board (often 300\u2013500 markets) and is priced higher.\",\n      \"default\": \"main\"\n    },\n    \"includeLive\": {\n      \"title\": \"Include in-play games\",\n      \"type\": \"boolean\",\n      \"description\": \"Include games already started (live prices at the moment of the run).\",\n      \"default\": true\n    },\n    \"startsWithinHours\": {\n      \"title\": \"Only games starting within (hours)\",\n      \"type\": \"integer\",\n      \"minimum\": 0,\n      \"description\": \"0 = no limit. Live games are kept when \\\"Include in-play games\\\" is on.\",\n      \"default\": 0\n    },\n    \"maxEvents\": {\n      \"title\": \"Max games\",\n      \"type\": \"integer\",\n      \"minimum\": 1,\n      \"maximum\": 1000,\n      \"description\": \"Soonest games first. You pay per game returned.\",\n      \"prefill\": 10,\n      \"default\": 50\n    },\n    \"proxyConfiguration\": {\n      \"title\": \"Proxy (optional)\",\n      \"type\": \"object\",\n      \"editor\": \"proxy\",\n      \"description\": \"On by default. Kambi limits how often one IP may ask; your run moves to a fresh Apify Proxy IP whenever it is slowed down. Turn off only to test without a proxy.\",\n      \"prefill\": {\n        \"useApifyProxy\": true\n      },\n      \"default\": {\n        \"useApifyProxy\": true\n      }\n    }\n  },\n  \"required\": []\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/sports-odds-api"
+  }
+}

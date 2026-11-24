@@ -1,0 +1,153 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Grants.gov Search API: federal grants list with deadlines",
+    "description": "Which federal grants are open right now? Searches Grants.gov and returns opportunity, agency, deadline, eligibility and the source link.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/grants-gov-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/grants-gov-scraper\nAuthor: Public Records.",
+    "version": "0.0.15",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/grants-gov-scraper",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~grants-gov-scraper/runs": {
+      "post": {
+        "operationId": "start_grants_gov_scraper_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/grants-gov-scraper",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/grants-gov-scraper",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"$schema\": \"https://apify.com/schemas/v1/input.ide.json\",\n  \"title\": \"Grants.gov Opportunities Scraper\",\n  \"description\": \"Public Grants.gov search2 API. No API key. Response token/accessKey are ignored. Server date filter: postedWithinDays \u2192 dateRange. open/close date fields are client-side (API does not support custom MM/DD ranges).\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"keyword\": {\n      \"title\": \"Keyword\",\n      \"type\": \"string\",\n      \"description\": \"Search keyword (e.g. education, cybersecurity). Leave empty for all.\",\n      \"editor\": \"textfield\",\n      \"default\": \"\",\n      \"prefill\": \"\"\n    },\n    \"agency\": {\n      \"title\": \"Agency\",\n      \"type\": \"string\",\n      \"description\": \"Mapped to API body agencies (e.g. HHS, EPA, NSF).\",\n      \"editor\": \"textfield\",\n      \"default\": \"\",\n      \"nullable\": true\n    },\n    \"status\": {\n      \"title\": \"Opportunity status\",\n      \"type\": \"string\",\n      \"description\": \"Mapped to API oppStatuses. Use forecasted|posted|closed|archived or pipe-joined.\",\n      \"editor\": \"textfield\",\n      \"default\": \"forecasted|posted\",\n      \"prefill\": \"posted\"\n    },\n    \"postedWithinDays\": {\n      \"title\": \"Posted within N days\",\n      \"type\": \"integer\",\n      \"description\": \"Server-side filter mapped to search2 dateRange (posted-date lookback). Verified values: 3,7,14,21,28,35,42,49,56,90,180,365. Omit for no posted-date filter.\",\n      \"editor\": \"number\",\n      \"minimum\": 1,\n      \"maximum\": 3650,\n      \"nullable\": true\n    },\n    \"openDateFrom\": {\n      \"title\": \"Open date from\",\n      \"type\": \"string\",\n      \"description\": \"Client-side filter on openDate. Accepts MM/DD/YYYY or YYYY-MM-DD. Inclusive.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"openDateTo\": {\n      \"title\": \"Open date to\",\n      \"type\": \"string\",\n      \"description\": \"Client-side filter on openDate. Inclusive.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"closeDateFrom\": {\n      \"title\": \"Close date from\",\n      \"type\": \"string\",\n      \"description\": \"Client-side filter on closeDate. Inclusive. Useful for 'still open' windows.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"closeDateTo\": {\n      \"title\": \"Close date to\",\n      \"type\": \"string\",\n      \"description\": \"Client-side filter on closeDate. Inclusive.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"maxItems\": {\n      \"title\": \"Max items\",\n      \"type\": \"integer\",\n      \"description\": \"Cap on opportunity rows (deduped by opportunityId).\",\n      \"default\": 50,\n      \"minimum\": 1,\n      \"maximum\": 5000\n    },\n    \"fetchDetails\": {\n      \"title\": \"Fetch opportunity details\",\n      \"type\": \"boolean\",\n      \"description\": \"Hydrate synopsis via fetchOpportunity. Still one PPE charge per opportunity.\",\n      \"default\": false\n    }\n  }\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~grants-gov-scraper/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_grants_gov_scraper_sync_get_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/grants-gov-scraper and return dataset items",
+        "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"$schema\": \"https://apify.com/schemas/v1/input.ide.json\",\n  \"title\": \"Grants.gov Opportunities Scraper\",\n  \"description\": \"Public Grants.gov search2 API. No API key. Response token/accessKey are ignored. Server date filter: postedWithinDays \u2192 dateRange. open/close date fields are client-side (API does not support custom MM/DD ranges).\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"keyword\": {\n      \"title\": \"Keyword\",\n      \"type\": \"string\",\n      \"description\": \"Search keyword (e.g. education, cybersecurity). Leave empty for all.\",\n      \"editor\": \"textfield\",\n      \"default\": \"\",\n      \"prefill\": \"\"\n    },\n    \"agency\": {\n      \"title\": \"Agency\",\n      \"type\": \"string\",\n      \"description\": \"Mapped to API body agencies (e.g. HHS, EPA, NSF).\",\n      \"editor\": \"textfield\",\n      \"default\": \"\",\n      \"nullable\": true\n    },\n    \"status\": {\n      \"title\": \"Opportunity status\",\n      \"type\": \"string\",\n      \"description\": \"Mapped to API oppStatuses. Use forecasted|posted|closed|archived or pipe-joined.\",\n      \"editor\": \"textfield\",\n      \"default\": \"forecasted|posted\",\n      \"prefill\": \"posted\"\n    },\n    \"postedWithinDays\": {\n      \"title\": \"Posted within N days\",\n      \"type\": \"integer\",\n      \"description\": \"Server-side filter mapped to search2 dateRange (posted-date lookback). Verified values: 3,7,14,21,28,35,42,49,56,90,180,365. Omit for no posted-date filter.\",\n      \"editor\": \"number\",\n      \"minimum\": 1,\n      \"maximum\": 3650,\n      \"nullable\": true\n    },\n    \"openDateFrom\": {\n      \"title\": \"Open date from\",\n      \"type\": \"string\",\n      \"description\": \"Client-side filter on openDate. Accepts MM/DD/YYYY or YYYY-MM-DD. Inclusive.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"openDateTo\": {\n      \"title\": \"Open date to\",\n      \"type\": \"string\",\n      \"description\": \"Client-side filter on openDate. Inclusive.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"closeDateFrom\": {\n      \"title\": \"Close date from\",\n      \"type\": \"string\",\n      \"description\": \"Client-side filter on closeDate. Inclusive. Useful for 'still open' windows.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"closeDateTo\": {\n      \"title\": \"Close date to\",\n      \"type\": \"string\",\n      \"description\": \"Client-side filter on closeDate. Inclusive.\",\n      \"editor\": \"datepicker\",\n      \"nullable\": true\n    },\n    \"maxItems\": {\n      \"title\": \"Max items\",\n      \"type\": \"integer\",\n      \"description\": \"Cap on opportunity rows (deduped by opportunityId).\",\n      \"default\": 50,\n      \"minimum\": 1,\n      \"maximum\": 5000\n    },\n    \"fetchDetails\": {\n      \"title\": \"Fetch opportunity details\",\n      \"type\": \"boolean\",\n      \"description\": \"Hydrate synopsis via fetchOpportunity. Still one PPE charge per opportunity.\",\n      \"default\": false\n    }\n  }\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/grants-gov-scraper"
+  }
+}

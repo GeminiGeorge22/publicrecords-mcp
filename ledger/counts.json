@@ -1,13 +1,13 @@
 {
-  "as_of": "2026-11-24 15:54 America/Toronto",
-  "total_surfaces": 521,
-  "live": 77,
-  "submitted_pending": 199,
-  "remaining_to_do": 71,
-  "held_needs_Mark": 28,
+  "as_of": "2026-11-24 16:23 America/Toronto",
+  "total_surfaces": 524,
+  "live": 78,
+  "submitted_pending": 202,
+  "remaining_to_do": 69,
+  "held_needs_Mark": 29,
   "skipped": 146,
-  "touched_live_submitted_remaining": 347,
-  "checksum": 521,
+  "touched_live_submitted_remaining": 349,
+  "checksum": 524,
   "remaining_names": [
     "AI Agent Store aiagentstore.ai",
     "AI Agents List aiagentslist.com",
@@ -16,7 +16,6 @@
     "AIBase MCP",
     "AIcyclopedia",
     "API List apilist.fun",
-    "APIs.guru (OpenAPI PR)",
     "Activepieces community template",
     "Agent.ai marketplace",
     "AgentHunter",
@@ -39,7 +38,6 @@
     "Hacker News Show HN",
     "Hashnode",
     "HostedMCP hostedmcp.org (pt-BR)",
-    "Hugging Face (account + org \"publicrecords\" + write token to vault)",
     "Indie Hackers products",
     "Insidr AI tools",
     "Juejin 掘金",
@@ -109,33 +107,34 @@
     "Zyla API Hub",
     "any-api.com",
     "hesreallyhim/awesome-claude-code",
-    "mcpservers.com"
+    "mcpservers.com",
+    "npm registry"
   ],
   "by_type": {
     "awesome-list": 267,
     "plugin-marketplace": 25,
-    "other": 53,
+    "other": 55,
     "mcp-directory": 133,
-    "skills-marketplace": 14,
+    "skills-marketplace": 15,
     "registry": 9,
     "article": 20
   },
-  "placements_rows": 9378,
+  "placements_rows": 9432,
   "placements_by_status": {
-    "live": 823,
-    "not-listed": 1725,
-    "submitted": 2396,
-    "remaining": 1266,
+    "live": 840,
+    "not-listed": 1720,
+    "submitted": 2454,
+    "remaining": 1232,
     "skipped": 2620,
-    "held-needs-Mark": 548
+    "held-needs-Mark": 566
   },
   "skool_placements_by_status": {
     "submitted": 141,
     "skipped": 146,
-    "not-listed": 174,
+    "not-listed": 176,
     "live": 16,
     "remaining": 13,
-    "held-needs-Mark": 31
+    "held-needs-Mark": 32
   },
   "access_points_rows": 135
 }

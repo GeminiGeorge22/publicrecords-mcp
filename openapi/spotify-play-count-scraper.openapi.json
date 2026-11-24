@@ -1,0 +1,153 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Spotify Play Count & Monthly Listeners Scraper",
+    "description": "Spotify scraper for play counts and monthly listeners: paste a track, album, playlist or artist link and get every track's play count, plus an artist's monthly listeners and followers. Optional streams per day. No login. Pay per track.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/spotify-play-count-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/spotify-play-count-scraper\nAuthor: Public Records.",
+    "version": "0.1.2",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/spotify-play-count-scraper",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~spotify-play-count-scraper/runs": {
+      "post": {
+        "operationId": "start_spotify_play_count_scraper_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/spotify-play-count-scraper",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/spotify-play-count-scraper",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Spotify Play Count & Monthly Listeners Scraper\",\n  \"description\": \"Paste Spotify links. Get every track's play count, and for artists their monthly listeners and followers.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"urls\": {\n      \"title\": \"Spotify links\",\n      \"type\": \"array\",\n      \"description\": \"One per line: track, album, artist or playlist links (open.spotify.com/\u2026) or URIs (spotify:album:\u2026).\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"https://open.spotify.com/album/4aawyAB9vmqN3uQ7FjRGTy\"\n      ]\n    },\n    \"addDailyStreams\": {\n      \"title\": \"Add daily streams (last 1, 7 and 30 days)\",\n      \"type\": \"boolean\",\n      \"description\": \"Adds streams per day for tracks we have been tracking. Tracks seen for the first time get empty values today and history from tomorrow.\",\n      \"default\": false,\n      \"sectionCaption\": \"Advanced\"\n    },\n    \"includeArtistAlbums\": {\n      \"title\": \"For artist links, also scrape their albums and singles\",\n      \"type\": \"boolean\",\n      \"description\": \"Off: an artist link returns the artist row plus its top tracks. On: also every track of the albums and singles shown on the artist page (slower).\",\n      \"default\": false\n    },\n    \"maxTracksPerTarget\": {\n      \"title\": \"Max tracks per link\",\n      \"type\": \"integer\",\n      \"description\": \"0 means no limit. Large playlists and full catalogs can run to thousands of tracks.\",\n      \"default\": 0,\n      \"minimum\": 0,\n      \"prefill\": 50\n    }\n  },\n  \"required\": [\n    \"urls\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~spotify-play-count-scraper/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_spotify_play_count_scraper_sync_get_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/spotify-play-count-scraper and return dataset items",
+        "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Spotify Play Count & Monthly Listeners Scraper\",\n  \"description\": \"Paste Spotify links. Get every track's play count, and for artists their monthly listeners and followers.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"urls\": {\n      \"title\": \"Spotify links\",\n      \"type\": \"array\",\n      \"description\": \"One per line: track, album, artist or playlist links (open.spotify.com/\u2026) or URIs (spotify:album:\u2026).\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"https://open.spotify.com/album/4aawyAB9vmqN3uQ7FjRGTy\"\n      ]\n    },\n    \"addDailyStreams\": {\n      \"title\": \"Add daily streams (last 1, 7 and 30 days)\",\n      \"type\": \"boolean\",\n      \"description\": \"Adds streams per day for tracks we have been tracking. Tracks seen for the first time get empty values today and history from tomorrow.\",\n      \"default\": false,\n      \"sectionCaption\": \"Advanced\"\n    },\n    \"includeArtistAlbums\": {\n      \"title\": \"For artist links, also scrape their albums and singles\",\n      \"type\": \"boolean\",\n      \"description\": \"Off: an artist link returns the artist row plus its top tracks. On: also every track of the albums and singles shown on the artist page (slower).\",\n      \"default\": false\n    },\n    \"maxTracksPerTarget\": {\n      \"title\": \"Max tracks per link\",\n      \"type\": \"integer\",\n      \"description\": \"0 means no limit. Large playlists and full catalogs can run to thousands of tracks.\",\n      \"default\": 0,\n      \"minimum\": 0,\n      \"prefill\": 50\n    }\n  },\n  \"required\": [\n    \"urls\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/spotify-play-count-scraper"
+  }
+}

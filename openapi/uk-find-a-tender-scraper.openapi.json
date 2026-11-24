@@ -1,0 +1,153 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Find a Tender & Contracts Finder: UK government tenders",
+    "description": "Which UK government tenders were published today? Returns Find a Tender and Contracts Finder notices with buyer, value, deadline and source link.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/uk-find-a-tender-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/uk-find-a-tender-scraper\nAuthor: Public Records.",
+    "version": "0.0.14",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/uk-find-a-tender-scraper",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~uk-find-a-tender-scraper/runs": {
+      "post": {
+        "operationId": "start_uk_find_a_tender_scraper_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/uk-find-a-tender-scraper",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/uk-find-a-tender-scraper",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"$schema\": \"https://apify.com/schemas/v1/input.ide.json\",\n  \"title\": \"UK Find a Tender Scraper\",\n  \"description\": \"Public OCDS 1.1 packages from Find a Tender. Keywords and CPV are applied client-side after flatten.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"keywords\": {\n      \"title\": \"Keywords\",\n      \"type\": \"array\",\n      \"description\": \"Case-insensitive match on tender title, description, or buyer name (client-side).\",\n      \"editor\": \"stringList\",\n      \"default\": []\n    },\n    \"cpv\": {\n      \"title\": \"CPV codes\",\n      \"type\": \"array\",\n      \"description\": \"Match when tender.items[].classification.id starts with any code (client-side).\",\n      \"editor\": \"stringList\",\n      \"default\": []\n    },\n    \"noticeType\": {\n      \"title\": \"Notice stages\",\n      \"type\": \"array\",\n      \"description\": \"Mapped to API stages: planning | tender | award. Omit for all.\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"prefill\": [\n        \"tender\"\n      ]\n    },\n    \"updatedFrom\": {\n      \"title\": \"Updated from\",\n      \"type\": \"string\",\n      \"description\": \"ISO datetime. Default: 7 days ago.\",\n      \"editor\": \"textfield\",\n      \"nullable\": true\n    },\n    \"updatedTo\": {\n      \"title\": \"Updated to\",\n      \"type\": \"string\",\n      \"description\": \"ISO datetime. Default: now.\",\n      \"editor\": \"textfield\",\n      \"nullable\": true\n    },\n    \"maxItems\": {\n      \"title\": \"Max items\",\n      \"type\": \"integer\",\n      \"description\": \"Cap on notice rows.\",\n      \"default\": 50,\n      \"minimum\": 1,\n      \"maximum\": 5000\n    }\n  }\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~uk-find-a-tender-scraper/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_uk_find_a_tender_scraper_sync_get_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/uk-find-a-tender-scraper and return dataset items",
+        "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"$schema\": \"https://apify.com/schemas/v1/input.ide.json\",\n  \"title\": \"UK Find a Tender Scraper\",\n  \"description\": \"Public OCDS 1.1 packages from Find a Tender. Keywords and CPV are applied client-side after flatten.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"keywords\": {\n      \"title\": \"Keywords\",\n      \"type\": \"array\",\n      \"description\": \"Case-insensitive match on tender title, description, or buyer name (client-side).\",\n      \"editor\": \"stringList\",\n      \"default\": []\n    },\n    \"cpv\": {\n      \"title\": \"CPV codes\",\n      \"type\": \"array\",\n      \"description\": \"Match when tender.items[].classification.id starts with any code (client-side).\",\n      \"editor\": \"stringList\",\n      \"default\": []\n    },\n    \"noticeType\": {\n      \"title\": \"Notice stages\",\n      \"type\": \"array\",\n      \"description\": \"Mapped to API stages: planning | tender | award. Omit for all.\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"prefill\": [\n        \"tender\"\n      ]\n    },\n    \"updatedFrom\": {\n      \"title\": \"Updated from\",\n      \"type\": \"string\",\n      \"description\": \"ISO datetime. Default: 7 days ago.\",\n      \"editor\": \"textfield\",\n      \"nullable\": true\n    },\n    \"updatedTo\": {\n      \"title\": \"Updated to\",\n      \"type\": \"string\",\n      \"description\": \"ISO datetime. Default: now.\",\n      \"editor\": \"textfield\",\n      \"nullable\": true\n    },\n    \"maxItems\": {\n      \"title\": \"Max items\",\n      \"type\": \"integer\",\n      \"description\": \"Cap on notice rows.\",\n      \"default\": 50,\n      \"minimum\": 1,\n      \"maximum\": 5000\n    }\n  }\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/uk-find-a-tender-scraper"
+  }
+}

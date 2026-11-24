@@ -1,0 +1,138 @@
+[
+  {
+    "slug": "ashby-jobs-scraper",
+    "title": "Ashby Jobs Scraper \u2014 New Job Postings Since Any Date",
+    "store": "https://apify.com/publicrecords/ashby-jobs-scraper",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/ashby-jobs-scraper",
+    "file": "ashby-jobs-scraper.openapi.json",
+    "buildId": "8mjtwxWAturpfDPXh"
+  },
+  {
+    "slug": "calibration-ledger",
+    "title": "Calibration Ledger \u2014 trust a forecast, with evidence (beta)",
+    "store": "https://apify.com/publicrecords/calibration-ledger",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/calibration-ledger",
+    "file": "calibration-ledger.openapi.json",
+    "buildId": "sdmeZvNqpHAhbhMmY"
+  },
+  {
+    "slug": "company-social-profile-finder",
+    "title": "Company Website to LinkedIn & Social Media Links",
+    "store": "https://apify.com/publicrecords/company-social-profile-finder",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/company-social-profile-finder",
+    "file": "company-social-profile-finder.openapi.json",
+    "buildId": "fLFucWTn4mdNAeBXg"
+  },
+  {
+    "slug": "etsy-search-scraper",
+    "title": "Etsy Scraper \u2014 Listings, Prices, Best Sellers & Ad Flags",
+    "store": "https://apify.com/publicrecords/etsy-search-scraper",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/etsy-search-scraper",
+    "file": "etsy-search-scraper.openapi.json",
+    "buildId": "FcRfHkKn9nXxyhGNF"
+  },
+  {
+    "slug": "etsy-shop-velocity",
+    "title": "Etsy Shop Daily Sales Tracker & Scraper",
+    "store": "https://apify.com/publicrecords/etsy-shop-velocity",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/etsy-shop-velocity",
+    "file": "etsy-shop-velocity.openapi.json",
+    "buildId": "d6hBTmqZataenTmSO"
+  },
+  {
+    "slug": "eu-ted-notices-scraper",
+    "title": "TED Tenders Daily: EU procurement notices from Tenders",
+    "store": "https://apify.com/publicrecords/eu-ted-notices-scraper",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/eu-ted-notices-scraper",
+    "file": "eu-ted-notices-scraper.openapi.json",
+    "buildId": "MWD16HQbqdOPmguEa"
+  },
+  {
+    "slug": "google-ads-transparency-scraper",
+    "title": "Google Ads Transparency Scraper: Competitor Ads",
+    "store": "https://apify.com/publicrecords/google-ads-transparency-scraper",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/google-ads-transparency-scraper",
+    "file": "google-ads-transparency-scraper.openapi.json",
+    "buildId": "thT4DCd3ahzxRIVk4"
+  },
+  {
+    "slug": "govcon-opportunity-feed",
+    "title": "Federal Government Contracts: SAM.gov + Grants.gov in one",
+    "store": "https://apify.com/publicrecords/govcon-opportunity-feed",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/govcon-opportunity-feed",
+    "file": "govcon-opportunity-feed.openapi.json",
+    "buildId": "IPShBkjHaldZujfOa"
+  },
+  {
+    "slug": "grants-gov-scraper",
+    "title": "Grants.gov Search API: federal grants list with deadlines",
+    "store": "https://apify.com/publicrecords/grants-gov-scraper",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/grants-gov-scraper",
+    "file": "grants-gov-scraper.openapi.json",
+    "buildId": "cRbjaeOcpvUuvHeyO"
+  },
+  {
+    "slug": "greenhouse-jobs-scraper",
+    "title": "Greenhouse Jobs Scraper \u2014 New Job Postings Since Any Date",
+    "store": "https://apify.com/publicrecords/greenhouse-jobs-scraper",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/greenhouse-jobs-scraper",
+    "file": "greenhouse-jobs-scraper.openapi.json",
+    "buildId": "2aEwZcQD2XeuVX0US"
+  },
+  {
+    "slug": "legistar-meetings-scraper",
+    "title": "City Council Meeting Minutes & Agendas Scraper (Legistar)",
+    "store": "https://apify.com/publicrecords/legistar-meetings-scraper",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/legistar-meetings-scraper",
+    "file": "legistar-meetings-scraper.openapi.json",
+    "buildId": "nvOQ2tWFqWspzWPop"
+  },
+  {
+    "slug": "lever-jobs-scraper",
+    "title": "Lever Jobs Scraper \u2014 New Job Postings Since Any Date",
+    "store": "https://apify.com/publicrecords/lever-jobs-scraper",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/lever-jobs-scraper",
+    "file": "lever-jobs-scraper.openapi.json",
+    "buildId": "UphowNYVlblreGJj4"
+  },
+  {
+    "slug": "smartrecruiters-jobs-scraper",
+    "title": "SmartRecruiters Jobs Scraper \u2014 New Postings Since Any Date",
+    "store": "https://apify.com/publicrecords/smartrecruiters-jobs-scraper",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/smartrecruiters-jobs-scraper",
+    "file": "smartrecruiters-jobs-scraper.openapi.json",
+    "buildId": "zKDUWVK41qj5R3b12"
+  },
+  {
+    "slug": "sports-odds-api",
+    "title": "Sports Betting Odds API: BetRivers, Unibet, Paf, Svenska Spel",
+    "store": "https://apify.com/publicrecords/sports-odds-api",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/sports-odds-api",
+    "file": "sports-odds-api.openapi.json",
+    "buildId": "K5mN0bFF1NwhLdNcZ"
+  },
+  {
+    "slug": "spotify-play-count-scraper",
+    "title": "Spotify Play Count & Monthly Listeners Scraper",
+    "store": "https://apify.com/publicrecords/spotify-play-count-scraper",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/spotify-play-count-scraper",
+    "file": "spotify-play-count-scraper.openapi.json",
+    "buildId": "xIAvzq9fs1KmvfkBc"
+  },
+  {
+    "slug": "uk-find-a-tender-scraper",
+    "title": "Find a Tender & Contracts Finder: UK government tenders",
+    "store": "https://apify.com/publicrecords/uk-find-a-tender-scraper",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/uk-find-a-tender-scraper",
+    "file": "uk-find-a-tender-scraper.openapi.json",
+    "buildId": "BfG4n4INc3cxOw2eL"
+  },
+  {
+    "slug": "usaspending-awards-scraper",
+    "title": "USAspending API Awards: federal contract and grant awards",
+    "store": "https://apify.com/publicrecords/usaspending-awards-scraper",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/usaspending-awards-scraper",
+    "file": "usaspending-awards-scraper.openapi.json",
+    "buildId": "GiWOmEI1iJSFgTS24"
+  }
+]

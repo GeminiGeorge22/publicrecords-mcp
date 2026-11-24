@@ -1,0 +1,153 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Federal Government Contracts: SAM.gov + Grants.gov in one",
+    "description": "Which government contracts were posted today? Returns SAM.gov and Grants.gov notices in one feed, new-since-last-run deltas, and source links.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/govcon-opportunity-feed\nMCP: https://mcp.apify.com?tools=publicrecords/govcon-opportunity-feed\nAuthor: Public Records.",
+    "version": "0.1.52",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/govcon-opportunity-feed",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~govcon-opportunity-feed/runs": {
+      "post": {
+        "operationId": "start_govcon_opportunity_feed_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/govcon-opportunity-feed",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/govcon-opportunity-feed",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"GovCon Opportunity Feed input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"mode\": {\n      \"title\": \"Mode\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"monitor\",\n        \"snapshot\",\n        \"enrich\",\n        \"rehashState\"\n      ],\n      \"default\": \"monitor\",\n      \"description\": \"snapshot (Store QA prefill): serve matching opportunities from the published HF snapshot. monitor: serve HF delta events with eventDate >= since (near-$0 on a quiet window). enrich: snapshot plus future incumbent overlays (deferred in 0.1.32). rehashState: no-op on the public Actor (stateless; private producer only).\",\n      \"prefill\": \"snapshot\"\n    },\n    \"sources\": {\n      \"title\": \"Sources\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [\n        \"sam\",\n        \"grants\"\n      ],\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"description\": \"Allowed values: sam, grants. SAM defaults to daily Data Services CSV (samBulk=true, no key). Grants.gov needs no key.\",\n      \"prefill\": [\n        \"sam\"\n      ]\n    },\n    \"samApiKey\": {\n      \"title\": \"SAM.gov API key\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"isSecret\": true,\n      \"description\": \"Optional when samBulk=true. Required only for API enrich (resourceLinks) / monitor checks / samBulk=false. Personal public API key from sam.gov (Account Details \u2192 Request API Key). Free. Stored encrypted; never logged.\"\n    },\n    \"naics\": {\n      \"title\": \"NAICS codes\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"description\": \"6-digit or prefix, e.g. 541512 or 5415.\",\n      \"prefill\": [\n        \"541512\"\n      ]\n    },\n    \"agencies\": {\n      \"title\": \"Agencies\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"description\": \"Names or codes, e.g. Department of Defense, DHS, EPA.\"\n    },\n    \"keywords\": {\n      \"title\": \"Keywords\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"description\": \"Free-text keywords matched against opportunity titles.\"\n    },\n    \"setAside\": {\n      \"title\": \"Set-aside types\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"description\": \"SB, 8A, HUBZone, SDVOSB, WOSB, NONE\"\n    },\n    \"states\": {\n      \"title\": \"Place of performance states\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"description\": \"Two-letter US state codes for place of performance (contracts).\"\n    },\n    \"noticeTypes\": {\n      \"title\": \"Notice types\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"description\": \"Filter by notice type, e.g. solicitation, award_notice, grant_posted.\"\n    },\n    \"postedWithinDays\": {\n      \"title\": \"Posted within N days\",\n      \"type\": \"integer\",\n      \"default\": 14,\n      \"minimum\": 1,\n      \"maximum\": 365,\n      \"description\": \"Only include opportunities posted within the last N days. Declared product default is **14 days** (Thursday product window). Schedules and Store listing align to 14d; raise if you need a longer lookback (PPE scales with matches).\",\n      \"prefill\": 14\n    },\n    \"deadlineAfter\": {\n      \"title\": \"Deadline after\",\n      \"type\": \"string\",\n      \"editor\": \"datepicker\",\n      \"description\": \"Defaults to today; excludes expired opportunities.\"\n    },\n    \"since\": {\n      \"title\": \"Since date\",\n      \"type\": \"string\",\n      \"editor\": \"datepicker\",\n      \"description\": \"ET calendar date (YYYY-MM-DD) or RFC3339. Selects HF delta shards with eventDate >= since. Optional for snapshot (serves latest snapshot). For monitor, defaults to a 7-day lookback ending at the latest published delta date.\",\n      \"prefill\": \"2026-09-21\"\n    },\n    \"includeDescriptions\": {\n      \"title\": \"Include full descriptions\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"When true, fetch full grant synopses (slower).\",\n      \"prefill\": false\n    },\n    \"includeContacts\": {\n      \"title\": \"Include official contacts\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"When true, include SAM point-of-contact fields.\",\n      \"prefill\": false\n    },\n    \"enrichTopN\": {\n      \"title\": \"Incumbents per opportunity (enrich mode)\",\n      \"type\": \"integer\",\n      \"default\": 5,\n      \"minimum\": 1,\n      \"maximum\": 20,\n      \"description\": \"Category leaders (or predecessors) per opportunity in enrich mode.\"\n    },\n    \"maxItems\": {\n      \"title\": \"Max items\",\n      \"type\": \"integer\",\n      \"default\": 10000,\n      \"minimum\": 1,\n      \"maximum\": 50000,\n      \"description\": \"Hard cap on opportunity rows returned (and billed) after sort by postedDate desc \u2192 Sol#. Default 10000. Schema maximum 50000 so a buyer can opt into covering a full Active+14d/30d window (they pay PPE for what they take). Under the default 14d window, Active matches often exceed 10k \u2014 runs emit CAP_TRUNCATED + CAP_COVERAGE.covered/total (never silent). Cap always drops the oldest rows.\",\n      \"prefill\": 25\n    },\n    \"samBulk\": {\n      \"title\": \"Use SAM Data Services daily CSV (bulk)\",\n      \"type\": \"boolean\",\n      \"default\": true,\n      \"description\": \"Ignored on the public Actor (v1.2 HF serve). Retained for input compatibility; private producer uses SAM Data Services CSV.\",\n      \"prefill\": true\n    },\n    \"samEnrichLimit\": {\n      \"title\": \"SAM API enrich budget\",\n      \"type\": \"integer\",\n      \"default\": 5,\n      \"minimum\": 0,\n      \"maximum\": 50,\n      \"description\": \"Ignored on the public Actor (v1.2 HF serve). Retained for input compatibility.\",\n      \"prefill\": 0\n    },\n    \"incumbentMode\": {\n      \"title\": \"Enrich join mode\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"category_leaders\",\n        \"predecessor\"\n      ],\n      \"default\": \"category_leaders\",\n      \"description\": \"category_leaders (default): top USASpending recipients by agency\u00d7NAICS. predecessor: true prior-awardee/recompete join (stub until PREDECESSOR_JOIN.md ships). Proof schedules must keep default.\"\n    }\n  },\n  \"required\": []\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~govcon-opportunity-feed/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_govcon_opportunity_feed_sync_get_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/govcon-opportunity-feed and return dataset items",
+        "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"GovCon Opportunity Feed input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"mode\": {\n      \"title\": \"Mode\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"monitor\",\n        \"snapshot\",\n        \"enrich\",\n        \"rehashState\"\n      ],\n      \"default\": \"monitor\",\n      \"description\": \"snapshot (Store QA prefill): serve matching opportunities from the published HF snapshot. monitor: serve HF delta events with eventDate >= since (near-$0 on a quiet window). enrich: snapshot plus future incumbent overlays (deferred in 0.1.32). rehashState: no-op on the public Actor (stateless; private producer only).\",\n      \"prefill\": \"snapshot\"\n    },\n    \"sources\": {\n      \"title\": \"Sources\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [\n        \"sam\",\n        \"grants\"\n      ],\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"description\": \"Allowed values: sam, grants. SAM defaults to daily Data Services CSV (samBulk=true, no key). Grants.gov needs no key.\",\n      \"prefill\": [\n        \"sam\"\n      ]\n    },\n    \"samApiKey\": {\n      \"title\": \"SAM.gov API key\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"isSecret\": true,\n      \"description\": \"Optional when samBulk=true. Required only for API enrich (resourceLinks) / monitor checks / samBulk=false. Personal public API key from sam.gov (Account Details \u2192 Request API Key). Free. Stored encrypted; never logged.\"\n    },\n    \"naics\": {\n      \"title\": \"NAICS codes\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"description\": \"6-digit or prefix, e.g. 541512 or 5415.\",\n      \"prefill\": [\n        \"541512\"\n      ]\n    },\n    \"agencies\": {\n      \"title\": \"Agencies\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"description\": \"Names or codes, e.g. Department of Defense, DHS, EPA.\"\n    },\n    \"keywords\": {\n      \"title\": \"Keywords\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"description\": \"Free-text keywords matched against opportunity titles.\"\n    },\n    \"setAside\": {\n      \"title\": \"Set-aside types\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"description\": \"SB, 8A, HUBZone, SDVOSB, WOSB, NONE\"\n    },\n    \"states\": {\n      \"title\": \"Place of performance states\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"description\": \"Two-letter US state codes for place of performance (contracts).\"\n    },\n    \"noticeTypes\": {\n      \"title\": \"Notice types\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"default\": [],\n      \"description\": \"Filter by notice type, e.g. solicitation, award_notice, grant_posted.\"\n    },\n    \"postedWithinDays\": {\n      \"title\": \"Posted within N days\",\n      \"type\": \"integer\",\n      \"default\": 14,\n      \"minimum\": 1,\n      \"maximum\": 365,\n      \"description\": \"Only include opportunities posted within the last N days. Declared product default is **14 days** (Thursday product window). Schedules and Store listing align to 14d; raise if you need a longer lookback (PPE scales with matches).\",\n      \"prefill\": 14\n    },\n    \"deadlineAfter\": {\n      \"title\": \"Deadline after\",\n      \"type\": \"string\",\n      \"editor\": \"datepicker\",\n      \"description\": \"Defaults to today; excludes expired opportunities.\"\n    },\n    \"since\": {\n      \"title\": \"Since date\",\n      \"type\": \"string\",\n      \"editor\": \"datepicker\",\n      \"description\": \"ET calendar date (YYYY-MM-DD) or RFC3339. Selects HF delta shards with eventDate >= since. Optional for snapshot (serves latest snapshot). For monitor, defaults to a 7-day lookback ending at the latest published delta date.\",\n      \"prefill\": \"2026-09-21\"\n    },\n    \"includeDescriptions\": {\n      \"title\": \"Include full descriptions\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"When true, fetch full grant synopses (slower).\",\n      \"prefill\": false\n    },\n    \"includeContacts\": {\n      \"title\": \"Include official contacts\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"When true, include SAM point-of-contact fields.\",\n      \"prefill\": false\n    },\n    \"enrichTopN\": {\n      \"title\": \"Incumbents per opportunity (enrich mode)\",\n      \"type\": \"integer\",\n      \"default\": 5,\n      \"minimum\": 1,\n      \"maximum\": 20,\n      \"description\": \"Category leaders (or predecessors) per opportunity in enrich mode.\"\n    },\n    \"maxItems\": {\n      \"title\": \"Max items\",\n      \"type\": \"integer\",\n      \"default\": 10000,\n      \"minimum\": 1,\n      \"maximum\": 50000,\n      \"description\": \"Hard cap on opportunity rows returned (and billed) after sort by postedDate desc \u2192 Sol#. Default 10000. Schema maximum 50000 so a buyer can opt into covering a full Active+14d/30d window (they pay PPE for what they take). Under the default 14d window, Active matches often exceed 10k \u2014 runs emit CAP_TRUNCATED + CAP_COVERAGE.covered/total (never silent). Cap always drops the oldest rows.\",\n      \"prefill\": 25\n    },\n    \"samBulk\": {\n      \"title\": \"Use SAM Data Services daily CSV (bulk)\",\n      \"type\": \"boolean\",\n      \"default\": true,\n      \"description\": \"Ignored on the public Actor (v1.2 HF serve). Retained for input compatibility; private producer uses SAM Data Services CSV.\",\n      \"prefill\": true\n    },\n    \"samEnrichLimit\": {\n      \"title\": \"SAM API enrich budget\",\n      \"type\": \"integer\",\n      \"default\": 5,\n      \"minimum\": 0,\n      \"maximum\": 50,\n      \"description\": \"Ignored on the public Actor (v1.2 HF serve). Retained for input compatibility.\",\n      \"prefill\": 0\n    },\n    \"incumbentMode\": {\n      \"title\": \"Enrich join mode\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"category_leaders\",\n        \"predecessor\"\n      ],\n      \"default\": \"category_leaders\",\n      \"description\": \"category_leaders (default): top USASpending recipients by agency\u00d7NAICS. predecessor: true prior-awardee/recompete join (stub until PREDECESSOR_JOIN.md ships). Proof schedules must keep default.\"\n    }\n  },\n  \"required\": []\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/govcon-opportunity-feed"
+  }
+}

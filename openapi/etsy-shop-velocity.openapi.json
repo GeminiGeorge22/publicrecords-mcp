@@ -1,0 +1,153 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Etsy Shop Daily Sales Tracker & Scraper",
+    "description": "Daily sales for 370,000+ Etsy shops: sales per day, 7-day and 28-day sales and total sales, measured from each shop's public sales counter and dated. One row per shop, pay per shop.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/etsy-shop-velocity\nMCP: https://mcp.apify.com?tools=publicrecords/etsy-shop-velocity\nAuthor: Public Records.",
+    "version": "0.2.48",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/etsy-shop-velocity",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~etsy-shop-velocity/runs": {
+      "post": {
+        "operationId": "start_etsy_shop_velocity_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/etsy-shop-velocity",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/etsy-shop-velocity",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Etsy Shop Sales Velocity input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"shops\": {\n      \"title\": \"Shop names\",\n      \"type\": \"array\",\n      \"description\": \"Etsy shop names (the part after etsy.com/shop/). Leave empty to use the keyword or category filters.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"OrelCeramics\",\n        \"Bestickend\"\n      ],\n      \"maxItems\": 20000\n    },\n    \"keywords\": {\n      \"title\": \"Keywords in shop title\",\n      \"type\": \"array\",\n      \"description\": \"Case-insensitive words matched against the shop title and headline. At most 5000 keywords (larger lists are refused with a clear message).\",\n      \"editor\": \"stringList\",\n      \"maxItems\": 5000\n    },\n    \"category\": {\n      \"title\": \"Panel category\",\n      \"type\": \"string\",\n      \"description\": \"Exact panel category label, matched case-insensitively, e.g. \\\"kids & baby > toys\\\", \\\"home & living > home decor > scatter cushions\\\", \\\"art & collectibles > fine art ceramics\\\". The label is filled for about 0.7% of shops, so a category filter returns only those shops. Empty = all.\",\n      \"editor\": \"textfield\"\n    },\n    \"minSales\": {\n      \"title\": \"Minimum lifetime sales\",\n      \"type\": \"integer\",\n      \"description\": \"Only shops at or above this sales counter.\",\n      \"minimum\": 0,\n      \"default\": 0\n    },\n    \"since\": {\n      \"title\": \"Changed since (date)\",\n      \"type\": \"string\",\n      \"description\": \"ISO date. Return only shops whose counters changed since this date. Empty = all matching shops.\",\n      \"editor\": \"textfield\"\n    },\n    \"maxShops\": {\n      \"title\": \"Max shops\",\n      \"type\": \"integer\",\n      \"description\": \"Upper bound on rows returned (and charged).\",\n      \"minimum\": 1,\n      \"maximum\": 20000,\n      \"default\": 200\n    }\n  },\n  \"required\": []\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~etsy-shop-velocity/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_etsy_shop_velocity_sync_get_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/etsy-shop-velocity and return dataset items",
+        "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Etsy Shop Sales Velocity input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"shops\": {\n      \"title\": \"Shop names\",\n      \"type\": \"array\",\n      \"description\": \"Etsy shop names (the part after etsy.com/shop/). Leave empty to use the keyword or category filters.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"OrelCeramics\",\n        \"Bestickend\"\n      ],\n      \"maxItems\": 20000\n    },\n    \"keywords\": {\n      \"title\": \"Keywords in shop title\",\n      \"type\": \"array\",\n      \"description\": \"Case-insensitive words matched against the shop title and headline. At most 5000 keywords (larger lists are refused with a clear message).\",\n      \"editor\": \"stringList\",\n      \"maxItems\": 5000\n    },\n    \"category\": {\n      \"title\": \"Panel category\",\n      \"type\": \"string\",\n      \"description\": \"Exact panel category label, matched case-insensitively, e.g. \\\"kids & baby > toys\\\", \\\"home & living > home decor > scatter cushions\\\", \\\"art & collectibles > fine art ceramics\\\". The label is filled for about 0.7% of shops, so a category filter returns only those shops. Empty = all.\",\n      \"editor\": \"textfield\"\n    },\n    \"minSales\": {\n      \"title\": \"Minimum lifetime sales\",\n      \"type\": \"integer\",\n      \"description\": \"Only shops at or above this sales counter.\",\n      \"minimum\": 0,\n      \"default\": 0\n    },\n    \"since\": {\n      \"title\": \"Changed since (date)\",\n      \"type\": \"string\",\n      \"description\": \"ISO date. Return only shops whose counters changed since this date. Empty = all matching shops.\",\n      \"editor\": \"textfield\"\n    },\n    \"maxShops\": {\n      \"title\": \"Max shops\",\n      \"type\": \"integer\",\n      \"description\": \"Upper bound on rows returned (and charged).\",\n      \"minimum\": 1,\n      \"maximum\": 20000,\n      \"default\": 200\n    }\n  },\n  \"required\": []\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/etsy-shop-velocity"
+  }
+}
