@@ -641,7 +641,7 @@ MobinX/awesome-mcp-list,usaspending-awards-scraper,live,bundle endpoint,https://
 MobinX/awesome-mcp-list,uk-find-a-tender-scraper,live,bundle endpoint,https://github.com/MobinX/awesome-mcp-list,server=gov-tenders-mcp
 MobinX/awesome-mcp-list,eu-ted-notices-scraper,live,bundle endpoint,https://github.com/MobinX/awesome-mcp-list,server=gov-tenders-mcp
 MobinX/awesome-mcp-list,legistar-meetings-scraper,live,bundle endpoint,https://github.com/MobinX/awesome-mcp-list,server=gov-tenders-mcp
-MobinX/awesome-mcp-list,company-social-profile-finder,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
+MobinX/awesome-mcp-list,company-social-profile-finder,submitted,MCP GitHub repo,https://github.com/MobinX/awesome-mcp-list/pull/1480,Lane B r4 2026-11-24 17:29 America/Toronto: PR #1480 adds GeminiGeorge22/company-social-mcp (stdio + hosted MCP).
 MobinX/awesome-mcp-list,google-ads-transparency-scraper,live,bundle endpoint,https://github.com/MobinX/awesome-mcp-list,server=google-ads-transparency-mcp
 MobinX/awesome-mcp-list,sports-odds-api,live,bundle endpoint,https://github.com/MobinX/awesome-mcp-list,server=sports-odds-mcp
 MobinX/awesome-mcp-list,spotify-play-count-scraper,not-listed,bundle endpoint,,No listing or PR for this Actor yet. Follow how_new_actor_added on the surface (batch into an open PR if one exists).
@@ -11069,3 +11069,111 @@ Codeberg Gitea API awesome-list search,sports-odds-api,skipped,,,
 Codeberg Gitea API awesome-list search,spotify-play-count-scraper,skipped,,,
 Codeberg Gitea API awesome-list search,uk-find-a-tender-scraper,skipped,,,
 Codeberg Gitea API awesome-list search,usaspending-awards-scraper,skipped,,,
+Lead-Orchestra/awesome-b2b-leads,ashby-jobs-scraper,submitted,store page,https://github.com/Lead-Orchestra/awesome-b2b-leads/pull/18,Lane B r4 2026-11-24 17:29 America/Toronto
+Lead-Orchestra/awesome-b2b-leads,greenhouse-jobs-scraper,submitted,store page,https://github.com/Lead-Orchestra/awesome-b2b-leads/pull/18,Lane B r4 2026-11-24 17:29 America/Toronto
+Lead-Orchestra/awesome-b2b-leads,lever-jobs-scraper,submitted,store page,https://github.com/Lead-Orchestra/awesome-b2b-leads/pull/18,Lane B r4 2026-11-24 17:29 America/Toronto
+Lead-Orchestra/awesome-b2b-leads,smartrecruiters-jobs-scraper,submitted,store page,https://github.com/Lead-Orchestra/awesome-b2b-leads/pull/18,Lane B r4 2026-11-24 17:29 America/Toronto
+Lead-Orchestra/awesome-b2b-leads,etsy-search-scraper,not-listed,,,
+Lead-Orchestra/awesome-b2b-leads,etsy-shop-velocity,not-listed,,,
+Lead-Orchestra/awesome-b2b-leads,calibration-ledger,not-listed,,,
+Lead-Orchestra/awesome-b2b-leads,govcon-opportunity-feed,not-listed,,,
+Lead-Orchestra/awesome-b2b-leads,grants-gov-scraper,not-listed,,,
+Lead-Orchestra/awesome-b2b-leads,usaspending-awards-scraper,not-listed,,,
+Lead-Orchestra/awesome-b2b-leads,uk-find-a-tender-scraper,not-listed,,,
+Lead-Orchestra/awesome-b2b-leads,eu-ted-notices-scraper,not-listed,,,
+Lead-Orchestra/awesome-b2b-leads,legistar-meetings-scraper,not-listed,,,
+Lead-Orchestra/awesome-b2b-leads,company-social-profile-finder,submitted,store page,https://github.com/Lead-Orchestra/awesome-b2b-leads/pull/18,Lane B r4 2026-11-24 17:29 America/Toronto
+Lead-Orchestra/awesome-b2b-leads,google-ads-transparency-scraper,submitted,store page,https://github.com/Lead-Orchestra/awesome-b2b-leads/pull/18,Lane B r4 2026-11-24 17:29 America/Toronto
+Lead-Orchestra/awesome-b2b-leads,sports-odds-api,not-listed,,,
+Lead-Orchestra/awesome-b2b-leads,spotify-play-count-scraper,not-listed,,,
+Lead-Orchestra/awesome-b2b-leads,skool-community-growth-tracker,not-listed,,,Omitted from new submissions (standing Skool rule).
+openstatusHQ/awesome-openapi,ashby-jobs-scraper,not-listed,,,
+openstatusHQ/awesome-openapi,greenhouse-jobs-scraper,not-listed,,,
+openstatusHQ/awesome-openapi,lever-jobs-scraper,not-listed,,,
+openstatusHQ/awesome-openapi,smartrecruiters-jobs-scraper,not-listed,,,
+openstatusHQ/awesome-openapi,etsy-search-scraper,not-listed,,,
+openstatusHQ/awesome-openapi,etsy-shop-velocity,not-listed,,,
+openstatusHQ/awesome-openapi,calibration-ledger,not-listed,,,
+openstatusHQ/awesome-openapi,govcon-opportunity-feed,not-listed,,,
+openstatusHQ/awesome-openapi,grants-gov-scraper,submitted,OpenAPI URL,https://github.com/openstatusHQ/awesome-openapi/pull/30,Lane B r4 2026-11-24 17:29 America/Toronto
+openstatusHQ/awesome-openapi,usaspending-awards-scraper,submitted,OpenAPI URL,https://github.com/openstatusHQ/awesome-openapi/pull/30,Lane B r4 2026-11-24 17:29 America/Toronto
+openstatusHQ/awesome-openapi,uk-find-a-tender-scraper,submitted,OpenAPI URL,https://github.com/openstatusHQ/awesome-openapi/pull/30,Lane B r4 2026-11-24 17:29 America/Toronto
+openstatusHQ/awesome-openapi,eu-ted-notices-scraper,submitted,OpenAPI URL,https://github.com/openstatusHQ/awesome-openapi/pull/30,Lane B r4 2026-11-24 17:29 America/Toronto
+openstatusHQ/awesome-openapi,legistar-meetings-scraper,submitted,OpenAPI URL,https://github.com/openstatusHQ/awesome-openapi/pull/30,Lane B r4 2026-11-24 17:29 America/Toronto
+openstatusHQ/awesome-openapi,company-social-profile-finder,submitted,OpenAPI URL,https://github.com/openstatusHQ/awesome-openapi/pull/30,Lane B r4 2026-11-24 17:29 America/Toronto
+openstatusHQ/awesome-openapi,google-ads-transparency-scraper,not-listed,,,
+openstatusHQ/awesome-openapi,sports-odds-api,not-listed,,,
+openstatusHQ/awesome-openapi,spotify-play-count-scraper,not-listed,,,
+openstatusHQ/awesome-openapi,skool-community-growth-tracker,not-listed,,,Omitted from new submissions (standing Skool rule).
+A-Hemeda/Free-Public-APIs,ashby-jobs-scraper,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,greenhouse-jobs-scraper,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,lever-jobs-scraper,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,smartrecruiters-jobs-scraper,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,etsy-search-scraper,not-listed,,,
+A-Hemeda/Free-Public-APIs,etsy-shop-velocity,not-listed,,,
+A-Hemeda/Free-Public-APIs,calibration-ledger,not-listed,,,
+A-Hemeda/Free-Public-APIs,govcon-opportunity-feed,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,grants-gov-scraper,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,usaspending-awards-scraper,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,uk-find-a-tender-scraper,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,eu-ted-notices-scraper,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,legistar-meetings-scraper,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,company-social-profile-finder,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,google-ads-transparency-scraper,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,sports-odds-api,submitted,store page,https://github.com/A-Hemeda/Free-Public-APIs/pull/7,Lane B r4 2026-11-24 17:29 America/Toronto
+A-Hemeda/Free-Public-APIs,spotify-play-count-scraper,not-listed,,,
+A-Hemeda/Free-Public-APIs,skool-community-growth-tracker,not-listed,,,Omitted from new submissions (standing Skool rule).
+agentskillexchange/skills,ashby-jobs-scraper,not-listed,,,
+agentskillexchange/skills,greenhouse-jobs-scraper,not-listed,,,
+agentskillexchange/skills,lever-jobs-scraper,not-listed,,,
+agentskillexchange/skills,smartrecruiters-jobs-scraper,not-listed,,,
+agentskillexchange/skills,etsy-search-scraper,not-listed,,,
+agentskillexchange/skills,etsy-shop-velocity,not-listed,,,
+agentskillexchange/skills,calibration-ledger,not-listed,,,
+agentskillexchange/skills,govcon-opportunity-feed,submitted,skill,https://github.com/agentskillexchange/skills/pull/179,Lane B r4 2026-11-24 17:29 America/Toronto
+agentskillexchange/skills,grants-gov-scraper,submitted,skill,https://github.com/agentskillexchange/skills/pull/179,Lane B r4 2026-11-24 17:29 America/Toronto
+agentskillexchange/skills,usaspending-awards-scraper,submitted,skill,https://github.com/agentskillexchange/skills/pull/179,Lane B r4 2026-11-24 17:29 America/Toronto
+agentskillexchange/skills,uk-find-a-tender-scraper,submitted,skill,https://github.com/agentskillexchange/skills/pull/179,Lane B r4 2026-11-24 17:29 America/Toronto
+agentskillexchange/skills,eu-ted-notices-scraper,submitted,skill,https://github.com/agentskillexchange/skills/pull/179,Lane B r4 2026-11-24 17:29 America/Toronto
+agentskillexchange/skills,legistar-meetings-scraper,submitted,skill,https://github.com/agentskillexchange/skills/pull/179,Lane B r4 2026-11-24 17:29 America/Toronto
+agentskillexchange/skills,company-social-profile-finder,not-listed,,,
+agentskillexchange/skills,google-ads-transparency-scraper,not-listed,,,
+agentskillexchange/skills,sports-odds-api,not-listed,,,
+agentskillexchange/skills,spotify-play-count-scraper,not-listed,,,
+agentskillexchange/skills,skool-community-growth-tracker,not-listed,,,Omitted from new submissions (standing Skool rule).
+eliasstravik/awesome-gtm-engineering,ashby-jobs-scraper,submitted,store page,https://github.com/eliasstravik/awesome-gtm-engineering/pull/26,Lane B r4 2026-11-24 17:29 America/Toronto
+eliasstravik/awesome-gtm-engineering,greenhouse-jobs-scraper,submitted,store page,https://github.com/eliasstravik/awesome-gtm-engineering/pull/26,Lane B r4 2026-11-24 17:29 America/Toronto
+eliasstravik/awesome-gtm-engineering,lever-jobs-scraper,submitted,store page,https://github.com/eliasstravik/awesome-gtm-engineering/pull/26,Lane B r4 2026-11-24 17:29 America/Toronto
+eliasstravik/awesome-gtm-engineering,smartrecruiters-jobs-scraper,submitted,store page,https://github.com/eliasstravik/awesome-gtm-engineering/pull/26,Lane B r4 2026-11-24 17:29 America/Toronto
+eliasstravik/awesome-gtm-engineering,etsy-search-scraper,not-listed,,,
+eliasstravik/awesome-gtm-engineering,etsy-shop-velocity,not-listed,,,
+eliasstravik/awesome-gtm-engineering,calibration-ledger,not-listed,,,
+eliasstravik/awesome-gtm-engineering,govcon-opportunity-feed,not-listed,,,
+eliasstravik/awesome-gtm-engineering,grants-gov-scraper,not-listed,,,
+eliasstravik/awesome-gtm-engineering,usaspending-awards-scraper,not-listed,,,
+eliasstravik/awesome-gtm-engineering,uk-find-a-tender-scraper,not-listed,,,
+eliasstravik/awesome-gtm-engineering,eu-ted-notices-scraper,not-listed,,,
+eliasstravik/awesome-gtm-engineering,legistar-meetings-scraper,not-listed,,,
+eliasstravik/awesome-gtm-engineering,company-social-profile-finder,submitted,store page,https://github.com/eliasstravik/awesome-gtm-engineering/pull/26,Lane B r4 2026-11-24 17:29 America/Toronto
+eliasstravik/awesome-gtm-engineering,google-ads-transparency-scraper,submitted,store page,https://github.com/eliasstravik/awesome-gtm-engineering/pull/26,Lane B r4 2026-11-24 17:29 America/Toronto
+eliasstravik/awesome-gtm-engineering,sports-odds-api,not-listed,,,
+eliasstravik/awesome-gtm-engineering,spotify-play-count-scraper,not-listed,,,
+eliasstravik/awesome-gtm-engineering,skool-community-growth-tracker,not-listed,,,Omitted from new submissions (standing Skool rule).
+jentic/jentic-public-apis,ashby-jobs-scraper,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,greenhouse-jobs-scraper,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,lever-jobs-scraper,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,smartrecruiters-jobs-scraper,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,etsy-search-scraper,not-listed,,,
+jentic/jentic-public-apis,etsy-shop-velocity,not-listed,,,
+jentic/jentic-public-apis,calibration-ledger,not-listed,,,
+jentic/jentic-public-apis,govcon-opportunity-feed,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,grants-gov-scraper,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,usaspending-awards-scraper,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,uk-find-a-tender-scraper,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,eu-ted-notices-scraper,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,legistar-meetings-scraper,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,company-social-profile-finder,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,google-ads-transparency-scraper,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,sports-odds-api,submitted,OpenAPI URL,https://github.com/jentic/jentic-public-apis/pull/28414,Lane B r4 2026-11-24 17:29 America/Toronto
+jentic/jentic-public-apis,spotify-play-count-scraper,not-listed,,,
+jentic/jentic-public-apis,skool-community-growth-tracker,not-listed,,,Omitted from new submissions (standing Skool rule).
