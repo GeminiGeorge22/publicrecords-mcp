@@ -28,6 +28,20 @@ See also:
 - Prompt pack: https://geminigeorge22.github.io/agents/prompt-pack.json
 - Dialects: https://geminigeorge22.github.io/agents/dialects/
 
+
+## Cursor plugin
+
+This repository is a single [Cursor Plugin](https://cursor.com/docs/reference/plugins) named `publicrecords-mcp`:
+
+- Manifest: [`.cursor-plugin/plugin.json`](./.cursor-plugin/plugin.json)
+- MCP servers (all 18 remote endpoints): [`mcp.json`](./mcp.json) (identical copy at [`.mcp.json`](./.mcp.json) for the cursor.directory scanner)
+- Rule: [`rules/cursor-rules.mdc`](./rules/cursor-rules.mdc) (same text as [`dialects/cursor-rules.mdc`](./dialects/cursor-rules.mdc))
+- Logo (1:1 PNG with a background plate): [`assets/logo.png`](./assets/logo.png)
+
+Connect with your own Apify account. Cursor can use Apify's OAuth flow; this repository does not contain tokens.
+
+Repo URL for [cursor.directory/plugins/new](https://cursor.directory/plugins/new) and [Cursor Marketplace publish](https://cursor.com/marketplace/publish): `https://github.com/GeminiGeorge22/publicrecords-mcp`
+
 ## Live tools (Store)
 
 | Brand | Actor ID | Store |
