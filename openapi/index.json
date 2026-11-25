@@ -1,7 +1,7 @@
 [
   {
     "slug": "ashby-jobs-scraper",
-    "title": "Ashby Jobs Scraper \u2014 New Job Postings Since Any Date",
+    "title": "Ashby Jobs Scraper — New Job Postings Since Any Date",
     "store": "https://apify.com/publicrecords/ashby-jobs-scraper",
     "mcp": "https://mcp.apify.com?tools=publicrecords/ashby-jobs-scraper",
     "file": "ashby-jobs-scraper.openapi.json",
@@ -9,7 +9,7 @@
   },
   {
     "slug": "calibration-ledger",
-    "title": "Calibration Ledger \u2014 trust a forecast, with evidence (beta)",
+    "title": "Calibration Ledger — trust a forecast, with evidence (beta)",
     "store": "https://apify.com/publicrecords/calibration-ledger",
     "mcp": "https://mcp.apify.com?tools=publicrecords/calibration-ledger",
     "file": "calibration-ledger.openapi.json",
@@ -25,7 +25,7 @@
   },
   {
     "slug": "etsy-search-scraper",
-    "title": "Etsy Scraper \u2014 Listings, Prices, Best Sellers & Ad Flags",
+    "title": "Etsy Scraper — Listings, Prices, Best Sellers & Ad Flags",
     "store": "https://apify.com/publicrecords/etsy-search-scraper",
     "mcp": "https://mcp.apify.com?tools=publicrecords/etsy-search-scraper",
     "file": "etsy-search-scraper.openapi.json",
@@ -73,7 +73,7 @@
   },
   {
     "slug": "greenhouse-jobs-scraper",
-    "title": "Greenhouse Jobs Scraper \u2014 New Job Postings Since Any Date",
+    "title": "Greenhouse Jobs Scraper — New Job Postings Since Any Date",
     "store": "https://apify.com/publicrecords/greenhouse-jobs-scraper",
     "mcp": "https://mcp.apify.com?tools=publicrecords/greenhouse-jobs-scraper",
     "file": "greenhouse-jobs-scraper.openapi.json",
@@ -89,7 +89,7 @@
   },
   {
     "slug": "lever-jobs-scraper",
-    "title": "Lever Jobs Scraper \u2014 New Job Postings Since Any Date",
+    "title": "Lever Jobs Scraper — New Job Postings Since Any Date",
     "store": "https://apify.com/publicrecords/lever-jobs-scraper",
     "mcp": "https://mcp.apify.com?tools=publicrecords/lever-jobs-scraper",
     "file": "lever-jobs-scraper.openapi.json",
@@ -97,7 +97,7 @@
   },
   {
     "slug": "smartrecruiters-jobs-scraper",
-    "title": "SmartRecruiters Jobs Scraper \u2014 New Postings Since Any Date",
+    "title": "SmartRecruiters Jobs Scraper — New Postings Since Any Date",
     "store": "https://apify.com/publicrecords/smartrecruiters-jobs-scraper",
     "mcp": "https://mcp.apify.com?tools=publicrecords/smartrecruiters-jobs-scraper",
     "file": "smartrecruiters-jobs-scraper.openapi.json",
@@ -118,6 +118,14 @@
     "mcp": "https://mcp.apify.com?tools=publicrecords/spotify-play-count-scraper",
     "file": "spotify-play-count-scraper.openapi.json",
     "buildId": "xIAvzq9fs1KmvfkBc"
+  },
+  {
+    "slug": "tennis-scores-api",
+    "title": "Tennis Scores API: ATP & WTA Live Scores, Results, Rankings",
+    "store": "https://apify.com/publicrecords/tennis-scores-api",
+    "file": "tennis-scores-api.openapi.json",
+    "buildId": "e5sKloJcpvFgWkaRq",
+    "note": "Apify Actor only; no hosted MCP / Standby endpoint."
   },
   {
     "slug": "uk-find-a-tender-scraper",
