@@ -160,3 +160,41 @@ Filled 2026-11-24 21:45 America/Toronto. The publicrecords-mcp SHA will be the c
 - GitHub Discussions enabled on publicrecords-mcp (free public repo). Welcome post: https://github.com/GeminiGeorge22/publicrecords-mcp/discussions/46 (General). A first attempt at the same post (#45) had a broken body and was deleted. Pinning via the GraphQL API was not available on this token (no `pinDiscussion` mutation); pin #46 from the GitHub UI if you want it stuck at the top.
 - Beta issue label created. Issue forms ship in the publicrecords-mcp PR (they appear on `main` after merge).
 - Demo GIF source rows: public Hugging Face snapshot `Publicrecords/us-open-federal-grants` (Grants.gov posted opportunities, 2026-11-24). No Actor was run and no token was used.
+
+### publicrecords-mcp PR and later owned-surface work
+
+- publicrecords-mcp PR: https://github.com/GeminiGeorge22/publicrecords-mcp/pull/47 — commit `bd2025e5b7e36951a7b18dd0c50787cb9a147eac`
+- Tennis examples notebook follow-up (README was already on `47154ac`): see examples list below.
+
+Example repos (README and/or `notebooks/quickstart.ipynb`, `[skip ci]` on main). The Skool examples repo was not touched:
+- publicrecords-tennis-scores-api-examples: `74e4a4b6be2e5a2d315aad9b8d70d133c667bb66` — https://github.com/GeminiGeorge22/publicrecords-tennis-scores-api-examples/commit/74e4a4b6be2e5a2d315aad9b8d70d133c667bb66 (notebooks/quickstart.ipynb)
+- publicrecords-usaspending-awards-scraper-examples: `44dcc952ef0fce23c5638ce8856b025d23268bba` — https://github.com/GeminiGeorge22/publicrecords-usaspending-awards-scraper-examples/commit/44dcc952ef0fce23c5638ce8856b025d23268bba (README.md, notebooks/quickstart.ipynb)
+- publicrecords-uk-find-a-tender-scraper-examples: `be6577d559dd5c6e77a9e33a28e60d3febbf6acd` — https://github.com/GeminiGeorge22/publicrecords-uk-find-a-tender-scraper-examples/commit/be6577d559dd5c6e77a9e33a28e60d3febbf6acd (README.md, notebooks/quickstart.ipynb)
+- publicrecords-spotify-play-count-scraper-examples: `483c5ebbe35bc69cbb0833cebfc2823d2c9e45f5` — https://github.com/GeminiGeorge22/publicrecords-spotify-play-count-scraper-examples/commit/483c5ebbe35bc69cbb0833cebfc2823d2c9e45f5 (README.md, notebooks/quickstart.ipynb)
+- publicrecords-sports-odds-api-examples: `71065b0e8fd4ac16de3a4813a2e4b422a7a751b1` — https://github.com/GeminiGeorge22/publicrecords-sports-odds-api-examples/commit/71065b0e8fd4ac16de3a4813a2e4b422a7a751b1 (README.md, notebooks/quickstart.ipynb)
+- publicrecords-smartrecruiters-jobs-scraper-examples: `22e442e0c731d23b74e3e6e8d739eab4c8f5299c` — https://github.com/GeminiGeorge22/publicrecords-smartrecruiters-jobs-scraper-examples/commit/22e442e0c731d23b74e3e6e8d739eab4c8f5299c (README.md, notebooks/quickstart.ipynb)
+- publicrecords-lever-jobs-scraper-examples: `51ebea5dfba8ec2e53628e4921384b0a76003b33` — https://github.com/GeminiGeorge22/publicrecords-lever-jobs-scraper-examples/commit/51ebea5dfba8ec2e53628e4921384b0a76003b33 (README.md, notebooks/quickstart.ipynb)
+- publicrecords-legistar-meetings-scraper-examples: `c66c5f661991caa42e1b7424f63899e649135e5f` — https://github.com/GeminiGeorge22/publicrecords-legistar-meetings-scraper-examples/commit/c66c5f661991caa42e1b7424f63899e649135e5f (README.md, notebooks/quickstart.ipynb)
+- publicrecords-greenhouse-jobs-scraper-examples: `e2f21dcee9a5ef217aeb39ce236ccf625155d067` — https://github.com/GeminiGeorge22/publicrecords-greenhouse-jobs-scraper-examples/commit/e2f21dcee9a5ef217aeb39ce236ccf625155d067 (README.md, notebooks/quickstart.ipynb)
+- publicrecords-grants-gov-scraper-examples: `c156b3acfc4841bfbbea3cd6204cb9caa2f82bc6` — https://github.com/GeminiGeorge22/publicrecords-grants-gov-scraper-examples/commit/c156b3acfc4841bfbbea3cd6204cb9caa2f82bc6 (README.md, notebooks/quickstart.ipynb)
+- publicrecords-govcon-opportunity-feed-examples: `82c23613b2d5312e1426016da829807ea8ebdee2` — https://github.com/GeminiGeorge22/publicrecords-govcon-opportunity-feed-examples/commit/82c23613b2d5312e1426016da829807ea8ebdee2 (README.md, notebooks/quickstart.ipynb)
+- publicrecords-google-ads-transparency-scraper-examples: `55a1406cb37482e02d6f437e3a01bca70090dd4e` — https://github.com/GeminiGeorge22/publicrecords-google-ads-transparency-scraper-examples/commit/55a1406cb37482e02d6f437e3a01bca70090dd4e (README.md, notebooks/quickstart.ipynb)
+- publicrecords-eu-ted-notices-scraper-examples: `2007a2f9083a80d0a029328abc91d5fa2103ef2d` — https://github.com/GeminiGeorge22/publicrecords-eu-ted-notices-scraper-examples/commit/2007a2f9083a80d0a029328abc91d5fa2103ef2d (README.md, notebooks/quickstart.ipynb)
+- publicrecords-etsy-shop-velocity-examples: `6a0888d0bd32caf525ccfe7cff0e795253225340` — https://github.com/GeminiGeorge22/publicrecords-etsy-shop-velocity-examples/commit/6a0888d0bd32caf525ccfe7cff0e795253225340 (README.md, notebooks/quickstart.ipynb)
+- publicrecords-etsy-search-scraper-examples: `cac5e0e3c8d6c2d3d9cb3b9e3c1a4586cb32d472` — https://github.com/GeminiGeorge22/publicrecords-etsy-search-scraper-examples/commit/cac5e0e3c8d6c2d3d9cb3b9e3c1a4586cb32d472 (README.md, notebooks/quickstart.ipynb)
+- publicrecords-company-social-profile-finder-examples: `394da3b728dcf3e6ec9befd171ae15dd26348ea4` — https://github.com/GeminiGeorge22/publicrecords-company-social-profile-finder-examples/commit/394da3b728dcf3e6ec9befd171ae15dd26348ea4 (README.md, notebooks/quickstart.ipynb)
+- publicrecords-calibration-ledger-examples: `1b80620d3a4ba4c25ada1224668c7cd1edf7d44f` — https://github.com/GeminiGeorge22/publicrecords-calibration-ledger-examples/commit/1b80620d3a4ba4c25ada1224668c7cd1edf7d44f (README.md, notebooks/quickstart.ipynb)
+- publicrecords-ashby-jobs-scraper-examples: `adfa670e4e93904b931d081c053859c19f197904` — https://github.com/GeminiGeorge22/publicrecords-ashby-jobs-scraper-examples/commit/adfa670e4e93904b931d081c053859c19f197904 (README.md, notebooks/quickstart.ipynb)
+
+Hugging Face (org `Publicrecords`, write as that account): public dataset and Space cards that already had a README now link to publicrecords-mcp, publicrecords-skills, and BETA.md. A first pass glued the BETA.md bullet onto the next line on some cards; a second commit fixed the line break. Ten private/internal datasets had no README and were left private and unchanged. The Skool dataset was skipped and not made public.
+
+Kaggle (owner `publicrecords`, metadata `--update` only, no new versions of the data files): all 8 public mirrors had mcp / skills / BETA.md links appended to their descriptions:
+- https://www.kaggle.com/datasets/publicrecords/company-official-social-links
+- https://www.kaggle.com/datasets/publicrecords/imf-real-gdp-growth-forecasts
+- https://www.kaggle.com/datasets/publicrecords/us-city-council-meetings-legistar
+- https://www.kaggle.com/datasets/publicrecords/public-ats-job-posting-samples
+- https://www.kaggle.com/datasets/publicrecords/eu-ted-public-procurement-notices
+- https://www.kaggle.com/datasets/publicrecords/uk-public-tenders-ogl-v3
+- https://www.kaggle.com/datasets/publicrecords/largest-us-federal-contract-awards-usaspending
+- https://www.kaggle.com/datasets/publicrecords/open-us-federal-grants-grants-gov-2026-11-24
+
