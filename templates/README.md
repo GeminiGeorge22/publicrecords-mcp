@@ -24,6 +24,7 @@ The Creator-ready workflow is [`n8n/grants-gov-weekday-digest.json`](n8n/grants-
 | Lever Jobs Scraper | [n8n/lever-jobs-scraper.json](n8n/lever-jobs-scraper.json) | [apify.com/publicrecords/lever-jobs-scraper](https://apify.com/publicrecords/lever-jobs-scraper) |
 | SmartRecruiters Jobs Scraper | [n8n/smartrecruiters-jobs-scraper.json](n8n/smartrecruiters-jobs-scraper.json) | [apify.com/publicrecords/smartrecruiters-jobs-scraper](https://apify.com/publicrecords/smartrecruiters-jobs-scraper) |
 | Sports Odds API | [n8n/sports-odds-api.json](n8n/sports-odds-api.json) | [apify.com/publicrecords/sports-odds-api](https://apify.com/publicrecords/sports-odds-api) |
+| Tennis Scores API | [n8n/tennis-scores-api.json](n8n/tennis-scores-api.json) | [apify.com/publicrecords/tennis-scores-api](https://apify.com/publicrecords/tennis-scores-api) |
 | Spotify Play Count Scraper | [n8n/spotify-play-count-scraper.json](n8n/spotify-play-count-scraper.json) | [apify.com/publicrecords/spotify-play-count-scraper](https://apify.com/publicrecords/spotify-play-count-scraper) |
 | UK Tenders Scraper | [n8n/uk-find-a-tender-scraper.json](n8n/uk-find-a-tender-scraper.json) | [apify.com/publicrecords/uk-find-a-tender-scraper](https://apify.com/publicrecords/uk-find-a-tender-scraper) |
 | USAspending Awards Scraper | [n8n/usaspending-awards-scraper.json](n8n/usaspending-awards-scraper.json) | [apify.com/publicrecords/usaspending-awards-scraper](https://apify.com/publicrecords/usaspending-awards-scraper) |
@@ -54,9 +55,10 @@ Use the platform's HTTP / Webhooks / API step (or the official Apify app, action
 | `lever-jobs-scraper` | `{"companies": ["veeva", "palantir"], "since": "30d", "maxResults": 50, "includeDescription": true}` |
 | `smartrecruiters-jobs-scraper` | `{"companies": ["Ubisoft2", "smartrecruiters"], "since": "30d", "maxResults": 50, "includeDescription": true}` |
 | `sports-odds-api` | `{"leagues": ["basketball/nba", "american_football/nfl", "ice_hockey/nhl", "baseball/mlb", "football/england/premier_league"], "maxEvents": 10, "proxyConfiguration": {"useApifyProxy": true}, "operators": ["rsiusnj", "rsiusny", "rsiuspa", "rsicaon", "ubuk", "ubca", "paf", "svenskaspel", "atg"], "markets": "main", "includeLive": true, "startsWithinHours": 0}` |
+| `tennis-scores-api` | `{"tournament": "wimbledon", "date": "2026-07-12", "maxResults": 20}` |
 | `spotify-play-count-scraper` | `{"urls": ["https://open.spotify.com/album/4aawyAB9vmqN3uQ7FjRGTy"], "maxTracksPerTarget": 50}` |
 | `uk-find-a-tender-scraper` | `{"noticeType": ["tender"], "updatedFrom": "2026-09-28T00:00:00", "maxItems": 100}` |
 | `usaspending-awards-scraper` | `{"agency": "Department of Defense", "awardTypes": ["A", "B", "C", "D"], "maxItems": 50}` |
 
 ## AI agents
-Any MCP client: `https://mcp.apify.com?tools=publicrecords/<actor>` (Apify OAuth or Bearer token).
+Any MCP client: `https://mcp.apify.com?tools=publicrecords/<actor>` (Apify OAuth or Bearer token). Exception: `tennis-scores-api` has no hosted MCP / Standby endpoint — use the HTTP recipe above with your own Apify token.

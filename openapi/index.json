@@ -134,5 +134,13 @@
     "mcp": "https://mcp.apify.com?tools=publicrecords/usaspending-awards-scraper",
     "file": "usaspending-awards-scraper.openapi.json",
     "buildId": "GiWOmEI1iJSFgTS24"
+  },
+  {
+    "slug": "tennis-scores-api",
+    "title": "Tennis Scores API: ATP & WTA Live Scores, Results, Rankings",
+    "store": "https://apify.com/publicrecords/tennis-scores-api",
+    "file": "tennis-scores-api.openapi.json",
+    "buildId": "e5sKloJcpvFgWkaRq",
+    "note": "Apify Actor only; no hosted MCP / Standby endpoint."
   }
 ]

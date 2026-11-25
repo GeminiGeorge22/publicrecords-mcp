@@ -239,6 +239,19 @@
       "description": "キーワードで Skool コミュニティを検索：メンバー数、価格、評価、推定月間収益、日次の成長。ご自身の Apify アカウントでイベントごとに課金：US$3.00 / 1,000 コミュニティ結果、US$0.02 / コミュニティ履歴。Apify がホストするリモート MCP サーバー（Streamable HTTP）。Apify OAuth またはご自身の API トークンで接続します。",
       "price_line": "ご自身の Apify アカウントでイベントごとに課金：US$3.00 / 1,000 コミュニティ結果、US$0.02 / コミュニティ履歴。",
       "price_tiered": false
+    },
+    {
+      "actor": "tennis-scores-api",
+      "store_url": "https://apify.com/publicrecords/tennis-scores-api",
+      "registry_name": "",
+      "server": "",
+      "server_github_url": "",
+      "endpoint": "",
+      "name": "Tennis Scores API: ATP & WTA Live Scores, Results, Rankings",
+      "one_line": "Every ATP and WTA match for a date or a whole tournament (Grand Slams, singles, doubles, mixed): set-by-set scores, tiebreaks, seeds, round, court and winner, plus ATP/WTA rankings. No login, no proxy.",
+      "description": "Every ATP and WTA match for a date or a whole tournament (Grand Slams, singles, doubles, mixed): set-by-set scores, tiebreaks, seeds, round, court and winner, plus ATP/WTA rankings. No login, no proxy. Pay per event on your own Apify account: $0.002 per match or ranking row; $0.00005 per Actor start. Standby/MCP mode is not built for this Actor; call it through the Apify API with your own token. Do not list an MCP endpoint.",
+      "price_line": "Pay per event on your own Apify account: $0.002 per match or ranking row; $0.00005 per Actor start.",
+      "price_tiered": false
     }
   ]
 }

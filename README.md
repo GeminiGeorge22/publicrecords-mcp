@@ -54,6 +54,9 @@ Repo URL for [cursor.directory/plugins/new](https://cursor.directory/plugins/new
 | Grants.gov | `publicrecords/grants-gov-scraper` | [Store](https://apify.com/publicrecords/grants-gov-scraper) |
 | UK Find a Tender | `publicrecords/uk-find-a-tender-scraper` | [Store](https://apify.com/publicrecords/uk-find-a-tender-scraper) |
 | Legistar Meetings | `publicrecords/legistar-meetings-scraper` | [Store](https://apify.com/publicrecords/legistar-meetings-scraper) |
+| Tennis Scores API (Actor only; no hosted MCP) | `publicrecords/tennis-scores-api` | [Store](https://apify.com/publicrecords/tennis-scores-api) |
+
+`publicrecords/tennis-scores-api` is an Apify Actor only: Standby/MCP mode is not built, so this repo does not publish an MCP registry entry or endpoint for it. Call it with your own Apify token via the [Apify API](https://docs.apify.com/api/v2).
 
 Thin descriptors live under [`tools/`](./tools/). Dialects under [`dialects/`](./dialects/).
 

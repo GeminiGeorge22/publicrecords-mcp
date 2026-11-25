@@ -134,3 +134,4 @@ Claude connectors directory,directory listing,not present,https://claude.ai/dire
 ChatGPT apps / plugin directory,directory listing,not present,https://platform.openai.com,verified identity + domain (held-needs-Mark),Mark
 publicrecords-mcp,localized READMEs (14 languages),live,https://github.com/GeminiGeorge22/publicrecords-mcp,none,Marketer
 Apify Store,"search ""skool community"" (skool-community-growth-tracker)",60 of 160,https://api.apify.com/v2/store?search=skool%20community&limit=100,"Store copy: lead title with ""Skool"" + ""community scraper"" buyer terms - logged for Master",Master
+Apify Store,"search ""tennis"" (tennis-scores-api)",unverified — Store page is public (logged-out GET 200 on 2026-11-24 18:55 America/Toronto); ranked position not recorded,https://apify.com/store?search=tennis,"none: Actor is live on the Store; do not change Store copy, price or code (Master).",Master
