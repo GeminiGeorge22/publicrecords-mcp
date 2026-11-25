@@ -2,35 +2,37 @@
 
 Snapshot of every distribution surface the publicrecords Apify Actor fleet touches, plus a playbook to launch a new Actor across them.
 
-**As of:** 2026-11-23 13:22 America/Toronto
+**As of:** 2026-11-25 17:28 America/Toronto
 
 | File | What |
 |---|---|
 | [surfaces.csv](./surfaces.csv) | One row per surface |
-| [placements.csv](./placements.csv) | Surface × 18 Actors |
+| [placements.csv](./placements.csv) | Surface × Actor status matrix (operational; not a listings total) |
 | [actor_map.csv](./actor_map.csv) | Dedicated server, bundles, skill folder per Actor |
 | [LAUNCH.md](./LAUNCH.md) | Ordered playbook |
 | [launch_new_actor.sh](./launch_new_actor.sh) | Dry-run planner (`./launch_new_actor.sh <actor-slug>`) |
 | [counts.json](./counts.json) | The counts below, machine-readable |
 
-## Counts
+## Counting rule (25 Nov 2026, America/Toronto)
 
-Source of the totals: this folder’s `surfaces.csv` / `counts.json`, built on 23 Nov 2026 from the files listed under Sources.
+Headline counts are **distinct surfaces** — unique distribution listings with a read-back URL. They live in `counts.json` (`total_surfaces`, `live`, `submitted_pending`, `remaining_to_do`, `held_needs_Mark`, `skipped`).
 
-| Bucket | N | Meaning |
-|---|---:|---|
-| Total surfaces in the ledger | **307** | Unique surfaces after collapsing MCP-LIST-1 per-server rows |
-| Live | **59** | Listed, shipped, or merged and visible |
-| Submitted / pending | **72** | Form/API/PR/auto-import in flight, not confirmed live |
-| Remaining to file (new surfaces) | **2** | Grok Bot marketplace (xAI), HOL plugin registry claim |
-| Held, needs Mark (default skip) | **63** | Account, identity, or paid/business decision |
-| Skipped / n-a / defunct | **111** | Out of scope, declined, blocked, or dead |
-| Touched (live + submitted + remaining) | **133** | Surfaces we listed, filed, or can still file without Mark |
-| Checksum | 307 | Must equal total |
+Per-language `README.<lang>.md` files, own-repo manifests, and n8n/Make/Postman recipe files are **not** separate surfaces. They roll up to the parent repo listing (`publicrecords-mcp localized READMEs (14 languages)` and `GeminiGeorge22 publicrecords-*-examples (multilingual READMEs)`). The n8n template gallery, Make share link, and Postman Public API Network remain their own surfaces.
 
-`placements.csv` has **5526** rows (307 surfaces × 18 Actors). Placement status `not-listed` means the surface is active for other Actors but this Actor has no row yet — follow `how_new_actor_added` (and batch into an open PR if one exists).
+`placements.csv` is an operational surface×actor status matrix, including `not-listed` rows for Actors not yet on a surface. **`placements_rows` is not a count of listings.** On 25 Nov 2026 that matrix had been reported as 23,309 rows, which inflated the totals (see `counts.json` `correction_reason`).
 
-By type (from `counts.json` `by_type`): awesome-list 138, mcp-directory 115, plugin-marketplace 18, skills-marketplace 14, other 12, registry 9, article 1.
+| Bucket | Before correction | After (25 Nov 17:28) | Meaning |
+|---|---:|---:|---|
+| Distinct surfaces | 972 | **829** | Unique listings after dropping 140 per-language README files and 3 own-repo recipe-file surfaces |
+| Live | 304 | **161** | Distinct surfaces with a read-back listing |
+| Submitted / pending | 367 | **367** | Form/API/PR/auto-import in flight, not confirmed live |
+| Remaining to file | 58 | **58** | Named in `counts.json` `remaining_names` |
+| Held, needs Mark | 31 | **31** | Default skip unless Mark says go (`held_names`) |
+| Skipped / n-a / defunct | 212 | **212** | Out of scope, declined, blocked, or dead |
+| Placement matrix rows | 23,309 | 19,877 | Operational surface×actor rows, not a listings total |
+| Placement rows with status=live | 1,741 | 1,285 | Actor-on-surface status only; do not use as the headline live count |
+
+An earlier 23 Nov 2026 baseline (307 surfaces, 59 live, 5,526 placement rows) is historical and is not the current headline.
 
 ## What is still left to do (not just the 2 remaining surfaces)
 
