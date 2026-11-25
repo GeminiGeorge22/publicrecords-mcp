@@ -2,6 +2,11 @@
 
 **Languages:** [zh-CN](./README.zh-CN.md) · [ja](./README.ja.md) · [ko](./README.ko.md) · [de](./README.de.md) · [fr](./README.fr.md) · [es](./README.es.md) · [pt-BR](./README.pt-BR.md) · [it](./README.it.md) · [ru](./README.ru.md) · [tr](./README.tr.md) · [id](./README.id.md) · [vi](./README.vi.md) · [ar](./README.ar.md) · [hi](./README.hi.md) (localized index of all 25 registry servers; English text applies if they differ)
 
+
+![A terminal demo: curl calls the Grants.gov Actor on your Apify account and prints three posted opportunities](./assets/demo.gif)
+
+**Try it, tell us, and star it if it helped.** Run any Public Records Actor on your own Apify account, then [leave feedback](./BETA.md). A star is welcome if this repo saved you time. Stars are optional and are never rewarded.
+
 **Manifest-only** pin package for [publicrecords](https://apify.com/publicrecords) Apify Actors on [Apify MCP](https://mcp.apify.com).
 
 > This repo contains **JSON tool descriptors and MCP server cards only** — no Actor source, Dockerfiles, truth sets, or tokens.
@@ -120,3 +125,11 @@ Each folder under [`servers/`](./servers/) is a remote-only MCP Registry entry (
 | [spotify-play-count-scraper](https://apify.com/publicrecords/spotify-play-count-scraper) | [VS Code](https://insiders.vscode.dev/redirect/mcp/install?name=spotify-play-count-mcp&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.apify.com%3Ftools%3Dpublicrecords%2Fspotify-play-count-scraper%22%7D) | [Cursor](https://cursor.com/en/install-mcp?name=spotify-play-count-mcp&config=eyJ1cmwiOiJodHRwczovL21jcC5hcGlmeS5jb20%2FdG9vbHM9cHVibGljcmVjb3Jkcy9zcG90aWZ5LXBsYXktY291bnQtc2NyYXBlciJ9) | `https://mcp.apify.com?tools=publicrecords/spotify-play-count-scraper` |
 | [skool-community-growth-tracker](https://apify.com/publicrecords/skool-community-growth-tracker) | [VS Code](https://insiders.vscode.dev/redirect/mcp/install?name=skool-community-mcp&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.apify.com%3Ftools%3Dpublicrecords%2Fskool-community-growth-tracker%22%7D) | [Cursor](https://cursor.com/en/install-mcp?name=skool-community-mcp&config=eyJ1cmwiOiJodHRwczovL21jcC5hcGlmeS5jb20%2FdG9vbHM9cHVibGljcmVjb3Jkcy9za29vbC1jb21tdW5pdHktZ3Jvd3RoLXRyYWNrZXIifQ%3D%3D) | `https://mcp.apify.com?tools=publicrecords/skool-community-growth-tracker` |
 <!-- one-click-install-index:end -->
+
+## Beta testers
+
+We are looking for people who will run an Actor on their own Apify account and tell us what broke or what they needed. Useful feedback (a bug report, a review, or a use case) can be credited here, gets first pick on new Actor and feature requests, and gets early access to new Actors. Stars are optional and are never part of that.
+
+See [BETA.md](./BETA.md) for how to join and how to report.
+
+_No testers credited yet. If you send feedback, you can be first._
