@@ -1,13 +1,13 @@
 {
-  "as_of": "2026-11-25 17:20 America/Toronto",
-  "total_surfaces": 972,
-  "live": 304,
+  "as_of": "2026-11-25 17:28 America/Toronto",
+  "total_surfaces": 829,
+  "live": 161,
   "submitted_pending": 367,
   "remaining_to_do": 58,
   "held_needs_Mark": 31,
   "skipped": 212,
-  "touched_live_submitted_remaining": 729,
-  "checksum": 972,
+  "touched_live_submitted_remaining": 586,
+  "checksum": 829,
   "remaining_names": [
     "AI Agent Store aiagentstore.ai",
     "AI Tools Directory aitoolsdirectory.com",
@@ -22,7 +22,7 @@
     "BetaList (free queue)",
     "Codepolitan",
     "Coze (coze.com) plugin store: Apify API plugin",
-    "Coze CN (coze.cn) \u63d2\u4ef6\u5546\u5e97",
+    "Coze CN (coze.cn) 插件商店",
     "Dang.ai",
     "DevHunt",
     "Fazier",
@@ -36,12 +36,12 @@
     "HostedMCP hostedmcp.org (pt-BR)",
     "Indie Hackers products",
     "Insidr AI tools",
-    "Juejin \u6398\u91d1",
+    "Juejin 掘金",
     "MCP Shortlist mcpshortlist.com (zh-Hant)",
-    "MCP\u30ca\u30d3 mcpnavi.jp (ja)",
+    "MCPナビ mcpnavi.jp (ja)",
     "Make (template share link)",
     "Medium",
-    "ModelScope MCP \u5e7f\u573a",
+    "ModelScope MCP 广场",
     "Moltbot Den",
     "Peerlist Launchpad",
     "Pipedream (workflow share)",
@@ -50,7 +50,7 @@
     "Qiita (organization + article draft)",
     "Qiita Team-free tags: MCP, Apify",
     "Relevance AI tool template",
-    "SegmentFault \u601d\u5426",
+    "SegmentFault 思否",
     "SideProjectors",
     "StartupBase",
     "Swarms Marketplace",
@@ -88,7 +88,7 @@
     "MCPizy",
     "Metorial marketplace",
     "Microsoft 365 Agent Store / Copilot Studio",
-    "ModelScope MCP \u5e7f\u573a (zh)",
+    "ModelScope MCP 广场 (zh)",
     "OpenAI plugin directory (ChatGPT + Codex)",
     "Perplexity connectors",
     "PlayMCP Kakao",
@@ -104,17 +104,19 @@
   "by_type": {
     "awesome-list": 461,
     "plugin-marketplace": 27,
-    "other": 292,
+    "other": 150,
     "mcp-directory": 137,
     "skills-marketplace": 23,
     "registry": 9,
-    "article": 20
+    "article": 20,
+    "data-hub": 1,
+    "docs-site": 1
   },
-  "placements_rows": 23309,
+  "placements_rows": 19877,
   "placements_by_status": {
-    "live": 1741,
-    "not-listed": 11042,
-    "submitted": 3581,
+    "live": 1285,
+    "not-listed": 8071,
+    "submitted": 3576,
     "remaining": 1059,
     "skipped": 5098,
     "held-needs-Mark": 788
@@ -122,7 +124,7 @@
   "skool_placements_by_status": {
     "submitted": 144,
     "skipped": 230,
-    "not-listed": 534,
+    "not-listed": 391,
     "live": 17,
     "held-needs-Mark": 34,
     "remaining": 12
@@ -159,5 +161,32 @@
         "Moltbot Den": "Attempted 25 Nov 2026 after Mark t1208u approved. POST /agents/register returned an LLM challenge; answering it from a later request got HTTP 403 Verification m"
       }
     }
-  }
+  },
+  "counting_rule": "Headline counts (total_surfaces, live, submitted_pending, remaining_to_do, held_needs_Mark, skipped) are distinct surfaces — unique distribution listings with a read-back URL. Per-language README.<lang>.md files, own-repo manifests, and n8n/Make/Postman recipe files are not separate surfaces; they roll up to the parent repo listing (publicrecords-mcp localized READMEs / publicrecords-*-examples multilingual READMEs). placements.csv remains an operational surface×actor status matrix, including not-listed rows for Actors not yet on a surface; placements_rows is not a count of listings.",
+  "before_correction_2026_11_25": {
+    "total_surfaces": 972,
+    "surface_status": {
+      "live": 304,
+      "submitted": 367,
+      "skipped": 212,
+      "held-needs-Mark": 31,
+      "remaining": 58
+    },
+    "placements_rows": 23309,
+    "placements_by_status": {
+      "live": 1741,
+      "not-listed": 11042,
+      "submitted": 3581,
+      "remaining": 1059,
+      "skipped": 5098,
+      "held-needs-Mark": 788
+    },
+    "lang_readme_surfaces": 140,
+    "recipe_surfaces": 3,
+    "live_lang_readme": 140,
+    "live_recipe": 3,
+    "placement_rows_on_removed_surfaces": 3432,
+    "live_placements_on_removed_surfaces": 461
+  },
+  "correction_reason": "The 23,309 figure was placements.csv row count: a full surface×actor matrix (972 surfaces × 24 Actors, with 19 older Actors still at 971 surfaces) including not-listed, skipped, and file-level rows. That inflated both placements_by_status.live (1741) and the 304 live-surface total. 140 live surfaces were per-language README.<lang>.md files that already had rollup surfaces, and 3 were n8n/Make/Postman recipe files in the same publicrecords-mcp repo (not listings on those products' galleries)."
 }
