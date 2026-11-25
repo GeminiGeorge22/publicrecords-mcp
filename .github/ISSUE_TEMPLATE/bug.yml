@@ -1,0 +1,44 @@
+name: Bug
+description: Something did not work as expected.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please report a problem from a run on **your** Apify account.
+        Do not paste API tokens, passwords, or other secrets.
+        Author: Public Records.
+  - type: input
+    id: actor_or_skill
+    attributes:
+      label: Actor, skill, or repo
+      description: For example publicrecords/grants-gov-scraper, the MCP pin, or publicrecords-skills.
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: Client or environment
+      description: For example Cursor, Claude Desktop, a Python script, n8n, Dify, Colab.
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Include a short input (no tokens) and any logs that contain no secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: false

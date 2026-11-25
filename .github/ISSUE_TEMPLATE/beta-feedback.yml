@@ -1,0 +1,62 @@
+name: Beta feedback
+description: Tell us what you tried, what worked, and what you want next.
+title: "[Beta] "
+labels: ["beta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying Public Records. This form is for feedback from a real run on **your** Apify account.
+        Please do not paste API tokens, passwords, or other secrets.
+
+        GitHub stars are optional and are never rewarded. See [BETA.md](https://github.com/GeminiGeorge22/publicrecords-mcp/blob/main/BETA.md).
+        Author: Public Records.
+  - type: dropdown
+    id: what_tested
+    attributes:
+      label: What did you test?
+      multiple: true
+      options:
+        - MCP server in Cursor, Claude Desktop, or another MCP client
+        - Agent Skill (Claude Code, Codex, Copilot, Cursor, Gemini CLI, Kiro)
+        - An Apify Actor from the Store, API, or a recipe
+        - Dify plugin
+        - Colab / Binder notebook or examples repo
+        - Something else (describe below)
+    validations:
+      required: true
+  - type: input
+    id: actor_or_skill
+    attributes:
+      label: Actor or skill
+      description: For example publicrecords/grants-gov-scraper or gov-tenders-and-grants.
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: Client or environment
+      description: For example Cursor, Claude Desktop, a Python script, n8n, Dify, Colab.
+    validations:
+      required: false
+  - type: textarea
+    id: goal
+    attributes:
+      label: What were you trying to do?
+      description: A short use case is enough. Do not include tokens.
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What happened, and what would you change?
+      description: What worked, what broke, and what you needed that was missing. Logs are welcome if they contain no secrets.
+    validations:
+      required: true
+  - type: input
+    id: credit_as
+    attributes:
+      label: How should we credit you if we use this feedback?
+      description: A GitHub handle, a name, or "please do not credit me". Credit is for feedback only, never for a star.
+    validations:
+      required: false

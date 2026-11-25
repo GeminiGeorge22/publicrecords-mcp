@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Beta testers discussion
+    url: https://github.com/GeminiGeorge22/publicrecords-mcp/discussions
+    about: Introduce yourself and say what you are using Public Records for.
+  - name: Beta testers guide
+    url: https://github.com/GeminiGeorge22/publicrecords-mcp/blob/main/BETA.md
+    about: What to test, how to report, and what we offer for feedback (not for stars).
