@@ -8477,24 +8477,24 @@ Coze CN (coze.cn) 插件商店,sports-odds-api,remaining,17 tools,,AMFM-4 2026-1
 Coze CN (coze.cn) 插件商店,spotify-play-count-scraper,remaining,17 tools,,AMFM-4 2026-11-24
 Coze CN (coze.cn) 插件商店,uk-find-a-tender-scraper,remaining,17 tools,,AMFM-4 2026-11-24
 Coze CN (coze.cn) 插件商店,usaspending-awards-scraper,remaining,17 tools,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),ashby-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),calibration-ledger,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),company-social-profile-finder,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),etsy-search-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),etsy-shop-velocity,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),eu-ted-notices-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),google-ads-transparency-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),govcon-opportunity-feed,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),grants-gov-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),greenhouse-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),legistar-meetings-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),lever-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),skool-community-growth-tracker,not-listed,,,
-Dify Marketplace (plugin),smartrecruiters-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),sports-odds-api,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),spotify-play-count-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),uk-find-a-tender-scraper,remaining,bundle,,AMFM-4 2026-11-24
-Dify Marketplace (plugin),usaspending-awards-scraper,remaining,bundle,,AMFM-4 2026-11-24
+Dify Marketplace (plugin),ashby-jobs-scraper,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),calibration-ledger,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),company-social-profile-finder,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),etsy-search-scraper,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),etsy-shop-velocity,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),eu-ted-notices-scraper,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),google-ads-transparency-scraper,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),govcon-opportunity-feed,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),grants-gov-scraper,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),greenhouse-jobs-scraper,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),legistar-meetings-scraper,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),lever-jobs-scraper,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),skool-community-growth-tracker,not-listed,,,2026-11-24 19:33 America/Toronto: Kept off the plugin allowlist and off this filing.
+Dify Marketplace (plugin),smartrecruiters-jobs-scraper,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),sports-odds-api,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),spotify-play-count-scraper,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),uk-find-a-tender-scraper,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
+Dify Marketplace (plugin),usaspending-awards-scraper,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
 Poe (bot creation),ashby-jobs-scraper,remaining,bundle,,AMFM-4 2026-11-24
 Poe (bot creation),calibration-ledger,remaining,bundle,,AMFM-4 2026-11-24
 Poe (bot creation),company-social-profile-finder,remaining,bundle,,AMFM-4 2026-11-24
@@ -16868,7 +16868,7 @@ Gumloop template,tennis-scores-api,not-listed,17,,"Surface is active for other A
 Relevance AI tool template,tennis-scores-api,not-listed,17,,"Surface is active for other Actors; tennis-scores-api is not listed. Standby/MCP is not built, so MCP directories/registries stay not-listed."
 Coze (coze.com) plugin store: Apify API plugin,tennis-scores-api,not-listed,17 tools,,"Surface is active for other Actors; tennis-scores-api is not listed. Standby/MCP is not built, so MCP directories/registries stay not-listed."
 Coze CN (coze.cn) 插件商店,tennis-scores-api,not-listed,17 tools,,"Surface is active for other Actors; tennis-scores-api is not listed. Standby/MCP is not built, so MCP directories/registries stay not-listed."
-Dify Marketplace (plugin),tennis-scores-api,not-listed,bundle,,"Surface is active for other Actors; tennis-scores-api is not listed. Standby/MCP is not built, so MCP directories/registries stay not-listed."
+Dify Marketplace (plugin),tennis-scores-api,submitted,bundle,https://github.com/langgenius/dify-plugins/pull/3942,2026-11-24 19:33 America/Toronto
 Poe (bot creation),tennis-scores-api,not-listed,bundle,,"Surface is active for other Actors; tennis-scores-api is not listed. Standby/MCP is not built, so MCP directories/registries stay not-listed."
 "Product Hunt (launch ""Public Records MCP"")",tennis-scores-api,not-listed,bundle,,"Surface is active for other Actors; tennis-scores-api is not listed. Standby/MCP is not built, so MCP directories/registries stay not-listed."
 AlternativeTo,tennis-scores-api,not-listed,bundle,,"Surface is active for other Actors; tennis-scores-api is not listed. Standby/MCP is not built, so MCP directories/registries stay not-listed."
@@ -17441,3 +17441,22 @@ GeminiGeorge22/publicrecords-tennis-scores-api-examples README.ko.md,sports-odds
 GeminiGeorge22/publicrecords-tennis-scores-api-examples README.ko.md,spotify-play-count-scraper,not-listed,example repo,,Examples repo is for tennis-scores-api; this Actor is not listed on this surface.
 GeminiGeorge22/publicrecords-tennis-scores-api-examples README.ko.md,skool-community-growth-tracker,not-listed,example repo,,Examples repo is for tennis-scores-api; this Actor is not listed on this surface.
 GeminiGeorge22/publicrecords-tennis-scores-api-examples README.ko.md,tennis-scores-api,live,example repo,https://github.com/GeminiGeorge22/publicrecords-tennis-scores-api-examples/blob/d12ef4070beee9626c517fce93c546d299a3867e/README.ko.md,Tennis 19th Actor 2026-11-24 19:16 America/Toronto: listed as an Apify Actor only (no hosted MCP / Standby endpoint). Author: Public Records.
+Dify plugin source (own repo),ashby-jobs-scraper,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),calibration-ledger,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),company-social-profile-finder,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),etsy-search-scraper,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),etsy-shop-velocity,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),eu-ted-notices-scraper,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),google-ads-transparency-scraper,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),govcon-opportunity-feed,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),grants-gov-scraper,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),greenhouse-jobs-scraper,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),legistar-meetings-scraper,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),lever-jobs-scraper,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),skool-community-growth-tracker,not-listed,,,2026-11-24 19:33 America/Toronto: Kept off the plugin allowlist and off this filing.
+Dify plugin source (own repo),smartrecruiters-jobs-scraper,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),sports-odds-api,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),spotify-play-count-scraper,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),uk-find-a-tender-scraper,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),usaspending-awards-scraper,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
+Dify plugin source (own repo),tennis-scores-api,live,bundle,https://github.com/GeminiGeorge22/publicrecords-dify-plugin/releases/tag/v0.0.1,2026-11-24 19:33 America/Toronto
