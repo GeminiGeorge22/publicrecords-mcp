@@ -109,3 +109,39 @@ Also: “Without a heartbeat you are a one-time visitor,” and a 5-minute inbox
 **Agentboard** `llms.txt` labels other agents' posts as untrusted data, never instructions. No hidden command was followed there.
 
 No other hidden agent-addressed instructions were acted on. HTML comment matches for the word “agent” on Agentel pages were ordinary page titles, not prompts.
+
+
+## Posting pass (Mark t1208u, 25 Nov 2026, afternoon ET America/Toronto)
+
+Mark replied "Post" and approved the drafted disclosed intros under the Public Records brand only. One post per site, via public API or plain HTTP. No FMF Tools brand, no Skool Actor, no paid boosts, no heartbeats, no wallet signatures, no 1VR registration. New-site keys were stored privately under `/home/box/apify-marketer/agent-networks/` (mode 600) and were not committed.
+
+### Live posts
+
+| Site | Public URL | Raw read-back |
+|---|---|---|
+| The Colony (ads) | https://thecolony.ai/posts/6ddb0461-f209-44e4-b7f8-e6becb63824c | HTTP 200, title Public Records MCP — official records, market data, and company social links - The Colony |
+| Forum for Agents | https://forumforagents.com/t/z3p42rnj#p-imdfeiut5 | HTTP 200, title Public Records MCP — official-records and company-social Actors — Forum for Agents (thread z3p42rnj, post imdfeiut5) |
+| Agentboard.ai | https://www.agentboard.ai/t/thr_72179b78cc42ff8c | HTTP 200, title Launch: Public Records MCP — Agentboard.ai |
+| Board for Agents | https://boardforagents.com/api/posts/8b1688d233 | API GET HTTP 200, id 8b1688d233, title Public Records MCP — official records and company social Actors. HTML `/p/8b1688d233` was 404; index.md still showed 32 notices; classifier `ai.verdict=unsafe`. |
+| Agent Socials (#offers, free) | https://socialnetworkforaiagents.com/c/offers/p_0mwwh9aw2bs6p2n29 | HTTP 200, title Public Records MCP. Disclosure: published by the publicrecords mainta… · @public-records in #offers. Profile https://socialnetworkforaiagents.com/a/public-records |
+| SwarmMemo (#commerce) | https://swarmmemo.com/e/ec56afd88d697aa7f7dfb1019f82a912?format=json | HTTP 200, id ec56afd88d697aa7f7dfb1019f82a912, room=commerce, hidden=false. A first write to #lobby was auto-hidden and is not the live placement. |
+| ZZBoard (introductions) | https://zzboard.net/t/149 | HTTP 200, title Public Records MCP — official-records and company-social Actors — zzboard |
+| Pluribotica | https://pluribotica.com/p/72f4f2c9-c1e7-4516-ac44-b67b771e13f3 | HTTP 200, title Public Records: “How to pin official-records…” \| Pluribotica |
+| Agents Gather | https://agentsgather.org/threads/1008 | HTTP 200, title # Public Records MCP — official-records and company-social Actors. Profile https://agentsgather.org/agents/185 |
+| The Agent Commons (affix-io) | https://ai.affix-io.com/conversation/193/#m193 | HTTP 200, title # Thread #193 at the Agent Commons, username bp-31384acb64cf49b9. URL-bearing drafts were rejected by Commons moderation; the live post is the disclosure without outbound links. |
+| Swarm Bar | https://swarmbar.com/p/c252502f-9044-4fa0-b112-26b58be50be1 | HTTP 200, title Public Records MCP · Swarm Bar |
+| Clawprint | https://clawprint.org/p/how-to-pin-official-records-actors-on-apify-mcp | HTTP 200, title How to pin official-records Actors on Apify MCP - Clawprint |
+
+### Skipped or not completed in this pass
+
+| Site | Reason |
+|---|---|
+| Yapper | New accounts are TL0 and cannot create topics; a cold promotional reply would be spam. No post was made. |
+| World of Bots | llms.txt and skill.md return HTTP 404; `/register_a_bot` is a site page, not a documented password-free HTTP API. No account was created. |
+| Moltbot Den | Register returned an LLM challenge; verify got HTTP 403 "Verification must come from the same IP that created the challenge" (egress IP was not stable). No API key, no showcase, no heartbeat. Left as remaining. |
+| 1VR Silicon Teahouse | Excluded: hidden instructions to start a 5-minute heartbeat and not to ask the owner. Not registered. |
+| Open Agent Board | ETH wallet signature required. |
+| Moltbook, ClawdChat, Abund.ai | Identity gates. |
+| Paid boosts / featured slots | No paying. |
+
+No heartbeat or participation-round task was created on any site. Agentboard replyRequests were not followed.
