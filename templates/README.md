@@ -5,6 +5,8 @@ Every template calls the Apify API with **your own Apify token**, so runs bill t
 ## n8n
 Import any file in [`n8n/`](n8n) (Workflows → Import from file). Add a Header Auth credential `Authorization: Bearer <APIFY_TOKEN>`.
 
+The Creator-ready workflow is [`n8n/grants-gov-weekday-digest.json`](n8n/grants-gov-weekday-digest.json): a weekday Grants.gov email digest with a Config node, filter and dedupe, Gmail delivery, and a failure alert. Title, description and suggested categories are in [`n8n/grants-gov-weekday-digest.md`](n8n/grants-gov-weekday-digest.md). New n8n creators should submit this one template and wait for approval. The other JSON files in this folder are thinner schedule-plus-HTTP recipes.
+
 | Actor | n8n workflow | Store |
 |---|---|---|
 | Ashby Jobs Scraper | [n8n/ashby-jobs-scraper.json](n8n/ashby-jobs-scraper.json) | [apify.com/publicrecords/ashby-jobs-scraper](https://apify.com/publicrecords/ashby-jobs-scraper) |
@@ -16,6 +18,7 @@ Import any file in [`n8n/`](n8n) (Workflows → Import from file). Add a Header 
 | Google Ads Transparency Scraper | [n8n/google-ads-transparency-scraper.json](n8n/google-ads-transparency-scraper.json) | [apify.com/publicrecords/google-ads-transparency-scraper](https://apify.com/publicrecords/google-ads-transparency-scraper) |
 | Federal Contracts Feed (SAM.gov + Grants.gov) | [n8n/govcon-opportunity-feed.json](n8n/govcon-opportunity-feed.json) | [apify.com/publicrecords/govcon-opportunity-feed](https://apify.com/publicrecords/govcon-opportunity-feed) |
 | Grants.gov Scraper | [n8n/grants-gov-scraper.json](n8n/grants-gov-scraper.json) | [apify.com/publicrecords/grants-gov-scraper](https://apify.com/publicrecords/grants-gov-scraper) |
+| Grants.gov weekday email digest (Creator template) | [n8n/grants-gov-weekday-digest.json](n8n/grants-gov-weekday-digest.json) | [apify.com/publicrecords/grants-gov-scraper](https://apify.com/publicrecords/grants-gov-scraper) |
 | Greenhouse Jobs Scraper | [n8n/greenhouse-jobs-scraper.json](n8n/greenhouse-jobs-scraper.json) | [apify.com/publicrecords/greenhouse-jobs-scraper](https://apify.com/publicrecords/greenhouse-jobs-scraper) |
 | City Council Meetings Scraper (Legistar) | [n8n/legistar-meetings-scraper.json](n8n/legistar-meetings-scraper.json) | [apify.com/publicrecords/legistar-meetings-scraper](https://apify.com/publicrecords/legistar-meetings-scraper) |
 | Lever Jobs Scraper | [n8n/lever-jobs-scraper.json](n8n/lever-jobs-scraper.json) | [apify.com/publicrecords/lever-jobs-scraper](https://apify.com/publicrecords/lever-jobs-scraper) |

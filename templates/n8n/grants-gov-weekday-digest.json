@@ -1,0 +1,468 @@
+{
+  "name": "Email a weekday Grants.gov opportunity digest",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "### How it works\n\nEach weekday at 07:00 (or when you click Test workflow) this workflow reads your keyword, agency, lookback, item cap, closing-soon window and digest address from Set digest options. It calls the official Public Records Grants.gov Actor on your own Apify account, waits for the dataset, and normalizes the rows. Opportunity numbers already emailed are skipped (kept in this workflow's static data). Remaining grants are ranked by close date, soon-to-close rows are flagged, and one HTML digest is sent through Gmail. If the Apify request fails, a separate branch emails a failure alert to the same address. If nothing new remains after filters and dedupe, the run ends without an empty email.\n\n### Setup\n\n1. Create an HTTP Header Auth credential: header name `Authorization`, value `Bearer` plus your Apify API token from Apify Console \u2192 Settings \u2192 API & Integrations. Assign that credential to Fetch open grants from Grants.gov.\n2. Connect a Gmail account to Send grant digest email and Send failure alert.\n3. In Set digest options, replace `YOUR_EMAIL@example.com` with your address. Set `keyword` (or leave it blank for all opportunities), `agency` (for example NSF or HHS), `status` (`posted` or `forecasted|posted`), `postedWithinDays`, `maxItems`, `closingSoonDays` and `dedupeMemoryDays`.\n4. Click Test workflow once, confirm the email, then set the workflow to Active. The Actor is pay-per-use on your Apify account; check the Store listing for current pricing before you leave a schedule running.\n\n### Customization\n\nChange the weekday schedule, swap Gmail for Outlook, Slack or Microsoft Teams, or append the `grants` array from the filter node to Google Sheets. Clear this workflow's static data to reset dedupe history. You can turn on `fetchDetails` in the Actor body when you also map any extra synopsis fields in the filter node.",
+        "height": 980,
+        "width": 420,
+        "color": 1
+      },
+      "id": "2901093a-967a-5a03-8fb6-0bc4bea52975",
+      "name": "Overview",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -420,
+        40
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Start and configure\n\nEdit keyword, agency, lookback, item cap, closing-soon window and digest email here. Both triggers share this node. Later steps only read these placeholders.",
+        "height": 620,
+        "width": 980,
+        "color": 7
+      },
+      "id": "7d7869d1-28e8-5e9f-8f80-a465b18fe5bd",
+      "name": "Start and configure",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        80,
+        40
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Fetch from Grants.gov\n\nSends your Config values as Actor input using Header Auth on your Apify account. The sync endpoint waits for the run and returns dataset rows. Failures take the error output.",
+        "height": 620,
+        "width": 500,
+        "color": 7
+      },
+      "id": "a6625f51-2ea2-5e5a-80ec-42106af1178a",
+      "name": "Fetch from Grants.gov",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1120,
+        40
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Filter, rank, and dedupe\n\nNormalizes Actor rows, skips opportunity numbers already emailed, ranks by close date, and builds digest fields. An empty result stops without sending mail.",
+        "height": 620,
+        "width": 860,
+        "color": 7
+      },
+      "id": "40d78cf3-7b92-51f9-8b00-5976515018d9",
+      "name": "Filter, rank, and dedupe",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1680,
+        40
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Send the digest or an alert\n\nNew matches go out as one HTML email. Apify errors send a failure alert to the same Config address. Empty runs follow the no-op path.",
+        "height": 900,
+        "width": 560,
+        "color": 7
+      },
+      "id": "6ac236b6-18dc-5cf4-b46b-991901f6eb68",
+      "name": "Send the digest or an alert",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2620,
+        40
+      ]
+    },
+    {
+      "parameters": {
+        "content": "Connect your Gmail credential and replace `YOUR_EMAIL@example.com` in Set digest options before you activate this workflow. The placeholder address is not a mailbox. Apify runs bill to your own account.",
+        "height": 200,
+        "width": 560,
+        "color": 3
+      },
+      "id": "cdc3ab69-9dda-5be3-afca-385bd86b0687",
+      "name": "Before you activate",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2620,
+        -200
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "triggerAtDay": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "triggerAtHour": 7,
+              "triggerAtMinute": 0
+            }
+          ]
+        }
+      },
+      "id": "4e52669a-4c4e-5ee0-b8c0-7fdaee9b7019",
+      "name": "Start weekdays at 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        160,
+        200
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "192bbbba-76b6-5929-a882-b4289c8a4b18",
+      "name": "When clicking Test workflow",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        160,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "cfg-keyword",
+              "name": "keyword",
+              "value": "education",
+              "type": "string"
+            },
+            {
+              "id": "cfg-agency",
+              "name": "agency",
+              "value": "",
+              "type": "string"
+            },
+            {
+              "id": "cfg-status",
+              "name": "status",
+              "value": "posted",
+              "type": "string"
+            },
+            {
+              "id": "cfg-posted",
+              "name": "postedWithinDays",
+              "value": 7,
+              "type": "number"
+            },
+            {
+              "id": "cfg-max",
+              "name": "maxItems",
+              "value": 50,
+              "type": "number"
+            },
+            {
+              "id": "cfg-soon",
+              "name": "closingSoonDays",
+              "value": 30,
+              "type": "number"
+            },
+            {
+              "id": "cfg-listed",
+              "name": "maxGrantsInEmail",
+              "value": 25,
+              "type": "number"
+            },
+            {
+              "id": "cfg-dedupe",
+              "name": "dedupeMemoryDays",
+              "value": 90,
+              "type": "number"
+            },
+            {
+              "id": "cfg-details",
+              "name": "fetchDetails",
+              "value": false,
+              "type": "boolean"
+            },
+            {
+              "id": "cfg-email",
+              "name": "digestEmail",
+              "value": "YOUR_EMAIL@example.com",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "7b78dad9-a5fd-5ece-aeaa-497ee263d6e8",
+      "name": "Set digest options",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        620,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~grants-gov-scraper/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ keyword: $json.keyword, agency: $json.agency, status: $json.status, postedWithinDays: $json.postedWithinDays, maxItems: $json.maxItems, fetchDetails: $json.fetchDetails }) }}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "dbf34079-98ca-58ba-ada4-7700a42b9560",
+      "name": "Fetch open grants from Grants.gov",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1220,
+        300
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000,
+      "onError": "continueErrorOutput",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "apifyHeaderAuth",
+          "name": "Apify API (Header Auth)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const cfg = $('Set digest options').first().json;\n\nfunction asText(value) {\n  if (value === undefined || value === null) return '';\n  return String(value).trim();\n}\n\nfunction parseGrantDate(raw) {\n  const text = asText(raw);\n  if (!text) return null;\n  let match = text.match(/^(\\d{1,2})\\/(\\d{1,2})\\/(\\d{4})$/);\n  if (match) {\n    return new Date(Number(match[3]), Number(match[1]) - 1, Number(match[2]));\n  }\n  match = text.match(/^(\\d{4})-(\\d{2})-(\\d{2})/);\n  if (match) {\n    return new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));\n  }\n  const parsed = new Date(text);\n  return Number.isNaN(parsed.getTime()) ? null : parsed;\n}\n\nfunction startOfToday() {\n  const now = new Date();\n  return new Date(now.getFullYear(), now.getMonth(), now.getDate());\n}\n\nfunction daysUntil(date) {\n  if (!date) return null;\n  const start = startOfToday();\n  const close = new Date(date.getFullYear(), date.getMonth(), date.getDate());\n  return Math.round((close.getTime() - start.getTime()) / 86400000);\n}\n\nfunction escapeHtml(value) {\n  return asText(value)\n    .replace(/&/g, '&amp;')\n    .replace(/</g, '&lt;')\n    .replace(/>/g, '&gt;')\n    .replace(/\"/g, '&quot;');\n}\n\nfunction grantKey(row) {\n  return asText(row.number || row.opportunityNumber || row.id || row.opportunityId || row.title);\n}\n\nfunction collectRows(items) {\n  const rows = [];\n  const pushValue = (value) => {\n    if (value === undefined || value === null) return;\n    if (Array.isArray(value)) {\n      value.forEach(pushValue);\n      return;\n    }\n    if (typeof value === 'object') {\n      const keys = Object.keys(value);\n      const numericKeys = keys.length > 0 && keys.every((key) => /^\\d+$/.test(key));\n      if (numericKeys) {\n        keys.sort((a, b) => Number(a) - Number(b)).forEach((key) => pushValue(value[key]));\n        return;\n      }\n      if (Array.isArray(value.data)) {\n        pushValue(value.data);\n        return;\n      }\n      if (Array.isArray(value.items)) {\n        pushValue(value.items);\n        return;\n      }\n      if (Array.isArray(value.body)) {\n        pushValue(value.body);\n        return;\n      }\n      rows.push(value);\n      return;\n    }\n  };\n  items.forEach((item) => pushValue(item.json));\n  return rows;\n}\n\nconst rawRows = collectRows($input.all());\nconst closingSoonDays = Number(cfg.closingSoonDays);\nconst maxGrantsInEmail = Number(cfg.maxGrantsInEmail) || 25;\nconst dedupeMemoryDays = Number(cfg.dedupeMemoryDays) || 90;\nconst today = startOfToday();\nconst staticData = $getWorkflowStaticData('global');\nif (!staticData.sentGrantKeys || typeof staticData.sentGrantKeys !== 'object') {\n  staticData.sentGrantKeys = {};\n}\n\nconst cutoff = today.getTime() - dedupeMemoryDays * 86400000;\nfor (const [key, sentAt] of Object.entries(staticData.sentGrantKeys)) {\n  const sentTime = Date.parse(sentAt);\n  if (!sentTime || sentTime < cutoff) {\n    delete staticData.sentGrantKeys[key];\n  }\n}\n\nconst seenThisRun = new Set();\nconst grants = [];\nlet skippedDedupe = 0;\nlet skippedInvalid = 0;\n\nfor (const row of rawRows) {\n  const title = asText(row.title || row.opportunityTitle);\n  const number = asText(row.number || row.opportunityNumber);\n  const id = asText(row.id || row.opportunityId);\n  const key = grantKey(row);\n  if (!title && !number && !id) {\n    skippedInvalid += 1;\n    continue;\n  }\n  if (!key) {\n    skippedInvalid += 1;\n    continue;\n  }\n  if (seenThisRun.has(key)) continue;\n  seenThisRun.add(key);\n  if (staticData.sentGrantKeys[key]) {\n    skippedDedupe += 1;\n    continue;\n  }\n  const closeDate = parseGrantDate(row.closeDate || row.close_date);\n  const openDate = parseGrantDate(row.openDate || row.open_date);\n  const daysToClose = daysUntil(closeDate);\n  const closingSoon = daysToClose !== null && daysToClose >= 0 && daysToClose <= closingSoonDays;\n  grants.push({\n    id,\n    number,\n    title,\n    agency: asText(row.agency || row.agencyName),\n    agencyCode: asText(row.agencyCode),\n    openDate: asText(row.openDate || row.open_date),\n    closeDate: asText(row.closeDate || row.close_date),\n    oppStatus: asText(row.oppStatus || row.status),\n    docType: asText(row.docType),\n    cfdaList: asText(row.cfdaList),\n    url: asText(row.url) || (id ? `https://www.grants.gov/search-results-detail/${id}` : ''),\n    daysToClose,\n    closingSoon,\n    openDateValue: openDate ? openDate.getTime() : null,\n    closeDateValue: closeDate ? closeDate.getTime() : Number.POSITIVE_INFINITY,\n  });\n}\n\ngrants.sort((a, b) => {\n  if (a.closeDateValue !== b.closeDateValue) return a.closeDateValue - b.closeDateValue;\n  const openA = a.openDateValue == null ? Number.POSITIVE_INFINITY : a.openDateValue;\n  const openB = b.openDateValue == null ? Number.POSITIVE_INFINITY : b.openDateValue;\n  if (openA !== openB) return openA - openB;\n  return asText(a.title).localeCompare(asText(b.title));\n});\n\nconst listed = grants.slice(0, maxGrantsInEmail);\nconst hiddenCount = grants.length - listed.length;\nconst closingSoonCount = grants.filter((grant) => grant.closingSoon).length;\nconst keywordLabel = asText(cfg.keyword) || 'all keywords';\nconst agencyLabel = asText(cfg.agency) || 'all agencies';\nconst subject = grants.length\n  ? `Grants.gov digest: ${grants.length} new opportunit${grants.length === 1 ? 'y' : 'ies'} (${keywordLabel})`\n  : 'Grants.gov digest: no new opportunities';\n\nconst rowsHtml = listed.map((grant) => {\n  const closeLabel = grant.closeDate || 'No close date';\n  const daysLabel = grant.daysToClose === null\n    ? ''\n    : grant.daysToClose < 0\n      ? ' (closed)'\n      : grant.daysToClose === 0\n        ? ' (closes today)'\n        : ` (${grant.daysToClose} day${grant.daysToClose === 1 ? '' : 's'} left)`;\n  const soonBadge = grant.closingSoon ? ' <strong>Closing soon</strong>' : '';\n  const link = grant.url\n    ? `<a href=\"${escapeHtml(grant.url)}\">${escapeHtml(grant.number || grant.id || 'View on Grants.gov')}</a>`\n    : escapeHtml(grant.number || grant.id || '');\n  return `<tr>\n  <td style=\"padding:8px;border-bottom:1px solid #ddd;vertical-align:top;\">${link}${soonBadge}</td>\n  <td style=\"padding:8px;border-bottom:1px solid #ddd;vertical-align:top;\">${escapeHtml(grant.title)}</td>\n  <td style=\"padding:8px;border-bottom:1px solid #ddd;vertical-align:top;\">${escapeHtml(grant.agency)}</td>\n  <td style=\"padding:8px;border-bottom:1px solid #ddd;vertical-align:top;white-space:nowrap;\">${escapeHtml(closeLabel)}${daysLabel}</td>\n</tr>`;\n}).join('\\n');\n\nconst html = grants.length\n  ? `<p>New or still-unseen federal grant opportunities from Grants.gov for <strong>${escapeHtml(keywordLabel)}</strong> / <strong>${escapeHtml(agencyLabel)}</strong>.</p>\n<p>${grants.length} listed below${closingSoonCount ? `, including ${closingSoonCount} closing within ${closingSoonDays} days` : ''}${hiddenCount ? `. Showing the first ${listed.length}; ${hiddenCount} more were ranked but omitted from this email` : ''}.</p>\n<table style=\"border-collapse:collapse;width:100%;font-family:Arial,sans-serif;font-size:14px;\">\n  <thead>\n    <tr>\n      <th style=\"text-align:left;padding:8px;border-bottom:2px solid #333;\">Opportunity</th>\n      <th style=\"text-align:left;padding:8px;border-bottom:2px solid #333;\">Title</th>\n      <th style=\"text-align:left;padding:8px;border-bottom:2px solid #333;\">Agency</th>\n      <th style=\"text-align:left;padding:8px;border-bottom:2px solid #333;\">Close date</th>\n    </tr>\n  </thead>\n  <tbody>\n    ${rowsHtml}\n  </tbody>\n</table>\n<p style=\"color:#555;font-size:12px;\">Source: Grants.gov via the publicrecords/grants-gov-scraper Actor on your Apify account. Already emailed opportunities are skipped until dedupe memory expires.</p>`\n  : '<p>No new Grants.gov opportunities remained after filters and dedupe.</p>';\n\nconst text = grants.length\n  ? listed.map((grant) => {\n      const closeLabel = grant.closeDate || 'No close date';\n      return `- ${grant.number || grant.id || ''} | ${grant.title} | ${grant.agency} | Closes ${closeLabel} | ${grant.url}`;\n    }).join('\\n')\n  : 'No new Grants.gov opportunities remained after filters and dedupe.';\n\nif (grants.length) {\n  const sentAt = new Date().toISOString();\n  for (const grant of grants) {\n    const key = grant.number || grant.id || grant.title;\n    staticData.sentGrantKeys[key] = sentAt;\n  }\n}\n\nconst cleanGrants = grants.map((grant) => {\n  const copy = { ...grant };\n  delete copy.openDateValue;\n  delete copy.closeDateValue;\n  return copy;\n});\n\nreturn [{\n  json: {\n    count: grants.length,\n    listedCount: listed.length,\n    hiddenCount,\n    closingSoonCount,\n    skippedDedupe,\n    skippedInvalid,\n    subject,\n    html,\n    text,\n    grants: cleanGrants,\n    digestEmail: asText(cfg.digestEmail),\n  },\n}];"
+      },
+      "id": "edd5ceb7-a729-5006-a476-df176f94ba6a",
+      "name": "Filter, rank, and dedupe grants",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1760,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "25b9b9c3-374f-577e-8d1d-427fb55efbb3",
+              "leftValue": "={{ $json.count }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "15016f60-5bf9-599b-8502-33da41efc054",
+      "name": "If any new matching grants",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        2160,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $json.digestEmail }}",
+        "subject": "={{ $json.subject }}",
+        "emailType": "html",
+        "message": "={{ $json.html }}",
+        "options": {}
+      },
+      "id": "dac87056-1682-51d3-b0c1-e72695d8d559",
+      "name": "Send grant digest email",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        2720,
+        200
+      ],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmailOAuth2",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "a43f6c57-598a-576c-bbf0-2d6a1e68d4a9",
+      "name": "Skip when no new grants",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2720,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const cfg = $('Set digest options').first().json;\nconst payload = $input.first().json || {};\nconst err = payload.error || payload;\nconst status = err.httpCode || err.statusCode || payload.statusCode || payload.status || 'unknown';\nconst message = err.message || payload.message || JSON.stringify(payload);\nconst digestEmail = String(cfg.digestEmail || '');\nconst subject = 'Grants.gov digest failed';\nconst html = `<p>The Grants.gov fetch failed, so no digest was sent.</p>\n<p><strong>Status:</strong> ${status}</p>\n<p><strong>Message:</strong> ${String(message).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</p>\n<p>Check your Apify Header Auth credential, Actor input, and the Actor run log in your Apify Console. This workflow did not include any API token in its parameters.</p>`;\nreturn [{ json: { subject, html, digestEmail, status, message: String(message) } }];"
+      },
+      "id": "9684f9b2-45ad-53df-a6a3-fb8dd63006e1",
+      "name": "Build failure alert",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2720,
+        580
+      ]
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $json.digestEmail }}",
+        "subject": "={{ $json.subject }}",
+        "emailType": "html",
+        "message": "={{ $json.html }}",
+        "options": {}
+      },
+      "id": "1ca908f6-6fb6-539f-8002-12524e589a2b",
+      "name": "Send failure alert",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        2720,
+        760
+      ],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "gmailOAuth2",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Start weekdays at 07:00": {
+      "main": [
+        [
+          {
+            "node": "Set digest options",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking Test workflow": {
+      "main": [
+        [
+          {
+            "node": "Set digest options",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set digest options": {
+      "main": [
+        [
+          {
+            "node": "Fetch open grants from Grants.gov",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch open grants from Grants.gov": {
+      "main": [
+        [
+          {
+            "node": "Filter, rank, and dedupe grants",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Build failure alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter, rank, and dedupe grants": {
+      "main": [
+        [
+          {
+            "node": "If any new matching grants",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If any new matching grants": {
+      "main": [
+        [
+          {
+            "node": "Send grant digest email",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Skip when no new grants",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build failure alert": {
+      "main": [
+        [
+          {
+            "node": "Send failure alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/New_York"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "pinData": {},
+  "tags": []
+}
