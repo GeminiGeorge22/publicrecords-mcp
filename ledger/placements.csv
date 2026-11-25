@@ -17764,3 +17764,630 @@ ad-si/awesome-e-commerce,spotify-play-count-scraper,not-listed,,,
 ad-si/awesome-e-commerce,uk-find-a-tender-scraper,not-listed,,,
 ad-si/awesome-e-commerce,usaspending-awards-scraper,not-listed,,,
 ad-si/awesome-e-commerce,tennis-scores-api,not-listed,,,
+Agentel MCP catalog,ashby-jobs-scraper,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,greenhouse-jobs-scraper,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,lever-jobs-scraper,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,smartrecruiters-jobs-scraper,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,etsy-search-scraper,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,etsy-shop-velocity,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,calibration-ledger,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,govcon-opportunity-feed,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,grants-gov-scraper,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,usaspending-awards-scraper,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,uk-find-a-tender-scraper,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,eu-ted-notices-scraper,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,legistar-meetings-scraper,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,company-social-profile-finder,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,google-ads-transparency-scraper,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,sports-odds-api,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,spotify-play-count-scraper,submitted,bundle endpoint,https://agentel.tech/agents/public-records,Included in the public-records-mcp MCP catalog submission (pending Skill Drop review).
+Agentel MCP catalog,skool-community-growth-tracker,skipped,bundle endpoint,https://agentel.tech/agents/public-records,Standing rule: never list or call the Skool Actor.
+Agentel MCP catalog,tennis-scores-api,not-listed,bundle endpoint,https://agentel.tech/agents/public-records,API-only Actor; no MCP or Standby. Not part of this MCP/skill listing.
+Agentel Skills Registry,ashby-jobs-scraper,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,greenhouse-jobs-scraper,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,lever-jobs-scraper,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,smartrecruiters-jobs-scraper,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,etsy-search-scraper,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,etsy-shop-velocity,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,calibration-ledger,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,govcon-opportunity-feed,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,grants-gov-scraper,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,usaspending-awards-scraper,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,uk-find-a-tender-scraper,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,eu-ted-notices-scraper,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,legistar-meetings-scraper,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,company-social-profile-finder,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,google-ads-transparency-scraper,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,sports-odds-api,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,spotify-play-count-scraper,remaining,skills pack,https://agentel.tech/docs/products/skill-submission.md,Skill registry not filed this pass (needs hashed GitHub source package).
+Agentel Skills Registry,skool-community-growth-tracker,skipped,skills pack,https://agentel.tech/docs/products/skill-submission.md,Standing rule: never list or call the Skool Actor.
+Agentel Skills Registry,tennis-scores-api,not-listed,skills pack,https://agentel.tech/docs/products/skill-submission.md,API-only Actor; no MCP or Standby.
+Sayba skills catalog,ashby-jobs-scraper,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,greenhouse-jobs-scraper,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,lever-jobs-scraper,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,smartrecruiters-jobs-scraper,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,etsy-search-scraper,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,etsy-shop-velocity,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,calibration-ledger,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,govcon-opportunity-feed,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,grants-gov-scraper,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,usaspending-awards-scraper,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,uk-find-a-tender-scraper,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,eu-ted-notices-scraper,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,legistar-meetings-scraper,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,company-social-profile-finder,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,google-ads-transparency-scraper,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,sports-odds-api,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,spotify-play-count-scraper,live,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Covered by the live free skill slug public-records-mcp (how to pin these Actors on Apify MCP).
+Sayba skills catalog,skool-community-growth-tracker,skipped,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,Standing rule: never list or call the Skool Actor.
+Sayba skills catalog,tennis-scores-api,not-listed,skills pack,https://ai.sayba.com/api/v1/marketplace/skills/public-records-mcp,API-only Actor; no MCP or Standby. Not part of this MCP/skill listing.
+The Colony,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,calibration-ledger,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,sports-odds-api,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Colony,skool-community-growth-tracker,skipped,bundle endpoint,https://thecolony.ai/,Standing rule: never list or call the Skool Actor.
+The Colony,tennis-scores-api,held-needs-Mark,bundle endpoint,https://thecolony.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,calibration-ledger,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,sports-odds-api,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Forum for Agents,skool-community-growth-tracker,skipped,bundle endpoint,https://forumforagents.com/,Standing rule: never list or call the Skool Actor.
+Forum for Agents,tennis-scores-api,held-needs-Mark,bundle endpoint,https://forumforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,calibration-ledger,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,sports-odds-api,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agentboard.ai,skool-community-growth-tracker,skipped,bundle endpoint,https://www.agentboard.ai/,Standing rule: never list or call the Skool Actor.
+Agentboard.ai,tennis-scores-api,held-needs-Mark,bundle endpoint,https://www.agentboard.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,calibration-ledger,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,sports-odds-api,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Board for Agents,skool-community-growth-tracker,skipped,bundle endpoint,https://boardforagents.com/,Standing rule: never list or call the Skool Actor.
+Board for Agents,tennis-scores-api,held-needs-Mark,bundle endpoint,https://boardforagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,calibration-ledger,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,sports-odds-api,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Socials,skool-community-growth-tracker,skipped,bundle endpoint,https://socialnetworkforaiagents.com/,Standing rule: never list or call the Skool Actor.
+Agent Socials,tennis-scores-api,held-needs-Mark,bundle endpoint,https://socialnetworkforaiagents.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,calibration-ledger,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,sports-odds-api,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbot Den,skool-community-growth-tracker,skipped,bundle endpoint,https://moltbotden.com/,Standing rule: never list or call the Skool Actor.
+Moltbot Den,tennis-scores-api,held-needs-Mark,bundle endpoint,https://moltbotden.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,calibration-ledger,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,sports-odds-api,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+1VR Silicon Teahouse,skool-community-growth-tracker,skipped,bundle endpoint,https://1vr.com/teahouse,Standing rule: never list or call the Skool Actor.
+1VR Silicon Teahouse,tennis-scores-api,held-needs-Mark,bundle endpoint,https://1vr.com/teahouse,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,calibration-ledger,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,sports-odds-api,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ZZBoard,skool-community-growth-tracker,skipped,bundle endpoint,https://zzboard.net/,Standing rule: never list or call the Skool Actor.
+ZZBoard,tennis-scores-api,held-needs-Mark,bundle endpoint,https://zzboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,calibration-ledger,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,sports-odds-api,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Pluribotica,skool-community-growth-tracker,skipped,bundle endpoint,https://pluribotica.com/,Standing rule: never list or call the Skool Actor.
+Pluribotica,tennis-scores-api,held-needs-Mark,bundle endpoint,https://pluribotica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,calibration-ledger,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,sports-odds-api,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SwarmMemo,skool-community-growth-tracker,skipped,bundle endpoint,https://swarmmemo.com/,Standing rule: never list or call the Skool Actor.
+SwarmMemo,tennis-scores-api,held-needs-Mark,bundle endpoint,https://swarmmemo.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,calibration-ledger,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,sports-odds-api,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agents Gather,skool-community-growth-tracker,skipped,bundle endpoint,https://agentsgather.org/,Standing rule: never list or call the Skool Actor.
+Agents Gather,tennis-scores-api,held-needs-Mark,bundle endpoint,https://agentsgather.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,calibration-ledger,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,sports-odds-api,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Yapper,skool-community-growth-tracker,skipped,bundle endpoint,https://yapper.forum/,Standing rule: never list or call the Skool Actor.
+Yapper,tennis-scores-api,held-needs-Mark,bundle endpoint,https://yapper.forum/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),etsy-search-scraper,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),calibration-ledger,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),grants-gov-scraper,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),company-social-profile-finder,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),sports-odds-api,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Agent Commons (affix-io),skool-community-growth-tracker,skipped,bundle endpoint,https://ai.affix-io.com/,Standing rule: never list or call the Skool Actor.
+The Agent Commons (affix-io),tennis-scores-api,held-needs-Mark,bundle endpoint,https://ai.affix-io.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,calibration-ledger,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,sports-odds-api,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarm Bar,skool-community-growth-tracker,skipped,bundle endpoint,https://swarmbar.com/,Standing rule: never list or call the Skool Actor.
+Swarm Bar,tennis-scores-api,held-needs-Mark,bundle endpoint,https://swarmbar.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,calibration-ledger,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,sports-odds-api,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Clawprint,skool-community-growth-tracker,skipped,bundle endpoint,https://clawprint.org/,Standing rule: never list or call the Skool Actor.
+Clawprint,tennis-scores-api,held-needs-Mark,bundle endpoint,https://clawprint.org/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,ashby-jobs-scraper,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,greenhouse-jobs-scraper,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,lever-jobs-scraper,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,smartrecruiters-jobs-scraper,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,etsy-search-scraper,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,etsy-shop-velocity,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,calibration-ledger,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,govcon-opportunity-feed,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,grants-gov-scraper,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,usaspending-awards-scraper,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,uk-find-a-tender-scraper,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,eu-ted-notices-scraper,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,legistar-meetings-scraper,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,company-social-profile-finder,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,google-ads-transparency-scraper,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,sports-odds-api,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,spotify-play-count-scraper,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+World of Bots,skool-community-growth-tracker,skipped,bundle endpoint,https://www.worldofbots.app,Standing rule: never list or call the Skool Actor.
+World of Bots,tennis-scores-api,held-needs-Mark,bundle endpoint,https://www.worldofbots.app,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,ashby-jobs-scraper,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,greenhouse-jobs-scraper,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,lever-jobs-scraper,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,smartrecruiters-jobs-scraper,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,etsy-search-scraper,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,etsy-shop-velocity,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,calibration-ledger,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,govcon-opportunity-feed,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,grants-gov-scraper,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,usaspending-awards-scraper,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,uk-find-a-tender-scraper,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,eu-ted-notices-scraper,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,legistar-meetings-scraper,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,company-social-profile-finder,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,google-ads-transparency-scraper,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,sports-odds-api,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,spotify-play-count-scraper,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Swarms Marketplace,skool-community-growth-tracker,skipped,bundle endpoint,https://swarms.world/platform/api-keys,Standing rule: never list or call the Skool Actor.
+Swarms Marketplace,tennis-scores-api,remaining,bundle endpoint,https://swarms.world/platform/api-keys,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,ashby-jobs-scraper,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,greenhouse-jobs-scraper,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,lever-jobs-scraper,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,smartrecruiters-jobs-scraper,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,etsy-search-scraper,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,etsy-shop-velocity,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,calibration-ledger,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,govcon-opportunity-feed,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,grants-gov-scraper,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,usaspending-awards-scraper,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,uk-find-a-tender-scraper,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,eu-ted-notices-scraper,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,legistar-meetings-scraper,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,company-social-profile-finder,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,google-ads-transparency-scraper,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,sports-odds-api,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,spotify-play-count-scraper,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Vectle,skool-community-growth-tracker,skipped,skills pack,https://vectle.com/skill-author-guide.md,Standing rule: never list or call the Skool Actor.
+Vectle,tennis-scores-api,remaining,skills pack,https://vectle.com/skill-author-guide.md,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,ashby-jobs-scraper,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,greenhouse-jobs-scraper,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,lever-jobs-scraper,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,smartrecruiters-jobs-scraper,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,etsy-search-scraper,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,etsy-shop-velocity,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,calibration-ledger,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,govcon-opportunity-feed,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,grants-gov-scraper,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,usaspending-awards-scraper,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,uk-find-a-tender-scraper,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,eu-ted-notices-scraper,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,legistar-meetings-scraper,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,company-social-profile-finder,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,google-ads-transparency-scraper,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,sports-odds-api,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,spotify-play-count-scraper,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Hermtica,skool-community-growth-tracker,skipped,bundle endpoint,https://hermtica.com/,Standing rule: never list or call the Skool Actor.
+Hermtica,tennis-scores-api,remaining,bundle endpoint,https://hermtica.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,ashby-jobs-scraper,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,greenhouse-jobs-scraper,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,lever-jobs-scraper,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,smartrecruiters-jobs-scraper,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,etsy-search-scraper,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,etsy-shop-velocity,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,calibration-ledger,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,govcon-opportunity-feed,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,grants-gov-scraper,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,usaspending-awards-scraper,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,uk-find-a-tender-scraper,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,eu-ted-notices-scraper,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,legistar-meetings-scraper,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,company-social-profile-finder,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,google-ads-transparency-scraper,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,sports-odds-api,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,spotify-play-count-scraper,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Commons Observatory,skool-community-growth-tracker,skipped,skills pack,https://agentcommons.net/,Standing rule: never list or call the Skool Actor.
+Agent Commons Observatory,tennis-scores-api,remaining,skills pack,https://agentcommons.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,ashby-jobs-scraper,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,greenhouse-jobs-scraper,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,lever-jobs-scraper,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,smartrecruiters-jobs-scraper,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,etsy-search-scraper,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,etsy-shop-velocity,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,calibration-ledger,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,govcon-opportunity-feed,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,grants-gov-scraper,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,usaspending-awards-scraper,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,uk-find-a-tender-scraper,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,eu-ted-notices-scraper,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,legistar-meetings-scraper,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,company-social-profile-finder,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,google-ads-transparency-scraper,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,sports-odds-api,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,spotify-play-count-scraper,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Open Agent Board,skool-community-growth-tracker,skipped,bundle endpoint,https://openagentboard.net/,Standing rule: never list or call the Skool Actor.
+Open Agent Board,tennis-scores-api,skipped,bundle endpoint,https://openagentboard.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,ashby-jobs-scraper,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,greenhouse-jobs-scraper,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,lever-jobs-scraper,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,smartrecruiters-jobs-scraper,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,etsy-search-scraper,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,etsy-shop-velocity,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,calibration-ledger,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,govcon-opportunity-feed,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,grants-gov-scraper,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,usaspending-awards-scraper,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,uk-find-a-tender-scraper,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,eu-ted-notices-scraper,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,legistar-meetings-scraper,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,company-social-profile-finder,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,google-ads-transparency-scraper,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,sports-odds-api,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,spotify-play-count-scraper,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Moltbook,skool-community-growth-tracker,skipped,bundle endpoint,https://www.moltbook.com/,Standing rule: never list or call the Skool Actor.
+Moltbook,tennis-scores-api,skipped,bundle endpoint,https://www.moltbook.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,ashby-jobs-scraper,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,greenhouse-jobs-scraper,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,lever-jobs-scraper,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,smartrecruiters-jobs-scraper,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,etsy-search-scraper,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,etsy-shop-velocity,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,calibration-ledger,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,govcon-opportunity-feed,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,grants-gov-scraper,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,usaspending-awards-scraper,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,uk-find-a-tender-scraper,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,eu-ted-notices-scraper,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,legistar-meetings-scraper,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,company-social-profile-finder,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,google-ads-transparency-scraper,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,sports-odds-api,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,spotify-play-count-scraper,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+ClawdChat,skool-community-growth-tracker,skipped,bundle endpoint,https://clawdchat.ai/,Standing rule: never list or call the Skool Actor.
+ClawdChat,tennis-scores-api,skipped,bundle endpoint,https://clawdchat.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,ashby-jobs-scraper,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,greenhouse-jobs-scraper,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,lever-jobs-scraper,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,smartrecruiters-jobs-scraper,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,etsy-search-scraper,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,etsy-shop-velocity,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,calibration-ledger,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,govcon-opportunity-feed,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,grants-gov-scraper,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,usaspending-awards-scraper,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,uk-find-a-tender-scraper,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,eu-ted-notices-scraper,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,legistar-meetings-scraper,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,company-social-profile-finder,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,google-ads-transparency-scraper,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,sports-odds-api,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,spotify-play-count-scraper,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Abund.ai,skool-community-growth-tracker,skipped,bundle endpoint,https://abund.ai/,Standing rule: never list or call the Skool Actor.
+Abund.ai,tennis-scores-api,skipped,bundle endpoint,https://abund.ai/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,ashby-jobs-scraper,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,greenhouse-jobs-scraper,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,lever-jobs-scraper,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,smartrecruiters-jobs-scraper,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,etsy-search-scraper,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,etsy-shop-velocity,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,calibration-ledger,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,govcon-opportunity-feed,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,grants-gov-scraper,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,usaspending-awards-scraper,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,uk-find-a-tender-scraper,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,eu-ted-notices-scraper,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,legistar-meetings-scraper,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,company-social-profile-finder,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,google-ads-transparency-scraper,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,sports-odds-api,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,spotify-play-count-scraper,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+DramaBots,skool-community-growth-tracker,skipped,bundle endpoint,https://dramabots.net/,Standing rule: never list or call the Skool Actor.
+DramaBots,tennis-scores-api,skipped,bundle endpoint,https://dramabots.net/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,ashby-jobs-scraper,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,greenhouse-jobs-scraper,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,lever-jobs-scraper,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,smartrecruiters-jobs-scraper,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,etsy-search-scraper,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,etsy-shop-velocity,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,calibration-ledger,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,govcon-opportunity-feed,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,grants-gov-scraper,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,usaspending-awards-scraper,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,uk-find-a-tender-scraper,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,eu-ted-notices-scraper,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,legistar-meetings-scraper,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,company-social-profile-finder,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,google-ads-transparency-scraper,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,sports-odds-api,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,spotify-play-count-scraper,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Windhelm Forum,skool-community-growth-tracker,skipped,bundle endpoint,https://windhelmforum.com/,Standing rule: never list or call the Skool Actor.
+Windhelm Forum,tennis-scores-api,skipped,bundle endpoint,https://windhelmforum.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,ashby-jobs-scraper,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,greenhouse-jobs-scraper,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,lever-jobs-scraper,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,smartrecruiters-jobs-scraper,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,etsy-search-scraper,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,etsy-shop-velocity,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,calibration-ledger,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,govcon-opportunity-feed,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,grants-gov-scraper,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,usaspending-awards-scraper,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,uk-find-a-tender-scraper,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,eu-ted-notices-scraper,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,legistar-meetings-scraper,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,company-social-profile-finder,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,google-ads-transparency-scraper,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,sports-odds-api,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,spotify-play-count-scraper,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+VoxPew,skool-community-growth-tracker,skipped,bundle endpoint,https://voxpew.com/,Standing rule: never list or call the Skool Actor.
+VoxPew,tennis-scores-api,skipped,bundle endpoint,https://voxpew.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,ashby-jobs-scraper,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,greenhouse-jobs-scraper,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,lever-jobs-scraper,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,smartrecruiters-jobs-scraper,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,etsy-search-scraper,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,etsy-shop-velocity,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,calibration-ledger,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,govcon-opportunity-feed,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,grants-gov-scraper,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,usaspending-awards-scraper,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,uk-find-a-tender-scraper,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,eu-ted-notices-scraper,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,legistar-meetings-scraper,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,company-social-profile-finder,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,google-ads-transparency-scraper,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,sports-odds-api,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,spotify-play-count-scraper,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+SiteMix,skool-community-growth-tracker,skipped,bundle endpoint,https://sitemixhk.com/chat,Standing rule: never list or call the Skool Actor.
+SiteMix,tennis-scores-api,skipped,bundle endpoint,https://sitemixhk.com/chat,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,ashby-jobs-scraper,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,greenhouse-jobs-scraper,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,lever-jobs-scraper,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,smartrecruiters-jobs-scraper,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,etsy-search-scraper,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,etsy-shop-velocity,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,calibration-ledger,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,govcon-opportunity-feed,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,grants-gov-scraper,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,usaspending-awards-scraper,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,uk-find-a-tender-scraper,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,eu-ted-notices-scraper,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,legistar-meetings-scraper,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,company-social-profile-finder,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,google-ads-transparency-scraper,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,sports-odds-api,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,spotify-play-count-scraper,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+The Continental,skool-community-growth-tracker,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,Standing rule: never list or call the Skool Actor.
+The Continental,tennis-scores-api,skipped,bundle endpoint,https://the-continental-api-production.up.railway.app/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,ashby-jobs-scraper,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,greenhouse-jobs-scraper,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,lever-jobs-scraper,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,smartrecruiters-jobs-scraper,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,etsy-search-scraper,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,etsy-shop-velocity,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,calibration-ledger,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,govcon-opportunity-feed,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,grants-gov-scraper,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,usaspending-awards-scraper,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,uk-find-a-tender-scraper,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,eu-ted-notices-scraper,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,legistar-meetings-scraper,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,company-social-profile-finder,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,google-ads-transparency-scraper,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,sports-odds-api,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,spotify-play-count-scraper,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
+Agent Community,skool-community-growth-tracker,skipped,bundle endpoint,https://agent-community.com/,Standing rule: never list or call the Skool Actor.
+Agent Community,tennis-scores-api,skipped,bundle endpoint,https://agent-community.com/,See surface notes and ledger/followups/agent-networks-2026-11-25.md.
