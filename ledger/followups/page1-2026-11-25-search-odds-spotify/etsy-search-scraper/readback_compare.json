@@ -1,0 +1,43 @@
+{
+  "title": {
+    "before": "Etsy Scraper — Listings, Prices, Best Sellers & Ad Flags",
+    "after": "Etsy Search Scraper — Prices, Bestsellers & Ads",
+    "expected": "Etsy Search Scraper — Prices, Bestsellers & Ads",
+    "match_expected": true,
+    "byte_equal": true
+  },
+  "description": {
+    "before": "Etsy scraper for product research: search results by keyword, market page or category URL with price, rating, reviews, Bestseller and Star Seller badges, ad flag, shop and Etsy's rank position. One row per listing. Pay per listing row. Works with Claude.",
+    "after": "Etsy search scraper for product research: search results by keyword, market page or category URL with price, rating, reviews, Bestseller and Star Seller badges, ad flag, shop and Etsy's rank position. One row per listing. Pay per listing row. Works with Claude.",
+    "expected": "Etsy search scraper for product research: search results by keyword, market page or category URL with price, rating, reviews, Bestseller and Star Seller badges, ad flag, shop and Etsy's rank position. One row per listing. Pay per listing row. Works with Claude.",
+    "match_expected": true,
+    "byte_equal": true
+  },
+  "seoTitle": {
+    "before": "Etsy Scraper: Search Results, Prices & Bestsellers",
+    "after": "Etsy Search Scraper: Prices, Bestsellers & Ads",
+    "expected": "Etsy Search Scraper: Prices, Bestsellers & Ads",
+    "match_expected": true,
+    "byte_equal": true
+  },
+  "seoDescription": {
+    "before": "Etsy scraper for product research: Etsy search results with price, rating, reviews, Bestseller badges, ad flags, shop and rank position per listing.",
+    "after": "Etsy search scraper and product scraper for market data: search results with price, rating, reviews, Bestseller badges, ad flags, shop and rank position.",
+    "expected": "Etsy search scraper and product scraper for market data: search results with price, rating, reviews, Bestseller badges, ad flags, shop and rank position.",
+    "match_expected": true,
+    "byte_equal": true
+  },
+  "unchanged_other": {
+    "pricingInfos": true,
+    "exampleRunInput": true,
+    "categories": true,
+    "taggedBuilds": true,
+    "isPublic": true,
+    "notice": true
+  },
+  "versions_len_before": 2,
+  "versions_len_after": 2,
+  "put_http": 200,
+  "modifiedAt_before": "2026-11-25T20:36:03.312Z",
+  "modifiedAt_after": "2026-11-25T21:08:30.752Z"
+}

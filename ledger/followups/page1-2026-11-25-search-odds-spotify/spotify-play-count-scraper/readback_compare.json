@@ -1,0 +1,43 @@
+{
+  "title": {
+    "before": "Spotify Play Count & Monthly Listeners Scraper",
+    "after": "Spotify Play Count Scraper: Monthly Listeners",
+    "expected": "Spotify Play Count Scraper: Monthly Listeners",
+    "match_expected": true,
+    "byte_equal": true
+  },
+  "description": {
+    "before": "Spotify scraper for play counts and monthly listeners: paste a track, album, playlist or artist link and get every track's play count, plus an artist's monthly listeners and followers. Optional streams per day. No login. Pay per track.",
+    "after": "Spotify play count scraper for streams and monthly listeners: paste a track, album, playlist or artist link and get every track's play count, plus an artist's monthly listeners and followers. Optional streams per day. No login. Pay per track.",
+    "expected": "Spotify play count scraper for streams and monthly listeners: paste a track, album, playlist or artist link and get every track's play count, plus an artist's monthly listeners and followers. Optional streams per day. No login. Pay per track.",
+    "match_expected": true,
+    "byte_equal": true
+  },
+  "seoTitle": {
+    "before": "Spotify Play Counts & Monthly Listeners Scraper",
+    "after": "Spotify Play Count Scraper: Monthly Listeners",
+    "expected": "Spotify Play Count Scraper: Monthly Listeners",
+    "match_expected": true,
+    "byte_equal": true
+  },
+  "seoDescription": {
+    "before": "Scrape Spotify play counts for any album, playlist or artist, plus monthly listeners and followers. Optional streams per day. No login. Pay per track.",
+    "after": "Spotify play count scraper for albums, playlists or artists: play counts, monthly listeners and followers. Optional daily streams. No login. Pay per track.",
+    "expected": "Spotify play count scraper for albums, playlists or artists: play counts, monthly listeners and followers. Optional daily streams. No login. Pay per track.",
+    "match_expected": true,
+    "byte_equal": true
+  },
+  "unchanged_other": {
+    "pricingInfos": true,
+    "exampleRunInput": true,
+    "categories": true,
+    "taggedBuilds": true,
+    "isPublic": true,
+    "notice": true
+  },
+  "versions_len_before": 1,
+  "versions_len_after": 1,
+  "put_http": 200,
+  "modifiedAt_before": "2026-11-21T15:07:25.896Z",
+  "modifiedAt_after": "2026-11-25T21:08:31.981Z"
+}
