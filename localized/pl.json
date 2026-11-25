@@ -239,6 +239,19 @@
       "description": "Wyszukuj społeczności Skool po słowie kluczowym: członkowie, cena, ocena, szacowany miesięczny przychód i dzienny wzrost. Płatność za zdarzenie z Twojego własnego konta Apify: 3,00 USD za 1 000 wyników; 0,02 USD za historię społeczności. Zdalny serwer MCP (Streamable HTTP) hostowany przez Apify; połącz przez Apify OAuth lub własny token API.",
       "price_line": "Płatność za zdarzenie z Twojego własnego konta Apify: 3,00 USD za 1 000 wyników; 0,02 USD za historię społeczności.",
       "price_tiered": false
+    },
+    {
+      "actor": "tennis-scores-api",
+      "store_url": "https://apify.com/publicrecords/tennis-scores-api",
+      "registry_name": "",
+      "server": "",
+      "server_github_url": "",
+      "endpoint": "",
+      "name": "Tennis Scores API: ATP & WTA Live Scores, Results, Rankings",
+      "one_line": "Every ATP and WTA match for a date or a whole tournament (Grand Slams, singles, doubles, mixed): set-by-set scores, tiebreaks, seeds, round, court and winner, plus ATP/WTA rankings. No login, no proxy.",
+      "description": "Every ATP and WTA match for a date or a whole tournament (Grand Slams, singles, doubles, mixed): set-by-set scores, tiebreaks, seeds, round, court and winner, plus ATP/WTA rankings. No login, no proxy. Pay per event on your own Apify account: $0.002 per match or ranking row; $0.00005 per Actor start. Standby/MCP mode is not built for this Actor; call it through the Apify API with your own token. Do not list an MCP endpoint.",
+      "price_line": "Pay per event on your own Apify account: $0.002 per match or ranking row; $0.00005 per Actor start.",
+      "price_tiered": false
     }
   ]
 }

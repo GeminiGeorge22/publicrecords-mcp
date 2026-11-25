@@ -1,0 +1,83 @@
+{
+  "name": "Tennis Scores API \u2192 daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "c8e2a1b4-7d33-4f6a-9c1e-0b5a2d8f4e71",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~tennis-scores-api/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"tournament\": \"wimbledon\",\n  \"date\": \"2026-07-12\",\n  \"maxResults\": 20\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "a41c9e70-2b18-4d55-8f0c-6e3a1b27c904",
+      "name": "Run Tennis Scores API on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price. This Actor has no hosted MCP / Standby endpoint."
+    },
+    {
+      "parameters": {
+        "content": "## Tennis Scores API\nATP and WTA match scores, results and rankings (set-by-set scores, tiebreaks, seeds, winner).\n\nStore page: https://apify.com/publicrecords/tennis-scores-api\nCall the Apify API with your own token. Standby/MCP mode is not built; this workflow does not use an MCP endpoint.\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 280,
+        "width": 420
+      },
+      "id": "b7f6d2c1-9e44-4a18-8c3b-1d0e5a6f8b22",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -320
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run Tennis Scores API on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}
