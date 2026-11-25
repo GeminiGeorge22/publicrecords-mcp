@@ -1,0 +1,6 @@
+{
+  "title": "Sports Odds API: BetRivers, Unibet, Paf, Svenska Spel",
+  "description": "Sports odds API: live and pre-game odds from BetRivers (12 US states + Ontario), Unibet (7 countries), Paf, Svenska Spel and ATG in one call. One row per game with every book's price and the best price per outcome. No API key. Pay per game.",
+  "seoTitle": "Sports Odds API: BetRivers, Unibet, Paf, ATG",
+  "seoDescription": "Sports odds API for sports betting odds: BetRivers, Unibet, Paf, Svenska Spel and ATG prices per game, plus the best price. Not DraftKings or FanDuel."
+}

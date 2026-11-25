@@ -29,6 +29,10 @@ The Creator-ready workflow is [`n8n/grants-gov-weekday-digest.json`](n8n/grants-
 | UK Tenders Scraper | [n8n/uk-find-a-tender-scraper.json](n8n/uk-find-a-tender-scraper.json) | [apify.com/publicrecords/uk-find-a-tender-scraper](https://apify.com/publicrecords/uk-find-a-tender-scraper) |
 | USAspending Awards Scraper | [n8n/usaspending-awards-scraper.json](n8n/usaspending-awards-scraper.json) | [apify.com/publicrecords/usaspending-awards-scraper](https://apify.com/publicrecords/usaspending-awards-scraper) |
 
+## Make HTTP recipes
+
+Importable (or one-module rebuild) Make scenarios for the flagship buyer Actors live in [`make/`](make). Official Make gallery submission is not included.
+
 ## Make, Zapier, Pipedream, Activepieces, Clay, Gumloop, Relevance AI (HTTP recipe)
 
 Use the platform's HTTP / Webhooks / API step (or the official Apify app, action *Run Actor*, Actor `publicrecords/<actor>`):

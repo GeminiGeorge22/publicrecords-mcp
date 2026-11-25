@@ -1,0 +1,140 @@
+{
+  "etsy-search-scraper": {
+    "ok": true,
+    "compare": {
+      "title": {
+        "before": "Etsy Scraper — Listings, Prices, Best Sellers & Ad Flags",
+        "after": "Etsy Search Scraper — Prices, Bestsellers & Ads",
+        "expected": "Etsy Search Scraper — Prices, Bestsellers & Ads",
+        "match_expected": true,
+        "byte_equal": true
+      },
+      "description": {
+        "before": "Etsy scraper for product research: search results by keyword, market page or category URL with price, rating, reviews, Bestseller and Star Seller badges, ad flag, shop and Etsy's rank position. One row per listing. Pay per listing row. Works with Claude.",
+        "after": "Etsy search scraper for product research: search results by keyword, market page or category URL with price, rating, reviews, Bestseller and Star Seller badges, ad flag, shop and Etsy's rank position. One row per listing. Pay per listing row. Works with Claude.",
+        "expected": "Etsy search scraper for product research: search results by keyword, market page or category URL with price, rating, reviews, Bestseller and Star Seller badges, ad flag, shop and Etsy's rank position. One row per listing. Pay per listing row. Works with Claude.",
+        "match_expected": true,
+        "byte_equal": true
+      },
+      "seoTitle": {
+        "before": "Etsy Scraper: Search Results, Prices & Bestsellers",
+        "after": "Etsy Search Scraper: Prices, Bestsellers & Ads",
+        "expected": "Etsy Search Scraper: Prices, Bestsellers & Ads",
+        "match_expected": true,
+        "byte_equal": true
+      },
+      "seoDescription": {
+        "before": "Etsy scraper for product research: Etsy search results with price, rating, reviews, Bestseller badges, ad flags, shop and rank position per listing.",
+        "after": "Etsy search scraper and product scraper for market data: search results with price, rating, reviews, Bestseller badges, ad flags, shop and rank position.",
+        "expected": "Etsy search scraper and product scraper for market data: search results with price, rating, reviews, Bestseller badges, ad flags, shop and rank position.",
+        "match_expected": true,
+        "byte_equal": true
+      },
+      "unchanged_other": {
+        "pricingInfos": true,
+        "exampleRunInput": true,
+        "categories": true,
+        "taggedBuilds": true,
+        "isPublic": true,
+        "notice": true
+      },
+      "versions_len_before": 2,
+      "versions_len_after": 2,
+      "put_http": 200,
+      "modifiedAt_before": "2026-11-25T20:36:03.312Z",
+      "modifiedAt_after": "2026-11-25T21:08:30.752Z"
+    }
+  },
+  "sports-odds-api": {
+    "ok": true,
+    "compare": {
+      "title": {
+        "before": "Sports Betting Odds API: BetRivers, Unibet, Paf, Svenska Spel",
+        "after": "Sports Odds API: BetRivers, Unibet, Paf, Svenska Spel",
+        "expected": "Sports Odds API: BetRivers, Unibet, Paf, Svenska Spel",
+        "match_expected": true,
+        "byte_equal": true
+      },
+      "description": {
+        "before": "Sports betting odds API: live and pre-game odds from BetRivers (12 US states + Ontario), Unibet (7 countries), Paf, Svenska Spel and ATG in one call. One row per game with every book's price and the best price per outcome. No API key. Pay per game.",
+        "after": "Sports odds API: live and pre-game odds from BetRivers (12 US states + Ontario), Unibet (7 countries), Paf, Svenska Spel and ATG in one call. One row per game with every book's price and the best price per outcome. No API key. Pay per game.",
+        "expected": "Sports odds API: live and pre-game odds from BetRivers (12 US states + Ontario), Unibet (7 countries), Paf, Svenska Spel and ATG in one call. One row per game with every book's price and the best price per outcome. No API key. Pay per game.",
+        "match_expected": true,
+        "byte_equal": true
+      },
+      "seoTitle": {
+        "before": "Sports Betting Odds API: BetRivers, Unibet, Paf, ATG",
+        "after": "Sports Odds API: BetRivers, Unibet, Paf, ATG",
+        "expected": "Sports Odds API: BetRivers, Unibet, Paf, ATG",
+        "match_expected": true,
+        "byte_equal": true
+      },
+      "seoDescription": {
+        "before": "Compare sports betting odds from BetRivers, Unibet, Paf, Svenska Spel and ATG: each book's price per game plus the best price. Not DraftKings or FanDuel.",
+        "after": "Sports odds API for sports betting odds: BetRivers, Unibet, Paf, Svenska Spel and ATG prices per game, plus the best price. Not DraftKings or FanDuel.",
+        "expected": "Sports odds API for sports betting odds: BetRivers, Unibet, Paf, Svenska Spel and ATG prices per game, plus the best price. Not DraftKings or FanDuel.",
+        "match_expected": true,
+        "byte_equal": true
+      },
+      "unchanged_other": {
+        "pricingInfos": true,
+        "exampleRunInput": true,
+        "categories": true,
+        "taggedBuilds": true,
+        "isPublic": true,
+        "notice": true
+      },
+      "versions_len_before": 1,
+      "versions_len_after": 1,
+      "put_http": 200,
+      "modifiedAt_before": "2026-11-22T15:04:06.705Z",
+      "modifiedAt_after": "2026-11-25T21:08:31.507Z"
+    }
+  },
+  "spotify-play-count-scraper": {
+    "ok": true,
+    "compare": {
+      "title": {
+        "before": "Spotify Play Count & Monthly Listeners Scraper",
+        "after": "Spotify Play Count Scraper: Monthly Listeners",
+        "expected": "Spotify Play Count Scraper: Monthly Listeners",
+        "match_expected": true,
+        "byte_equal": true
+      },
+      "description": {
+        "before": "Spotify scraper for play counts and monthly listeners: paste a track, album, playlist or artist link and get every track's play count, plus an artist's monthly listeners and followers. Optional streams per day. No login. Pay per track.",
+        "after": "Spotify play count scraper for streams and monthly listeners: paste a track, album, playlist or artist link and get every track's play count, plus an artist's monthly listeners and followers. Optional streams per day. No login. Pay per track.",
+        "expected": "Spotify play count scraper for streams and monthly listeners: paste a track, album, playlist or artist link and get every track's play count, plus an artist's monthly listeners and followers. Optional streams per day. No login. Pay per track.",
+        "match_expected": true,
+        "byte_equal": true
+      },
+      "seoTitle": {
+        "before": "Spotify Play Counts & Monthly Listeners Scraper",
+        "after": "Spotify Play Count Scraper: Monthly Listeners",
+        "expected": "Spotify Play Count Scraper: Monthly Listeners",
+        "match_expected": true,
+        "byte_equal": true
+      },
+      "seoDescription": {
+        "before": "Scrape Spotify play counts for any album, playlist or artist, plus monthly listeners and followers. Optional streams per day. No login. Pay per track.",
+        "after": "Spotify play count scraper for albums, playlists or artists: play counts, monthly listeners and followers. Optional daily streams. No login. Pay per track.",
+        "expected": "Spotify play count scraper for albums, playlists or artists: play counts, monthly listeners and followers. Optional daily streams. No login. Pay per track.",
+        "match_expected": true,
+        "byte_equal": true
+      },
+      "unchanged_other": {
+        "pricingInfos": true,
+        "exampleRunInput": true,
+        "categories": true,
+        "taggedBuilds": true,
+        "isPublic": true,
+        "notice": true
+      },
+      "versions_len_before": 1,
+      "versions_len_after": 1,
+      "put_http": 200,
+      "modifiedAt_before": "2026-11-21T15:07:25.896Z",
+      "modifiedAt_after": "2026-11-25T21:08:31.981Z"
+    }
+  }
+}
