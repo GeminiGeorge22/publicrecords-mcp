@@ -2,7 +2,7 @@
   "name": "publicrecords-mcp",
   "displayName": "publicrecords MCP",
   "version": "1.0.0",
-  "description": "Eighteen remote MCP servers for publicrecords Apify Actors, including jobs, procurement, ads, company socials, sports odds, and Spotify play counts. Each server is hosted at mcp.apify.com. Authenticate with your own Apify account (OAuth or an API token). This plugin does not bundle tokens.",
+  "description": "Twenty-three remote MCP servers for publicrecords Apify Actors, including PDF to text, web page to Markdown, audio transcription, email domain/MX/disposable checks (not a mailbox check), jobs, procurement, ads, company socials, sports odds, and Spotify play counts. Each server is hosted at mcp.apify.com. Authenticate with your own Apify account (OAuth or an API token). This plugin does not bundle tokens.",
   "author": {
     "name": "publicrecords"
   },

@@ -1,0 +1,48 @@
+{
+  "name": "Public Records \u2014 PDF to text & Markdown (OCR, DOCX, RAG chunks) to HTTP",
+  "author": "Public Records",
+  "description": "Run publicrecords/pdf-docx-to-markdown on YOUR Apify account via HTTP, then use the JSON rows in later modules (Google Sheets, Slack, email, a vector store). Set APIFY_TOKEN in a Make connection or variable. Do not hard-code a token. Official Make gallery submission needs a Make account and is not included.",
+  "flow": [
+    {
+      "id": 1,
+      "module": "http:ActionSendData",
+      "version": 3,
+      "parameters": {},
+      "mapper": {
+        "url": "https://api.apify.com/v2/acts/publicrecords~pdf-docx-to-markdown/run-sync-get-dataset-items",
+        "method": "post",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "Bearer {{APIFY_TOKEN}}"
+          },
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "bodyType": "raw",
+        "contentType": "application/json",
+        "parseResponse": true,
+        "data": "{\"documentUrls\": [\"https://arxiv.org/pdf/1706.03762\", \"https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/tests/resources/skew.pdf\"], \"ocrMode\": \"auto\", \"ocrLanguage\": \"eng\", \"chunkSize\": 400, \"chunkOverlap\": 40}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 0,
+          "y": 0
+        },
+        "restore": {
+          "expect": "json"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "instant": false,
+    "version": 1,
+    "designer": {
+      "orphans": []
+    },
+    "notes": "Rebuild in Make with the HTTP module if import of this blueprint is rejected; the URL, method, header and body are the recipe."
+  }
+}

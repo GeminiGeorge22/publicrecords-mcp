@@ -25,6 +25,11 @@ The Creator-ready workflow is [`n8n/grants-gov-weekday-digest.json`](n8n/grants-
 | SmartRecruiters Jobs Scraper | [n8n/smartrecruiters-jobs-scraper.json](n8n/smartrecruiters-jobs-scraper.json) | [apify.com/publicrecords/smartrecruiters-jobs-scraper](https://apify.com/publicrecords/smartrecruiters-jobs-scraper) |
 | Sports Odds API | [n8n/sports-odds-api.json](n8n/sports-odds-api.json) | [apify.com/publicrecords/sports-odds-api](https://apify.com/publicrecords/sports-odds-api) |
 | Tennis Scores API | [n8n/tennis-scores-api.json](n8n/tennis-scores-api.json) | [apify.com/publicrecords/tennis-scores-api](https://apify.com/publicrecords/tennis-scores-api) |
+| Audio to Text Transcriber | [n8n/audio-file-transcriber.json](n8n/audio-file-transcriber.json) | [apify.com/publicrecords/audio-file-transcriber](https://apify.com/publicrecords/audio-file-transcriber) |
+| PDF to Text & Markdown Extractor | [n8n/pdf-docx-to-markdown.json](n8n/pdf-docx-to-markdown.json) | [apify.com/publicrecords/pdf-docx-to-markdown](https://apify.com/publicrecords/pdf-docx-to-markdown) |
+| Web Page to Markdown | [n8n/url-to-markdown.json](n8n/url-to-markdown.json) | [apify.com/publicrecords/url-to-markdown](https://apify.com/publicrecords/url-to-markdown) |
+| JavaScript Page to Markdown | [n8n/js-page-to-markdown.json](n8n/js-page-to-markdown.json) | [apify.com/publicrecords/js-page-to-markdown](https://apify.com/publicrecords/js-page-to-markdown) |
+| Email Verifier (domain, MX, disposable — not the mailbox) | [n8n/email-verifier.json](n8n/email-verifier.json) | [apify.com/publicrecords/email-verifier](https://apify.com/publicrecords/email-verifier) |
 | Spotify Play Count Scraper | [n8n/spotify-play-count-scraper.json](n8n/spotify-play-count-scraper.json) | [apify.com/publicrecords/spotify-play-count-scraper](https://apify.com/publicrecords/spotify-play-count-scraper) |
 | UK Tenders Scraper | [n8n/uk-find-a-tender-scraper.json](n8n/uk-find-a-tender-scraper.json) | [apify.com/publicrecords/uk-find-a-tender-scraper](https://apify.com/publicrecords/uk-find-a-tender-scraper) |
 | USAspending Awards Scraper | [n8n/usaspending-awards-scraper.json](n8n/usaspending-awards-scraper.json) | [apify.com/publicrecords/usaspending-awards-scraper](https://apify.com/publicrecords/usaspending-awards-scraper) |
@@ -61,6 +66,11 @@ Use the platform's HTTP / Webhooks / API step (or the official Apify app, action
 | `sports-odds-api` | `{"leagues": ["basketball/nba", "american_football/nfl", "ice_hockey/nhl", "baseball/mlb", "football/england/premier_league"], "maxEvents": 10, "proxyConfiguration": {"useApifyProxy": true}, "operators": ["rsiusnj", "rsiusny", "rsiuspa", "rsicaon", "ubuk", "ubca", "paf", "svenskaspel", "atg"], "markets": "main", "includeLive": true, "startsWithinHours": 0}` |
 | `tennis-scores-api` | `{"tournament": "wimbledon", "date": "2026-07-12", "maxResults": 20}` |
 | `spotify-play-count-scraper` | `{"urls": ["https://open.spotify.com/album/4aawyAB9vmqN3uQ7FjRGTy"], "maxTracksPerTarget": 50}` |
+| `audio-file-transcriber` | `{"audioUrls": ["https://raw.githubusercontent.com/ggerganov/whisper.cpp/master/samples/jfk.wav"], "model": "base", "translateToEnglish": false, "wordTimestamps": false, "skipSilence": true, "maxMinutesPerFile": 60}` |
+| `pdf-docx-to-markdown` | `{"documentUrls": ["https://arxiv.org/pdf/1706.03762", "https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/tests/resources/skew.pdf"], "ocrMode": "auto", "ocrLanguage": "eng", "chunkSize": 400, "chunkOverlap": 40}` |
+| `url-to-markdown` | `{"urls": ["https://en.wikipedia.org/wiki/Web_scraping", "https://quotes.toscrape.com/"]}` |
+| `js-page-to-markdown` | `{"urls": ["https://quotes.toscrape.com/js/", "https://react.dev/"], "waitForSelector": "", "scrollToBottom": false, "screenshot": false}` |
+| `email-verifier` | `{"emails": ["support@apify.com", "jane.doe@gmial.com", "info@mailinator.com", "sales@stripe.com", "someone@no-such-domain-4k7q.com"]}` |
 | `uk-find-a-tender-scraper` | `{"noticeType": ["tender"], "updatedFrom": "2026-09-28T00:00:00", "maxItems": 100}` |
 | `usaspending-awards-scraper` | `{"agency": "Department of Defense", "awardTypes": ["A", "B", "C", "D"], "maxItems": 50}` |
 

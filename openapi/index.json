@@ -8,6 +8,14 @@
     "buildId": "8mjtwxWAturpfDPXh"
   },
   {
+    "slug": "audio-file-transcriber",
+    "title": "Audio to Text Transcriber: Whisper Speech to Text",
+    "store": "https://apify.com/publicrecords/audio-file-transcriber",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/audio-file-transcriber",
+    "file": "audio-file-transcriber.openapi.json",
+    "buildId": "J2B3GfEHcuwwPVvuT"
+  },
+  {
     "slug": "calibration-ledger",
     "title": "Calibration Ledger \u2014 trust a forecast, with evidence (beta)",
     "store": "https://apify.com/publicrecords/calibration-ledger",
@@ -22,6 +30,14 @@
     "mcp": "https://mcp.apify.com?tools=publicrecords/company-social-profile-finder",
     "file": "company-social-profile-finder.openapi.json",
     "buildId": "fLFucWTn4mdNAeBXg"
+  },
+  {
+    "slug": "email-verifier",
+    "title": "Email Verifier: Bulk Email Validation, MX & Disposable Check",
+    "store": "https://apify.com/publicrecords/email-verifier",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/email-verifier",
+    "file": "email-verifier.openapi.json",
+    "buildId": "wFAbmVgu5aqlJ5hsC"
   },
   {
     "slug": "etsy-search-scraper",
@@ -80,6 +96,14 @@
     "buildId": "2aEwZcQD2XeuVX0US"
   },
   {
+    "slug": "js-page-to-markdown",
+    "title": "JavaScript Page to Markdown: Render JS Web Pages + Screenshot",
+    "store": "https://apify.com/publicrecords/js-page-to-markdown",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/js-page-to-markdown",
+    "file": "js-page-to-markdown.openapi.json",
+    "buildId": "yiQ0Q9135SL17heLe"
+  },
+  {
     "slug": "legistar-meetings-scraper",
     "title": "City Council Meeting Minutes & Agendas Scraper (Legistar)",
     "store": "https://apify.com/publicrecords/legistar-meetings-scraper",
@@ -94,6 +118,14 @@
     "mcp": "https://mcp.apify.com?tools=publicrecords/lever-jobs-scraper",
     "file": "lever-jobs-scraper.openapi.json",
     "buildId": "UphowNYVlblreGJj4"
+  },
+  {
+    "slug": "pdf-docx-to-markdown",
+    "title": "PDF to Text & Markdown Extractor: OCR, DOCX, RAG chunks",
+    "store": "https://apify.com/publicrecords/pdf-docx-to-markdown",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/pdf-docx-to-markdown",
+    "file": "pdf-docx-to-markdown.openapi.json",
+    "buildId": "9aC1ncFLy5Siqn9JI"
   },
   {
     "slug": "smartrecruiters-jobs-scraper",
@@ -126,6 +158,14 @@
     "mcp": "https://mcp.apify.com?tools=publicrecords/uk-find-a-tender-scraper",
     "file": "uk-find-a-tender-scraper.openapi.json",
     "buildId": "BfG4n4INc3cxOw2eL"
+  },
+  {
+    "slug": "url-to-markdown",
+    "title": "Web Page to Markdown: URL to LLM-Ready Text",
+    "store": "https://apify.com/publicrecords/url-to-markdown",
+    "mcp": "https://mcp.apify.com?tools=publicrecords/url-to-markdown",
+    "file": "url-to-markdown.openapi.json",
+    "buildId": "2pXSnqqiBmtxoFRUS"
   },
   {
     "slug": "usaspending-awards-scraper",

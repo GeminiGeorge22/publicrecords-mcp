@@ -1,0 +1,163 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "JavaScript Page to Markdown: Render JS Web Pages + Screenshot",
+    "description": "Render JavaScript-heavy web pages (React, Vue, Angular, SPAs) in a real Chromium browser and get clean, LLM-ready Markdown with title, metadata and an optional screenshot. Web fetch for RAG and AI agents.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/js-page-to-markdown\nMCP: https://mcp.apify.com?tools=publicrecords/js-page-to-markdown\nAuthor: Public Records.",
+    "version": "0.1.0",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/js-page-to-markdown",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~js-page-to-markdown/runs": {
+      "post": {
+        "operationId": "start_js_page_to_markdown_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/js-page-to-markdown",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/js-page-to-markdown",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"JavaScript page to Markdown\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"urls\": {\n      \"title\": \"URLs\",\n      \"type\": \"array\",\n      \"description\": \"Public http(s) pages to render in a real Chromium browser. Up to 500 per run. Pages behind a login are not supported.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"https://quotes.toscrape.com/js/\",\n        \"https://react.dev/\"\n      ],\n      \"default\": [\n        \"https://quotes.toscrape.com/js/\",\n        \"https://react.dev/\"\n      ]\n    },\n    \"waitForSelector\": {\n      \"title\": \"Wait for CSS selector (optional)\",\n      \"type\": \"string\",\n      \"description\": \"Wait until this element exists before reading the page, e.g. .product-list or #results. If it never appears, the page is read anyway and the row says waitForSelectorFound: false.\",\n      \"editor\": \"textfield\"\n    },\n    \"scrollToBottom\": {\n      \"title\": \"Scroll to load more\",\n      \"type\": \"boolean\",\n      \"description\": \"Scroll down the page (up to 8 seconds) so lazy-loaded and infinite-scroll content renders first.\",\n      \"default\": false\n    },\n    \"extraWaitMs\": {\n      \"title\": \"Extra wait after load (ms)\",\n      \"type\": \"integer\",\n      \"description\": \"Extra time to wait after the page settles, 0 to 10,000 ms.\",\n      \"minimum\": 0,\n      \"maximum\": 10000,\n      \"default\": 0\n    },\n    \"contentScope\": {\n      \"title\": \"Content to keep\",\n      \"type\": \"string\",\n      \"description\": \"main: the page's main content (main/article), or the body without menus, headers and footers. full: the whole rendered body.\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"main\",\n        \"full\"\n      ],\n      \"enumTitles\": [\n        \"Main content (recommended)\",\n        \"Full page\"\n      ],\n      \"default\": \"main\"\n    },\n    \"cssSelector\": {\n      \"title\": \"CSS selector to extract (optional)\",\n      \"type\": \"string\",\n      \"description\": \"Keep only the elements matching this selector, e.g. article or #content. Overrides Content to keep.\",\n      \"editor\": \"textfield\"\n    },\n    \"screenshot\": {\n      \"title\": \"Save a screenshot of each page\",\n      \"type\": \"boolean\",\n      \"description\": \"Save a screenshot of each rendered page to the run's key-value store. The row gets screenshotKey and screenshotUrl. Charged per screenshot.\",\n      \"default\": false\n    },\n    \"fullPageScreenshot\": {\n      \"title\": \"Full-page screenshot\",\n      \"type\": \"boolean\",\n      \"description\": \"Capture the whole scrollable page instead of the first screen.\",\n      \"default\": false\n    },\n    \"screenshotFormat\": {\n      \"title\": \"Screenshot format\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"png\",\n        \"jpeg\"\n      ],\n      \"enumTitles\": [\n        \"PNG\",\n        \"JPEG (smaller)\"\n      ],\n      \"default\": \"png\",\n      \"description\": \"Image format of the screenshot.\"\n    },\n    \"mobile\": {\n      \"title\": \"Mobile view\",\n      \"type\": \"boolean\",\n      \"description\": \"Render as a phone (390 x 844, mobile user agent) instead of a desktop (1366 x 900).\",\n      \"default\": false\n    },\n    \"blockImages\": {\n      \"title\": \"Skip images, fonts and video while rendering\",\n      \"type\": \"boolean\",\n      \"description\": \"Faster and cheaper. Image links still appear in the Markdown. Turned off automatically when a screenshot is requested.\",\n      \"default\": true\n    },\n    \"includeLinks\": {\n      \"title\": \"Include page links\",\n      \"type\": \"boolean\",\n      \"description\": \"Add the rendered page's links (URL, text, internal or external) to each row.\",\n      \"default\": false\n    },\n    \"maxChars\": {\n      \"title\": \"Max Markdown characters per page\",\n      \"type\": \"integer\",\n      \"description\": \"Longer Markdown is cut and the row says truncated: true.\",\n      \"minimum\": 500,\n      \"maximum\": 2000000,\n      \"default\": 200000\n    },\n    \"timeoutSecs\": {\n      \"title\": \"Timeout per page (seconds)\",\n      \"type\": \"integer\",\n      \"description\": \"How long to wait for one page before it is skipped (not charged).\",\n      \"minimum\": 10,\n      \"maximum\": 90,\n      \"default\": 20\n    },\n    \"maxConcurrency\": {\n      \"title\": \"Browser tabs at once (optional)\",\n      \"type\": \"integer\",\n      \"description\": \"Pages rendered in parallel. Default is one tab per 512 MB of memory, up to 8.\",\n      \"minimum\": 1,\n      \"maximum\": 8\n    }\n  },\n  \"required\": [\n    \"urls\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started"
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~js-page-to-markdown/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_js_page_to_markdown_sync_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/js-page-to-markdown and return dataset items",
+        "description": "Starts the Actor, waits for it to finish, and returns dataset items. Docs: https://apify.com/publicrecords/js-page-to-markdown",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"JavaScript page to Markdown\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"urls\": {\n      \"title\": \"URLs\",\n      \"type\": \"array\",\n      \"description\": \"Public http(s) pages to render in a real Chromium browser. Up to 500 per run. Pages behind a login are not supported.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"https://quotes.toscrape.com/js/\",\n        \"https://react.dev/\"\n      ],\n      \"default\": [\n        \"https://quotes.toscrape.com/js/\",\n        \"https://react.dev/\"\n      ]\n    },\n    \"waitForSelector\": {\n      \"title\": \"Wait for CSS selector (optional)\",\n      \"type\": \"string\",\n      \"description\": \"Wait until this element exists before reading the page, e.g. .product-list or #results. If it never appears, the page is read anyway and the row says waitForSelectorFound: false.\",\n      \"editor\": \"textfield\"\n    },\n    \"scrollToBottom\": {\n      \"title\": \"Scroll to load more\",\n      \"type\": \"boolean\",\n      \"description\": \"Scroll down the page (up to 8 seconds) so lazy-loaded and infinite-scroll content renders first.\",\n      \"default\": false\n    },\n    \"extraWaitMs\": {\n      \"title\": \"Extra wait after load (ms)\",\n      \"type\": \"integer\",\n      \"description\": \"Extra time to wait after the page settles, 0 to 10,000 ms.\",\n      \"minimum\": 0,\n      \"maximum\": 10000,\n      \"default\": 0\n    },\n    \"contentScope\": {\n      \"title\": \"Content to keep\",\n      \"type\": \"string\",\n      \"description\": \"main: the page's main content (main/article), or the body without menus, headers and footers. full: the whole rendered body.\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"main\",\n        \"full\"\n      ],\n      \"enumTitles\": [\n        \"Main content (recommended)\",\n        \"Full page\"\n      ],\n      \"default\": \"main\"\n    },\n    \"cssSelector\": {\n      \"title\": \"CSS selector to extract (optional)\",\n      \"type\": \"string\",\n      \"description\": \"Keep only the elements matching this selector, e.g. article or #content. Overrides Content to keep.\",\n      \"editor\": \"textfield\"\n    },\n    \"screenshot\": {\n      \"title\": \"Save a screenshot of each page\",\n      \"type\": \"boolean\",\n      \"description\": \"Save a screenshot of each rendered page to the run's key-value store. The row gets screenshotKey and screenshotUrl. Charged per screenshot.\",\n      \"default\": false\n    },\n    \"fullPageScreenshot\": {\n      \"title\": \"Full-page screenshot\",\n      \"type\": \"boolean\",\n      \"description\": \"Capture the whole scrollable page instead of the first screen.\",\n      \"default\": false\n    },\n    \"screenshotFormat\": {\n      \"title\": \"Screenshot format\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"png\",\n        \"jpeg\"\n      ],\n      \"enumTitles\": [\n        \"PNG\",\n        \"JPEG (smaller)\"\n      ],\n      \"default\": \"png\",\n      \"description\": \"Image format of the screenshot.\"\n    },\n    \"mobile\": {\n      \"title\": \"Mobile view\",\n      \"type\": \"boolean\",\n      \"description\": \"Render as a phone (390 x 844, mobile user agent) instead of a desktop (1366 x 900).\",\n      \"default\": false\n    },\n    \"blockImages\": {\n      \"title\": \"Skip images, fonts and video while rendering\",\n      \"type\": \"boolean\",\n      \"description\": \"Faster and cheaper. Image links still appear in the Markdown. Turned off automatically when a screenshot is requested.\",\n      \"default\": true\n    },\n    \"includeLinks\": {\n      \"title\": \"Include page links\",\n      \"type\": \"boolean\",\n      \"description\": \"Add the rendered page's links (URL, text, internal or external) to each row.\",\n      \"default\": false\n    },\n    \"maxChars\": {\n      \"title\": \"Max Markdown characters per page\",\n      \"type\": \"integer\",\n      \"description\": \"Longer Markdown is cut and the row says truncated: true.\",\n      \"minimum\": 500,\n      \"maximum\": 2000000,\n      \"default\": 200000\n    },\n    \"timeoutSecs\": {\n      \"title\": \"Timeout per page (seconds)\",\n      \"type\": \"integer\",\n      \"description\": \"How long to wait for one page before it is skipped (not charged).\",\n      \"minimum\": 10,\n      \"maximum\": 90,\n      \"default\": 20\n    },\n    \"maxConcurrency\": {\n      \"title\": \"Browser tabs at once (optional)\",\n      \"type\": \"integer\",\n      \"description\": \"Pages rendered in parallel. Default is one tab per 512 MB of memory, up to 8.\",\n      \"minimum\": 1,\n      \"maximum\": 8\n    }\n  },\n  \"required\": [\n    \"urls\"\n  ]\n}",
+              "example": {
+                "urls": [
+                  "https://quotes.toscrape.com/js/",
+                  "https://react.dev/"
+                ],
+                "waitForSelector": "",
+                "scrollToBottom": false,
+                "screenshot": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/js-page-to-markdown"
+  }
+}

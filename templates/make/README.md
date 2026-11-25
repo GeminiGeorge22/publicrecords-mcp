@@ -12,6 +12,11 @@ Also see the n8n workflows in [`../n8n`](../n8n) and the HTTP table in [`../READ
 | [etsy-shop-velocity.json](etsy-shop-velocity.json) | Etsy Shop Sales Tracker | [Store](https://apify.com/publicrecords/etsy-shop-velocity) |
 | [sports-odds-api.json](sports-odds-api.json) | Sports Odds API | [Store](https://apify.com/publicrecords/sports-odds-api) |
 | [spotify-play-count-scraper.json](spotify-play-count-scraper.json) | Spotify Play Count Scraper | [Store](https://apify.com/publicrecords/spotify-play-count-scraper) |
+| [audio-file-transcriber.json](audio-file-transcriber.json) | Audio to Text Transcriber | [Store](https://apify.com/publicrecords/audio-file-transcriber) |
+| [pdf-docx-to-markdown.json](pdf-docx-to-markdown.json) | PDF to Text & Markdown Extractor | [Store](https://apify.com/publicrecords/pdf-docx-to-markdown) |
+| [url-to-markdown.json](url-to-markdown.json) | Web Page to Markdown | [Store](https://apify.com/publicrecords/url-to-markdown) |
+| [js-page-to-markdown.json](js-page-to-markdown.json) | JavaScript Page to Markdown | [Store](https://apify.com/publicrecords/js-page-to-markdown) |
+| [email-verifier.json](email-verifier.json) | Email Verifier (domain, MX, disposable — not the mailbox) | [Store](https://apify.com/publicrecords/email-verifier) |
 
 ## HTTP module (every recipe)
 

@@ -1,0 +1,48 @@
+{
+  "name": "Public Records \u2014 Email Verifier (domain, MX and disposable check, not the mailbox) to HTTP",
+  "author": "Public Records",
+  "description": "Run publicrecords/email-verifier on YOUR Apify account via HTTP. It checks syntax, domain, MX records and disposable domains, not the mailbox, and does not send mail. Set APIFY_TOKEN in a Make connection or variable. Do not hard-code a token. Official Make gallery submission is not included.",
+  "flow": [
+    {
+      "id": 1,
+      "module": "http:ActionSendData",
+      "version": 3,
+      "parameters": {},
+      "mapper": {
+        "url": "https://api.apify.com/v2/acts/publicrecords~email-verifier/run-sync-get-dataset-items",
+        "method": "post",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "Bearer {{APIFY_TOKEN}}"
+          },
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "bodyType": "raw",
+        "contentType": "application/json",
+        "parseResponse": true,
+        "data": "{\"emails\": [\"support@apify.com\", \"jane.doe@gmial.com\", \"info@mailinator.com\", \"sales@stripe.com\", \"someone@no-such-domain-4k7q.com\"]}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 0,
+          "y": 0
+        },
+        "restore": {
+          "expect": "json"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "instant": false,
+    "version": 1,
+    "designer": {
+      "orphans": []
+    },
+    "notes": "Rebuild in Make with the HTTP module if import of this blueprint is rejected; the URL, method, header and body are the recipe."
+  }
+}

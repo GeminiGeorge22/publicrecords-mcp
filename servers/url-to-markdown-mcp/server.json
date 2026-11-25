@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.GeminiGeorge22/url-to-markdown-mcp",
+  "title": "Web Page to Markdown MCP: URL to LLM-Ready Text",
+  "description": "Turn web page URLs into clean, LLM-ready Markdown. Plain HTTP, no browser.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/publicrecords/url-to-markdown",
+  "repository": {
+    "url": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+    "source": "github",
+    "subfolder": "servers/url-to-markdown-mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/url-to-markdown",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional if you use Apify OAuth. Otherwise: Bearer <APIFY_TOKEN> (your own Apify API token).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

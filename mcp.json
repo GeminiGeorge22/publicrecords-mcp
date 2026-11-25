@@ -3,11 +3,17 @@
     "ashby-jobs-scraper": {
       "url": "https://mcp.apify.com?tools=publicrecords/ashby-jobs-scraper"
     },
+    "audio-file-transcriber": {
+      "url": "https://mcp.apify.com?tools=publicrecords/audio-file-transcriber"
+    },
     "calibration-ledger": {
       "url": "https://mcp.apify.com?tools=publicrecords/calibration-ledger"
     },
     "company-social-profile-finder": {
       "url": "https://mcp.apify.com?tools=publicrecords/company-social-profile-finder"
+    },
+    "email-verifier": {
+      "url": "https://mcp.apify.com?tools=publicrecords/email-verifier"
     },
     "etsy-search-scraper": {
       "url": "https://mcp.apify.com?tools=publicrecords/etsy-search-scraper"
@@ -30,11 +36,17 @@
     "greenhouse-jobs-scraper": {
       "url": "https://mcp.apify.com?tools=publicrecords/greenhouse-jobs-scraper"
     },
+    "js-page-to-markdown": {
+      "url": "https://mcp.apify.com?tools=publicrecords/js-page-to-markdown"
+    },
     "legistar-meetings-scraper": {
       "url": "https://mcp.apify.com?tools=publicrecords/legistar-meetings-scraper"
     },
     "lever-jobs-scraper": {
       "url": "https://mcp.apify.com?tools=publicrecords/lever-jobs-scraper"
+    },
+    "pdf-docx-to-markdown": {
+      "url": "https://mcp.apify.com?tools=publicrecords/pdf-docx-to-markdown"
     },
     "skool-community-growth-tracker": {
       "url": "https://mcp.apify.com?tools=publicrecords/skool-community-growth-tracker"
@@ -50,6 +62,9 @@
     },
     "uk-find-a-tender-scraper": {
       "url": "https://mcp.apify.com?tools=publicrecords/uk-find-a-tender-scraper"
+    },
+    "url-to-markdown": {
+      "url": "https://mcp.apify.com?tools=publicrecords/url-to-markdown"
     },
     "usaspending-awards-scraper": {
       "url": "https://mcp.apify.com?tools=publicrecords/usaspending-awards-scraper"
