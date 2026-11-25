@@ -1,5 +1,16 @@
 # publicrecords-mcp
 
+## Try it in 1 minute
+
+1. Open the [Etsy Search Scraper](https://apify.com/publicrecords/etsy-search-scraper) on the Apify Store.
+2. Sign in with **your own** Apify account and run the built-in example input:
+
+```json
+{"queries": ["ceramic mug"], "maxPages": 1}
+```
+
+3. Or, in an MCP client, connect `https://mcp.apify.com` with your Apify account and pin `publicrecords/etsy-search-scraper`. For company LinkedIn/social links, pin `publicrecords/company-social-profile-finder`.
+
 **Languages:** [zh-CN](./README.zh-CN.md) · [ja](./README.ja.md) · [ko](./README.ko.md) · [de](./README.de.md) · [fr](./README.fr.md) · [es](./README.es.md) · [pt-BR](./README.pt-BR.md) · [it](./README.it.md) · [ru](./README.ru.md) · [tr](./README.tr.md) · [id](./README.id.md) · [vi](./README.vi.md) · [ar](./README.ar.md) · [hi](./README.hi.md) (localized index of all 25 registry servers; English text applies if they differ)
 
 
