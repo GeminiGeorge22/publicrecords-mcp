@@ -1,0 +1,164 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "PDF to Text & Markdown Extractor: OCR, DOCX, RAG chunks",
+    "description": "Turn PDF and Word files into clean Markdown text. Scanned pages are read with OCR, and the text comes split into RAG-ready chunks with heading paths.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/pdf-docx-to-markdown\nMCP: https://mcp.apify.com?tools=publicrecords/pdf-docx-to-markdown\nAuthor: Public Records.",
+    "version": "0.1.0",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/pdf-docx-to-markdown",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~pdf-docx-to-markdown/runs": {
+      "post": {
+        "operationId": "start_pdf_docx_to_markdown_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/pdf-docx-to-markdown",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/pdf-docx-to-markdown",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"PDF to Text & Markdown Extractor input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"documentUrls\": {\n      \"title\": \"PDF or DOCX file URLs\",\n      \"type\": \"array\",\n      \"description\": \"Direct links to PDF or Word (.docx) files. Each file becomes one dataset row with its Markdown text. Up to 50 MB per file.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"https://arxiv.org/pdf/1706.03762\",\n        \"https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/tests/resources/skew.pdf\"\n      ],\n      \"default\": [\n        \"https://arxiv.org/pdf/1706.03762\",\n        \"https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/tests/resources/skew.pdf\"\n      ]\n    },\n    \"ocrMode\": {\n      \"title\": \"OCR for scanned pages\",\n      \"type\": \"string\",\n      \"description\": \"auto: OCR only pages with no text layer (scanned pages). always: OCR every page. off: never OCR.\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"auto\",\n        \"always\",\n        \"off\"\n      ],\n      \"enumTitles\": [\n        \"Auto (scanned pages only)\",\n        \"Always (every page)\",\n        \"Off\"\n      ],\n      \"default\": \"auto\"\n    },\n    \"ocrLanguage\": {\n      \"title\": \"OCR language\",\n      \"type\": \"string\",\n      \"description\": \"Language of the scanned text. Combine with +, e.g. eng+fra.\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"eng\",\n        \"fra\",\n        \"deu\",\n        \"spa\",\n        \"por\",\n        \"ita\",\n        \"nld\",\n        \"eng+fra\",\n        \"eng+spa\",\n        \"eng+deu\"\n      ],\n      \"enumTitles\": [\n        \"English\",\n        \"French\",\n        \"German\",\n        \"Spanish\",\n        \"Portuguese\",\n        \"Italian\",\n        \"Dutch\",\n        \"English + French\",\n        \"English + Spanish\",\n        \"English + German\"\n      ],\n      \"default\": \"eng\"\n    },\n    \"pageRange\": {\n      \"title\": \"Page range (PDF)\",\n      \"type\": \"string\",\n      \"description\": \"Only convert these pages, e.g. 1-5,8 or 10-last. Empty converts every page up to the page limit.\",\n      \"editor\": \"textfield\"\n    },\n    \"maxPagesPerDocument\": {\n      \"title\": \"Max pages per PDF\",\n      \"type\": \"integer\",\n      \"description\": \"Stop after this many pages of each PDF (1 to 500).\",\n      \"minimum\": 1,\n      \"maximum\": 500,\n      \"default\": 200\n    },\n    \"chunkSize\": {\n      \"title\": \"Chunk size (tokens)\",\n      \"type\": \"integer\",\n      \"description\": \"Split the Markdown into retrieval chunks of about this many tokens (1 token = about 4 characters). Chunks respect headings, paragraphs and sentences. 0 turns chunking off.\",\n      \"minimum\": 0,\n      \"maximum\": 4000,\n      \"default\": 400\n    },\n    \"chunkOverlap\": {\n      \"title\": \"Chunk overlap (tokens)\",\n      \"type\": \"integer\",\n      \"description\": \"Tokens repeated from the end of one chunk at the start of the next.\",\n      \"minimum\": 0,\n      \"maximum\": 1000,\n      \"default\": 40\n    },\n    \"chunksAsRows\": {\n      \"title\": \"One row per chunk\",\n      \"type\": \"boolean\",\n      \"description\": \"On: each chunk is its own dataset row (ready for a vector database). Off: one row per document with a chunks list.\",\n      \"default\": false\n    },\n    \"includeMarkdown\": {\n      \"title\": \"Include full Markdown\",\n      \"type\": \"boolean\",\n      \"description\": \"Off leaves the markdown field empty and keeps only the chunks (smaller rows). Ignored when one row per chunk is on.\",\n      \"default\": true\n    }\n  },\n  \"required\": [\n    \"documentUrls\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started"
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~pdf-docx-to-markdown/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_pdf_docx_to_markdown_sync_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/pdf-docx-to-markdown and return dataset items",
+        "description": "Starts the Actor, waits for it to finish, and returns dataset items. Docs: https://apify.com/publicrecords/pdf-docx-to-markdown",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"PDF to Text & Markdown Extractor input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"documentUrls\": {\n      \"title\": \"PDF or DOCX file URLs\",\n      \"type\": \"array\",\n      \"description\": \"Direct links to PDF or Word (.docx) files. Each file becomes one dataset row with its Markdown text. Up to 50 MB per file.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"https://arxiv.org/pdf/1706.03762\",\n        \"https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/tests/resources/skew.pdf\"\n      ],\n      \"default\": [\n        \"https://arxiv.org/pdf/1706.03762\",\n        \"https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/tests/resources/skew.pdf\"\n      ]\n    },\n    \"ocrMode\": {\n      \"title\": \"OCR for scanned pages\",\n      \"type\": \"string\",\n      \"description\": \"auto: OCR only pages with no text layer (scanned pages). always: OCR every page. off: never OCR.\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"auto\",\n        \"always\",\n        \"off\"\n      ],\n      \"enumTitles\": [\n        \"Auto (scanned pages only)\",\n        \"Always (every page)\",\n        \"Off\"\n      ],\n      \"default\": \"auto\"\n    },\n    \"ocrLanguage\": {\n      \"title\": \"OCR language\",\n      \"type\": \"string\",\n      \"description\": \"Language of the scanned text. Combine with +, e.g. eng+fra.\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"eng\",\n        \"fra\",\n        \"deu\",\n        \"spa\",\n        \"por\",\n        \"ita\",\n        \"nld\",\n        \"eng+fra\",\n        \"eng+spa\",\n        \"eng+deu\"\n      ],\n      \"enumTitles\": [\n        \"English\",\n        \"French\",\n        \"German\",\n        \"Spanish\",\n        \"Portuguese\",\n        \"Italian\",\n        \"Dutch\",\n        \"English + French\",\n        \"English + Spanish\",\n        \"English + German\"\n      ],\n      \"default\": \"eng\"\n    },\n    \"pageRange\": {\n      \"title\": \"Page range (PDF)\",\n      \"type\": \"string\",\n      \"description\": \"Only convert these pages, e.g. 1-5,8 or 10-last. Empty converts every page up to the page limit.\",\n      \"editor\": \"textfield\"\n    },\n    \"maxPagesPerDocument\": {\n      \"title\": \"Max pages per PDF\",\n      \"type\": \"integer\",\n      \"description\": \"Stop after this many pages of each PDF (1 to 500).\",\n      \"minimum\": 1,\n      \"maximum\": 500,\n      \"default\": 200\n    },\n    \"chunkSize\": {\n      \"title\": \"Chunk size (tokens)\",\n      \"type\": \"integer\",\n      \"description\": \"Split the Markdown into retrieval chunks of about this many tokens (1 token = about 4 characters). Chunks respect headings, paragraphs and sentences. 0 turns chunking off.\",\n      \"minimum\": 0,\n      \"maximum\": 4000,\n      \"default\": 400\n    },\n    \"chunkOverlap\": {\n      \"title\": \"Chunk overlap (tokens)\",\n      \"type\": \"integer\",\n      \"description\": \"Tokens repeated from the end of one chunk at the start of the next.\",\n      \"minimum\": 0,\n      \"maximum\": 1000,\n      \"default\": 40\n    },\n    \"chunksAsRows\": {\n      \"title\": \"One row per chunk\",\n      \"type\": \"boolean\",\n      \"description\": \"On: each chunk is its own dataset row (ready for a vector database). Off: one row per document with a chunks list.\",\n      \"default\": false\n    },\n    \"includeMarkdown\": {\n      \"title\": \"Include full Markdown\",\n      \"type\": \"boolean\",\n      \"description\": \"Off leaves the markdown field empty and keeps only the chunks (smaller rows). Ignored when one row per chunk is on.\",\n      \"default\": true\n    }\n  },\n  \"required\": [\n    \"documentUrls\"\n  ]\n}",
+              "example": {
+                "documentUrls": [
+                  "https://arxiv.org/pdf/1706.03762",
+                  "https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/tests/resources/skew.pdf"
+                ],
+                "ocrMode": "auto",
+                "ocrLanguage": "eng",
+                "chunkSize": 400,
+                "chunkOverlap": 40
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/pdf-docx-to-markdown"
+  }
+}

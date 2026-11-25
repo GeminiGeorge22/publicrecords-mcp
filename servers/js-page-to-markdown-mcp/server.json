@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.GeminiGeorge22/js-page-to-markdown-mcp",
+  "title": "JavaScript Page to Markdown MCP: Render JS + Screenshot",
+  "description": "Render JavaScript pages in Chromium and get LLM-ready Markdown, with optional screenshots.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/publicrecords/js-page-to-markdown",
+  "repository": {
+    "url": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+    "source": "github",
+    "subfolder": "servers/js-page-to-markdown-mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/js-page-to-markdown",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional if you use Apify OAuth. Otherwise: Bearer <APIFY_TOKEN> (your own Apify API token).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

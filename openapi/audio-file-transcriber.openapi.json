@@ -1,0 +1,164 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Audio to Text Transcriber: Whisper Speech to Text",
+    "description": "Transcribe audio and video files to text with timestamps, SRT and VTT subtitles. Whisper runs inside the Actor, so there is no outside speech API.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/audio-file-transcriber\nMCP: https://mcp.apify.com?tools=publicrecords/audio-file-transcriber\nAuthor: Public Records.",
+    "version": "0.1.0",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/audio-file-transcriber",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~audio-file-transcriber/runs": {
+      "post": {
+        "operationId": "start_audio_file_transcriber_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/audio-file-transcriber",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/audio-file-transcriber",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Audio to Text Transcriber input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"audioUrls\": {\n      \"title\": \"Audio or video file URLs\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Direct links to audio or video files (mp3, wav, m4a, ogg, flac, webm, mp4 and other formats ffmpeg reads). Up to 300 MB per file. Not for Instagram, TikTok or YouTube page links.\",\n      \"prefill\": [\n        \"https://raw.githubusercontent.com/ggerganov/whisper.cpp/master/samples/jfk.wav\"\n      ],\n      \"default\": [\n        \"https://raw.githubusercontent.com/ggerganov/whisper.cpp/master/samples/jfk.wav\"\n      ]\n    },\n    \"model\": {\n      \"title\": \"Whisper model\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"tiny\",\n        \"base\",\n        \"small\"\n      ],\n      \"enumTitles\": [\n        \"Tiny (fastest)\",\n        \"Base (balanced)\",\n        \"Small (most accurate, slowest)\"\n      ],\n      \"default\": \"base\",\n      \"description\": \"Bigger models are more accurate and slower. The price per minute is the same for every model.\"\n    },\n    \"language\": {\n      \"title\": \"Language\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Spoken language as a two-letter code (en, fr, es, de ...). Leave empty to detect it automatically.\"\n    },\n    \"translateToEnglish\": {\n      \"title\": \"Translate to English\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Output an English translation instead of the original-language transcript.\"\n    },\n    \"wordTimestamps\": {\n      \"title\": \"Word timestamps\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Add start and end times for each word inside each segment.\"\n    },\n    \"skipSilence\": {\n      \"title\": \"Skip silence\",\n      \"type\": \"boolean\",\n      \"default\": true,\n      \"description\": \"Skip long silent stretches before transcribing (voice activity detection). Faster and fewer made-up lines on music or silence.\"\n    },\n    \"maxMinutesPerFile\": {\n      \"title\": \"Max minutes per file\",\n      \"type\": \"integer\",\n      \"minimum\": 1,\n      \"maximum\": 180,\n      \"default\": 60,\n      \"description\": \"Files longer than this are skipped with a reason and not charged.\"\n    }\n  },\n  \"required\": [\n    \"audioUrls\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started"
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~audio-file-transcriber/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_audio_file_transcriber_sync_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/audio-file-transcriber and return dataset items",
+        "description": "Starts the Actor, waits for it to finish, and returns dataset items. Docs: https://apify.com/publicrecords/audio-file-transcriber",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Audio to Text Transcriber input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"audioUrls\": {\n      \"title\": \"Audio or video file URLs\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Direct links to audio or video files (mp3, wav, m4a, ogg, flac, webm, mp4 and other formats ffmpeg reads). Up to 300 MB per file. Not for Instagram, TikTok or YouTube page links.\",\n      \"prefill\": [\n        \"https://raw.githubusercontent.com/ggerganov/whisper.cpp/master/samples/jfk.wav\"\n      ],\n      \"default\": [\n        \"https://raw.githubusercontent.com/ggerganov/whisper.cpp/master/samples/jfk.wav\"\n      ]\n    },\n    \"model\": {\n      \"title\": \"Whisper model\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"tiny\",\n        \"base\",\n        \"small\"\n      ],\n      \"enumTitles\": [\n        \"Tiny (fastest)\",\n        \"Base (balanced)\",\n        \"Small (most accurate, slowest)\"\n      ],\n      \"default\": \"base\",\n      \"description\": \"Bigger models are more accurate and slower. The price per minute is the same for every model.\"\n    },\n    \"language\": {\n      \"title\": \"Language\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Spoken language as a two-letter code (en, fr, es, de ...). Leave empty to detect it automatically.\"\n    },\n    \"translateToEnglish\": {\n      \"title\": \"Translate to English\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Output an English translation instead of the original-language transcript.\"\n    },\n    \"wordTimestamps\": {\n      \"title\": \"Word timestamps\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Add start and end times for each word inside each segment.\"\n    },\n    \"skipSilence\": {\n      \"title\": \"Skip silence\",\n      \"type\": \"boolean\",\n      \"default\": true,\n      \"description\": \"Skip long silent stretches before transcribing (voice activity detection). Faster and fewer made-up lines on music or silence.\"\n    },\n    \"maxMinutesPerFile\": {\n      \"title\": \"Max minutes per file\",\n      \"type\": \"integer\",\n      \"minimum\": 1,\n      \"maximum\": 180,\n      \"default\": 60,\n      \"description\": \"Files longer than this are skipped with a reason and not charged.\"\n    }\n  },\n  \"required\": [\n    \"audioUrls\"\n  ]\n}",
+              "example": {
+                "audioUrls": [
+                  "https://raw.githubusercontent.com/ggerganov/whisper.cpp/master/samples/jfk.wav"
+                ],
+                "model": "base",
+                "translateToEnglish": false,
+                "wordTimestamps": false,
+                "skipSilence": true,
+                "maxMinutesPerFile": 60
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/audio-file-transcriber"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Web Page to Markdown: URL to LLM-Ready Text",
+    "description": "Turn any web page URL into clean, LLM-ready Markdown with title, description, language and canonical URL. Plain HTTP, no browser, so it is fast and cheap for RAG and AI agents.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/url-to-markdown\nMCP: https://mcp.apify.com?tools=publicrecords/url-to-markdown\nAuthor: Public Records.",
+    "version": "0.1.0",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/url-to-markdown",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~url-to-markdown/runs": {
+      "post": {
+        "operationId": "start_url_to_markdown_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/url-to-markdown",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/url-to-markdown",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"URL to Markdown\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"urls\": {\n      \"title\": \"URLs\",\n      \"type\": \"array\",\n      \"description\": \"Web pages to convert to Markdown, one per line (up to 1,000 per run). A URL without http(s):// gets https://.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"https://en.wikipedia.org/wiki/Web_scraping\",\n        \"https://quotes.toscrape.com/\"\n      ],\n      \"default\": [\n        \"https://en.wikipedia.org/wiki/Web_scraping\",\n        \"https://quotes.toscrape.com/\"\n      ]\n    },\n    \"contentScope\": {\n      \"title\": \"Content to keep\",\n      \"type\": \"string\",\n      \"description\": \"main: the page's main content (main/article), or the body without menus, headers and footers. full: the whole page body.\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"main\",\n        \"full\"\n      ],\n      \"enumTitles\": [\n        \"Main content (recommended)\",\n        \"Full page\"\n      ],\n      \"default\": \"main\"\n    },\n    \"cssSelector\": {\n      \"title\": \"CSS selector (optional)\",\n      \"type\": \"string\",\n      \"description\": \"Keep only the elements matching this selector, e.g. article or #content. Overrides Content to keep.\",\n      \"editor\": \"textfield\"\n    },\n    \"includeLinks\": {\n      \"title\": \"Include page links\",\n      \"type\": \"boolean\",\n      \"description\": \"Add the page's links (URL, text, internal or external) to each row.\",\n      \"default\": false\n    },\n    \"maxChars\": {\n      \"title\": \"Max Markdown characters per page\",\n      \"type\": \"integer\",\n      \"description\": \"Longer Markdown is cut and the row says truncated: true.\",\n      \"minimum\": 500,\n      \"maximum\": 2000000,\n      \"default\": 200000\n    },\n    \"timeoutSecs\": {\n      \"title\": \"Timeout per page (seconds)\",\n      \"type\": \"integer\",\n      \"minimum\": 5,\n      \"maximum\": 30,\n      \"default\": 15,\n      \"description\": \"How long to wait for a page to answer before it is skipped (not charged). The download may take up to 1.5x this.\"\n    }\n  },\n  \"required\": [\n    \"urls\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started"
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~url-to-markdown/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_url_to_markdown_sync_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/url-to-markdown and return dataset items",
+        "description": "Starts the Actor, waits for it to finish, and returns dataset items. Docs: https://apify.com/publicrecords/url-to-markdown",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"URL to Markdown\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"urls\": {\n      \"title\": \"URLs\",\n      \"type\": \"array\",\n      \"description\": \"Web pages to convert to Markdown, one per line (up to 1,000 per run). A URL without http(s):// gets https://.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"https://en.wikipedia.org/wiki/Web_scraping\",\n        \"https://quotes.toscrape.com/\"\n      ],\n      \"default\": [\n        \"https://en.wikipedia.org/wiki/Web_scraping\",\n        \"https://quotes.toscrape.com/\"\n      ]\n    },\n    \"contentScope\": {\n      \"title\": \"Content to keep\",\n      \"type\": \"string\",\n      \"description\": \"main: the page's main content (main/article), or the body without menus, headers and footers. full: the whole page body.\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"main\",\n        \"full\"\n      ],\n      \"enumTitles\": [\n        \"Main content (recommended)\",\n        \"Full page\"\n      ],\n      \"default\": \"main\"\n    },\n    \"cssSelector\": {\n      \"title\": \"CSS selector (optional)\",\n      \"type\": \"string\",\n      \"description\": \"Keep only the elements matching this selector, e.g. article or #content. Overrides Content to keep.\",\n      \"editor\": \"textfield\"\n    },\n    \"includeLinks\": {\n      \"title\": \"Include page links\",\n      \"type\": \"boolean\",\n      \"description\": \"Add the page's links (URL, text, internal or external) to each row.\",\n      \"default\": false\n    },\n    \"maxChars\": {\n      \"title\": \"Max Markdown characters per page\",\n      \"type\": \"integer\",\n      \"description\": \"Longer Markdown is cut and the row says truncated: true.\",\n      \"minimum\": 500,\n      \"maximum\": 2000000,\n      \"default\": 200000\n    },\n    \"timeoutSecs\": {\n      \"title\": \"Timeout per page (seconds)\",\n      \"type\": \"integer\",\n      \"minimum\": 5,\n      \"maximum\": 30,\n      \"default\": 15,\n      \"description\": \"How long to wait for a page to answer before it is skipped (not charged). The download may take up to 1.5x this.\"\n    }\n  },\n  \"required\": [\n    \"urls\"\n  ]\n}",
+              "example": {
+                "urls": [
+                  "https://en.wikipedia.org/wiki/Web_scraping",
+                  "https://quotes.toscrape.com/"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/url-to-markdown"
+  }
+}

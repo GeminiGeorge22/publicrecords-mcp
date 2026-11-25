@@ -18,3 +18,8 @@ sports-odds-api,sports-odds-api,sports-betting-stats-mcp,sports-odds,https://api
 spotify-play-count-scraper,spotify-play-count-mcp,,spotify-play-counts,https://apify.com/publicrecords/spotify-play-count-scraper,io.github.GeminiGeorge22/spotify-play-count-mcp
 skool-community-growth-tracker,skool-community-mcp,,skool-communities,https://apify.com/publicrecords/skool-community-growth-tracker,io.github.GeminiGeorge22/skool-community-mcp
 tennis-scores-api,,,tennis-scores,https://apify.com/publicrecords/tennis-scores-api,
+pdf-docx-to-markdown,pdf-docx-to-markdown-mcp,,pdf-to-text,https://apify.com/publicrecords/pdf-docx-to-markdown,io.github.GeminiGeorge22/pdf-docx-to-markdown-mcp
+audio-file-transcriber,audio-file-transcriber-mcp,,audio-to-text,https://apify.com/publicrecords/audio-file-transcriber,io.github.GeminiGeorge22/audio-file-transcriber-mcp
+url-to-markdown,url-to-markdown-mcp,,web-page-to-markdown,https://apify.com/publicrecords/url-to-markdown,io.github.GeminiGeorge22/url-to-markdown-mcp
+js-page-to-markdown,js-page-to-markdown-mcp,,js-page-to-markdown,https://apify.com/publicrecords/js-page-to-markdown,io.github.GeminiGeorge22/js-page-to-markdown-mcp
+email-verifier,email-verifier-mcp,,email-verifier,https://apify.com/publicrecords/email-verifier,io.github.GeminiGeorge22/email-verifier-mcp

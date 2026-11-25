@@ -1,0 +1,163 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Email Verifier: Bulk Email Validation, MX & Disposable Check",
+    "description": "Validate a list of email addresses without sending mail. It checks the syntax, the domain, MX records and disposable domains, not the mailbox, plus role accounts, SPF/DMARC and typo fixes, with a verdict per email. This Actor checks the domain, MX records and disposable domains, not the mailbox. It does not send mail and is not a mailbox verifier.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/email-verifier\nMCP: https://mcp.apify.com?tools=publicrecords/email-verifier\nAuthor: Public Records.",
+    "version": "0.1.0",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/email-verifier",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~email-verifier/runs": {
+      "post": {
+        "operationId": "start_email_verifier_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/email-verifier",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/email-verifier",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Email Verifier\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"emails\": {\n      \"title\": \"Emails\",\n      \"type\": \"array\",\n      \"description\": \"Email addresses to check, one per line (up to 10,000 per run). Duplicates are checked once. No email is sent.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"support@apify.com\",\n        \"jane.doe@gmial.com\",\n        \"info@mailinator.com\",\n        \"sales@stripe.com\",\n        \"someone@no-such-domain-4k7q.com\"\n      ],\n      \"default\": [\n        \"support@apify.com\",\n        \"jane.doe@gmial.com\",\n        \"info@mailinator.com\",\n        \"sales@stripe.com\",\n        \"someone@no-such-domain-4k7q.com\"\n      ]\n    },\n    \"dnsServers\": {\n      \"title\": \"DNS servers (optional)\",\n      \"type\": \"array\",\n      \"description\": \"IP addresses of DNS resolvers to use, e.g. 1.1.1.1. Leave empty to use the platform resolver.\",\n      \"editor\": \"stringList\",\n      \"sectionCaption\": \"Advanced\"\n    }\n  },\n  \"required\": [\n    \"emails\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started"
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~email-verifier/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_email_verifier_sync_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/email-verifier and return dataset items",
+        "description": "Starts the Actor, waits for it to finish, and returns dataset items. Docs: https://apify.com/publicrecords/email-verifier",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Email Verifier\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"emails\": {\n      \"title\": \"Emails\",\n      \"type\": \"array\",\n      \"description\": \"Email addresses to check, one per line (up to 10,000 per run). Duplicates are checked once. No email is sent.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"support@apify.com\",\n        \"jane.doe@gmial.com\",\n        \"info@mailinator.com\",\n        \"sales@stripe.com\",\n        \"someone@no-such-domain-4k7q.com\"\n      ],\n      \"default\": [\n        \"support@apify.com\",\n        \"jane.doe@gmial.com\",\n        \"info@mailinator.com\",\n        \"sales@stripe.com\",\n        \"someone@no-such-domain-4k7q.com\"\n      ]\n    },\n    \"dnsServers\": {\n      \"title\": \"DNS servers (optional)\",\n      \"type\": \"array\",\n      \"description\": \"IP addresses of DNS resolvers to use, e.g. 1.1.1.1. Leave empty to use the platform resolver.\",\n      \"editor\": \"stringList\",\n      \"sectionCaption\": \"Advanced\"\n    }\n  },\n  \"required\": [\n    \"emails\"\n  ]\n}",
+              "example": {
+                "emails": [
+                  "support@apify.com",
+                  "jane.doe@gmial.com",
+                  "info@mailinator.com",
+                  "sales@stripe.com",
+                  "someone@no-such-domain-4k7q.com"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/email-verifier"
+  }
+}

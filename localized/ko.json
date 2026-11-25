@@ -252,6 +252,71 @@
       "description": "Every ATP and WTA match for a date or a whole tournament (Grand Slams, singles, doubles, mixed): set-by-set scores, tiebreaks, seeds, round, court and winner, plus ATP/WTA rankings. No login, no proxy. Pay per event on your own Apify account: $0.002 per match or ranking row; $0.00005 per Actor start. Standby/MCP mode is not built for this Actor; call it through the Apify API with your own token. Do not list an MCP endpoint.",
       "price_line": "Pay per event on your own Apify account: $0.002 per match or ranking row; $0.00005 per Actor start.",
       "price_tiered": false
+    },
+    {
+      "actor": "pdf-docx-to-markdown",
+      "store_url": "https://apify.com/publicrecords/pdf-docx-to-markdown",
+      "registry_name": "io.github.GeminiGeorge22/pdf-docx-to-markdown-mcp",
+      "server": "pdf-docx-to-markdown-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/pdf-docx-to-markdown-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/pdf-docx-to-markdown",
+      "name": "PDF→텍스트 MCP: OCR, DOCX, RAG 청크",
+      "one_line": "PDF와 Word 파일을 깔끔한 Markdown으로 바꾸고, 스캔은 OCR로 읽으며 RAG용 청크로 나눕니다.",
+      "description": "PDF와 Word 파일을 깔끔한 Markdown으로 바꾸고, 스캔은 OCR로 읽으며 RAG용 청크로 나눕니다. Pay per event on your own Apify account: $0.0025 per GB Actor start (default 2 GB = $0.005); $0.004 per document converted (first 20 text pages and chunking); $0.0003 per extra text page; $0.002 per OCR page. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.0025 per GB Actor start (default 2 GB = $0.005); $0.004 per document converted (first 20 text pages and chunking); $0.0003 per extra text page; $0.002 per OCR page. Current rates are on the Store page.",
+      "price_tiered": false
+    },
+    {
+      "actor": "audio-file-transcriber",
+      "store_url": "https://apify.com/publicrecords/audio-file-transcriber",
+      "registry_name": "io.github.GeminiGeorge22/audio-file-transcriber-mcp",
+      "server": "audio-file-transcriber-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/audio-file-transcriber-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/audio-file-transcriber",
+      "name": "오디오→텍스트 MCP: Whisper Speech to Text",
+      "one_line": "오디오와 동영상 파일을 타임스탬프, SRT, VTT 자막이 있는 텍스트로 받아적습니다. Whisper는 Actor 안에서 실행됩니다.",
+      "description": "오디오와 동영상 파일을 타임스탬프, SRT, VTT 자막이 있는 텍스트로 받아적습니다. Whisper는 Actor 안에서 실행됩니다. Pay per event on your own Apify account: $0.0025 per GB Actor start (default 4 GB = $0.01); $0.008 per started audio minute, any model. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.0025 per GB Actor start (default 4 GB = $0.01); $0.008 per started audio minute, any model. Current rates are on the Store page.",
+      "price_tiered": false
+    },
+    {
+      "actor": "url-to-markdown",
+      "store_url": "https://apify.com/publicrecords/url-to-markdown",
+      "registry_name": "io.github.GeminiGeorge22/url-to-markdown-mcp",
+      "server": "url-to-markdown-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/url-to-markdown-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/url-to-markdown",
+      "name": "웹 페이지→Markdown MCP: URL을 LLM용 텍스트로",
+      "one_line": "웹 페이지 URL을 LLM에 쓸 수 있는 깨끗한 Markdown으로 바꿉니다. 브라우저 없이 일반 HTTP만 사용합니다.",
+      "description": "웹 페이지 URL을 LLM에 쓸 수 있는 깨끗한 Markdown으로 바꿉니다. 브라우저 없이 일반 HTTP만 사용합니다. Pay per event on your own Apify account: $0.002 Actor start (default 512 MB is one event); $0.0012 per page converted. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.002 Actor start (default 512 MB is one event); $0.0012 per page converted. Current rates are on the Store page.",
+      "price_tiered": false
+    },
+    {
+      "actor": "js-page-to-markdown",
+      "store_url": "https://apify.com/publicrecords/js-page-to-markdown",
+      "registry_name": "io.github.GeminiGeorge22/js-page-to-markdown-mcp",
+      "server": "js-page-to-markdown-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/js-page-to-markdown-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/js-page-to-markdown",
+      "name": "JavaScript 페이지→Markdown MCP: JS 렌더와 스크린샷",
+      "one_line": "JavaScript 페이지를 Chromium에서 렌더하고 LLM용 Markdown을 돌려줍니다. 스크린샷은 선택 사항입니다.",
+      "description": "JavaScript 페이지를 Chromium에서 렌더하고 LLM용 Markdown을 돌려줍니다. 스크린샷은 선택 사항입니다. Pay per event on your own Apify account: $0.002 per GB Actor start (default 1 GB = $0.002); $0.0015 per page rendered; $0.001 per screenshot when screenshots are on. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.002 per GB Actor start (default 1 GB = $0.002); $0.0015 per page rendered; $0.001 per screenshot when screenshots are on. Current rates are on the Store page.",
+      "price_tiered": false
+    },
+    {
+      "actor": "email-verifier",
+      "store_url": "https://apify.com/publicrecords/email-verifier",
+      "registry_name": "io.github.GeminiGeorge22/email-verifier-mcp",
+      "server": "email-verifier-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/email-verifier-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/email-verifier",
+      "name": "이메일 검증 MCP: 도메인, MX, 일회용 도메인",
+      "one_line": "구문, 도메인, MX 레코드, 일회용 도메인을 확인합니다. 메일함은 확인하지 않으며 메일을 보내지 않습니다.",
+      "description": "구문, 도메인, MX 레코드, 일회용 도메인을 확인합니다. 메일함은 확인하지 않으며 메일을 보내지 않습니다. Pay per event on your own Apify account: $0.0005 Actor start (default 256 MB is one event); $0.0005 per email checked. Current rates are on the Store page. This is not a mailbox or SMTP check. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.0005 Actor start (default 256 MB is one event); $0.0005 per email checked. Current rates are on the Store page. This is not a mailbox or SMTP check.",
+      "price_tiered": false
     }
   ]
 }

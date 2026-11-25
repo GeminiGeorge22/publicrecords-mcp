@@ -1,7 +1,7 @@
 {
   "info": {
     "name": "Public Records APIs (Apify)",
-    "description": "Importable Postman Collection v2.1 for 18 Public Records Actors (Skool omitted). Each request bills through the caller's own Apify account. Set the collection variable APIFY_TOKEN locally — this file ships with it empty and contains no secrets.\n\nImport: Postman → Import → this file. OpenAPI specs: https://huggingface.co/datasets/Publicrecords/apify-actor-openapi\n\nAuthor: Public Records.\n\n`tennis-scores-api` is included as an Apify Actor only (Standby/MCP is not built); requests call the Apify REST API, not an MCP endpoint.",
+    "description": "Importable Postman Collection v2.1 for 18 Public Records Actors (Skool omitted). Each request bills through the caller's own Apify account. Set the collection variable APIFY_TOKEN locally \u2014 this file ships with it empty and contains no secrets.\n\nImport: Postman \u2192 Import \u2192 this file. OpenAPI specs: https://huggingface.co/datasets/Publicrecords/apify-actor-openapi\n\nAuthor: Public Records.\n\n`tennis-scores-api` is included as an Apify Actor only (Standby/MCP is not built); requests call the Apify REST API, not an MCP endpoint.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
@@ -14,7 +14,7 @@
   ],
   "item": [
     {
-      "name": "Ashby Jobs Scraper — New Job Postings Since Any Date",
+      "name": "Ashby Jobs Scraper \u2014 New Job Postings Since Any Date",
       "description": "Scrape Ashby jobs and job postings from any Ashby job board, only those published since a date or window (24h, 7d, 30d). Title, location, department, compensation, URL, description. Pay per result.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/ashby-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/ashby-jobs-scraper\nAuthor: Public Records.",
       "item": [
         {
@@ -106,8 +106,8 @@
       ]
     },
     {
-      "name": "Calibration Ledger — trust a forecast, with evidence (beta)",
-      "description": "Given a claim from an organization (IMF, OECD, Fed/FOMC, SPF, ECB SPF, or a listed issuer), returns that organization's track record: error distribution, intervals, bias, band coverage, worst misses with source links — or honest 'no coverage' (free). Organizations only, never people.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/calibration-ledger\nMCP: https://mcp.apify.com?tools=publicrecords/calibration-ledger\nAuthor: Public Records.",
+      "name": "Calibration Ledger \u2014 trust a forecast, with evidence (beta)",
+      "description": "Given a claim from an organization (IMF, OECD, Fed/FOMC, SPF, ECB SPF, or a listed issuer), returns that organization's track record: error distribution, intervals, bias, band coverage, worst misses with source links \u2014 or honest 'no coverage' (free). Organizations only, never people.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/calibration-ledger\nMCP: https://mcp.apify.com?tools=publicrecords/calibration-ledger\nAuthor: Public Records.",
       "item": [
         {
           "name": "Start a run of publicrecords/calibration-ledger",
@@ -290,7 +290,7 @@
       ]
     },
     {
-      "name": "Etsy Scraper — Listings, Prices, Best Sellers & Ad Flags",
+      "name": "Etsy Scraper \u2014 Listings, Prices, Best Sellers & Ad Flags",
       "description": "Etsy scraper for product research: search results by keyword, market page or category URL with price, rating, reviews, Bestseller and Star Seller badges, ad flag, shop and Etsy's rank position. One row per listing. Pay per listing row. Works with Claude.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/etsy-search-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/etsy-search-scraper\nAuthor: Public Records.",
       "item": [
         {
@@ -842,7 +842,7 @@
       ]
     },
     {
-      "name": "Greenhouse Jobs Scraper — New Job Postings Since Any Date",
+      "name": "Greenhouse Jobs Scraper \u2014 New Job Postings Since Any Date",
       "description": "Scrape Greenhouse jobs and job postings from any Greenhouse job board, only those published since a date or window (24h, 7d, 30d). Title, location, department, URL, description. Pay per result.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/greenhouse-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/greenhouse-jobs-scraper\nAuthor: Public Records.",
       "item": [
         {
@@ -1026,7 +1026,7 @@
       ]
     },
     {
-      "name": "Lever Jobs Scraper — New Job Postings Since Any Date",
+      "name": "Lever Jobs Scraper \u2014 New Job Postings Since Any Date",
       "description": "Scrape Lever jobs and job postings from any Lever job board, only those created since a date or window (24h, 7d, 30d). Title, location, team, workplace type, URL, description. Pay per result.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/lever-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/lever-jobs-scraper\nAuthor: Public Records.",
       "item": [
         {
@@ -1118,7 +1118,7 @@
       ]
     },
     {
-      "name": "SmartRecruiters Jobs Scraper — New Postings Since Any Date",
+      "name": "SmartRecruiters Jobs Scraper \u2014 New Postings Since Any Date",
       "description": "Scrape open jobs from any SmartRecruiters careers site and return only postings released since a date or window (24h, 7d, 30d). Title, location, department, URL, description. Pay per result.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/smartrecruiters-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/smartrecruiters-jobs-scraper\nAuthor: Public Records.",
       "item": [
         {
@@ -1659,6 +1659,466 @@
             "body": {
               "mode": "raw",
               "raw": "{\n  \"keywords\": [],\n  \"naics\": [],\n  \"agency\": \"\",\n  \"recipient\": \"\",\n  \"awardTypes\": [\n    \"A\",\n    \"B\",\n    \"C\",\n    \"D\"\n  ],\n  \"subawards\": false,\n  \"fetchDetails\": false,\n  \"maxItems\": 50\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "PDF to Text & Markdown Extractor: OCR, DOCX, RAG chunks",
+      "description": "Turn PDF and Word files into clean Markdown text. Scanned pages are read with OCR, and the text comes split into RAG-ready chunks with heading paths.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/pdf-docx-to-markdown\nMCP: https://mcp.apify.com?tools=publicrecords/pdf-docx-to-markdown\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/pdf-docx-to-markdown",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~pdf-docx-to-markdown/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~pdf-docx-to-markdown",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/pdf-docx-to-markdown\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"documentUrls\": [\n    \"https://arxiv.org/pdf/1706.03762\",\n    \"https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/tests/resources/skew.pdf\"\n  ],\n  \"ocrMode\": \"auto\",\n  \"ocrLanguage\": \"eng\",\n  \"chunkSize\": 400,\n  \"chunkOverlap\": 40\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/pdf-docx-to-markdown and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~pdf-docx-to-markdown/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~pdf-docx-to-markdown",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"documentUrls\": [\n    \"https://arxiv.org/pdf/1706.03762\",\n    \"https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/tests/resources/skew.pdf\"\n  ],\n  \"ocrMode\": \"auto\",\n  \"ocrLanguage\": \"eng\",\n  \"chunkSize\": 400,\n  \"chunkOverlap\": 40\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Audio to Text Transcriber: Whisper Speech to Text",
+      "description": "Transcribe audio and video files to text with timestamps, SRT and VTT subtitles. Whisper runs inside the Actor, so there is no outside speech API. This Actor transcribes file links; it does not download Instagram, TikTok or YouTube posts.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/audio-file-transcriber\nMCP: https://mcp.apify.com?tools=publicrecords/audio-file-transcriber\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/audio-file-transcriber",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~audio-file-transcriber/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~audio-file-transcriber",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/audio-file-transcriber\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"audioUrls\": [\n    \"https://raw.githubusercontent.com/ggerganov/whisper.cpp/master/samples/jfk.wav\"\n  ],\n  \"model\": \"base\",\n  \"translateToEnglish\": false,\n  \"wordTimestamps\": false,\n  \"skipSilence\": true,\n  \"maxMinutesPerFile\": 60\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/audio-file-transcriber and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~audio-file-transcriber/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~audio-file-transcriber",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"audioUrls\": [\n    \"https://raw.githubusercontent.com/ggerganov/whisper.cpp/master/samples/jfk.wav\"\n  ],\n  \"model\": \"base\",\n  \"translateToEnglish\": false,\n  \"wordTimestamps\": false,\n  \"skipSilence\": true,\n  \"maxMinutesPerFile\": 60\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Web Page to Markdown: URL to LLM-Ready Text",
+      "description": "Turn any web page URL into clean, LLM-ready Markdown with title, description, language and canonical URL. Plain HTTP, no browser, so it is fast and cheap for RAG and AI agents.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/url-to-markdown\nMCP: https://mcp.apify.com?tools=publicrecords/url-to-markdown\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/url-to-markdown",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~url-to-markdown/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~url-to-markdown",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/url-to-markdown\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"urls\": [\n    \"https://en.wikipedia.org/wiki/Web_scraping\",\n    \"https://quotes.toscrape.com/\"\n  ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/url-to-markdown and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~url-to-markdown/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~url-to-markdown",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"urls\": [\n    \"https://en.wikipedia.org/wiki/Web_scraping\",\n    \"https://quotes.toscrape.com/\"\n  ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "JavaScript Page to Markdown: Render JS Web Pages + Screenshot",
+      "description": "Render JavaScript-heavy web pages (React, Vue, Angular, SPAs) in a real Chromium browser and get clean, LLM-ready Markdown with title, metadata and an optional screenshot. Web fetch for RAG and AI agents.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/js-page-to-markdown\nMCP: https://mcp.apify.com?tools=publicrecords/js-page-to-markdown\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/js-page-to-markdown",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~js-page-to-markdown/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~js-page-to-markdown",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/js-page-to-markdown\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"urls\": [\n    \"https://quotes.toscrape.com/js/\",\n    \"https://react.dev/\"\n  ],\n  \"waitForSelector\": \"\",\n  \"scrollToBottom\": false,\n  \"screenshot\": false\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/js-page-to-markdown and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~js-page-to-markdown/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~js-page-to-markdown",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"urls\": [\n    \"https://quotes.toscrape.com/js/\",\n    \"https://react.dev/\"\n  ],\n  \"waitForSelector\": \"\",\n  \"scrollToBottom\": false,\n  \"screenshot\": false\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Email Verifier: Bulk Email Validation, MX & Disposable Check",
+      "description": "Validate a list of email addresses without sending mail. It checks the syntax, the domain, MX records and disposable domains, not the mailbox, plus role accounts, SPF/DMARC and typo fixes, with a verdict per email. It checks the syntax, the domain, MX records and disposable domains, not the mailbox. It does not send mail and is not a mailbox verifier.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/email-verifier\nMCP: https://mcp.apify.com?tools=publicrecords/email-verifier\nAuthor: Public Records.",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/email-verifier",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~email-verifier/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~email-verifier",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/email-verifier\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"emails\": [\n    \"support@apify.com\",\n    \"jane.doe@gmial.com\",\n    \"info@mailinator.com\",\n    \"sales@stripe.com\",\n    \"someone@no-such-domain-4k7q.com\"\n  ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/email-verifier and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~email-verifier/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~email-verifier",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"emails\": [\n    \"support@apify.com\",\n    \"jane.doe@gmial.com\",\n    \"info@mailinator.com\",\n    \"sales@stripe.com\",\n    \"someone@no-such-domain-4k7q.com\"\n  ]\n}\n",
               "options": {
                 "raw": {
                   "language": "json"
