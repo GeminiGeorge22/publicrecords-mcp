@@ -11,6 +11,7 @@ Snapshot of every distribution surface the publicrecords Apify Actor fleet touch
 | [actor_map.csv](./actor_map.csv) | Dedicated server, bundles, skill folder per Actor |
 | [LAUNCH.md](./LAUNCH.md) | Ordered playbook |
 | [launch_new_actor.sh](./launch_new_actor.sh) | Dry-run planner (`./launch_new_actor.sh <actor-slug>`) |
+| [push_actor_coverage.py](./push_actor_coverage.py) | Re-runnable coverage planner keyed on the Store slug (`python3 ledger/push_actor_coverage.py --dry-run <slug>`) |
 | [counts.json](./counts.json) | The counts below, machine-readable |
 
 ## Counting rule (25 Nov 2026, America/Toronto)
