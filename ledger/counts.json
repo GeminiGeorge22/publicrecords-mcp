@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-25 17:28 America/Toronto",
+  "as_of": "2026-11-25 21:16 America/Toronto",
   "total_surfaces": 829,
   "live": 161,
   "submitted_pending": 367,
@@ -114,10 +114,10 @@
   },
   "placements_rows": 19877,
   "placements_by_status": {
-    "live": 1285,
-    "not-listed": 8071,
-    "submitted": 3576,
-    "remaining": 1059,
+    "live": 1330,
+    "not-listed": 8016,
+    "submitted": 3591,
+    "remaining": 1054,
     "skipped": 5098,
     "held-needs-Mark": 788
   },
@@ -188,5 +188,16 @@
     "placement_rows_on_removed_surfaces": 3432,
     "live_placements_on_removed_surfaces": 461
   },
-  "correction_reason": "The 23,309 figure was placements.csv row count: a full surface×actor matrix (972 surfaces × 24 Actors, with 19 older Actors still at 971 surfaces) including not-listed, skipped, and file-level rows. That inflated both placements_by_status.live (1741) and the 304 live-surface total. 140 live surfaces were per-language README.<lang>.md files that already had rollup surfaces, and 3 were n8n/Make/Postman recipe files in the same publicrecords-mcp repo (not listings on those products' galleries)."
+  "correction_reason": "The 23,309 figure was placements.csv row count: a full surface×actor matrix (972 surfaces × 24 Actors, with 19 older Actors still at 971 surfaces) including not-listed, skipped, and file-level rows. That inflated both placements_by_status.live (1741) and the 304 live-surface total. 140 live surfaces were per-language README.<lang>.md files that already had rollup surfaces, and 3 were n8n/Make/Postman recipe files in the same publicrecords-mcp repo (not listings on those products' galleries).",
+  "coverage_pass_2026_11_25": {
+    "five_actors": [
+      "pdf-docx-to-markdown",
+      "audio-file-transcriber",
+      "url-to-markdown",
+      "js-page-to-markdown",
+      "email-verifier"
+    ],
+    "followup": "ledger/followups/new-actor-coverage-2026-11-25.md",
+    "note": "Headline surface counts unchanged. Placement status updates for the five Actors only (Glama/Sayba/skills live; ClawHub and some auto-imports submitted)."
+  }
 }
