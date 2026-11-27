@@ -1,0 +1,83 @@
+{
+  "name": "Email Verifier (domain, MX, disposable) \u2192 dataset (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## Email Verifier (domain, MX, disposable)\nBulk email verification at $0.0005/email ($5/10k). Checks domain, MX records and disposable domains only. It is not a mailbox or SMTP check and does not send mail.\n\n1. Replace `YOUR_APIFY_TOKEN` in the Authorization header.\n2. Edit the JSON body (`emails`) and click Test workflow.\n3. Connect the output to Google Sheets, Slack, Airtable or email if you want.\n\nStore: https://apify.com/publicrecords/email-verifier\nMCP: https://mcp.apify.com?tools=publicrecords/email-verifier",
+        "height": 320,
+        "width": 480
+      },
+      "id": "3465a3c0-878c-41a1-a9a4-ac2b3e9d2b3f",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -360
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "5871db9b-70a2-4fbd-b142-3ef1c81d5cb9",
+      "name": "When clicking \u2018Test workflow\u2019",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~email-verifier/run-sync-get-dataset-items",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_APIFY_TOKEN"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"emails\": [\n    \"support@apify.com\",\n    \"jane.doe@gmial.com\",\n    \"info@mailinator.com\",\n    \"sales@stripe.com\",\n    \"someone@no-such-domain-4k7q.com\"\n  ]\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "b07ecb97-0183-4364-badf-38782fbca6d4",
+      "name": "Run Email Verifier (domain, MX, disposable) on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        0
+      ],
+      "notes": "Replace YOUR_APIFY_TOKEN with your Apify API token (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price. This Actor checks domain, MX and disposable domains only \u2014 not a mailbox or SMTP check."
+    }
+  ],
+  "connections": {
+    "When clicking \u2018Test workflow\u2019": {
+      "main": [
+        [
+          {
+            "node": "Run Email Verifier (domain, MX, disposable) on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

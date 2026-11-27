@@ -1,0 +1,83 @@
+{
+  "name": "URL to Markdown \u2192 LLM-ready text (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## URL to Markdown (LLM-ready, pay-as-you-go)\nTurn web page URLs into clean, LLM-ready Markdown at $0.0012/page, with no monthly subscription. Plain HTTP, no browser. A Firecrawl alternative and Jina Reader alternative for this job. Not a site crawler: you choose the URLs.\n\n1. Replace `YOUR_APIFY_TOKEN` in the Authorization header.\n2. Edit the JSON body (`urls`) and click Test workflow.\n\nStore: https://apify.com/publicrecords/url-to-markdown\nMCP: https://mcp.apify.com?tools=publicrecords/url-to-markdown",
+        "height": 320,
+        "width": 480
+      },
+      "id": "e3e42e76-71e7-4e80-8f71-b947b1b5196b",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -360
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "ff9e4681-6210-4641-b639-ca4c714910bc",
+      "name": "When clicking \u2018Test workflow\u2019",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~url-to-markdown/run-sync-get-dataset-items",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_APIFY_TOKEN"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"urls\": [\n    \"https://en.wikipedia.org/wiki/Web_scraping\",\n    \"https://quotes.toscrape.com/\"\n  ]\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "1e7d939a-3a61-4be6-bc2c-23489aadb1bf",
+      "name": "Run URL to Markdown on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        0
+      ],
+      "notes": "Replace YOUR_APIFY_TOKEN with your Apify API token (console.apify.com/settings/integrations). Runs bill to your own Apify account at $0.0012/page, pay-as-you-go, no monthly subscription. Plain HTTP, no browser."
+    }
+  ],
+  "connections": {
+    "When clicking \u2018Test workflow\u2019": {
+      "main": [
+        [
+          {
+            "node": "Run URL to Markdown on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}
