@@ -1,0 +1,152 @@
+{
+  "name": "ATS jobs (Greenhouse) \u2192 Airtable (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## ATS jobs \u2192 Airtable\nPull the newest Greenhouse job postings (last 7 days, max 10) into Airtable. Same pattern works for Lever, Ashby and SmartRecruiters by changing the Actor slug.\n\n1. Replace `YOUR_APIFY_TOKEN` on the Apify node.\n2. Replace `YOUR_AIRTABLE_TOKEN`, `YOUR_AIRTABLE_BASE_ID` and `YOUR_AIRTABLE_TABLE` on the Airtable node.\n3. Create Airtable fields: Title, Company, Location, Department, URL, Posted, Source.\n4. Edit `companies` / `since` and click Test workflow.\n\nStore: https://apify.com/publicrecords/greenhouse-jobs-scraper\nAlso: lever-jobs-scraper, ashby-jobs-scraper, smartrecruiters-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/greenhouse-jobs-scraper",
+        "height": 360,
+        "width": 520
+      },
+      "id": "0e9702c9-0888-4110-8ece-661368045b83",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -360
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f1732715-ba1c-4d6d-b132-cb03faae47d9",
+      "name": "When clicking \u2018Test workflow\u2019",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~greenhouse-jobs-scraper/run-sync-get-dataset-items",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_APIFY_TOKEN"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"companies\": [\n    \"gitlab\",\n    \"cloudflare\"\n  ],\n  \"since\": \"7d\",\n  \"maxResults\": 10,\n  \"includeDescription\": false\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "a453e590-190e-4434-bf58-3d6ae7c2f987",
+      "name": "Run Greenhouse Jobs Scraper on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        0
+      ],
+      "notes": "Replace YOUR_APIFY_TOKEN with your Apify API token. To use Lever, Ashby or SmartRecruiters instead, change the Actor slug in the URL (publicrecords~lever-jobs-scraper, publicrecords~ashby-jobs-scraper, or publicrecords~smartrecruiters-jobs-scraper) and the company tokens. Runs bill to your own Apify account. maxResults is 10 so the Airtable request stays within one batch of 10 records."
+    },
+    {
+      "parameters": {
+        "jsCode": "// Map Apify job rows to an Airtable records payload (max 10).\n// Common field names are tried in order; empty strings if a field is missing.\nconst pick = (obj, keys) => {\n  for (const k of keys) {\n    const v = obj[k];\n    if (v !== undefined && v !== null && v !== '') return v;\n  }\n  return '';\n};\nconst records = items.slice(0, 10).map((item) => {\n  const j = item.json || {};\n  return {\n    fields: {\n      Title: pick(j, ['title', 'jobTitle', 'name']),\n      Company: pick(j, ['company', 'companyName', 'companySlug']),\n      Location: pick(j, ['location', 'locations', 'workplace']),\n      Department: pick(j, ['department', 'team', 'departments']),\n      URL: pick(j, ['url', 'jobUrl', 'absoluteUrl', 'applyUrl']),\n      Posted: pick(j, ['publishedAt', 'postedAt', 'absoluteDate', 'firstPublishedAt', 'updatedAt']),\n      Source: 'greenhouse',\n    },\n  };\n});\nreturn [{ json: { records } }];\n"
+      },
+      "id": "693f3043-0119-47e6-bcd6-faa3ed6494ea",
+      "name": "Map jobs to Airtable records",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        520,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.airtable.com/v0/YOUR_AIRTABLE_BASE_ID/YOUR_AIRTABLE_TABLE",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_AIRTABLE_TOKEN"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "b65fb65b-e79d-4323-aa96-1c2171097b9b",
+      "name": "Create rows in Airtable",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        780,
+        0
+      ],
+      "notes": "Replace YOUR_AIRTABLE_TOKEN, YOUR_AIRTABLE_BASE_ID and YOUR_AIRTABLE_TABLE. Create matching fields in the table: Title, Company, Location, Department, URL, Posted, Source. Airtable allows up to 10 records per request."
+    }
+  ],
+  "connections": {
+    "When clicking \u2018Test workflow\u2019": {
+      "main": [
+        [
+          {
+            "node": "Run Greenhouse Jobs Scraper on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run Greenhouse Jobs Scraper on Apify": {
+      "main": [
+        [
+          {
+            "node": "Map jobs to Airtable records",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Map jobs to Airtable records": {
+      "main": [
+        [
+          {
+            "node": "Create rows in Airtable",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}
