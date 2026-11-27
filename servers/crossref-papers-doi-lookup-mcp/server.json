@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.GeminiGeorge22/crossref-papers-doi-lookup-mcp",
+  "title": "Academic Paper Search MCP: Crossref Citations & DOI Lookup",
+  "description": "Search Crossref scholarly works or look up DOIs: authors, journal, citations.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/publicrecords/crossref-papers-doi-lookup",
+  "repository": {
+    "url": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+    "source": "github",
+    "subfolder": "servers/crossref-papers-doi-lookup-mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/crossref-papers-doi-lookup",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional if you use Apify OAuth. Otherwise: Bearer <APIFY_TOKEN> (your own Apify API token).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

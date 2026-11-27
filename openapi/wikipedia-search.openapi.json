@@ -1,0 +1,159 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Wikipedia Search, ECB Exchange Rates & Treasury Yields",
+    "description": "Search Wikipedia, or fetch ECB euro FX rates and U.S. Treasury yields.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/wikipedia-search\nMCP: https://mcp.apify.com?tools=publicrecords/wikipedia-search\nAuthor: Public Records.",
+    "version": "0.1.0",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/wikipedia-search",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~wikipedia-search/runs": {
+      "post": {
+        "operationId": "start_wikipedia_search_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/wikipedia-search",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/wikipedia-search",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Wikipedia, exchange rates and Treasury input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"mode\": {\n      \"title\": \"Mode\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"wiki\",\n        \"fx\",\n        \"treasury\"\n      ],\n      \"editor\": \"select\",\n      \"description\": \"Wikipedia search, ECB euro exchange rates, or U.S. Treasury par yields.\",\n      \"default\": \"wiki\",\n      \"prefill\": \"wiki\"\n    },\n    \"q\": {\n      \"title\": \"Wikipedia search\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Article search (mode=wiki).\",\n      \"prefill\": \"European Central Bank\"\n    },\n    \"lang\": {\n      \"title\": \"Language\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Wikipedia language edition, default en.\",\n      \"default\": \"en\"\n    },\n    \"limit\": {\n      \"title\": \"Limit\",\n      \"type\": \"integer\",\n      \"editor\": \"number\",\n      \"description\": \"Wikipedia result cap, 1-10.\",\n      \"default\": 2,\n      \"prefill\": 2,\n      \"minimum\": 1,\n      \"maximum\": 10\n    },\n    \"full\": {\n      \"title\": \"Full article\",\n      \"type\": \"boolean\",\n      \"editor\": \"checkbox\",\n      \"description\": \"Return full article text instead of the intro.\",\n      \"default\": false\n    },\n    \"date\": {\n      \"title\": \"Date\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"YYYY-MM-DD for a historical FX or Treasury snapshot.\"\n    },\n    \"base\": {\n      \"title\": \"FX base\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"ISO currency, default EUR.\",\n      \"default\": \"EUR\"\n    },\n    \"symbols\": {\n      \"title\": \"FX symbols\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Optional comma-separated currency codes, for example USD,GBP,JPY.\"\n    },\n    \"amount\": {\n      \"title\": \"Amount\",\n      \"type\": \"number\",\n      \"editor\": \"number\",\n      \"description\": \"Optional amount to convert from the base currency.\"\n    }\n  },\n  \"required\": [\n    \"mode\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started"
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~wikipedia-search/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_wikipedia_search_sync_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/wikipedia-search and return dataset items",
+        "description": "Starts the Actor, waits for it to finish, and returns dataset items. Docs: https://apify.com/publicrecords/wikipedia-search",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Wikipedia, exchange rates and Treasury input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"mode\": {\n      \"title\": \"Mode\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"wiki\",\n        \"fx\",\n        \"treasury\"\n      ],\n      \"editor\": \"select\",\n      \"description\": \"Wikipedia search, ECB euro exchange rates, or U.S. Treasury par yields.\",\n      \"default\": \"wiki\",\n      \"prefill\": \"wiki\"\n    },\n    \"q\": {\n      \"title\": \"Wikipedia search\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Article search (mode=wiki).\",\n      \"prefill\": \"European Central Bank\"\n    },\n    \"lang\": {\n      \"title\": \"Language\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Wikipedia language edition, default en.\",\n      \"default\": \"en\"\n    },\n    \"limit\": {\n      \"title\": \"Limit\",\n      \"type\": \"integer\",\n      \"editor\": \"number\",\n      \"description\": \"Wikipedia result cap, 1-10.\",\n      \"default\": 2,\n      \"prefill\": 2,\n      \"minimum\": 1,\n      \"maximum\": 10\n    },\n    \"full\": {\n      \"title\": \"Full article\",\n      \"type\": \"boolean\",\n      \"editor\": \"checkbox\",\n      \"description\": \"Return full article text instead of the intro.\",\n      \"default\": false\n    },\n    \"date\": {\n      \"title\": \"Date\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"YYYY-MM-DD for a historical FX or Treasury snapshot.\"\n    },\n    \"base\": {\n      \"title\": \"FX base\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"ISO currency, default EUR.\",\n      \"default\": \"EUR\"\n    },\n    \"symbols\": {\n      \"title\": \"FX symbols\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Optional comma-separated currency codes, for example USD,GBP,JPY.\"\n    },\n    \"amount\": {\n      \"title\": \"Amount\",\n      \"type\": \"number\",\n      \"editor\": \"number\",\n      \"description\": \"Optional amount to convert from the base currency.\"\n    }\n  },\n  \"required\": [\n    \"mode\"\n  ]\n}",
+              "example": {
+                "mode": "wiki",
+                "q": "European Central Bank",
+                "limit": 2
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/wikipedia-search"
+  }
+}

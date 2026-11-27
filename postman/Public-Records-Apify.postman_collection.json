@@ -1,7 +1,7 @@
 {
   "info": {
     "name": "Public Records APIs (Apify)",
-    "description": "Importable Postman Collection v2.1 for 18 Public Records Actors (Skool omitted). Each request bills through the caller's own Apify account. Set the collection variable APIFY_TOKEN locally \u2014 this file ships with it empty and contains no secrets.\n\nImport: Postman \u2192 Import \u2192 this file. OpenAPI specs: https://huggingface.co/datasets/Publicrecords/apify-actor-openapi\n\nAuthor: Public Records.\n\n`tennis-scores-api` is included as an Apify Actor only (Standby/MCP is not built); requests call the Apify REST API, not an MCP endpoint.",
+    "description": "Importable Postman Collection v2.1 for 18 Public Records Actors (Skool omitted). Each request bills through the caller's own Apify account. Set the collection variable APIFY_TOKEN locally — this file ships with it empty and contains no secrets.\n\nImport: Postman → Import → this file. OpenAPI specs: https://huggingface.co/datasets/Publicrecords/apify-actor-openapi\n\nAuthor: Public Records.\n\n`tennis-scores-api` is included as an Apify Actor only (Standby/MCP is not built); requests call the Apify REST API, not an MCP endpoint.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
@@ -14,7 +14,7 @@
   ],
   "item": [
     {
-      "name": "Ashby Jobs Scraper \u2014 New Job Postings Since Any Date",
+      "name": "Ashby Jobs Scraper — New Job Postings Since Any Date",
       "description": "Scrape Ashby jobs and job postings from any Ashby job board, only those published since a date or window (24h, 7d, 30d). Title, location, department, compensation, URL, description. Pay per result.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/ashby-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/ashby-jobs-scraper\nAuthor: Public Records.",
       "item": [
         {
@@ -106,8 +106,8 @@
       ]
     },
     {
-      "name": "Calibration Ledger \u2014 trust a forecast, with evidence (beta)",
-      "description": "Given a claim from an organization (IMF, OECD, Fed/FOMC, SPF, ECB SPF, or a listed issuer), returns that organization's track record: error distribution, intervals, bias, band coverage, worst misses with source links \u2014 or honest 'no coverage' (free). Organizations only, never people.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/calibration-ledger\nMCP: https://mcp.apify.com?tools=publicrecords/calibration-ledger\nAuthor: Public Records.",
+      "name": "Calibration Ledger — trust a forecast, with evidence (beta)",
+      "description": "Given a claim from an organization (IMF, OECD, Fed/FOMC, SPF, ECB SPF, or a listed issuer), returns that organization's track record: error distribution, intervals, bias, band coverage, worst misses with source links — or honest 'no coverage' (free). Organizations only, never people.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/calibration-ledger\nMCP: https://mcp.apify.com?tools=publicrecords/calibration-ledger\nAuthor: Public Records.",
       "item": [
         {
           "name": "Start a run of publicrecords/calibration-ledger",
@@ -290,7 +290,7 @@
       ]
     },
     {
-      "name": "Etsy Scraper \u2014 Listings, Prices, Best Sellers & Ad Flags",
+      "name": "Etsy Scraper — Listings, Prices, Best Sellers & Ad Flags",
       "description": "Etsy scraper for product research: search results by keyword, market page or category URL with price, rating, reviews, Bestseller and Star Seller badges, ad flag, shop and Etsy's rank position. One row per listing. Pay per listing row. Works with Claude.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/etsy-search-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/etsy-search-scraper\nAuthor: Public Records.",
       "item": [
         {
@@ -842,7 +842,7 @@
       ]
     },
     {
-      "name": "Greenhouse Jobs Scraper \u2014 New Job Postings Since Any Date",
+      "name": "Greenhouse Jobs Scraper — New Job Postings Since Any Date",
       "description": "Scrape Greenhouse jobs and job postings from any Greenhouse job board, only those published since a date or window (24h, 7d, 30d). Title, location, department, URL, description. Pay per result.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/greenhouse-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/greenhouse-jobs-scraper\nAuthor: Public Records.",
       "item": [
         {
@@ -1026,7 +1026,7 @@
       ]
     },
     {
-      "name": "Lever Jobs Scraper \u2014 New Job Postings Since Any Date",
+      "name": "Lever Jobs Scraper — New Job Postings Since Any Date",
       "description": "Scrape Lever jobs and job postings from any Lever job board, only those created since a date or window (24h, 7d, 30d). Title, location, team, workplace type, URL, description. Pay per result.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/lever-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/lever-jobs-scraper\nAuthor: Public Records.",
       "item": [
         {
@@ -1118,7 +1118,7 @@
       ]
     },
     {
-      "name": "SmartRecruiters Jobs Scraper \u2014 New Postings Since Any Date",
+      "name": "SmartRecruiters Jobs Scraper — New Postings Since Any Date",
       "description": "Scrape open jobs from any SmartRecruiters careers site and return only postings released since a date or window (24h, 7d, 30d). Title, location, department, URL, description. Pay per result.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/smartrecruiters-jobs-scraper\nMCP: https://mcp.apify.com?tools=publicrecords/smartrecruiters-jobs-scraper\nAuthor: Public Records.",
       "item": [
         {
@@ -2119,6 +2119,461 @@
             "body": {
               "mode": "raw",
               "raw": "{\n  \"emails\": [\n    \"support@apify.com\",\n    \"jane.doe@gmial.com\",\n    \"info@mailinator.com\",\n    \"sales@stripe.com\",\n    \"someone@no-such-domain-4k7q.com\"\n  ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tech Stack Detector: Website Technology Lookup",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/tech-stack-detector",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~tech-stack-detector/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~tech-stack-detector",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"urls\": [\n    \"https://www.allbirds.com\",\n    \"https://techcrunch.com\",\n    \"https://vercel.com\"\n  ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/tech-stack-detector and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~tech-stack-detector/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~tech-stack-detector",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"urls\": [\n    \"https://www.allbirds.com\",\n    \"https://techcrunch.com\",\n    \"https://vercel.com\"\n  ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Phone Number Validator: E.164 Format, Country & Line Type",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/phone-number-validator",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~phone-number-validator/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~phone-number-validator",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"mode\": \"phone_validate\",\n  \"phones\": [\n    \"+1 650-253-0000\",\n    \"+44 20 7946 0958\",\n    \"+61 2 5550 1234\",\n    \"not-a-number\"\n  ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/phone-number-validator and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~phone-number-validator/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~phone-number-validator",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"mode\": \"phone_validate\",\n  \"phones\": [\n    \"+1 650-253-0000\",\n    \"+44 20 7946 0958\",\n    \"+61 2 5550 1234\",\n    \"not-a-number\"\n  ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Wikipedia Search, ECB Exchange Rates & Treasury Yields",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/wikipedia-search",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~wikipedia-search/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~wikipedia-search",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"mode\": \"wiki\",\n  \"q\": \"European Central Bank\",\n  \"limit\": 2\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/wikipedia-search and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~wikipedia-search/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~wikipedia-search",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"mode\": \"wiki\",\n  \"q\": \"European Central Bank\",\n  \"limit\": 2\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Academic Paper Search & DOI Lookup: Crossref Citations",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/crossref-papers-doi-lookup",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~crossref-papers-doi-lookup/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~crossref-papers-doi-lookup",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"queries\": [\n    \"large language models\"\n  ],\n  \"dois\": [\n    \"10.1038/nature14539\"\n  ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/crossref-papers-doi-lookup and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~crossref-papers-doi-lookup/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~crossref-papers-doi-lookup",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"queries\": [\n    \"large language models\"\n  ],\n  \"dois\": [\n    \"10.1038/nature14539\"\n  ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "DNS Lookup: Bulk DNS Records, MX, SPF and DMARC Checker",
+      "item": [
+        {
+          "name": "Start a run of publicrecords/dns-lookup",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~dns-lookup/runs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~dns-lookup",
+                "runs"
+              ]
+            },
+            "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"domains\": [\n    \"apify.com\",\n    \"github.com\",\n    \"wikipedia.org\"\n  ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Run publicrecords/dns-lookup and return dataset items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{APIFY_TOKEN}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.apify.com/v2/acts/publicrecords~dns-lookup/run-sync-get-dataset-items",
+              "protocol": "https",
+              "host": [
+                "api",
+                "apify",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "acts",
+                "publicrecords~dns-lookup",
+                "run-sync-get-dataset-items"
+              ]
+            },
+            "description": "Synchronous convenience endpoint. Waits for the run to finish and returns dataset items.\n\nRuns on the importer's own Apify account (pay-per-use). Set APIFY_TOKEN locally; this collection ships with it empty.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"domains\": [\n    \"apify.com\",\n    \"github.com\",\n    \"wikipedia.org\"\n  ]\n}\n",
               "options": {
                 "raw": {
                   "language": "json"

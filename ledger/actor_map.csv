@@ -23,3 +23,8 @@ audio-file-transcriber,audio-file-transcriber-mcp,,audio-to-text,https://apify.c
 url-to-markdown,url-to-markdown-mcp,,web-page-to-markdown,https://apify.com/publicrecords/url-to-markdown,io.github.GeminiGeorge22/url-to-markdown-mcp
 js-page-to-markdown,js-page-to-markdown-mcp,,js-page-to-markdown,https://apify.com/publicrecords/js-page-to-markdown,io.github.GeminiGeorge22/js-page-to-markdown-mcp
 email-verifier,email-verifier-mcp,,email-verifier,https://apify.com/publicrecords/email-verifier,io.github.GeminiGeorge22/email-verifier-mcp
+tech-stack-detector,tech-stack-detector-mcp,,website-tech-stack,https://apify.com/publicrecords/tech-stack-detector,io.github.GeminiGeorge22/tech-stack-detector-mcp
+phone-number-validator,phone-number-validator-mcp,,phone-number-validator,https://apify.com/publicrecords/phone-number-validator,io.github.GeminiGeorge22/phone-number-validator-mcp
+wikipedia-search,wikipedia-search-mcp,,wikipedia-search,https://apify.com/publicrecords/wikipedia-search,io.github.GeminiGeorge22/wikipedia-search-mcp
+crossref-papers-doi-lookup,crossref-papers-doi-lookup-mcp,,academic-papers-doi,https://apify.com/publicrecords/crossref-papers-doi-lookup,io.github.GeminiGeorge22/crossref-papers-doi-lookup-mcp
+dns-lookup,dns-lookup-mcp,,dns-lookup,https://apify.com/publicrecords/dns-lookup,io.github.GeminiGeorge22/dns-lookup-mcp

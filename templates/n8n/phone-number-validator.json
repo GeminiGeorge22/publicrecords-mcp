@@ -1,0 +1,83 @@
+{
+  "name": "Phone Number Validator: E.164 Format, Country & Line Type → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "c1dd6040-70b7-4533-bd22-4bf493dbc828",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~phone-number-validator/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"mode\": \"phone_validate\",\n  \"phones\": [\n    \"+1 650-253-0000\",\n    \"+44 20 7946 0958\",\n    \"+61 2 5550 1234\",\n    \"not-a-number\"\n  ]\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "84d11f59-3bef-4db7-90c7-d52ff649a1e7",
+      "name": "Run Phone Number Validator: E.164 Format, Country & Line Type on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## Phone Number Validator: E.164 Format, Country & Line Type\nValidate phone numbers: E.164, country and line type. Not a live carrier lookup.\n\nStore page: https://apify.com/publicrecords/phone-number-validator\nMCP: https://mcp.apify.com?tools=publicrecords/phone-number-validator\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 280,
+        "width": 420
+      },
+      "id": "f87d302e-678d-44e3-a89f-98972a123619",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -320
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run Phone Number Validator: E.164 Format, Country & Line Type on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "pinData": {}
+}

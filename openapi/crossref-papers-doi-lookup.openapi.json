@@ -1,0 +1,162 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Academic Paper Search & DOI Lookup: Crossref Citations",
+    "description": "Search Crossref scholarly works or look up DOIs: authors, journal, citations.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/crossref-papers-doi-lookup\nMCP: https://mcp.apify.com?tools=publicrecords/crossref-papers-doi-lookup\nAuthor: Public Records.",
+    "version": "0.1.0",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/crossref-papers-doi-lookup",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~crossref-papers-doi-lookup/runs": {
+      "post": {
+        "operationId": "start_crossref_papers_doi_lookup_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/crossref-papers-doi-lookup",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/crossref-papers-doi-lookup",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Crossref Paper Search and DOI Lookup input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"queries\": {\n      \"title\": \"Search queries\",\n      \"type\": \"array\",\n      \"description\": \"Words to search for in titles, authors, journals and other bibliographic fields, one search per line (for example `large language models` or `LeCun deep learning 2015`).\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"large language models\"\n      ],\n      \"default\": [\n        \"large language models\"\n      ]\n    },\n    \"dois\": {\n      \"title\": \"DOIs\",\n      \"type\": \"array\",\n      \"description\": \"DOIs to look up, one per line. `10.1038/nature14539`, `doi:10.1038/nature14539` and `https://doi.org/10.1038/nature14539` all work.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"10.1038/nature14539\"\n      ],\n      \"default\": [\n        \"10.1038/nature14539\"\n      ]\n    },\n    \"maxResultsPerQuery\": {\n      \"title\": \"Max results per search\",\n      \"type\": \"integer\",\n      \"description\": \"How many papers to return for each search query (1–1000). DOI lookups always return one row per DOI.\",\n      \"default\": 10,\n      \"minimum\": 1,\n      \"maximum\": 1000\n    },\n    \"sort\": {\n      \"title\": \"Sort search results by\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"relevance\",\n        \"published\",\n        \"is-referenced-by-count\"\n      ],\n      \"enumTitles\": [\n        \"Relevance\",\n        \"Newest first\",\n        \"Most cited first\"\n      ],\n      \"default\": \"relevance\",\n      \"description\": \"Order of search results. Relevance is Crossref's own match score; DOI lookups are not affected.\"\n    },\n    \"fromYear\": {\n      \"title\": \"Published from year\",\n      \"type\": \"integer\",\n      \"description\": \"Only works published in or after this year (searches only).\",\n      \"minimum\": 1600,\n      \"maximum\": 2100\n    },\n    \"toYear\": {\n      \"title\": \"Published until year\",\n      \"type\": \"integer\",\n      \"description\": \"Only works published in or before this year (searches only).\",\n      \"minimum\": 1600,\n      \"maximum\": 2100\n    },\n    \"type\": {\n      \"title\": \"Work type\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"description\": \"Limit searches to one Crossref work type.\",\n      \"enum\": [\n        \"any\",\n        \"journal-article\",\n        \"proceedings-article\",\n        \"posted-content\",\n        \"book\",\n        \"book-chapter\",\n        \"dissertation\",\n        \"report\",\n        \"dataset\"\n      ],\n      \"enumTitles\": [\n        \"Any\",\n        \"Journal article\",\n        \"Conference paper\",\n        \"Preprint\",\n        \"Book\",\n        \"Book chapter\",\n        \"Dissertation\",\n        \"Report\",\n        \"Dataset\"\n      ],\n      \"default\": \"any\"\n    }\n  }\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started"
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~crossref-papers-doi-lookup/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_crossref_papers_doi_lookup_sync_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/crossref-papers-doi-lookup and return dataset items",
+        "description": "Starts the Actor, waits for it to finish, and returns dataset items. Docs: https://apify.com/publicrecords/crossref-papers-doi-lookup",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Crossref Paper Search and DOI Lookup input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"queries\": {\n      \"title\": \"Search queries\",\n      \"type\": \"array\",\n      \"description\": \"Words to search for in titles, authors, journals and other bibliographic fields, one search per line (for example `large language models` or `LeCun deep learning 2015`).\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"large language models\"\n      ],\n      \"default\": [\n        \"large language models\"\n      ]\n    },\n    \"dois\": {\n      \"title\": \"DOIs\",\n      \"type\": \"array\",\n      \"description\": \"DOIs to look up, one per line. `10.1038/nature14539`, `doi:10.1038/nature14539` and `https://doi.org/10.1038/nature14539` all work.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"10.1038/nature14539\"\n      ],\n      \"default\": [\n        \"10.1038/nature14539\"\n      ]\n    },\n    \"maxResultsPerQuery\": {\n      \"title\": \"Max results per search\",\n      \"type\": \"integer\",\n      \"description\": \"How many papers to return for each search query (1–1000). DOI lookups always return one row per DOI.\",\n      \"default\": 10,\n      \"minimum\": 1,\n      \"maximum\": 1000\n    },\n    \"sort\": {\n      \"title\": \"Sort search results by\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"relevance\",\n        \"published\",\n        \"is-referenced-by-count\"\n      ],\n      \"enumTitles\": [\n        \"Relevance\",\n        \"Newest first\",\n        \"Most cited first\"\n      ],\n      \"default\": \"relevance\",\n      \"description\": \"Order of search results. Relevance is Crossref's own match score; DOI lookups are not affected.\"\n    },\n    \"fromYear\": {\n      \"title\": \"Published from year\",\n      \"type\": \"integer\",\n      \"description\": \"Only works published in or after this year (searches only).\",\n      \"minimum\": 1600,\n      \"maximum\": 2100\n    },\n    \"toYear\": {\n      \"title\": \"Published until year\",\n      \"type\": \"integer\",\n      \"description\": \"Only works published in or before this year (searches only).\",\n      \"minimum\": 1600,\n      \"maximum\": 2100\n    },\n    \"type\": {\n      \"title\": \"Work type\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"description\": \"Limit searches to one Crossref work type.\",\n      \"enum\": [\n        \"any\",\n        \"journal-article\",\n        \"proceedings-article\",\n        \"posted-content\",\n        \"book\",\n        \"book-chapter\",\n        \"dissertation\",\n        \"report\",\n        \"dataset\"\n      ],\n      \"enumTitles\": [\n        \"Any\",\n        \"Journal article\",\n        \"Conference paper\",\n        \"Preprint\",\n        \"Book\",\n        \"Book chapter\",\n        \"Dissertation\",\n        \"Report\",\n        \"Dataset\"\n      ],\n      \"default\": \"any\"\n    }\n  }\n}",
+              "example": {
+                "queries": [
+                  "large language models"
+                ],
+                "dois": [
+                  "10.1038/nature14539"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/crossref-papers-doi-lookup"
+  }
+}

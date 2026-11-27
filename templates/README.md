@@ -30,6 +30,11 @@ The Creator-ready workflow is [`n8n/grants-gov-weekday-digest.json`](n8n/grants-
 | Web Page to Markdown | [n8n/url-to-markdown.json](n8n/url-to-markdown.json) | [apify.com/publicrecords/url-to-markdown](https://apify.com/publicrecords/url-to-markdown) |
 | JavaScript Page to Markdown | [n8n/js-page-to-markdown.json](n8n/js-page-to-markdown.json) | [apify.com/publicrecords/js-page-to-markdown](https://apify.com/publicrecords/js-page-to-markdown) |
 | Email Verifier (domain, MX, disposable — not the mailbox) | [n8n/email-verifier.json](n8n/email-verifier.json) | [apify.com/publicrecords/email-verifier](https://apify.com/publicrecords/email-verifier) |
+| DNS Lookup: Bulk DNS Records, MX, SPF and DMARC Checker | [n8n/dns-lookup.json](n8n/dns-lookup.json) | [apify.com/publicrecords/dns-lookup](https://apify.com/publicrecords/dns-lookup) |
+| Academic Paper Search & DOI Lookup: Crossref Citations | [n8n/crossref-papers-doi-lookup.json](n8n/crossref-papers-doi-lookup.json) | [apify.com/publicrecords/crossref-papers-doi-lookup](https://apify.com/publicrecords/crossref-papers-doi-lookup) |
+| Wikipedia Search, ECB Exchange Rates & Treasury Yields | [n8n/wikipedia-search.json](n8n/wikipedia-search.json) | [apify.com/publicrecords/wikipedia-search](https://apify.com/publicrecords/wikipedia-search) |
+| Phone Number Validator: E.164 Format, Country & Line Type | [n8n/phone-number-validator.json](n8n/phone-number-validator.json) | [apify.com/publicrecords/phone-number-validator](https://apify.com/publicrecords/phone-number-validator) |
+| Tech Stack Detector: Website Technology Lookup | [n8n/tech-stack-detector.json](n8n/tech-stack-detector.json) | [apify.com/publicrecords/tech-stack-detector](https://apify.com/publicrecords/tech-stack-detector) |
 | Spotify Play Count Scraper | [n8n/spotify-play-count-scraper.json](n8n/spotify-play-count-scraper.json) | [apify.com/publicrecords/spotify-play-count-scraper](https://apify.com/publicrecords/spotify-play-count-scraper) |
 | UK Tenders Scraper | [n8n/uk-find-a-tender-scraper.json](n8n/uk-find-a-tender-scraper.json) | [apify.com/publicrecords/uk-find-a-tender-scraper](https://apify.com/publicrecords/uk-find-a-tender-scraper) |
 | USAspending Awards Scraper | [n8n/usaspending-awards-scraper.json](n8n/usaspending-awards-scraper.json) | [apify.com/publicrecords/usaspending-awards-scraper](https://apify.com/publicrecords/usaspending-awards-scraper) |
@@ -71,6 +76,11 @@ Use the platform's HTTP / Webhooks / API step (or the official Apify app, action
 | `url-to-markdown` | `{"urls": ["https://en.wikipedia.org/wiki/Web_scraping", "https://quotes.toscrape.com/"]}` |
 | `js-page-to-markdown` | `{"urls": ["https://quotes.toscrape.com/js/", "https://react.dev/"], "waitForSelector": "", "scrollToBottom": false, "screenshot": false}` |
 | `email-verifier` | `{"emails": ["support@apify.com", "jane.doe@gmial.com", "info@mailinator.com", "sales@stripe.com", "someone@no-such-domain-4k7q.com"]}` |
+| `dns-lookup` | `{"domains": ["apify.com", "github.com", "wikipedia.org"]}` |
+| `crossref-papers-doi-lookup` | `{"queries": ["large language models"], "dois": ["10.1038/nature14539"]}` |
+| `wikipedia-search` | `{"mode": "wiki", "q": "European Central Bank", "limit": 2}` |
+| `phone-number-validator` | `{"mode": "phone_validate", "phones": ["+1 650-253-0000", "+44 20 7946 0958", "+61 2 5550 1234", "not-a-number"]}` |
+| `tech-stack-detector` | `{"urls": ["https://www.allbirds.com", "https://techcrunch.com", "https://vercel.com"]}` |
 | `uk-find-a-tender-scraper` | `{"noticeType": ["tender"], "updatedFrom": "2026-09-28T00:00:00", "maxItems": 100}` |
 | `usaspending-awards-scraper` | `{"agency": "Department of Defense", "awardTypes": ["A", "B", "C", "D"], "maxItems": 50}` |
 
