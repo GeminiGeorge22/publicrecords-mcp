@@ -12,6 +12,12 @@
     "company-social-profile-finder": {
       "url": "https://mcp.apify.com?tools=publicrecords/company-social-profile-finder"
     },
+    "crossref-papers-doi-lookup": {
+      "url": "https://mcp.apify.com?tools=publicrecords/crossref-papers-doi-lookup"
+    },
+    "dns-lookup": {
+      "url": "https://mcp.apify.com?tools=publicrecords/dns-lookup"
+    },
     "email-verifier": {
       "url": "https://mcp.apify.com?tools=publicrecords/email-verifier"
     },
@@ -48,6 +54,9 @@
     "pdf-docx-to-markdown": {
       "url": "https://mcp.apify.com?tools=publicrecords/pdf-docx-to-markdown"
     },
+    "phone-number-validator": {
+      "url": "https://mcp.apify.com?tools=publicrecords/phone-number-validator"
+    },
     "skool-community-growth-tracker": {
       "url": "https://mcp.apify.com?tools=publicrecords/skool-community-growth-tracker"
     },
@@ -60,6 +69,9 @@
     "spotify-play-count-scraper": {
       "url": "https://mcp.apify.com?tools=publicrecords/spotify-play-count-scraper"
     },
+    "tech-stack-detector": {
+      "url": "https://mcp.apify.com?tools=publicrecords/tech-stack-detector"
+    },
     "uk-find-a-tender-scraper": {
       "url": "https://mcp.apify.com?tools=publicrecords/uk-find-a-tender-scraper"
     },
@@ -68,6 +80,9 @@
     },
     "usaspending-awards-scraper": {
       "url": "https://mcp.apify.com?tools=publicrecords/usaspending-awards-scraper"
+    },
+    "wikipedia-search": {
+      "url": "https://mcp.apify.com?tools=publicrecords/wikipedia-search"
     }
   }
 }

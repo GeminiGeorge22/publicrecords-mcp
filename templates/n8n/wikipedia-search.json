@@ -1,0 +1,83 @@
+{
+  "name": "Wikipedia Search, ECB Exchange Rates & Treasury Yields → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "fcc74f31-3f59-4f11-a791-e3f0a5affb77",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~wikipedia-search/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"mode\": \"wiki\",\n  \"q\": \"European Central Bank\",\n  \"limit\": 2\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "da543f51-80be-4991-9cf7-40bb8a12a820",
+      "name": "Run Wikipedia Search, ECB Exchange Rates & Treasury Yields on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## Wikipedia Search, ECB Exchange Rates & Treasury Yields\nSearch Wikipedia, or fetch ECB euro FX rates and U.S. Treasury yields.\n\nStore page: https://apify.com/publicrecords/wikipedia-search\nMCP: https://mcp.apify.com?tools=publicrecords/wikipedia-search\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 280,
+        "width": 420
+      },
+      "id": "046781c1-b2d9-4d5b-96df-4dd8d88648d1",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -320
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run Wikipedia Search, ECB Exchange Rates & Treasury Yields on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "pinData": {}
+}

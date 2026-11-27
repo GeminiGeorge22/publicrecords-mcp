@@ -1,0 +1,83 @@
+{
+  "name": "Tech Stack Detector: Website Technology Lookup → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "22f684c6-38a8-4cab-ad4d-e8b84880b4d1",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~tech-stack-detector/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"urls\": [\n    \"https://www.allbirds.com\",\n    \"https://techcrunch.com\",\n    \"https://vercel.com\"\n  ]\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "f31ab68e-8bb3-431e-931c-57a5e0e9582e",
+      "name": "Run Tech Stack Detector: Website Technology Lookup on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## Tech Stack Detector: Website Technology Lookup\nFind what any website is built with: CMS, frameworks, analytics, CDN, hosting and more.\n\nStore page: https://apify.com/publicrecords/tech-stack-detector\nMCP: https://mcp.apify.com?tools=publicrecords/tech-stack-detector\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 280,
+        "width": 420
+      },
+      "id": "7fc710f4-dbaa-4f49-a7ba-f35ee5435c6f",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -320
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run Tech Stack Detector: Website Technology Lookup on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "pinData": {}
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.GeminiGeorge22/phone-number-validator-mcp",
+  "title": "Phone Number Validator MCP: E.164, Country & Line Type",
+  "description": "Validate phone numbers: E.164, country and line type. Not a live carrier lookup.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/publicrecords/phone-number-validator",
+  "repository": {
+    "url": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+    "source": "github",
+    "subfolder": "servers/phone-number-validator-mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/phone-number-validator",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional if you use Apify OAuth. Otherwise: Bearer <APIFY_TOKEN> (your own Apify API token).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

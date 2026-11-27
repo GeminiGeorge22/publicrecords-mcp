@@ -1,0 +1,161 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Tech Stack Detector: Website Technology Lookup",
+    "description": "Find what any website is built with: CMS, frameworks, analytics, CDN, hosting and more.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/tech-stack-detector\nMCP: https://mcp.apify.com?tools=publicrecords/tech-stack-detector\nAuthor: Public Records.",
+    "version": "0.1.0",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/tech-stack-detector",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~tech-stack-detector/runs": {
+      "post": {
+        "operationId": "start_tech_stack_detector_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/tech-stack-detector",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/tech-stack-detector",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Tech Stack Detector input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"urls\": {\n      \"title\": \"Websites\",\n      \"type\": \"array\",\n      \"description\": \"Website URLs or bare domains, one per line (for example `shopify.com` or `https://www.example.com/pricing`). Each site is checked once; duplicates are skipped.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"https://www.allbirds.com\",\n        \"https://techcrunch.com\",\n        \"https://vercel.com\"\n      ],\n      \"default\": [\n        \"https://www.allbirds.com\",\n        \"https://techcrunch.com\",\n        \"https://vercel.com\"\n      ]\n    },\n    \"checkDns\": {\n      \"title\": \"Check email and DNS records\",\n      \"type\": \"boolean\",\n      \"description\": \"Also read the domain's MX and TXT records to find the email provider (Google Workspace, Microsoft 365) and email and SaaS tools (SendGrid, Mailchimp, HubSpot, Zendesk and more). Free; adds under a second per site.\",\n      \"default\": true\n    },\n    \"timeoutSecs\": {\n      \"title\": \"Timeout per site (seconds)\",\n      \"type\": \"integer\",\n      \"description\": \"How long to wait for each site before skipping it. Skipped sites are not charged.\",\n      \"default\": 20,\n      \"minimum\": 5,\n      \"maximum\": 60,\n      \"unit\": \"seconds\"\n    }\n  },\n  \"required\": [\n    \"urls\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started"
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~tech-stack-detector/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_tech_stack_detector_sync_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/tech-stack-detector and return dataset items",
+        "description": "Starts the Actor, waits for it to finish, and returns dataset items. Docs: https://apify.com/publicrecords/tech-stack-detector",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Tech Stack Detector input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"urls\": {\n      \"title\": \"Websites\",\n      \"type\": \"array\",\n      \"description\": \"Website URLs or bare domains, one per line (for example `shopify.com` or `https://www.example.com/pricing`). Each site is checked once; duplicates are skipped.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"https://www.allbirds.com\",\n        \"https://techcrunch.com\",\n        \"https://vercel.com\"\n      ],\n      \"default\": [\n        \"https://www.allbirds.com\",\n        \"https://techcrunch.com\",\n        \"https://vercel.com\"\n      ]\n    },\n    \"checkDns\": {\n      \"title\": \"Check email and DNS records\",\n      \"type\": \"boolean\",\n      \"description\": \"Also read the domain's MX and TXT records to find the email provider (Google Workspace, Microsoft 365) and email and SaaS tools (SendGrid, Mailchimp, HubSpot, Zendesk and more). Free; adds under a second per site.\",\n      \"default\": true\n    },\n    \"timeoutSecs\": {\n      \"title\": \"Timeout per site (seconds)\",\n      \"type\": \"integer\",\n      \"description\": \"How long to wait for each site before skipping it. Skipped sites are not charged.\",\n      \"default\": 20,\n      \"minimum\": 5,\n      \"maximum\": 60,\n      \"unit\": \"seconds\"\n    }\n  },\n  \"required\": [\n    \"urls\"\n  ]\n}",
+              "example": {
+                "urls": [
+                  "https://www.allbirds.com",
+                  "https://techcrunch.com",
+                  "https://vercel.com"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/tech-stack-detector"
+  }
+}

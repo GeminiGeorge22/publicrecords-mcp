@@ -17,6 +17,11 @@ Also see the n8n workflows in [`../n8n`](../n8n) and the HTTP table in [`../READ
 | [url-to-markdown.json](url-to-markdown.json) | Web Page to Markdown | [Store](https://apify.com/publicrecords/url-to-markdown) |
 | [js-page-to-markdown.json](js-page-to-markdown.json) | JavaScript Page to Markdown | [Store](https://apify.com/publicrecords/js-page-to-markdown) |
 | [email-verifier.json](email-verifier.json) | Email Verifier (domain, MX, disposable — not the mailbox) | [Store](https://apify.com/publicrecords/email-verifier) |
+| [dns-lookup.json](dns-lookup.json) | DNS Lookup: Bulk DNS Records, MX, SPF and DMARC Checker | [Store](https://apify.com/publicrecords/dns-lookup) |
+| [crossref-papers-doi-lookup.json](crossref-papers-doi-lookup.json) | Academic Paper Search & DOI Lookup: Crossref Citations | [Store](https://apify.com/publicrecords/crossref-papers-doi-lookup) |
+| [wikipedia-search.json](wikipedia-search.json) | Wikipedia Search, ECB Exchange Rates & Treasury Yields | [Store](https://apify.com/publicrecords/wikipedia-search) |
+| [phone-number-validator.json](phone-number-validator.json) | Phone Number Validator: E.164 Format, Country & Line Type | [Store](https://apify.com/publicrecords/phone-number-validator) |
+| [tech-stack-detector.json](tech-stack-detector.json) | Tech Stack Detector: Website Technology Lookup | [Store](https://apify.com/publicrecords/tech-stack-detector) |
 
 ## HTTP module (every recipe)
 

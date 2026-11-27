@@ -317,6 +317,71 @@
       "description": "Проверяет синтаксис, домен, MX-записи и одноразовые домены, а не сам почтовый ящик. Письма не отправляет. Pay per event on your own Apify account: $0.0005 Actor start (default 256 MB is one event); $0.0005 per email checked. Current rates are on the Store page. This is not a mailbox or SMTP check. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
       "price_line": "Pay per event on your own Apify account: $0.0005 Actor start (default 256 MB is one event); $0.0005 per email checked. Current rates are on the Store page. This is not a mailbox or SMTP check.",
       "price_tiered": false
+    },
+    {
+      "actor": "tech-stack-detector",
+      "store_url": "https://apify.com/publicrecords/tech-stack-detector",
+      "registry_name": "io.github.GeminiGeorge22/tech-stack-detector-mcp",
+      "server": "tech-stack-detector-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/tech-stack-detector-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/tech-stack-detector",
+      "name": "MCP детектор стека: технологии сайта",
+      "one_line": "Показывает, на чём собран сайт: CMS, фреймворки, аналитика, CDN, хостинг и другое.",
+      "description": "Показывает, на чём собран сайт: CMS, фреймворки, аналитика, CDN, хостинг и другое. Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.0015 per site analyzed. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.0015 per site analyzed. Current rates are on the Store page.",
+      "price_tiered": true
+    },
+    {
+      "actor": "phone-number-validator",
+      "store_url": "https://apify.com/publicrecords/phone-number-validator",
+      "registry_name": "io.github.GeminiGeorge22/phone-number-validator-mcp",
+      "server": "phone-number-validator-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/phone-number-validator-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/phone-number-validator",
+      "name": "MCP проверка телефонов: E.164, страна и тип линии",
+      "one_line": "Проверяет номера: E.164, страна и тип линии. Это не живой запрос к оператору.",
+      "description": "Проверяет номера: E.164, страна и тип линии. Это не живой запрос к оператору. Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.001 per phone number validated or extracted. Invoice/receipt PDF, barcode SVG and payment URI modes are priced on the Store page. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.001 per phone number validated or extracted. Invoice/receipt PDF, barcode SVG and payment URI modes are priced on the Store page. Current rates are on the Store page.",
+      "price_tiered": true
+    },
+    {
+      "actor": "wikipedia-search",
+      "store_url": "https://apify.com/publicrecords/wikipedia-search",
+      "registry_name": "io.github.GeminiGeorge22/wikipedia-search-mcp",
+      "server": "wikipedia-search-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/wikipedia-search-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/wikipedia-search",
+      "name": "MCP поиск Википедии: статьи, курсы ЕЦБ и доходность казначейства",
+      "one_line": "Ищите в Википедии или получайте курсы евро ЕЦБ и доходность казначейских бумаг США.",
+      "description": "Ищите в Википедии или получайте курсы евро ЕЦБ и доходность казначейских бумаг США. Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.001 per Wikipedia, FX or Treasury row. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.001 per Wikipedia, FX or Treasury row. Current rates are on the Store page.",
+      "price_tiered": true
+    },
+    {
+      "actor": "crossref-papers-doi-lookup",
+      "store_url": "https://apify.com/publicrecords/crossref-papers-doi-lookup",
+      "registry_name": "io.github.GeminiGeorge22/crossref-papers-doi-lookup-mcp",
+      "server": "crossref-papers-doi-lookup-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/crossref-papers-doi-lookup-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/crossref-papers-doi-lookup",
+      "name": "MCP поиск статей: цитирования Crossref и DOI",
+      "one_line": "Ищите работы в Crossref или проверяйте DOI: авторы, журнал, цитирования.",
+      "description": "Ищите работы в Crossref или проверяйте DOI: авторы, журнал, цитирования. Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.0008 per paper returned. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.0008 per paper returned. Current rates are on the Store page.",
+      "price_tiered": true
+    },
+    {
+      "actor": "dns-lookup",
+      "store_url": "https://apify.com/publicrecords/dns-lookup",
+      "registry_name": "io.github.GeminiGeorge22/dns-lookup-mcp",
+      "server": "dns-lookup-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/dns-lookup-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/dns-lookup",
+      "name": "MCP DNS-запросы: массовые записи, MX, SPF и DMARC",
+      "one_line": "Массовый DNS: A, MX, NS, TXT, SPF, DMARC и почтовый провайдер в одной строке.",
+      "description": "Массовый DNS: A, MX, NS, TXT, SPF, DMARC и почтовый провайдер в одной строке. Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.0008 per domain looked up. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.0008 per domain looked up. Current rates are on the Store page.",
+      "price_tiered": true
     }
   ]
 }

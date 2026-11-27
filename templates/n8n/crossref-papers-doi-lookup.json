@@ -1,0 +1,83 @@
+{
+  "name": "Academic Paper Search & DOI Lookup: Crossref Citations → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "a9e77e42-8460-4d00-85cd-8ad4ea1c40f2",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~crossref-papers-doi-lookup/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"queries\": [\n    \"large language models\"\n  ],\n  \"dois\": [\n    \"10.1038/nature14539\"\n  ]\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "de37b3cc-d45a-4721-90b7-81b1a8146790",
+      "name": "Run Academic Paper Search & DOI Lookup: Crossref Citations on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## Academic Paper Search & DOI Lookup: Crossref Citations\nSearch Crossref scholarly works or look up DOIs: authors, journal, citations.\n\nStore page: https://apify.com/publicrecords/crossref-papers-doi-lookup\nMCP: https://mcp.apify.com?tools=publicrecords/crossref-papers-doi-lookup\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 280,
+        "width": 420
+      },
+      "id": "25f446e0-6a1f-4c46-91b0-44bf3526d15f",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -320
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run Academic Paper Search & DOI Lookup: Crossref Citations on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "pinData": {}
+}

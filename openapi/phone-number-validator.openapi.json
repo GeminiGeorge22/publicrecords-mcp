@@ -1,0 +1,163 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Phone Number Validator: E.164 Format, Country & Line Type",
+    "description": "Validate phone numbers: E.164, country and line type. Not a live carrier lookup.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/phone-number-validator\nMCP: https://mcp.apify.com?tools=publicrecords/phone-number-validator\nAuthor: Public Records.",
+    "version": "0.1.0",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/phone-number-validator",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~phone-number-validator/runs": {
+      "post": {
+        "operationId": "start_phone_number_validator_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/phone-number-validator",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/phone-number-validator",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Phone validator, invoice PDF and barcode input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"mode\": {\n      \"title\": \"Mode\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"phone_validate\",\n        \"phone_extract\",\n        \"invoice_pdf\",\n        \"receipt_pdf\",\n        \"barcode_svg\",\n        \"pay_uri\"\n      ],\n      \"editor\": \"select\",\n      \"description\": \"Phone validator (format and region), extract numbers from text, invoice or receipt PDF, barcode SVG, or a payment URI.\",\n      \"default\": \"phone_validate\",\n      \"prefill\": \"phone_validate\"\n    },\n    \"phone\": {\n      \"title\": \"Phone number\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"For phone_validate. International or national format.\"\n    },\n    \"phones\": {\n      \"title\": \"Phone numbers\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"description\": \"For phone_validate. One dataset row and $0.001 per number, up to 200. An invalid number still returns a row with valid: false and is charged.\",\n      \"maxItems\": 200,\n      \"prefill\": [\n        \"+1 650-253-0000\",\n        \"+44 20 7946 0958\",\n        \"+61 2 5550 1234\",\n        \"not-a-number\"\n      ]\n    },\n    \"text\": {\n      \"title\": \"Text\",\n      \"type\": \"string\",\n      \"editor\": \"textarea\",\n      \"description\": \"For phone_extract (find numbers in text) or barcode payload.\"\n    },\n    \"country\": {\n      \"title\": \"Default country\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"ISO country for national-format phone numbers, for example US.\",\n      \"prefill\": \"US\"\n    },\n    \"number\": {\n      \"title\": \"Document number\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Invoice or receipt number.\"\n    },\n    \"date\": {\n      \"title\": \"Date\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Invoice or receipt date, YYYY-MM-DD.\"\n    },\n    \"due_date\": {\n      \"title\": \"Due date\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Payment due date, YYYY-MM-DD.\"\n    },\n    \"currency\": {\n      \"title\": \"Currency\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"ISO currency code, for example USD.\"\n    },\n    \"seller\": {\n      \"title\": \"Seller\",\n      \"type\": \"object\",\n      \"editor\": \"json\",\n      \"description\": \"Seller block, for example name, address, email, phone, tax_id.\"\n    },\n    \"buyer\": {\n      \"title\": \"Buyer\",\n      \"type\": \"object\",\n      \"editor\": \"json\",\n      \"description\": \"Buyer block, for example name, address, email, tax_id.\"\n    },\n    \"items\": {\n      \"title\": \"Line items\",\n      \"type\": \"array\",\n      \"editor\": \"json\",\n      \"description\": \"Array of description, quantity, unit_price, and optional tax_rate.\"\n    },\n    \"tax_rate\": {\n      \"title\": \"Tax rate\",\n      \"type\": \"number\",\n      \"editor\": \"number\",\n      \"description\": \"Percent, applied to items without their own tax_rate.\"\n    },\n    \"type\": {\n      \"title\": \"Barcode type\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"For barcode_svg, for example code128 or ean13.\"\n    },\n    \"crypto\": {\n      \"title\": \"Payment block\",\n      \"type\": \"object\",\n      \"editor\": \"json\",\n      \"description\": \"Optional network, token, address and amount for a payment URI or QR on the PDF.\"\n    }\n  },\n  \"required\": [\n    \"mode\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started"
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~phone-number-validator/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_phone_number_validator_sync_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/phone-number-validator and return dataset items",
+        "description": "Starts the Actor, waits for it to finish, and returns dataset items. Docs: https://apify.com/publicrecords/phone-number-validator",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"Phone validator, invoice PDF and barcode input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"mode\": {\n      \"title\": \"Mode\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"phone_validate\",\n        \"phone_extract\",\n        \"invoice_pdf\",\n        \"receipt_pdf\",\n        \"barcode_svg\",\n        \"pay_uri\"\n      ],\n      \"editor\": \"select\",\n      \"description\": \"Phone validator (format and region), extract numbers from text, invoice or receipt PDF, barcode SVG, or a payment URI.\",\n      \"default\": \"phone_validate\",\n      \"prefill\": \"phone_validate\"\n    },\n    \"phone\": {\n      \"title\": \"Phone number\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"For phone_validate. International or national format.\"\n    },\n    \"phones\": {\n      \"title\": \"Phone numbers\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"description\": \"For phone_validate. One dataset row and $0.001 per number, up to 200. An invalid number still returns a row with valid: false and is charged.\",\n      \"maxItems\": 200,\n      \"prefill\": [\n        \"+1 650-253-0000\",\n        \"+44 20 7946 0958\",\n        \"+61 2 5550 1234\",\n        \"not-a-number\"\n      ]\n    },\n    \"text\": {\n      \"title\": \"Text\",\n      \"type\": \"string\",\n      \"editor\": \"textarea\",\n      \"description\": \"For phone_extract (find numbers in text) or barcode payload.\"\n    },\n    \"country\": {\n      \"title\": \"Default country\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"ISO country for national-format phone numbers, for example US.\",\n      \"prefill\": \"US\"\n    },\n    \"number\": {\n      \"title\": \"Document number\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Invoice or receipt number.\"\n    },\n    \"date\": {\n      \"title\": \"Date\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Invoice or receipt date, YYYY-MM-DD.\"\n    },\n    \"due_date\": {\n      \"title\": \"Due date\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"Payment due date, YYYY-MM-DD.\"\n    },\n    \"currency\": {\n      \"title\": \"Currency\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"ISO currency code, for example USD.\"\n    },\n    \"seller\": {\n      \"title\": \"Seller\",\n      \"type\": \"object\",\n      \"editor\": \"json\",\n      \"description\": \"Seller block, for example name, address, email, phone, tax_id.\"\n    },\n    \"buyer\": {\n      \"title\": \"Buyer\",\n      \"type\": \"object\",\n      \"editor\": \"json\",\n      \"description\": \"Buyer block, for example name, address, email, tax_id.\"\n    },\n    \"items\": {\n      \"title\": \"Line items\",\n      \"type\": \"array\",\n      \"editor\": \"json\",\n      \"description\": \"Array of description, quantity, unit_price, and optional tax_rate.\"\n    },\n    \"tax_rate\": {\n      \"title\": \"Tax rate\",\n      \"type\": \"number\",\n      \"editor\": \"number\",\n      \"description\": \"Percent, applied to items without their own tax_rate.\"\n    },\n    \"type\": {\n      \"title\": \"Barcode type\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"description\": \"For barcode_svg, for example code128 or ean13.\"\n    },\n    \"crypto\": {\n      \"title\": \"Payment block\",\n      \"type\": \"object\",\n      \"editor\": \"json\",\n      \"description\": \"Optional network, token, address and amount for a payment URI or QR on the PDF.\"\n    }\n  },\n  \"required\": [\n    \"mode\"\n  ]\n}",
+              "example": {
+                "mode": "phone_validate",
+                "phones": [
+                  "+1 650-253-0000",
+                  "+44 20 7946 0958",
+                  "+61 2 5550 1234",
+                  "not-a-number"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/phone-number-validator"
+  }
+}

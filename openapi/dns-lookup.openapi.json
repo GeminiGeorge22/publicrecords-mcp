@@ -1,0 +1,161 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "DNS Lookup: Bulk DNS Records, MX, SPF and DMARC Checker",
+    "description": "Bulk DNS lookup: A, MX, NS, TXT, SPF, DMARC and email provider in one row.\n\nRuns on your own Apify account (pay-per-use). Store: https://apify.com/publicrecords/dns-lookup\nMCP: https://mcp.apify.com?tools=publicrecords/dns-lookup\nAuthor: Public Records.",
+    "version": "0.1.0",
+    "contact": {
+      "name": "Public Records",
+      "url": "https://apify.com/publicrecords",
+      "email": "publicrecords@users.noreply.github.com"
+    },
+    "x-origin": [
+      {
+        "url": "https://apify.com/publicrecords/dns-lookup",
+        "format": "openapi",
+        "version": "3.0"
+      }
+    ],
+    "x-apisguru-categories": [
+      "developer_tools"
+    ]
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2",
+      "description": "Apify API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "runs",
+      "description": "Start a run and read dataset items"
+    }
+  ],
+  "paths": {
+    "/acts/publicrecords~dns-lookup/runs": {
+      "post": {
+        "operationId": "start_dns_lookup_run",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Start a run of publicrecords/dns-lookup",
+        "description": "Starts the Actor asynchronously. Poll the returned run, then read dataset items. Docs: https://apify.com/publicrecords/dns-lookup",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"DNS Lookup input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"domains\": {\n      \"title\": \"Domains\",\n      \"type\": \"array\",\n      \"description\": \"Domain names, one per line (for example `apify.com`). Website URLs and email addresses also work: the Actor takes the host name or the part after @. Duplicates are skipped.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"apify.com\",\n        \"github.com\",\n        \"wikipedia.org\"\n      ],\n      \"default\": [\n        \"apify.com\",\n        \"github.com\",\n        \"wikipedia.org\"\n      ]\n    },\n    \"recordTypes\": {\n      \"title\": \"Record types\",\n      \"type\": \"array\",\n      \"description\": \"DNS record types to return. Leave all selected for a full DNS report.\",\n      \"editor\": \"select\",\n      \"items\": {\n        \"type\": \"string\",\n        \"enum\": [\n          \"A\",\n          \"AAAA\",\n          \"CNAME\",\n          \"MX\",\n          \"NS\",\n          \"TXT\",\n          \"SOA\",\n          \"CAA\"\n        ],\n        \"enumTitles\": [\n          \"A (IPv4)\",\n          \"AAAA (IPv6)\",\n          \"CNAME (alias)\",\n          \"MX (mail servers)\",\n          \"NS (name servers)\",\n          \"TXT\",\n          \"SOA\",\n          \"CAA (certificate authorities)\"\n        ]\n      },\n      \"default\": [\n        \"A\",\n        \"AAAA\",\n        \"CNAME\",\n        \"MX\",\n        \"NS\",\n        \"TXT\",\n        \"SOA\",\n        \"CAA\"\n      ]\n    },\n    \"emailChecks\": {\n      \"title\": \"Check SPF, DMARC and email provider\",\n      \"type\": \"boolean\",\n      \"description\": \"Parse the SPF record, read the DMARC record at _dmarc.<domain>, and name the email provider from the MX hosts (Google Workspace, Microsoft 365 and others). Same price.\",\n      \"default\": true\n    }\n  },\n  \"required\": [\n    \"domains\"\n  ]\n}"
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Run started"
+          }
+        }
+      }
+    },
+    "/acts/publicrecords~dns-lookup/run-sync-get-dataset-items": {
+      "post": {
+        "operationId": "run_dns_lookup_sync_items",
+        "tags": [
+          "runs"
+        ],
+        "summary": "Run publicrecords/dns-lookup and return dataset items",
+        "description": "Starts the Actor, waits for it to finish, and returns dataset items. Docs: https://apify.com/publicrecords/dns-lookup",
+        "security": [
+          {
+            "ApiKeyQuery": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "timeout",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Timeout in seconds"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Memory in MB"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": "{\n  \"title\": \"DNS Lookup input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"domains\": {\n      \"title\": \"Domains\",\n      \"type\": \"array\",\n      \"description\": \"Domain names, one per line (for example `apify.com`). Website URLs and email addresses also work: the Actor takes the host name or the part after @. Duplicates are skipped.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"apify.com\",\n        \"github.com\",\n        \"wikipedia.org\"\n      ],\n      \"default\": [\n        \"apify.com\",\n        \"github.com\",\n        \"wikipedia.org\"\n      ]\n    },\n    \"recordTypes\": {\n      \"title\": \"Record types\",\n      \"type\": \"array\",\n      \"description\": \"DNS record types to return. Leave all selected for a full DNS report.\",\n      \"editor\": \"select\",\n      \"items\": {\n        \"type\": \"string\",\n        \"enum\": [\n          \"A\",\n          \"AAAA\",\n          \"CNAME\",\n          \"MX\",\n          \"NS\",\n          \"TXT\",\n          \"SOA\",\n          \"CAA\"\n        ],\n        \"enumTitles\": [\n          \"A (IPv4)\",\n          \"AAAA (IPv6)\",\n          \"CNAME (alias)\",\n          \"MX (mail servers)\",\n          \"NS (name servers)\",\n          \"TXT\",\n          \"SOA\",\n          \"CAA (certificate authorities)\"\n        ]\n      },\n      \"default\": [\n        \"A\",\n        \"AAAA\",\n        \"CNAME\",\n        \"MX\",\n        \"NS\",\n        \"TXT\",\n        \"SOA\",\n        \"CAA\"\n      ]\n    },\n    \"emailChecks\": {\n      \"title\": \"Check SPF, DMARC and email provider\",\n      \"type\": \"boolean\",\n      \"description\": \"Parse the SPF record, read the DMARC record at _dmarc.<domain>, and name the email provider from the MX hosts (Google Workspace, Microsoft 365 and others). Same price.\",\n      \"default\": true\n    }\n  },\n  \"required\": [\n    \"domains\"\n  ]\n}",
+              "example": {
+                "domains": [
+                  "apify.com",
+                  "github.com",
+                  "wikipedia.org"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dataset items"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyQuery": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "token",
+        "description": "Apify API token for the caller's own account"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Apify API token as Bearer token"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Apify Store listing",
+    "url": "https://apify.com/publicrecords/dns-lookup"
+  }
+}

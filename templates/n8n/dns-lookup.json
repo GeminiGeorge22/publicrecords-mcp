@@ -1,0 +1,83 @@
+{
+  "name": "DNS Lookup: Bulk DNS Records, MX, SPF and DMARC Checker → daily rows (Apify, publicrecords)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "fc6fc541-a7f5-4667-8172-ac68c848c24a",
+      "name": "Every day 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/publicrecords~dns-lookup/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"domains\": [\n    \"apify.com\",\n    \"github.com\",\n    \"wikipedia.org\"\n  ]\n}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "948d91a6-bcf3-4ffd-b1c2-8a2369b62b6c",
+      "name": "Run DNS Lookup: Bulk DNS Records, MX, SPF and DMARC Checker on Apify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Create a Header Auth credential: name = Authorization, value = Bearer <your Apify API token> (console.apify.com/settings/integrations). Runs bill to your own Apify account at the Store price."
+    },
+    {
+      "parameters": {
+        "content": "## DNS Lookup: Bulk DNS Records, MX, SPF and DMARC Checker\nBulk DNS lookup: A, MX, NS, TXT, SPF, DMARC and email provider in one row.\n\nStore page: https://apify.com/publicrecords/dns-lookup\nMCP: https://mcp.apify.com?tools=publicrecords/dns-lookup\n\nEdit the JSON body to change the input, then connect the output to Google Sheets, Slack, Airtable or email.",
+        "height": 280,
+        "width": 420
+      },
+      "id": "72ca8b05-bb36-444d-aa7a-a67552f3e7e3",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -320
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run DNS Lookup: Bulk DNS Records, MX, SPF and DMARC Checker on Apify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "pinData": {}
+}

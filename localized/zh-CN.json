@@ -317,6 +317,71 @@
       "description": "检查语法、域名、MX 记录和一次性域名，不检查邮箱本身，也不会发送邮件。 Pay per event on your own Apify account: $0.0005 Actor start (default 256 MB is one event); $0.0005 per email checked. Current rates are on the Store page. This is not a mailbox or SMTP check. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
       "price_line": "Pay per event on your own Apify account: $0.0005 Actor start (default 256 MB is one event); $0.0005 per email checked. Current rates are on the Store page. This is not a mailbox or SMTP check.",
       "price_tiered": false
+    },
+    {
+      "actor": "tech-stack-detector",
+      "store_url": "https://apify.com/publicrecords/tech-stack-detector",
+      "registry_name": "io.github.GeminiGeorge22/tech-stack-detector-mcp",
+      "server": "tech-stack-detector-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/tech-stack-detector-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/tech-stack-detector",
+      "name": "技术栈检测 MCP：查询网站所用技术",
+      "one_line": "查明网站所用技术：CMS、框架、分析、CDN、托管等。",
+      "description": "查明网站所用技术：CMS、框架、分析、CDN、托管等。 Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.0015 per site analyzed. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.0015 per site analyzed. Current rates are on the Store page.",
+      "price_tiered": true
+    },
+    {
+      "actor": "phone-number-validator",
+      "store_url": "https://apify.com/publicrecords/phone-number-validator",
+      "registry_name": "io.github.GeminiGeorge22/phone-number-validator-mcp",
+      "server": "phone-number-validator-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/phone-number-validator-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/phone-number-validator",
+      "name": "电话号码校验 MCP：E.164、国家与线路类型",
+      "one_line": "校验电话号码：E.164、国家与线路类型。不是向运营商做实时查询。",
+      "description": "校验电话号码：E.164、国家与线路类型。不是向运营商做实时查询。 Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.001 per phone number validated or extracted. Invoice/receipt PDF, barcode SVG and payment URI modes are priced on the Store page. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.001 per phone number validated or extracted. Invoice/receipt PDF, barcode SVG and payment URI modes are priced on the Store page. Current rates are on the Store page.",
+      "price_tiered": true
+    },
+    {
+      "actor": "wikipedia-search",
+      "store_url": "https://apify.com/publicrecords/wikipedia-search",
+      "registry_name": "io.github.GeminiGeorge22/wikipedia-search-mcp",
+      "server": "wikipedia-search-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/wikipedia-search-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/wikipedia-search",
+      "name": "维基百科搜索 MCP：条目、欧洲央行汇率与美国国债收益率",
+      "one_line": "搜索维基百科，或获取欧洲央行欧元汇率和美国国债收益率。",
+      "description": "搜索维基百科，或获取欧洲央行欧元汇率和美国国债收益率。 Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.001 per Wikipedia, FX or Treasury row. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.001 per Wikipedia, FX or Treasury row. Current rates are on the Store page.",
+      "price_tiered": true
+    },
+    {
+      "actor": "crossref-papers-doi-lookup",
+      "store_url": "https://apify.com/publicrecords/crossref-papers-doi-lookup",
+      "registry_name": "io.github.GeminiGeorge22/crossref-papers-doi-lookup-mcp",
+      "server": "crossref-papers-doi-lookup-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/crossref-papers-doi-lookup-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/crossref-papers-doi-lookup",
+      "name": "学术论文检索 MCP：Crossref 引用与 DOI 查询",
+      "one_line": "在 Crossref 检索论文或查询 DOI：作者、期刊与引用数。",
+      "description": "在 Crossref 检索论文或查询 DOI：作者、期刊与引用数。 Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.0008 per paper returned. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.0008 per paper returned. Current rates are on the Store page.",
+      "price_tiered": true
+    },
+    {
+      "actor": "dns-lookup",
+      "store_url": "https://apify.com/publicrecords/dns-lookup",
+      "registry_name": "io.github.GeminiGeorge22/dns-lookup-mcp",
+      "server": "dns-lookup-mcp",
+      "server_github_url": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/dns-lookup-mcp",
+      "endpoint": "https://mcp.apify.com?tools=publicrecords/dns-lookup",
+      "name": "DNS 查询 MCP：批量 DNS、MX、SPF 与 DMARC",
+      "one_line": "批量 DNS 查询：A、MX、NS、TXT、SPF、DMARC 与邮件服务商，一行一条。",
+      "description": "批量 DNS 查询：A、MX、NS、TXT、SPF、DMARC 与邮件服务商，一行一条。 Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.0008 per domain looked up. Current rates are on the Store page. Remote MCP server (Streamable HTTP) hosted by Apify; sign in with Apify OAuth or your own API token.",
+      "price_line": "Pay per event on your own Apify account: $0.001 Actor start (default 256 MB is one event); $0.0008 per domain looked up. Current rates are on the Store page.",
+      "price_tiered": true
     }
   ]
 }

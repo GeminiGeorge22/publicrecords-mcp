@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.GeminiGeorge22/tech-stack-detector-mcp",
+  "title": "Tech Stack Detector MCP: Website Technology Lookup",
+  "description": "Find what any website is built with: CMS, frameworks, analytics, CDN, hosting and more.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/publicrecords/tech-stack-detector",
+  "repository": {
+    "url": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+    "source": "github",
+    "subfolder": "servers/tech-stack-detector-mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/tech-stack-detector",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional if you use Apify OAuth. Otherwise: Bearer <APIFY_TOKEN> (your own Apify API token).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

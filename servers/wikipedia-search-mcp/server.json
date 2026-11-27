@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.GeminiGeorge22/wikipedia-search-mcp",
+  "title": "Wikipedia Search MCP: Articles, ECB FX & Treasury Yields",
+  "description": "Search Wikipedia, or fetch ECB euro FX rates and U.S. Treasury yields.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/publicrecords/wikipedia-search",
+  "repository": {
+    "url": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+    "source": "github",
+    "subfolder": "servers/wikipedia-search-mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/wikipedia-search",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional if you use Apify OAuth. Otherwise: Bearer <APIFY_TOKEN> (your own Apify API token).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
