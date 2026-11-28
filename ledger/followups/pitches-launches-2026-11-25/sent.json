@@ -1,0 +1,147 @@
+{
+  "as_of": "2026-11-25 21:13 America/Toronto",
+  "inbox": "publicrecords@agentmail.to",
+  "authorization": "Mark t1228u: Yes, send all 12 pitches (21:10 ET).",
+  "source": [
+    "/workspace/reports/pitch-cards.jsonl",
+    "/workspace/reports/pitches-2026-11-25.json",
+    "ledger/followups/pitches-launches-2026-11-25/pitches-2026-11-25.json"
+  ],
+  "skipped": [
+    {
+      "name": "Federal News Network",
+      "route": "form",
+      "form_url": "https://federalnewsnetwork.com/contact-us/",
+      "reason": "Official tip form includes a CAPTCHA; not submitted and not emailed."
+    }
+  ],
+  "counts": {
+    "drafted_email_pitches": 12,
+    "sent": 12,
+    "accepted_by_remote_mta": 10,
+    "bounced": 2,
+    "failed_to_send": 0
+  },
+  "messages": [
+    {
+      "recipient": "support@erank.com",
+      "subject": "Guest tip offer: turn an Etsy search into a pricing table",
+      "message_id": "<010001a215a04d96-1063ff4d-7025-4985-946c-377da08c8eae-000000@email.amazonses.com>",
+      "thread_id": "2db81932-41c0-40fd-b73a-e2c84aace49f",
+      "sent_at_utc": "2026-11-26T02:12:36.834Z",
+      "status": "sent",
+      "sent_at_et": "2026-11-25 21:12:36 America/Toronto"
+    },
+    {
+      "recipient": "community@practicalecommerce.com",
+      "subject": "Tool tip: Etsy search results as a pricing table",
+      "message_id": "<010001a215a069c9-8811ef88-0d74-4f4c-a28e-40663148cf90-000000@email.amazonses.com>",
+      "thread_id": "25271544-0813-4d75-9d1f-d37fb08a6984",
+      "sent_at_utc": "2026-11-26T02:12:44.039Z",
+      "status": "sent",
+      "sent_at_et": "2026-11-25 21:12:44 America/Toronto"
+    },
+    {
+      "recipient": "ina@ecommercebytes.com",
+      "subject": "Tip: Etsy search results as listing rows (prices, badges, ads)",
+      "message_id": "<010001a215a06b76-96a2cbc5-c19d-4ec5-bfdc-3285170f5bfe-000000@email.amazonses.com>",
+      "thread_id": "ecb706a7-16e0-44ff-8a5f-8f0cb75219d7",
+      "sent_at_utc": "2026-11-26T02:12:44.475Z",
+      "status": "sent",
+      "sent_at_et": "2026-11-25 21:12:44 America/Toronto"
+    },
+    {
+      "recipient": "editor@hypebot.com",
+      "subject": "Story pitch: no-login Spotify play counts and monthly listeners",
+      "message_id": "<010001a215a06d41-4227be67-1f3e-48b7-b5de-3c01407b2ec3-000000@email.amazonses.com>",
+      "thread_id": "00a13ba9-f94a-4d84-acfd-c1adf2bd7756",
+      "sent_at_utc": "2026-11-26T02:12:44.936Z",
+      "status": "sent",
+      "sent_at_et": "2026-11-25 21:12:44 America/Toronto"
+    },
+    {
+      "recipient": "mail@musically.com",
+      "subject": "Tools tip: scrape Spotify play counts and monthly listeners, no login",
+      "message_id": "<010001a215a06f7f-0d75cbc0-b305-483b-828a-b5dd2ee96eb5-000000@email.amazonses.com>",
+      "thread_id": "bc4eb8b3-53f3-4f84-ab42-9692b0ed5f9a",
+      "sent_at_utc": "2026-11-26T02:12:45.497Z",
+      "status": "sent",
+      "sent_at_et": "2026-11-25 21:12:45 America/Toronto"
+    },
+    {
+      "recipient": "editors@musictech.com",
+      "subject": "News tip: no-login Spotify play counts and monthly listeners",
+      "message_id": "<010001a215a07184-29159c91-5b27-48f8-b0cd-18479a7ac8ec-000000@email.amazonses.com>",
+      "thread_id": "19f56825-7277-4018-9bfb-82719ccfb6ab",
+      "sent_at_utc": "2026-11-26T02:12:46.009Z",
+      "status": "sent",
+      "sent_at_et": "2026-11-25 21:12:46 America/Toronto"
+    },
+    {
+      "recipient": "editor@ere.net",
+      "subject": "Pitch: ATS job-board feeds (Greenhouse, Lever, Ashby, SmartRecruiters) as JSON",
+      "message_id": "<010001a215a07380-8de11f04-e552-4e47-804e-de424728bdec-000000@email.amazonses.com>",
+      "thread_id": "63ca5aab-75d8-43dd-be1b-b15c4e4bcfbb",
+      "sent_at_utc": "2026-11-26T02:12:46.513Z",
+      "status": "sent",
+      "sent_at_et": "2026-11-25 21:12:46 America/Toronto"
+    },
+    {
+      "recipient": "submissions@washingtontechnology.com",
+      "subject": "Article pitch: official SAM.gov, Grants.gov and USAspending feeds as flat JSON",
+      "message_id": "<010001a215a076f9-c8c7c3d4-ce3f-4901-93dd-1e6945d6e5ea-000000@email.amazonses.com>",
+      "thread_id": "8aa8164d-c1d8-4f8e-bfc1-abf4045224ef",
+      "sent_at_utc": "2026-11-26T02:12:47.414Z",
+      "status": "sent",
+      "sent_at_et": "2026-11-25 21:12:47 America/Toronto"
+    },
+    {
+      "recipient": "source@opennews.org",
+      "subject": "Pointer: official US, EU, UK and city-council records as flat JSON for newsrooms",
+      "message_id": "<010001a215a078d7-f6be1ab8-f220-49d1-95e4-7865adb86141-000000@email.amazonses.com>",
+      "thread_id": "6bcf278e-f340-4194-a1ed-dcb656ef0e31",
+      "sent_at_utc": "2026-11-26T02:12:47.885Z",
+      "status": "sent",
+      "sent_at_et": "2026-11-25 21:12:47 America/Toronto"
+    },
+    {
+      "recipient": "adam@legalsportsreport.com",
+      "subject": "Industry tip: sports odds API for BetRivers, Unibet, Paf, Svenska Spel and ATG",
+      "message_id": "<010001a215a07a28-2ad1a84d-6923-4df0-a65a-12cd0a95c493-000000@email.amazonses.com>",
+      "thread_id": "429f9d61-3911-4f49-964a-ba3601266ac9",
+      "sent_at_utc": "2026-11-26T02:12:48.237Z",
+      "status": "bounced",
+      "bounce": {
+        "dsn_message_id": "<010001a215a08079-64f27510-2c27-4674-8f2d-6338e1a8c83b-000000@email.amazonses.com>",
+        "dsn_thread_id": "a0f01af3-d2a8-4829-9c74-6123b8193cef",
+        "status_code": "5.4.1",
+        "diagnostic": "smtp; 550 5.4.1 Recipient address rejected: Access denied. For more information see https://aka.ms/EXOSmtpErrors [MI3PEPF00008552.eurprd05.prod.outlook.com 2026-11-26T02:12:49.631Z 08DF4B312776F0F3]"
+      },
+      "sent_at_et": "2026-11-25 21:12:48 America/Toronto"
+    },
+    {
+      "recipient": "editorial@thelines.com",
+      "subject": "Tip: sports odds API for BetRivers, Unibet, Paf, Svenska Spel and ATG",
+      "message_id": "<010001a215a07f1a-e65edd82-1dde-47d1-848d-5a29fe0e6d1a-000000@email.amazonses.com>",
+      "thread_id": "6f6000b6-0549-432d-ab0b-058af96db2f9",
+      "sent_at_utc": "2026-11-26T02:12:49.496Z",
+      "status": "sent",
+      "sent_at_et": "2026-11-25 21:12:49 America/Toronto"
+    },
+    {
+      "recipient": "info@sportshandle.com",
+      "subject": "Story tip: sports odds API for BetRivers, Unibet, Paf, Svenska Spel and ATG",
+      "message_id": "<010001a215a07fdd-67633296-8ca3-4950-89c5-c129205077cd-000000@email.amazonses.com>",
+      "thread_id": "30fe2b3a-9f09-4da7-b847-d68d10e4253a",
+      "sent_at_utc": "2026-11-26T02:12:49.703Z",
+      "status": "bounced",
+      "bounce": {
+        "dsn_message_id": "<010001a215a080a8-e509703a-1f02-411e-b883-e4bdc7a4be36-000000@email.amazonses.com>",
+        "dsn_thread_id": "79d76ac3-1efb-46c2-9ee4-96cb39dbf176",
+        "status_code": "5.1.1",
+        "diagnostic": "Amazon SES did not send the message to this address because it is on the suppression list for your account."
+      },
+      "sent_at_et": "2026-11-25 21:12:49 America/Toronto"
+    }
+  ]
+}
